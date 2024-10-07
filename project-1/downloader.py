@@ -1,4 +1,5 @@
 import requests
+import os
 import paths
 from lxml import html
 
@@ -31,6 +32,9 @@ for anchor in paper_anchor_tags:
     html_content = str(response.text)
 
     if ALLOW_DOWNLOAD: 
+        if not os.path.exists(paths.HTML_FOLDER):
+            os.makedirs(paths.HTML_FOLDER)
+        
         with open(f"{paths.HTML_FOLDER}/{paper_id}.html", "w", encoding="utf-8") as file:
             file.write(html_content)
 

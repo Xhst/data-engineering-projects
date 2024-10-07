@@ -1,8 +1,6 @@
-from typing import TypedDict, List
-
-class TableSchema(TypedDict):
+class TableSchema(dict):
     caption: str
     table: str
-    footnotes: List[str]
-    references: List[str]
+    footnotes: list[str]
+    references: list[str]
     
