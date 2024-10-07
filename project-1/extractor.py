@@ -5,6 +5,7 @@ import os
 from tqdm import tqdm
 from lxml import html
 
+os.makedirs(paths.JSON_FOLDER, exist_ok=True)
 
 def extract_references(table_id : str, paper : html.HtmlElement) -> list[str]:
     """

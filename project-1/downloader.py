@@ -5,7 +5,9 @@ from lxml import html
 
 TOPIC = "cs.AI"
 NUMBER_OF_PAPERS = 750
-ALLOW_DOWNLOAD = False
+ALLOW_DOWNLOAD = True
+
+os.makedirs(paths.HTML_FOLDER, exist_ok=True)
 
 URL = f"https://arxiv.org/list/{TOPIC}/recent?skip=0&show={NUMBER_OF_PAPERS}"
 
