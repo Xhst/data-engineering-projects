@@ -21,7 +21,7 @@ def extract_references(table_id : str, paper : html.HtmlElement) -> list[str]:
     Returns:
         list[str]: A list of section titles associated with the references to the table.
     """
-    paragraphs_ref = paper.xpath('//a[contains(@href, "{table_id}") and contains(@class, "ltx_ref")]/ancestor::section[1]/*[contains(@class, "ltx_title")]')
+    paragraphs_ref = paper.xpath(f'//a[contains(@href, "{table_id}") and contains(@class, "ltx_ref")]/ancestor::section[1]/*[contains(@class, "ltx_title")]')
     
     ref_titles: list[str] = []
     for par in paragraphs_ref:
