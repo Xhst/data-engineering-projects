@@ -2,6 +2,7 @@ import json
 from json_schema import TableSchema
 import paths
 import os
+from tqdm import tqdm
 from lxml import html
 
 
@@ -69,8 +70,7 @@ def extract_footnotes(table : html.HtmlElement) -> list[str]:
                     continue
                 foot_text += segment
             
-            footnotes.append(foot_text)   
-            print(foot_text)
+            footnotes.append(foot_text)
     
     return footnotes
 
@@ -82,7 +82,8 @@ if __name__ == "__main__":
     if not os.path.exists(paths.JSON_FOLDER):
         os.makedirs(paths.JSON_FOLDER)
 
-    for filename in filenames:
+
+    for filename in tqdm(filenames, desc="Processing HTML files", unit=" file", colour="green", disable=False):
         article_json : dict[str, TableSchema] = {}
         
         with open(f"{paths.HTML_FOLDER}/{filename}", "r", encoding="utf-8") as file:
@@ -93,13 +94,11 @@ if __name__ == "__main__":
             tables = paper.xpath('//figure[contains(@id, ".T")]')
             
             for table in tables:
-                table_json : TableSchema = {}
-                
                 # we extract the table id and format it like this: T1, T2, T3, ...
                 table_id = table.xpath('@id')[0].split(".")[1]
                 
                 # Extracting captions ("Table X: " + "caption")
-                caption_fragments = table.xpath('//figcaption//text()')
+                caption_fragments = table.xpath('.//figcaption//text()')
                 caption = "".join(caption_fragments)
             
                 # Extracting footnotes
@@ -117,8 +116,8 @@ if __name__ == "__main__":
                 
                 # Store the table JSON with its id
                 article_json[table_id] = table_json
-            
-            # Change extension to json and save to file
-            filename = filename.replace(".html", ".json")
-            with open(f"{paths.JSON_FOLDER}/{filename}", "w", encoding="utf-8") as json_file:
-                json.dump(article_json, json_file, indent=4)
+                
+        # Change extension to json and save to file
+        filename = filename.replace(".html", ".json")
+        with open(f"{paths.JSON_FOLDER}/{filename}", "w", encoding="utf-8") as json_file:
+            json.dump(article_json, json_file, indent=4)
