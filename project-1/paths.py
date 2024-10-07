@@ -1,2 +1,2 @@
-HTML_FOLDER = "sources/"
-JSON_FOLDER = "extraction/"
+HTML_FOLDER = "sources"
+JSON_FOLDER = "extraction"

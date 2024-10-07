@@ -31,6 +31,6 @@ for anchor in paper_anchor_tags:
     html_content = str(response.text)
 
     if ALLOW_DOWNLOAD: 
-        with open(f"{paths.HTML_FOLDER}{paper_id}.html", "w", encoding="utf-8") as file:
+        with open(f"{paths.HTML_FOLDER}/{paper_id}.html", "w", encoding="utf-8") as file:
             file.write(html_content)
-            
+
