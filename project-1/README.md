@@ -6,7 +6,7 @@
     - tables 
     - tables’ captions 
     - footnotes in the tables or in the captions 
-    - paragraphs containing references to the extracted tables
+    - paragraphs containing references to the extracted tables (paragraph text, references text or link)
 - For each paper:
     - Using XPATH, extract all the tables; 
     - for each table extract its caption, footnotes (if present), paragraphs with references to the table
