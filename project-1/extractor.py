@@ -110,7 +110,7 @@ if __name__ == "__main__":
                     continue
                 
                 # we extract the table id and format it like this: T1, T2, T3, ...
-                table_id = table.xpath('@id')[0].split(".")[1]
+                table_id = ".".join(table.xpath('@id')[0].split(".")[1:])
 
                 # some ids are missing the "T" prefix, so we add it
                 if not("T" in table_id):
@@ -119,11 +119,6 @@ if __name__ == "__main__":
                 # Extracting captions ("Table X: " + "caption")
                 caption_fragments = table.xpath('.//*[contains(@class, "ltx_caption")]//text()')
                 caption = "".join(caption_fragments)
-                if filename == "2410.00373.html":
-                    print(table_id)
-                    print(caption_fragments)
-                    print(caption)
-                    print("\n\n")
 
                 # Extracting footnotes
                 footnotes = extract_footnotes(table)
@@ -131,9 +126,13 @@ if __name__ == "__main__":
                 # Extracting references
                 paragraphs_refs = extract_references(table_id, paper)
                 
+                table_str = ""
+                if(table.xpath('.//table') != []):
+                    table_str = html.tostring(table.xpath('.//table')[0]).decode('utf-8')
+                
                 table_json: TableSchema = {
                     "caption": caption,
-                    "table": html.tostring(table.xpath('//table')[0]).decode('utf-8'),  # Convert the table HTML element to string
+                    "table": table_str,
                     "footnotes": footnotes,
                     "references": paragraphs_refs
                 }
