@@ -5,7 +5,8 @@ import os
 from tqdm import tqdm
 from lxml import html
 
-os.makedirs(paths.JSON_FOLDER, exist_ok=True)
+# Set this to True if you want to check if the HTML files contain tables
+CHECK_TABLE_PRESENCE = False
 
 def extract_references(table_id : str, paper : html.HtmlElement) -> list[str]:
     """
@@ -76,13 +77,14 @@ def extract_footnotes(table : html.HtmlElement) -> list[str]:
     return footnotes
 
 
+papers_no_tables: list[str] = []
+
 if __name__ == "__main__":
     filenames = os.listdir(paths.HTML_FOLDER)
 
     # make sure the JSON folder exists
     if not os.path.exists(paths.JSON_FOLDER):
         os.makedirs(paths.JSON_FOLDER)
-
 
     for filename in tqdm(filenames, desc="Processing HTML files", unit=" file", colour="green", disable=False):
         article_json : dict[str, TableSchema] = {}
@@ -91,17 +93,30 @@ if __name__ == "__main__":
             file_content = file.read()
             paper = html.fromstring(file_content)
 
+            if CHECK_TABLE_PRESENCE:
+                all_table_tags: list[html.HtmlElement] = paper.xpath('//table[not(contains(@id, ".E") or contains(@id, ".F"))]')
+                if all_table_tags == []:
+                    papers_no_tables.append(filename.replace(".html", ""))
+                        
             # Extracting tables
-            tables = paper.xpath('//figure[contains(@id, ".T")]')
-            
+            # Most tables are contained within a figure element with a class of "ltx_table" and id containing ".T", 
+            # while in rare cases they are contained within a div element with a class of "ltx_minipage".
+            # In that case, we select only those divs that contain a table element.
+            tables = paper.xpath('//figure[contains(@id, ".T") and contains(@class, "ltx_table")] | ' + 
+                                 '//table/ancestor::div[contains(@id, ".") and contains(@class, "ltx_minipage")]')
+        
             for table in tables:
                 # we extract the table id and format it like this: T1, T2, T3, ...
                 table_id = table.xpath('@id')[0].split(".")[1]
+
+                # some ids are missing the "T" prefix, so we add it
+                if not("T" in table_id):
+                    table_id = "T" + table_id
                 
                 # Extracting captions ("Table X: " + "caption")
-                caption_fragments = table.xpath('.//figcaption//text()')
+                caption_fragments = table.xpath('.//*[contains(@class, "ltx_caption")]//text()')
                 caption = "".join(caption_fragments)
-            
+
                 # Extracting footnotes
                 footnotes = extract_footnotes(table)
                 
@@ -110,7 +125,7 @@ if __name__ == "__main__":
                 
                 table_json: TableSchema = {
                     "caption": caption,
-                    "table": html.tostring(table).decode('utf-8'),  # Convert the table HTML element to string
+                    "table": html.tostring(table.xpath('//table')[0]).decode('utf-8'),  # Convert the table HTML element to string
                     "footnotes": footnotes,
                     "references": paragraphs_refs
                 }
