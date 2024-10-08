@@ -52,6 +52,8 @@ The remaining 7 missing captions are from tables:
 We manually checked those tables and they actually have no caption.
 
 #### Tables
+When searching for tables, if the tables found with our methods are empty or have no children elements, we discard them.
+
 We are still missing tables in 79 papers because they are not inside figure tags, or the id format is not consistent. 
 
 Tables can be inside divs with strange structure, but this is a rare case (see paper 2406.19271)

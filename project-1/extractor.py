@@ -59,7 +59,7 @@ def extract_footnotes(table : html.HtmlElement) -> list[str]:
     Returns:
         list[str]: A list of strings where each string is a table footnote's full text.
     """
-    footnotes_xpath = table.xpath('//*[contains(@id, "footnote") and not(contains(@id, "."))]')
+    footnotes_xpath = table.xpath('.//*[contains(@id, "footnote") and not(contains(@id, "."))]')
     footnotes: list[str] = []
     
     for footnote in footnotes_xpath:
@@ -68,7 +68,7 @@ def extract_footnotes(table : html.HtmlElement) -> list[str]:
         if footnote_segments:
             foot_text = ""
             for segment in footnote_segments:
-                if segment == "" or segment.isnumeric():
+                if segment == "" or segment.isnumeric() or segment == "footnotetext: ":
                     continue
                 foot_text += segment
             
@@ -106,6 +106,9 @@ if __name__ == "__main__":
                                  '//table/ancestor::div[contains(@id, ".") and contains(@class, "ltx_minipage")]')
         
             for table in tables:
+                if table == None or table == [] or not(table.getchildren()):
+                    continue
+                
                 # we extract the table id and format it like this: T1, T2, T3, ...
                 table_id = table.xpath('@id')[0].split(".")[1]
 
@@ -116,6 +119,11 @@ if __name__ == "__main__":
                 # Extracting captions ("Table X: " + "caption")
                 caption_fragments = table.xpath('.//*[contains(@class, "ltx_caption")]//text()')
                 caption = "".join(caption_fragments)
+                if filename == "2410.00373.html":
+                    print(table_id)
+                    print(caption_fragments)
+                    print(caption)
+                    print("\n\n")
 
                 # Extracting footnotes
                 footnotes = extract_footnotes(table)
