@@ -12,20 +12,6 @@ NUMBER_OF_PAPERS: int = 1000
 BASE_SIZE: int = 50
 
 URL: str = "https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term="+str(TOPIC)+"&terms-0-field=abstract&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=hide&size="+str(BASE_SIZE)+"&order=-announced_date_first&start={start}"
-def has_next_page():
-    return True
-
-def proxy_rotator(proxy_list):
-    return itertools.cycle(proxy_list)
-
-def rotate_ua(user_agent_list):
-    return itertools.cycle(user_agent_list)
-
-user_agent_list = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0",
-]
 
 def get_request(url) -> requests.Response:
 
@@ -45,7 +31,7 @@ def collect_papers():
     papers_collected = 0
     current_page = 0
 
-    while papers_collected < NUMBER_OF_PAPERS or has_next_page():
+    while papers_collected < NUMBER_OF_PAPERS:
         response = get_request(URL.format(start=str(current_page * BASE_SIZE)))
 
         current_page += 1
