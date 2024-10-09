@@ -9,7 +9,7 @@ ALLOW_DOWNLOAD: bool = True
 TOPIC: str = "Sentiment analysis".replace(" ", "+")
 NUMBER_OF_PAPERS: int = 1000
 
-BASE_SIZE: int = 50
+BASE_SIZE: int = 200
 
 URL: str = "https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term="+str(TOPIC)+"&terms-0-field=abstract&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=hide&size="+str(BASE_SIZE)+"&order=-announced_date_first&start={start}"
 
@@ -37,7 +37,7 @@ def collect_papers():
         current_page += 1
 
         if (not(response) or response.status_code != 200):
-            print(f"GET Request Failed for {current_page} page")
+            print(f"GET Request Failed for page {current_page}")
             return
             
         arxiv = html.fromstring(response.content)
@@ -58,21 +58,22 @@ def collect_papers():
                 
 
 def try_download_paper(url: str):
-    url.replace("/abs/", "/html/")
+    url = url.replace("abs", "html")
     response = get_request(url)
+
+    paper_id = url.split("/")[-1]
 
     if (not(response) or response.status_code != 200):
         return False
     
     page = html.fromstring(response.content)
-    if page.xpath('//main[@id="main-container"]//h1[contains(text(), "No HTML for")]'):
+    
+    if page.xpath('//*[text()="HTML is not available for the source."]'):
         return False
     
     if page.xpath('//title[contains(text(), "reCAPTCHA")]'):
         print("reCAPTCHA detected")
         return False
-    
-    paper_id = url.split("/")[-1]
 
     html_content = str(response.text)
 
