@@ -77,6 +77,18 @@ def extract_footnotes(table : html.HtmlElement) -> list[str]:
     return footnotes
 
 
+def extract_caption(table : html.HtmlElement) -> str:
+    # Extracting captions ("Table X: " + "caption")
+
+    # First we control the siblings
+    caption_fragments = table.xpath('/sibling:://*[contains(@class, "ltx_caption")]//text()')
+    # If we did not found any caption, we try a stricter rules
+    if caption_fragments == []:
+        caption_fragments = table.xpath(f'./p[contains(@id, "{table_id}.")]//text()')
+    if caption_fragments == []:
+        caption_fragments = table.xpath(f'./span[contains(@id, "{table_id}.")]//text()')
+
+
 papers_no_tables: list[str] = []
 
 if __name__ == "__main__":
@@ -102,29 +114,24 @@ if __name__ == "__main__":
             # Most tables are contained within a figure element with a class of "ltx_table" and id containing ".T", 
             # while in rare cases they are contained within a div element with a class of "ltx_minipage".
             # In that case, we select only those divs that contain a table element.
-            tables = paper.xpath('//figure[contains(@id, ".T") and contains(@class, "ltx_table")] | ' + 
-                                 '//table/ancestor::div[contains(@id, ".") and contains(@class, "ltx_minipage")]')
+            tables = paper.xpath('//figure[contains(@id, ".T") and contains(@class, "ltx_table")]/descendant::table | ' + 
+                                 '//div[contains(@id, ".") and contains(@class, "ltx_minipage")]/descendant::table')
         
             for table in tables:
                 if table == None or table == [] or not(table.getchildren()):
                     continue
 
                 # Skip tables that are equations or figures or other
-                if table.xpath('.//table[contains(@id, ".T")]') == []:
+                if not(".T" in table.xpath('@id')[0]):
                     continue
                 
                 # we extract the table id and format it like this: T1, T2, T3, ...
                 table_id = ".".join(table.xpath('@id')[0].split(".")[1:])
-                
-                # Extracting captions ("Table X: " + "caption")
-                caption_fragments = table.xpath('.//*[contains(@class, "ltx_caption")]//text()')
-                # If we did not found any caption, we try a stricter rules
-                if caption_fragments == []:
-                    caption_fragments = table.xpath(f'./p[contains(@id, "{table_id}.")]//text()')
-                if caption_fragments == []:
-                    caption_fragments = table.xpath(f'./span[contains(@id, "{table_id}.")]//text()')
 
-                caption = "".join(caption_fragments)
+                if filename == "2410.01064.html":  
+                    print(table_id)
+                
+                caption = extract_caption(table)
 
                 # Extracting footnotes
                 footnotes = extract_footnotes(table)
