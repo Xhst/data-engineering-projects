@@ -1,5 +1,4 @@
 import json
-from json_schema import TableSchema
 import paths
 import os
 from tqdm import tqdm
@@ -37,6 +36,20 @@ def extract_references(table_id : str, paper : html.HtmlElement) -> list[str]:
         ref_titles.append(sec_title)
     
     return ref_titles
+
+
+def extract_caption(table: html.HtmlElement, table_id: str) -> str:
+    # Extracting captions ("Table X: " + "caption")
+    caption_fragments = table.xpath('.//*[contains(@class, "ltx_caption")]//text()')
+    # If we did not found any caption, we try a stricter rules
+    if caption_fragments == []:
+        caption_fragments = table.xpath(f'./p[contains(@id, "{table_id}.")]//text()')
+    if caption_fragments == []:
+        caption_fragments = table.xpath(f'./span[contains(@id, "{table_id}.")]//text()')
+
+    caption = "".join(caption_fragments)
+    
+    return caption
 
         
 def extract_footnotes(table : html.HtmlElement) -> list[str]:
@@ -86,8 +99,8 @@ if __name__ == "__main__":
     if not os.path.exists(paths.JSON_FOLDER):
         os.makedirs(paths.JSON_FOLDER)
 
-    for filename in tqdm(filenames, desc="Processing HTML files", unit=" file", colour="green", disable=True):
-        article_json : dict[str, TableSchema] = {}
+    for filename in tqdm(filenames, desc="Processing HTML files", unit=" file", colour="green", disable=False):
+        article_json : dict[str, dict] = {}
         
         with open(f"{paths.HTML_FOLDER}/{filename}", "r", encoding="utf-8") as file:
             file_content = file.read()
@@ -109,23 +122,14 @@ if __name__ == "__main__":
             for table in tables:
                 if table == None or table == [] or not(table.getchildren()):
                     continue
-
-                # Skip tables that are equations or figures or other
-                if table.xpath('.//table[contains(@id, ".T")]') == []:
-                    continue
                 
+                table_tags = table.xpath('.//table[contains(@id, ".T")]')
+            
                 # we extract the table id and format it like this: T1, T2, T3, ...
                 table_id = ".".join(table.xpath('@id')[0].split(".")[1:])
                 
-                # Extracting captions ("Table X: " + "caption")
-                caption_fragments = table.xpath('.//*[contains(@class, "ltx_caption")]//text()')
-                # If we did not found any caption, we try a stricter rules
-                if caption_fragments == []:
-                    caption_fragments = table.xpath(f'./p[contains(@id, "{table_id}.")]//text()')
-                if caption_fragments == []:
-                    caption_fragments = table.xpath(f'./span[contains(@id, "{table_id}.")]//text()')
-
-                caption = "".join(caption_fragments)
+                # Extracting caption
+                caption = extract_caption(table, table_id)
 
                 # Extracting footnotes
                 footnotes = extract_footnotes(table)
@@ -137,13 +141,13 @@ if __name__ == "__main__":
                 if not("T" in table_id):
                     table_id = "T" + table_id
 
-                # Check to see if tables are inside the table xpath
                 table_str = ""
-                if(table.xpath('.//table') != []):
-                    # If there are tables, we insert it into the JSON
-                    table_str = html.tostring(table.xpath('.//table')[0]).decode('utf-8')
+                # If there are tables, we insert it into the JSON
+                if table_tags != []:
+                    for table_tag in table_tags:
+                        table_str = table_str + html.tostring(table_tag).decode('utf-8')
 
-                    table_json: TableSchema = {
+                    table_json = {
                         "caption": caption,
                         "table": table_str,
                         "footnotes": footnotes,
@@ -152,9 +156,11 @@ if __name__ == "__main__":
                     
                     # Store the table JSON with its id
                     article_json[table_id] = table_json
+                
                 else:
                     # If there are no tables, we may have found a table caption related to a <table> tag
-                    # that is not a direct child of the figure element. In this case, we need to add the caption to the
+                    # that is not a direct parent of the table element, or maybe is outside of the figure element. 
+                    # In this case, we need to add the caption to the
                     # exisitng table JSON and add footnotes that may lay inside the caption
                     if table_id in article_json:
                         article_json[table_id]["caption"] = caption

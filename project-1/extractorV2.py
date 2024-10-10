@@ -1,5 +1,4 @@
 import json
-from json_schema import TableSchema
 import paths
 import os
 from tqdm import tqdm
@@ -99,7 +98,7 @@ if __name__ == "__main__":
         os.makedirs(paths.JSON_FOLDER)
 
     for filename in tqdm(filenames, desc="Processing HTML files", unit=" file", colour="green", disable=True):
-        article_json : dict[str, TableSchema] = {}
+        article_json : dict[str, dict] = {}
         
         with open(f"{paths.HTML_FOLDER}/{filename}", "r", encoding="utf-8") as file:
             file_content = file.read()
@@ -150,7 +149,7 @@ if __name__ == "__main__":
                     # If there are tables, we insert it into the JSON
                     table_str = html.tostring(table.xpath('.//table')[0]).decode('utf-8')
 
-                    table_json: TableSchema = {
+                    table_json = {
                         "caption": caption,
                         "table": table_str,
                         "footnotes": footnotes,
