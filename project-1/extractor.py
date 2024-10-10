@@ -98,7 +98,8 @@ if __name__ == "__main__":
                 if all_table_tags == []:
                     papers_no_tables.append(filename.replace(".html", ""))
                         
-            # Extracting tables
+            # Extracting tables, here "tables" are intended as tags containing table tags
+            
             # Most tables are contained within a figure element with a class of "ltx_table" and id containing ".T", 
             # while in rare cases they are contained within a div element with a class of "ltx_minipage".
             # In that case, we select only those divs that contain a table element.
