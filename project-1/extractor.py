@@ -7,7 +7,7 @@ from lxml import html
 # Set this to True if you want to check if the HTML files contain tables
 CHECK_TABLE_PRESENCE = False
 
-def extract_references(table_id : str, paper : html.HtmlElement) -> list[str]:
+def extract_references(table_number : str, paper : html.HtmlElement) -> list[str]:
     """
     Extracts section titles where references to the table are found.
 
@@ -21,21 +21,19 @@ def extract_references(table_id : str, paper : html.HtmlElement) -> list[str]:
     Returns:
         list[str]: A list of section titles associated with the references to the table.
     """
-    paragraphs_ref = paper.xpath(f'//a[contains(@href, "{table_id}") and contains(@class, "ltx_ref")]/ancestor::section[1]/*[contains(@class, "ltx_title")]')
+    # this almost works, but it could finds also tables with number table_number0,1,2,3, ex we search for 1 and find also 10
+    paragraphs_ref = paper.xpath(f'//p[contains(text(),"{table_number} ") or contains(text(),"{table_number}.") or contains(text(),"{table_number},") or contains(text(),"{table_number}-")]')
     
-    ref_titles: list[str] = []
+    refs_text: list[str] = []
+    
     for par in paragraphs_ref:
-        # Build each section title from the fragments
-        sec_title = ""
-        title_fragments = par.xpath('.//text()')
-        for fragment in title_fragments:
-            if fragment == "" or fragment == "\n":
-                continue
-            sec_title += fragment
-        
-        ref_titles.append(sec_title)
+        par_text = ""
+        segments = par.xpath('.//text()')
+        for seg in segments:
+            par_text = par_text + seg
+        refs_text.append(par_text)
     
-    return ref_titles
+    return refs_text
 
 
 def extract_caption(table: html.HtmlElement, table_id: str) -> str:
@@ -135,7 +133,9 @@ if __name__ == "__main__":
                 footnotes = extract_footnotes(table)
                 
                 # Extracting references
-                paragraphs_refs = extract_references(table_id, paper)
+                # We need this to search for references, we take the first part of the caption ("Table X:")
+                table_number = caption.split(":")[0]
+                paragraphs_refs = extract_references(table_number, paper)
                 
                 # Finally, some ids are missing the "T" prefix, so we add it
                 if not("T" in table_id):
