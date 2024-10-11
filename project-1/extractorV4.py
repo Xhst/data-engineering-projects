@@ -77,14 +77,7 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
                 result.append(html.tostring(ref[0]).decode('utf-8'))
 
     return result
-    
 
-    ''''refs = paper.xpath(f'//*[text()[contains(., "{tableDenomination}") and not(contains(@class, "ltx_text"))]//ancestor::section')
-    
-    for ref in refs:
-        result.append(html.tostring(ref).decode('utf-8'))
-    '''''
-    return result
 
 def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
     paperData = PaperData()
