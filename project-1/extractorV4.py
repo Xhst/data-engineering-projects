@@ -1,6 +1,7 @@
 import json
 import paths
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from tqdm import tqdm
 from lxml import html
@@ -57,23 +58,23 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
     # get the first two parts of the table id (e.g. #S1.T1.1.2 -> #S1.T1) because it's the id usally used in references
     id = ".".join(table_id.split(".")[:2])
 
-    a_refs = paper.xpath(f'//a[contains(@href, "{id}")]')
+    a_refs = paper.xpath(f'//a[contains(@href, "{id}")]/..')
 
     # first try to find references by looking for <a> tags
     if a_refs:
         for a_ref in a_refs:
-            ref = a_ref.xpath('ancestor::section')
-            if ref:
-                result.append(html.tostring(ref[0]).decode('utf-8'))
+            text_ref_content = a_ref.text_content().strip() if hasattr(a_ref, 'text_content') else a_ref.strip()
+            result.append(text_ref_content)
     
     # if no references are found, try to find them by looking for text references
     elif tableDenomination != "":
-        text_refs = paper.xpath(f'//*[contains(text(), "{tableDenomination}") and not(contains(@class, "ltx_text"))]')
+        text_refs = paper.xpath(f'//*[contains(text(), "{tableDenomination}")]')
 
-        for text_ref in text_refs:
-            ref = text_ref.xpath('ancestor::section')
-            if ref:
-                result.append(html.tostring(ref[0]).decode('utf-8'))
+        for text_ref in text_refs: 
+            text_ref_content = text_ref.text_content().strip() if hasattr(text_ref, 'text_content') else text_ref.strip()
+    
+            if text_ref_content != tableDenomination + ":":
+                result.append(text_ref_content)
 
     return result
 
@@ -108,26 +109,47 @@ def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
     paperData.title = extract_paper_title(paper)
     paperData.tables = tablesData
 
-    with open(f"{paths.JSON_FOLDER}/{filename}.json", "w", encoding="utf-8") as file:
-        json.dump(paperData, file, default=lambda o: o.__dict__, indent=4)
+    return paperData
     
+
+def process_file(filename, html_folder, json_folder):
+    with open(f"{html_folder}/{filename}", "r", encoding="utf-8") as htmlFile:
+        file_content = htmlFile.read().encode('utf-8')
+        paper = html.fromstring(file_content, parser=html.HTMLParser())
+        
+        filename = filename.replace(".html", "")
+
+        paperData = extract_paper_data(paper, filename)
+
+        with open(f"{json_folder}/{filename}.json", "w", encoding="utf-8") as jsonFile:
+            json.dump(paperData, jsonFile, default=lambda o: o.__dict__, indent=4)
 
 
 if __name__ == "__main__":
-    filenames = os.listdir(paths.HTML_FOLDER)
+    html_folder = paths.HTML_FOLDER
+    json_folder = paths.JSON_FOLDER
 
-    # make sure the JSON folder exists
-    if not os.path.exists(paths.JSON_FOLDER):
-        os.makedirs(paths.JSON_FOLDER)
+    # Assicurati che la cartella JSON esista
+    if not os.path.exists(json_folder):
+        os.makedirs(json_folder)
 
-    for filename in tqdm(filenames, desc="Processing HTML files", unit=" file", colour="green", disable=False):
-        with open(f"{paths.HTML_FOLDER}/{filename}", "r", encoding="utf-8") as file:
-            file_content = file.read().encode('utf-8')
-            paper = html.fromstring(file_content, parser=html.HTMLParser())
-            
-            filename = filename.replace(".html", "")
+    # Ottieni la lista dei file nella cartella HTML
+    filenames = os.listdir(html_folder)
 
-            extract_paper_data(paper, filename)
+    # Numero di thread che vuoi utilizzare (puoi modificarlo a piacere)
+    max_workers = 4
+
+    # Utilizza un ThreadPoolExecutor per eseguire il codice in parallelo
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Invia il lavoro al pool di thread
+        futures = {executor.submit(process_file, filename, html_folder, json_folder): filename for filename in filenames}
+
+        # Usa tqdm per visualizzare la barra di progresso
+        for future in tqdm(as_completed(futures), desc="Processing HTML files", unit=" file", colour="green", total=len(futures)):
+            try:
+                future.result()  # Ottieni il risultato per catturare eventuali eccezioni
+            except Exception as e:
+                print(f"Error processing file {futures[future]}: {e}")
 
 
 
