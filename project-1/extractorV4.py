@@ -23,27 +23,26 @@ def extract_paper_title(paper: html.HtmlElement) -> str:
     title = paper.xpath('//title/text()')[0]
     return title
 
-def extract_table_caption(table: html.HtmlElement) -> tuple[str, str]:
-
-    # try find caption from preceding sibling
-    caption_parts = table.xpath('.//preceding-sibling::*[contains(@class, "ltx_caption")]//text()')
-
-    if caption_parts:
-        return "".join(caption_parts), caption_parts[0]
+def extract_table_caption(table: html.HtmlElement, usedCaptions: set[str]) -> tuple[str, str]:
     
-    # try find caption from following sibling
-    caption_parts = table.xpath('.//following-sibling::*[contains(@class, "ltx_caption")]//text()')
+    # get the first valid caption found in the following xpaths
+    xpaths = [
+        './/preceding-sibling::*[contains(@class, "ltx_caption")][1]//text()',
+        './/following-sibling::*[contains(@class, "ltx_caption")][1]//text()',
+        './/preceding::*[contains(@class, "ltx_caption") and .//*[contains(@class, "ltx_tag_table")]][1]//text()',
+        './/following::*[contains(@class, "ltx_caption") and .//*[contains(@class, "ltx_tag_table")]][1]//text()'
+    ]
 
-    if caption_parts:
-        return "".join(caption_parts), caption_parts[0]
-    
-    # try find caption from parent
-    caption_parts = table.xpath('.//parent::*[contains(@class, "ltx_caption")]//text()')
+    for xpath in xpaths:
+        caption_parts = table.xpath(xpath)
+        
+        if caption_parts:
+            caption = ''.join(caption_parts)
 
-    if caption_parts:
-        return "".join(caption_parts), caption_parts[0]
+            if caption not in usedCaptions:
+                return caption, caption_parts[0]
     
-    return "", ""
+    return '', ''
 
 
 def extract_table(table: html.HtmlElement) -> str:
@@ -56,9 +55,9 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
     result = []
 
     # get the first two parts of the table id (e.g. #S1.T1.1.2 -> #S1.T1) because it's the id usally used in references
-    table_id = ".".join(table_id.split(".")[:2])
+    id = ".".join(table_id.split(".")[:2])
 
-    a_refs = paper.xpath(f'//a[contains(@href, "{table_id}")]')
+    a_refs = paper.xpath(f'//a[contains(@href, "{id}")]')
 
     # first try to find references by looking for <a> tags
     if a_refs:
@@ -68,7 +67,7 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
                 result.append(html.tostring(ref[0]).decode('utf-8'))
     
     # if no references are found, try to find them by looking for text references
-    else:
+    elif tableDenomination != "":
         text_refs = paper.xpath(f'//*[contains(text(), "{tableDenomination}") and not(contains(@class, "ltx_text"))]')
 
         for text_ref in text_refs:
@@ -83,8 +82,9 @@ def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
     paperData = PaperData()
 
     tablesData: list[TableData] = []
+    usedCaptions: set[str] = set()
 
-    tables: list[html.HtmlElement] = paper.xpath('//table[contains(@id, ".T") or contains(@id, ".F")]')
+    tables: list[html.HtmlElement] = paper.xpath('//table[contains(@class, "ltx_tabular")]')
 
     for table in tables:
         tableData = TableData()
@@ -92,7 +92,9 @@ def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
         table_id = table.get('id')
 
         tableData.table_id = table_id
-        tableData.caption, tableDenomination = extract_table_caption(table)
+        
+        tableData.caption, tableDenomination = extract_table_caption(table, usedCaptions)
+        usedCaptions.add(tableData.caption)
 
         tableDenomination = tableDenomination.replace(":", "").strip()
 
