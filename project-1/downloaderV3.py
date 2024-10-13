@@ -3,6 +3,7 @@ import arxiv
 import paths
 import time
 from lxml import html
+import os
 
 # Definisci la query
 query = '(abs:"record linkage" OR abs:"entity resolution")'
@@ -10,23 +11,35 @@ query = '(abs:"record linkage" OR abs:"entity resolution")'
 # Ricerca su arXiv con limite di 5 articoli per esempio
 search = arxiv.Search(
     query=query,
-    max_results=1000,
+    max_results=600,
     sort_by=arxiv.SortCriterion.SubmittedDate,
 )
 
 print(f"Query: {query}")
 
+if not os.path.exists(paths.HTML_FOLDER):
+    os.makedirs(paths.HTML_FOLDER)
+
 for result in search.results():
     paper_id = result.get_short_id().split("v")[0]
 
-    ar5iv_url = f"https://ar5iv.labs.arxiv.org/html/{paper_id}"
+    url = f"https://ar5iv.labs.arxiv.org/html/{paper_id}"
 
     time.sleep(0.5)
 
-    response = requests.get(ar5iv_url)
+    response = requests.get(url, allow_redirects=False)
+
+    if response.status_code in (301, 302, 307, 308):
+        url = response.headers["Location"].replace("abs", "html")
+        print(f"Redirected to {url}")
+        response = requests.get(url, allow_redirects=False)
+
+    if response.status_code == 404:
+        print(f"404 Not Found for {url}")
+        continue
 
     if response.status_code != 200:
-        print(f"Failed to open {ar5iv_url}")
+        print(f"Failed to open {url}")
         continue
 
     if "reCAPTCHA" in response.text:
