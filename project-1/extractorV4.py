@@ -16,13 +16,15 @@ class TableData:
 
 @dataclass
 class PaperData:
-    filename: str = ""
+    paper_id: str = ""
     title: str = ""
     tables: list[TableData] = field(default_factory=list)
+
 
 def extract_paper_title(paper: html.HtmlElement) -> str:
     title = paper.xpath('//title/text()')[0]
     return title
+
 
 def extract_table_caption(table: html.HtmlElement, usedCaptions: set[str]) -> tuple[str, str]:
     
@@ -49,8 +51,33 @@ def extract_table_caption(table: html.HtmlElement, usedCaptions: set[str]) -> tu
 def extract_table(table: html.HtmlElement) -> str:
     return html.tostring(table).decode('utf-8')
 
-def extract_table_footnotes(table: html.HtmlElement) -> list[str]:
-    return []
+
+def extract_table_footnotes(table: html.HtmlElement, table_id: str) -> list[str]:
+    id = ".".join(table_id.split(".")[:2])
+    table_container = table.xpath(f'.//ancestor::figure[@id="{id}"][0]')
+
+    if not table_container:
+        return []
+    
+    table_container = table_container[0]
+
+    footnotes_xpath = table_container.xpath('.//*[contains(@id, "footnote") and not(contains(@id, "."))]')
+    footnotes: list[str] = []
+    
+    for footnote in footnotes_xpath:
+        footnote_segments = footnote.xpath('.//text()')
+        
+        if footnote_segments:
+            foot_text = ""
+            for segment in footnote_segments:
+                if segment == "" or segment.isnumeric() or segment == "footnotetext: ":
+                    continue
+                foot_text += segment
+            
+            footnotes.append(foot_text)
+    
+    return footnotes
+
 
 def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomination: str) -> list[str]:
     result = []
@@ -68,11 +95,19 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
     
     # if no references are found, try to find them by looking for text references
     elif tableDenomination != "":
-        text_refs = paper.xpath(f'//*[contains(text(), "{tableDenomination}")]')
+        
+        # find all text references that contain the table denomination followed by a space, a dot,
+        # a colon or a comma. It's necessary to avoid selecting tables with a "greater" denomination.
+        # (e.g. "Table 1" and "Table 11", or "Table II" and "Table III") 
+        text_refs = paper.xpath(f'//*[contains(normalize-space(text()), "{tableDenomination} ") or '
+                                f'contains(normalize-space(text()), "{tableDenomination}.") or '
+                                f'contains(normalize-space(text()), "{tableDenomination}:") or '
+                                f'contains(normalize-space(text()), "{tableDenomination},")]')
 
         for text_ref in text_refs: 
             text_ref_content = text_ref.text_content().strip() if hasattr(text_ref, 'text_content') else text_ref.strip()
     
+            # if the text is exactly the table denomination followed by a colon, it's not a reference, but the caption
             if text_ref_content != tableDenomination + ":":
                 result.append(text_ref_content)
 
@@ -80,6 +115,7 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
 
 
 def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
+    #TODO: check tables inside tables e.g. 2410.03131
     paperData = PaperData()
 
     tablesData: list[TableData] = []
@@ -100,12 +136,12 @@ def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
         tableDenomination = tableDenomination.replace(":", "").strip()
 
         tableData.table = extract_table(table)
-        tableData.footnotes = extract_table_footnotes(table)
+        tableData.footnotes = extract_table_footnotes(table, table_id)
         tableData.references = extract_table_references(paper, table_id, tableDenomination)
 
         tablesData.append(tableData)
 
-    paperData.filename = filename
+    paperData.paper_id = filename
     paperData.title = extract_paper_title(paper)
     paperData.tables = tablesData
 
@@ -129,25 +165,19 @@ if __name__ == "__main__":
     html_folder = paths.HTML_FOLDER
     json_folder = paths.JSON_FOLDER
 
-    # Assicurati che la cartella JSON esista
     if not os.path.exists(json_folder):
         os.makedirs(json_folder)
 
-    # Ottieni la lista dei file nella cartella HTML
     filenames = os.listdir(html_folder)
 
-    # Numero di thread che vuoi utilizzare (puoi modificarlo a piacere)
-    max_workers = 4
+    max_workers = 8
 
-    # Utilizza un ThreadPoolExecutor per eseguire il codice in parallelo
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # Invia il lavoro al pool di thread
         futures = {executor.submit(process_file, filename, html_folder, json_folder): filename for filename in filenames}
 
-        # Usa tqdm per visualizzare la barra di progresso
         for future in tqdm(as_completed(futures), desc="Processing HTML files", unit=" file", colour="green", total=len(futures)):
             try:
-                future.result()  # Ottieni il risultato per catturare eventuali eccezioni
+                future.result() 
             except Exception as e:
                 print(f"Error processing file {futures[future]}: {e}")
 
