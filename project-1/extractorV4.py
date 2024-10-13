@@ -121,7 +121,7 @@ def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
     tablesData: list[TableData] = []
     usedCaptions: set[str] = set()
 
-    tables: list[html.HtmlElement] = paper.xpath('//table[contains(@class, "ltx_tabular")]')
+    tables: list[html.HtmlElement] = paper.xpath('//table[contains(@class, "ltx_tabular") and not(ancestor::table)]')
 
     for table in tables:
         tableData = TableData()
