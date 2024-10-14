@@ -48,10 +48,17 @@ def get_footnotes_from_figure(figure):
     return
 
 
-def get_references_from_figure(figure):
+#!!! Nested figures might repeat or miss some references!!!
+def get_references_from_figure(paper, table_number):
+
+    references: list[str] = []
+    ref_fragments = paper.xpath(f'.//a[contains(@title, "Table {table_number}")]/..')
+
+    for ref_fragment in ref_fragments:
+        references.append(ref_fragment.xpath(".//text()"))
 
     # return references
-    return
+    return references
 
 
 # simple extraction from figures
@@ -74,17 +81,18 @@ if __name__ == "__main__":
             )
 
             # print(filename)
-            # print(len(figure_list))
+            print(len(figure_list))
 
             for figure in figure_list:
 
-                figure_data = TableData()
-                figure_id = figure.get("id")
+                # check nested figure, TO-DO
+                # print(len(figure.xpath(".//figure")))
 
-                # print(figure_id)
+                figure_data = TableData()
+                figure_id: str = figure.get("id")
+                table_number = (figure_id.split(".")[1]).split("T")[1]
 
                 table = get_table_from_figure(figure)
                 caption = get_caption_from_figure(figure)
-                exit()
+                references = get_references_from_figure(paper, table_number)
                 footnotes = get_footnotes_from_figure(figure)
-                references = get_references_from_figure(figure)
