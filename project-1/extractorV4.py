@@ -32,8 +32,8 @@ def extract_table_caption(table: html.HtmlElement, usedCaptions: set[str]) -> tu
     xpaths = [
         './/preceding-sibling::*[contains(@class, "ltx_caption")][1]//text()',
         './/following-sibling::*[contains(@class, "ltx_caption")][1]//text()',
-        './/preceding::*[contains(@class, "ltx_caption") and .//*[contains(@class, "ltx_tag_table")]][1]//text()',
-        './/following::*[contains(@class, "ltx_caption") and .//*[contains(@class, "ltx_tag_table")]][1]//text()'
+        './/preceding::*[contains(@class, "ltx_caption")][1]//text()',
+        './/following::*[contains(@class, "ltx_caption")][1]//text()'
     ]
 
     for xpath in xpaths:
@@ -115,7 +115,6 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
 
 
 def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
-    #TODO: check tables inside tables e.g. 2410.03131
     paperData = PaperData()
 
     tablesData: list[TableData] = []
