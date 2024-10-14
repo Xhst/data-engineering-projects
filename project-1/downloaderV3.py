@@ -5,12 +5,11 @@ import time
 from lxml import html
 import os
 
-# Definisci la query
 query = '(abs:"record linkage" OR abs:"entity resolution")'
+query1 = '(abs:"synthetic data generation")'
 
-# Ricerca su arXiv con limite di 5 articoli per esempio
 search = arxiv.Search(
-    query=query,
+    query=query1,
     max_results=600,
     sort_by=arxiv.SortCriterion.SubmittedDate,
 )
