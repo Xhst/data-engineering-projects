@@ -14,7 +14,7 @@ def process_file(filename: str, source_folder: str, extract_folder: str):
         
         filename = filename.replace(".html", "")
         
-        # we extract the tables and sort them by them ids
+        # we extract the tables and sort them by id
         paperData = dict(sorted(forward_extractor.extract_paper_data(paper).items()))
 
         with open(f"{extract_folder}/{filename}.json", "w", encoding="utf-8") as jsonFile:
