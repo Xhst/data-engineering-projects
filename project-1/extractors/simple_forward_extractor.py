@@ -1,29 +1,5 @@
-import json
-import paths
-import os
-import time
-
-from dataclasses import dataclass, field
 from lxml import html
-
-
-@dataclass
-class TableData:
-    table_id: str = ""
-    caption: str = ""
-    table: str = ""
-    references: list[str] = field(default_factory=list)
-    footnotes: list[str] = field(default_factory=list)
-
-    def to_custom_dict(self):
-        return {
-            self.table_id: {
-                "caption": self.caption,
-                "table": self.table,
-                "references": self.references,
-                "footnotes": self.footnotes,
-            }
-        }
+from json_schema import TableData
 
 
 def get_table_from_figure(figure):
@@ -77,51 +53,29 @@ def get_references_from_figure(paper, table_number):
 
 
 # simple extraction from figures
-if __name__ == "__main__":
-    filenames = os.listdir(paths.HTML_FOLDER)
+def extract_paper_data(paper):
 
-    # make sure the JSON folder exists
-    if not os.path.exists(paths.JSON_FOLDER):
-        os.makedirs(paths.JSON_FOLDER)
+    paperData = {}
 
-    for filename in filenames:
+    table_data_list: list[TableData] = []
+    figure_list: list[html.HtmlElement] = paper.xpath('.//figure[contains(@id, ".T")]')
 
-        with open(f"{paths.HTML_FOLDER}/{filename}", "r", encoding="utf-8") as file:
+    for figure in figure_list:
 
-            file_content = file.read().encode("utf-8")
-            paper = html.fromstring(file_content, parser=html.HTMLParser())
-            filename = filename.replace(".html", "")
+        table_data = TableData()
 
-            table_data_list: list[TableData] = []
-            figure_list: list[html.HtmlElement] = paper.xpath(
-                './/figure[contains(@id, ".T")]'
-            )
+        # check nested figure
+        if len(figure.xpath('.//figure[contains(@id, ".T")]')) > 1:
+            continue
+        figure_id: str = figure.get("id")
+        table_number = (figure_id.split(".")[1]).split("T")[1]
 
-            for figure in figure_list:
+        table_id = figure_id
+        table_data.table = get_table_from_figure(figure)
+        table_data.caption = get_caption_from_figure(figure)
+        table_data.references = get_references_from_figure(paper, table_number)
+        table_data.footnotes = get_footnotes_from_figure(figure)
 
-                table_data = TableData()
+        paperData[table_id] = table_data
 
-                # check nested figure
-                if len(figure.xpath('.//figure[contains(@id, ".T")]')) > 1:
-                    continue
-                figure_id: str = figure.get("id")
-                table_number = (figure_id.split(".")[1]).split("T")[1]
-
-                table_data.table_id = figure_id
-                table_data.table = get_table_from_figure(figure)
-                table_data.caption = get_caption_from_figure(figure)
-                table_data.references = get_references_from_figure(paper, table_number)
-                table_data.footnotes = get_footnotes_from_figure(figure)
-
-                table_data_list.append(table_data)
-
-        custom_table_data_list = [
-            table_data.to_custom_dict() for table_data in table_data_list
-        ]
-
-        with open(
-            f"{paths.JSON_FOLDER}/{filename}.json", "w", encoding="utf-8"
-        ) as jsonFile:
-            json.dump(
-                custom_table_data_list, jsonFile, default=lambda o: o.__dict__, indent=4
-            )
+    return paperData
