@@ -159,7 +159,7 @@ if __name__ == "__main__":
     filenames = os.listdir(html_folder)
 
     max_workers = 8
-
+ 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         for folder in folders_to_extract:
 
