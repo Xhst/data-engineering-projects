@@ -90,10 +90,9 @@ def extract_footnotes(table : html.HtmlElement) -> list[str]:
         
 def extract_paper_data(paper: html.HtmlElement) -> dict[str, TableData]:
     article_json : dict[str, TableData] = {}
-    table_json = TableData()
                     
     # Extracting tables, here "tables" are intended as tags containing table tags
-    
+
     # Most tables are contained within a figure element with a class of "ltx_table" and id containing ".T", 
     # while in rare cases they are contained within a div element with a class of "ltx_minipage".
     # In that case, we select only those divs that contain a table element.
@@ -139,6 +138,7 @@ def extract_paper_data(paper: html.HtmlElement) -> dict[str, TableData]:
                 table_tag_str = table_tag_str + html.tostring(table_tag).decode('utf-8')
 
             # populate TableData
+            table_json = TableData()
             table_json.caption = caption
             table_json.table = table_tag_str
             table_json.footnotes = footnotes
@@ -147,4 +147,4 @@ def extract_paper_data(paper: html.HtmlElement) -> dict[str, TableData]:
             # Store the table JSON with its id
             article_json[table_id] = table_json
         
-        return article_json
+    return article_json
