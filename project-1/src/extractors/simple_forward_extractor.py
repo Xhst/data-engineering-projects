@@ -57,7 +57,6 @@ def extract_paper_data(paper):
 
     paperData = {}
 
-    table_data_list: list[TableData] = []
     figure_list: list[html.HtmlElement] = paper.xpath('.//figure[contains(@id, ".T")]')
 
     for figure in figure_list:
@@ -68,7 +67,16 @@ def extract_paper_data(paper):
         if len(figure.xpath('.//figure[contains(@id, ".T")]')) > 1:
             continue
         figure_id: str = figure.get("id")
-        table_number = (figure_id.split(".")[1]).split("T")[1]
+
+        try:
+            table_number = (figure_id.split(".")[1]).split("T")[1]
+
+        except:
+            figure_id_fragments = figure_id.split(".")
+
+            for figure_id_fragment in figure_id_fragments:
+                if figure_id_fragment.startswith("T"):
+                    table_number = figure_id_fragment[1:]
 
         table_id = figure_id
         table_data.table = get_table_from_figure(figure)
