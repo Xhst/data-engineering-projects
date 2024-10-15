@@ -114,14 +114,15 @@ def extract_paper_data(paper: html.HtmlElement) -> dict[str, TableData]:
     # In that case, we select only those divs that contain a table element.
     # TODO: confront with others
     table_containers = paper.xpath('//figure[contains(@id, ".T")] | ' + 
-                                   '//table/ancestor::div[contains(@id, ".") and contains(@class, "ltx_minipage") and not(ancestor::figure)]')    
+                                   '//table/ancestor::div[contains(@id, ".") and contains(@class, "ltx_minipage") and not(ancestor::figure)] | ' +
+                                   '//table/ancestor::div[contains(@id, "example") and not(ancestor::figure)][1]')    
     
     for table_container in table_containers:
         if table_container == None or table_container == [] or not(table_container.getchildren()):
             continue
         
         # we exclude equations and figures (id = ".E" or ".F")
-        table_tags = table_container.xpath('.//table[contains(@id, ".T")]')
+        table_tags = table_container.xpath('.//table[contains(@id, ".T") or contains(@id, "example")]')
         
         if table_tags == []:
             continue
@@ -136,8 +137,10 @@ def extract_paper_data(paper: html.HtmlElement) -> dict[str, TableData]:
         
         # Extracting references
         # We need this to search for some references, we take the first part of the caption ("Table X:")
-        table_num = caption.split(":")[0]
-        paragraphs_refs = extract_references(table_num, table_id, paper)
+        paragraphs_refs = []
+        if caption:
+            table_num = caption.split(":")[0]
+            paragraphs_refs = extract_references(table_num, table_id, paper)
 
         # We then insert it into the json
         table_tag_str = ""
