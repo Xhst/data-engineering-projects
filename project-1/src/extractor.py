@@ -14,7 +14,7 @@ def process_file(filename: str, source_folder: str, extract_folder: str):
         
         filename = filename.replace(".html", "")
 
-        paperData = forward_extractor.extract_paper_data(paper, filename)
+        paperData = forward_extractor.extract_paper_data(paper)
 
         with open(f"{extract_folder}/{filename}.json", "w", encoding="utf-8") as jsonFile:
             json.dump(paperData, jsonFile, default=lambda o: o.__dict__, indent=4)
