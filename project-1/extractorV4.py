@@ -8,17 +8,10 @@ from lxml import html
 
 @dataclass
 class TableData:
-    table_id: str = ""
     caption: str = ""
     table: str = ""
     footnotes: list[str] = field(default_factory=list)
     references: list[str] = field(default_factory=list)
-
-@dataclass
-class PaperData:
-    paper_id: str = ""
-    title: str = ""
-    tables: list[TableData] = field(default_factory=list)
 
 
 def extract_paper_title(paper: html.HtmlElement) -> str:
@@ -54,7 +47,7 @@ def extract_table(table: html.HtmlElement) -> str:
 
 def extract_table_footnotes(table: html.HtmlElement, table_id: str) -> list[str]:
     id = ".".join(table_id.split(".")[:2])
-    table_container = table.xpath(f'.//ancestor::figure[@id="{id}"][0]')
+    table_container = table.xpath(f'.//ancestor::figure[@id="{id}"][1]')
 
     if not table_container:
         return []
@@ -114,10 +107,9 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
     return result
 
 
-def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
-    paperData = PaperData()
+def extract_paper_data(paper: html.HtmlElement, filename: str) -> dict[str, TableData]:
 
-    tablesData: list[TableData] = []
+    tablesData: dict[str, TableData] = {}
     usedCaptions: set[str] = set()
 
     tables: list[html.HtmlElement] = paper.xpath('//table[contains(@class, "ltx_tabular") and not(ancestor::table)]')
@@ -126,8 +118,6 @@ def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
         tableData = TableData()
 
         table_id = table.get('id')
-
-        tableData.table_id = table_id
         
         tableData.caption, tableDenomination = extract_table_caption(table, usedCaptions)
         usedCaptions.add(tableData.caption)
@@ -138,17 +128,13 @@ def extract_paper_data(paper: html.HtmlElement, filename: str) -> PaperData:
         tableData.footnotes = extract_table_footnotes(table, table_id)
         tableData.references = extract_table_references(paper, table_id, tableDenomination)
 
-        tablesData.append(tableData)
+        tablesData[table_id] = tableData
 
-    paperData.paper_id = filename
-    paperData.title = extract_paper_title(paper)
-    paperData.tables = tablesData
-
-    return paperData
+    return tablesData
     
 
-def process_file(filename, html_folder, json_folder):
-    with open(f"{html_folder}/{filename}", "r", encoding="utf-8") as htmlFile:
+def process_file(filename, source_folder, extract_folder):
+    with open(f"{source_folder}/{filename}", "r", encoding="utf-8") as htmlFile:
         file_content = htmlFile.read().encode('utf-8')
         paper = html.fromstring(file_content, parser=html.HTMLParser())
         
@@ -156,7 +142,7 @@ def process_file(filename, html_folder, json_folder):
 
         paperData = extract_paper_data(paper, filename)
 
-        with open(f"{json_folder}/{filename}.json", "w", encoding="utf-8") as jsonFile:
+        with open(f"{extract_folder}/{filename}.json", "w", encoding="utf-8") as jsonFile:
             json.dump(paperData, jsonFile, default=lambda o: o.__dict__, indent=4)
 
 
@@ -164,21 +150,33 @@ if __name__ == "__main__":
     html_folder = paths.HTML_FOLDER
     json_folder = paths.JSON_FOLDER
 
-    if not os.path.exists(json_folder):
-        os.makedirs(json_folder)
+    folders_to_extract = ['record_linkage', 'synthetic_data', 'ia']
+
+    for folder in folders_to_extract:
+        if not os.path.exists(f"{json_folder}/{folder}"):
+            os.makedirs(f"{json_folder}/{folder}")
 
     filenames = os.listdir(html_folder)
 
     max_workers = 8
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = {executor.submit(process_file, filename, html_folder, json_folder): filename for filename in filenames}
+        for folder in folders_to_extract:
 
-        for future in tqdm(as_completed(futures), desc="Processing HTML files", unit=" file", colour="green", total=len(futures)):
-            try:
-                future.result() 
-            except Exception as e:
-                print(f"Error processing file {futures[future]}: {e}")
+            extract_folder = f"{json_folder}/{folder}"
+            source_folder = f"{html_folder}/{folder}"
+
+            filenames = os.listdir(f"{source_folder}")
+
+            futures = {
+                executor.submit(process_file, filename, source_folder, extract_folder): filename for filename in filenames
+            }
+
+            for future in tqdm(as_completed(futures), desc=f"Processing {source_folder}", unit=" file", colour="green", total=len(futures)):
+                try:
+                    future.result() 
+                except Exception as e:
+                    print(f"Error processing file {futures[future]}: {e}")
 
 
 
