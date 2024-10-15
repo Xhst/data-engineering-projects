@@ -1,5 +1,4 @@
 from json_schema import TableData
-from tqdm import tqdm
 from lxml import html
 
 
@@ -91,7 +90,7 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
     return result
 
 
-def extract_paper_data(paper: html.HtmlElement, filename: str) -> dict[str, TableData]:
+def extract_paper_data(paper: html.HtmlElement) -> dict[str, TableData]:
 
     tablesData: dict[str, TableData] = {}
     usedCaptions: set[str] = set()

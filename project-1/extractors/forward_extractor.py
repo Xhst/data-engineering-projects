@@ -1,8 +1,6 @@
-import json
-import paths
-import os
-from tqdm import tqdm
 from lxml import html
+from json_schema import TableData
+
 
 def extract_references(table_num: str, table_id : str, paper : html.HtmlElement) -> list[str]:
     """
@@ -89,76 +87,64 @@ def extract_footnotes(table : html.HtmlElement) -> list[str]:
     
     return footnotes
 
-
-if __name__ == "__main__":
-    filenames = os.listdir(paths.HTML_FOLDER)
-
-    # make sure the JSON folder exists
-    if not os.path.exists(paths.JSON_FOLDER):
-        os.makedirs(paths.JSON_FOLDER)
-
-    for filename in tqdm(filenames, desc="Processing HTML files", unit=" file", colour="green", disable=False):
-        article_json : dict[str, dict] = {}
         
-        with open(f"{paths.HTML_FOLDER}/{filename}", "r", encoding="utf-8") as file:
-            file_content = file.read()
-            paper = html.fromstring(file_content)
-                        
-            # Extracting tables, here "tables" are intended as tags containing table tags
-            
-            # Most tables are contained within a figure element with a class of "ltx_table" and id containing ".T", 
-            # while in rare cases they are contained within a div element with a class of "ltx_minipage".
-            # In that case, we select only those divs that contain a table element.
-            tables = paper.xpath('//figure[contains(@id, ".T") and contains(@class, "ltx_table")] | ' + 
-                                 '//table/ancestor::div[contains(@id, ".") and contains(@class, "ltx_minipage")]')
-        
-            for table in tables:
-                if table == None or table == [] or not(table.getchildren()):
-                    continue
-                
-                table_tags = table.xpath('.//table[contains(@id, ".T")]')
-            
-                table_id = table.get('id')
-                
-                # Extracting caption
-                caption = extract_caption(table, table_id)
-
-                # Extracting footnotes
-                footnotes = extract_footnotes(table)
-                
-                # Extracting references
-                # We need this to search for some references, we take the first part of the caption ("Table X:")
-                table_num = caption.split(":")[0]
-                paragraphs_refs = extract_references(table_num, table_id, paper)
-
-                table_str = ""
-                # If there are tables, we insert it into the JSON
-                if table_tags != []:
-                    for table_tag in table_tags:
-                        table_str = table_str + html.tostring(table_tag).decode('utf-8')
-
-                    table_json = {
-                        "caption": caption,
-                        "table": table_str,
-                        "footnotes": footnotes,
-                        "references": paragraphs_refs
-                    }
+def extract_paper_data(paper: html.HtmlElement) -> dict[str, TableData]:
+    article_json : dict[str, TableData] = {}
+    table_json = TableData()
                     
-                    # Store the table JSON with its id
-                    article_json[table_id] = table_json
-                
-                else:
-                    # If there are no tables, we may have found a table caption related to a <table> tag
-                    # that is not a direct parent of the table element, or maybe is outside of the figure element. 
-                    # In this case, we need to add the caption to the
-                    # exisitng table JSON and add footnotes that may lay inside the caption
-                    if table_id in article_json:
-                        article_json[table_id]["caption"] = caption
-                        existing_footnotes: set[str] = set(article_json[table_id]["footnotes"])
-                        existing_footnotes.update(footnotes)
-                        article_json[table_id]["footnotes"] = list(existing_footnotes)
-                
-        # Change extension to json and save to file
-        filename = filename.replace(".html", ".json")
-        with open(f"{paths.JSON_FOLDER}/{filename}", "w", encoding="utf-8") as json_file:
-            json.dump(article_json, json_file, indent=4)
+    # Extracting tables, here "tables" are intended as tags containing table tags
+    
+    # Most tables are contained within a figure element with a class of "ltx_table" and id containing ".T", 
+    # while in rare cases they are contained within a div element with a class of "ltx_minipage".
+    # In that case, we select only those divs that contain a table element.
+    table_containers = paper.xpath('//figure[contains(@id, ".T") and contains(@class, "ltx_table")] | ' + 
+                                   '//table/ancestor::div[contains(@id, ".") and contains(@class, "ltx_minipage")]')
+
+    for table in table_containers:
+        if table == None or table == [] or not(table.getchildren()):
+            continue
+        
+        # we exclude equations and figures (id = ".E" or ".F")
+        table_tags = table.xpath('.//table[contains(@id, ".T")]')
+    
+        table_id = table.get('id')
+        
+        # Extracting caption
+        caption = extract_caption(table, table_id)
+
+        # Extracting footnotes
+        footnotes = extract_footnotes(table)
+        
+        # Extracting references
+        # We need this to search for some references, we take the first part of the caption ("Table X:")
+        table_num = caption.split(":")[0]
+        paragraphs_refs = extract_references(table_num, table_id, paper)
+
+        
+        # If there are no tables, we may have found a table caption related to a <table> tag
+        # that is not a direct parent of the table element, or maybe is outside of the figure element. 
+        # In this case, we need to add the caption to the
+        # exisitng table JSON and add footnotes that may lay inside the caption
+        if table_tags == []:
+            if table_id in article_json:
+                article_json[table_id].caption = caption
+                existing_footnotes: set[str] = set(article_json[table_id].footnotes)
+                existing_footnotes.update(footnotes)
+                article_json[table_id].footnotes = list(existing_footnotes)
+        
+        else:
+            # If there are tables, we just insert it into the JSON
+            table_tag_str = ""
+            for table_tag in table_tags:
+                table_tag_str = table_tag_str + html.tostring(table_tag).decode('utf-8')
+
+            # populate TableData
+            table_json.caption = caption
+            table_json.table = table_tag_str
+            table_json.footnotes = footnotes
+            table_json.references = paragraphs_refs
+            
+            # Store the table JSON with its id
+            article_json[table_id] = table_json
+        
+        return article_json
