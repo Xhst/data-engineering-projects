@@ -1,22 +1,6 @@
-import json
-import paths
-import os
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import dataclass, field
+from json_schema import TableData
 from tqdm import tqdm
 from lxml import html
-
-@dataclass
-class TableData:
-    caption: str = ""
-    table: str = ""
-    footnotes: list[str] = field(default_factory=list)
-    references: list[str] = field(default_factory=list)
-
-
-def extract_paper_title(paper: html.HtmlElement) -> str:
-    title = paper.xpath('//title/text()')[0]
-    return title
 
 
 def extract_table_caption(table: html.HtmlElement, usedCaptions: set[str]) -> tuple[str, str]:
@@ -131,53 +115,4 @@ def extract_paper_data(paper: html.HtmlElement, filename: str) -> dict[str, Tabl
         tablesData[table_id] = tableData
 
     return tablesData
-    
-
-def process_file(filename, source_folder, extract_folder):
-    with open(f"{source_folder}/{filename}", "r", encoding="utf-8") as htmlFile:
-        file_content = htmlFile.read().encode('utf-8')
-        paper = html.fromstring(file_content, parser=html.HTMLParser())
-        
-        filename = filename.replace(".html", "")
-
-        paperData = extract_paper_data(paper, filename)
-
-        with open(f"{extract_folder}/{filename}.json", "w", encoding="utf-8") as jsonFile:
-            json.dump(paperData, jsonFile, default=lambda o: o.__dict__, indent=4)
-
-
-if __name__ == "__main__":
-    html_folder = paths.HTML_FOLDER
-    json_folder = paths.JSON_FOLDER
-
-    folders_to_extract = ['record_linkage', 'synthetic_data', 'ia']
-
-    for folder in folders_to_extract:
-        if not os.path.exists(f"{json_folder}/{folder}"):
-            os.makedirs(f"{json_folder}/{folder}")
-
-    filenames = os.listdir(html_folder)
-
-    max_workers = 8
- 
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        for folder in folders_to_extract:
-
-            extract_folder = f"{json_folder}/{folder}"
-            source_folder = f"{html_folder}/{folder}"
-
-            filenames = os.listdir(f"{source_folder}")
-
-            futures = {
-                executor.submit(process_file, filename, source_folder, extract_folder): filename for filename in filenames
-            }
-
-            for future in tqdm(as_completed(futures), desc=f"Processing {source_folder}", unit=" file", colour="green", total=len(futures)):
-                try:
-                    future.result() 
-                except Exception as e:
-                    print(f"Error processing file {futures[future]}: {e}")
-
-
-
         
