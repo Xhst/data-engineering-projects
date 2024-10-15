@@ -80,6 +80,7 @@ def extract_table_references(paper: html.HtmlElement, table_id: str, tableDenomi
         text_refs = paper.xpath(f'//*[contains(normalize-space(text()), "{tableDenomination} ") or '
                                 f'contains(normalize-space(text()), "{tableDenomination}.") or '
                                 f'contains(normalize-space(text()), "{tableDenomination}:") or '
+                                f'contains(normalize-space(text()), "{tableDenomination};") or '
                                 f'contains(normalize-space(text()), "{tableDenomination},")]')
 
         for text_ref in text_refs: 
