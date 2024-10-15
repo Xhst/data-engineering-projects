@@ -78,7 +78,7 @@ if __name__ == "__main__":
     if not os.path.exists(stats_folder):
         os.makedirs(stats_folder)
 
-    extract_folders = ['record_linkage', 'synthetic_data', 'ia']
+    extract_folders = ['record_linkage', 'synthetic_data']
 
     for folder in extract_folders:
         extract_folder = f"{json_folder}/{folder}"
