@@ -6,7 +6,8 @@ from tqdm import tqdm
 from lxml import html
 from extractors import forward_extractor, backward_extractor, simple_forward_extractor
 
-def process_file(filename, source_folder, extract_folder):
+
+def process_file(filename: str, source_folder: str, extract_folder: str):
     with open(f"{source_folder}/{filename}", "r", encoding="utf-8") as htmlFile:
         file_content = htmlFile.read().encode('utf-8')
         paper = html.fromstring(file_content, parser=html.HTMLParser())
