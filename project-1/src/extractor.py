@@ -15,7 +15,7 @@ def process_file(filename: str, source_folder: str, extract_folder: str):
         filename = filename.replace(".html", "")
         
         # we extract the tables and sort them by id
-        paperData = dict(sorted(forward_extractor.extract_paper_data(paper).items()))
+        paperData = dict(sorted(backward_extractor.extract_paper_data(paper).items()))
 
         with open(f"{extract_folder}/{filename}.json", "w", encoding="utf-8") as jsonFile:
             json.dump(paperData, jsonFile, default=lambda o: o.__dict__, indent=4)
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     html_folder = paths.HTML_FOLDER
     json_folder = paths.JSON_FOLDER
 
-    folders_to_extract = ['record_linkage', 'synthetic_data']
+    folders_to_extract = ['synthetic_data']
 
     for folder in folders_to_extract:
         if not os.path.exists(f"{json_folder}/{folder}"):
