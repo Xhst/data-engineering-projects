@@ -6,10 +6,12 @@ from lxml import html
 import os
 
 queries: dict[str, str] = {}
+url_list: str = ""
+file_count = 0
 
-queries['record_linkage'] = '(abs:"record linkage" OR abs:"entity resolution")'
-queries['synthetic_data'] = '(abs:"synthetic data generation")'
+client = arxiv.Client()
 
+queries['synthetic_data'] = '(ti:"synthetic data")'
 
 if not os.path.exists(paths.HTML_FOLDER):
     os.makedirs(paths.HTML_FOLDER)
@@ -18,14 +20,14 @@ for topic, query in queries.items():
     
     if not os.path.exists(paths.HTML_FOLDER + "/" + topic):
         os.makedirs(paths.HTML_FOLDER + "/" + topic)
-    
+
     search = arxiv.Search(
         query=query,
-        max_results=600,
+        max_results=700,
         sort_by=arxiv.SortCriterion.SubmittedDate,
     )
 
-    for result in search.results():
+    for result in client.results(search):
         paper_id = result.get_short_id().split("v")[0]
 
         url = f"https://ar5iv.labs.arxiv.org/html/{paper_id}"
@@ -52,6 +54,14 @@ for topic, query in queries.items():
             continue
 
         html_content = str(response.text)
+        url_list += url + "\n"
+        file_count += 1
 
         with open(f"{paths.HTML_FOLDER}/{topic}/{paper_id}.html", "w", encoding="utf-8") as file:
-                file.write(html_content)    
+            file.write(html_content)    
+    
+
+with open(f"{paths.HTML_FOLDER}/urls.txt", "w", encoding="utf-8") as file:
+    file.write(url_list)
+
+print(f"Successfully downloaded {file_count} files.\n")
