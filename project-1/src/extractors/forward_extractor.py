@@ -115,7 +115,7 @@ def extract_paper_data(paper: html.HtmlElement) -> dict[str, TableData]:
     # TODO: confront with others
     table_containers = paper.xpath('//figure[contains(@id, ".T")] | ' + 
                                    '//table/ancestor::div[contains(@id, ".") and contains(@class, "ltx_minipage") and not(ancestor::figure)] | ' +
-                                   '//table/ancestor::div[contains(@id, "example") and not(ancestor::figure)][1]')    
+                                   '//table/ancestor::div[contains(@id, "example") and not(ancestor::figure)]')
     
     for table_container in table_containers:
         if table_container == None or table_container == [] or not(table_container.getchildren()):
