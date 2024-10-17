@@ -18,10 +18,7 @@ def extract_references(table_num: str, table_id: str, paper : html.HtmlElement) 
     """
     refs_text: list[str] = []
     
-    # get the first two parts of the table id (e.g. #S1.T1.1.2 -> #S1.T1) because it's the id usally used in references
-    id = ".".join(table_id.split(".")[:2])
-    
-    paragraphs_ref = paper.xpath(f'//a[contains(@href, "{id}")]/..')
+    paragraphs_ref = paper.xpath(f'//a[contains(@href, "{table_id}")]/..')
     
     # If there are no link references, we try to find the ref by table number text (es. "Table 1")
     if paragraphs_ref == []:
