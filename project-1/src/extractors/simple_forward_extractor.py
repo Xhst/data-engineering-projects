@@ -52,7 +52,7 @@ def get_footnotes_from_figure(figure):
 def get_references_from_figure(paper, table_number):
 
     references: list[str] = []
-    p_ref_list = paper.xpath(f'.//a[contains(@title, "Table {table_number}")]/..')
+    p_ref_list = paper.xpath(f'.//a[contains(@title, "Table {table_number} ")]/..')
 
     for p_ref in p_ref_list:
         ref = ""
