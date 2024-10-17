@@ -11,7 +11,7 @@ def collect_stats(base_folder: str, folder: str, destination_folder: str) -> Non
     papers_by_number_of_references: dict[int, list[str]] = defaultdict(list)
     papers_by_number_of_footnotes: dict[int, list[str]] = defaultdict(list)
 
-    paper_table_number_of_references: dict[int, dict[str, str]] = defaultdict(dict)
+    paper_table_number_of_references: dict[int, dict[str, list[str]]] = defaultdict(dict)
 
     paper_table_without_caption: dict[str, list[str]] = defaultdict(list)
     paper_table_without_references: dict[str, list[str]] = defaultdict(list)
@@ -46,6 +46,11 @@ def collect_stats(base_folder: str, folder: str, destination_folder: str) -> Non
                         paper_table_without_caption[paper_id].append(table_id)
                     if not references:
                         paper_table_without_references[paper_id].append(table_id)
+                    
+                    if not len(references) in paper_table_number_of_references:
+                        paper_table_number_of_references[len(references)] = defaultdict(list)
+                        
+                    paper_table_number_of_references[len(references)][paper_id].append(table_id)
                 
                 # Classify papers by their number of tables, references, and footnotes
                 papers_by_number_of_tables[num_tables].append(paper_id)
