@@ -9,9 +9,7 @@ def extract_table_caption(table: html.HtmlElement, usedCaptions: set[str]) -> tu
         './/preceding-sibling::*[contains(@class, "ltx_caption")][1]//text()',
         './/following-sibling::*[contains(@class, "ltx_caption")][1]//text()',
         './/preceding::*[contains(@class, "ltx_caption") and .//*[contains(@class, "ltx_tag_table")]][1]//text()',
-        './/following::*[contains(@class, "ltx_caption") and .//*[contains(@class, "ltx_tag_table")]][1]//text()',
-        './/preceding::*[contains(@class, "ltx_caption")][1]//text()',
-        './/following::*[contains(@class, "ltx_caption")][1]//text()'
+        './/following::*[contains(@class, "ltx_caption") and .//*[contains(@class, "ltx_tag_table")]][1]//text()'
     ]
 
     for xpath in xpaths:
