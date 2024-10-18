@@ -34,6 +34,7 @@ if __name__ == "__main__":
         "simple_forward_extractor": simple_forward_extractor,
     }
 
+    # !!! DA SCEGLIERE PRIMA DELL'USO !!!
     extractor = "simple_forward_extractor"
 
     folders_to_extract = [extractors[extractor].get_name()]
@@ -50,6 +51,8 @@ if __name__ == "__main__":
         for folder in folders_to_extract:
 
             extract_folder = f"{json_folder}/{folder}"
+
+            # !!! SELEZIONE TOPIC !!!
             source_folder = f"{html_folder}/{paths.SYNTHETIC_DATA}"
 
             filenames = os.listdir(f"{source_folder}")
