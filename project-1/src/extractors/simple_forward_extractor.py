@@ -2,6 +2,10 @@ from lxml import html
 from json_schema import TableData
 
 
+def get_name():
+    return "simple_forward_extractor"
+
+
 def get_table_from_figure(figure):
 
     table_tags: list[html.HtmlElement] = figure.xpath('.//table[contains(@id, ".T")]')
@@ -30,21 +34,23 @@ def get_caption_from_figure(figure):
 
 
 def get_footnotes_from_figure(figure):
-    footnotes_xpath = figure.xpath('.//*[contains(@id, "footnote") and not(contains(@id, "."))]')
+    footnotes_xpath = figure.xpath(
+        './/*[contains(@id, "footnote") and not(contains(@id, "."))]'
+    )
     footnotes: list[str] = []
-    
+
     for footnote in footnotes_xpath:
-        footnote_segments = footnote.xpath('.//text()')
-        
+        footnote_segments = footnote.xpath(".//text()")
+
         if footnote_segments:
             foot_text = ""
             for segment in footnote_segments:
                 if segment == "" or segment.isnumeric() or segment == "footnotetext: ":
                     continue
                 foot_text += segment
-            
+
             footnotes.append(foot_text)
-    
+
     return footnotes
 
 
