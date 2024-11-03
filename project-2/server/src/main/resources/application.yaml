@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: project-2
+
+search:
+  index:
+    path: target/index
+  sources:
+    path: target/sources
