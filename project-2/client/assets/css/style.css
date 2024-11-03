@@ -1,0 +1,32 @@
+body {
+    background-color: #fafafa;
+}
+
+.forest {
+    padding-top: 70px;
+}
+
+.forest::before {
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 300px;
+    height: 120px;
+    background: url('../img/forest.png') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+#advanced-search-btn > .bi-chevron-right {
+    display: none;
+}
+#advanced-search-btn > .bi-chevron-down {
+    display: inline-block;
+}
+#advanced-search-btn.collapsed > .bi-chevron-right {
+    display: inline-block;
+}
+#advanced-search-btn.collapsed > .bi-chevron-down {
+    display: none;
+}
