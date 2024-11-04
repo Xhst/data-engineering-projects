@@ -12,6 +12,7 @@ import org.apache.lucene.store.FSDirectory;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Map;
 
 @Configuration
 public class SearchConfig {
@@ -23,8 +24,14 @@ public class SearchConfig {
     private String sourcesPath;
 
     @Bean
-    public Analyzer analyzer() {
-        return new StandardAnalyzer();
+    public Map<String, Analyzer> perFieldAnalyzer() {
+        return Map.of(
+                "title", new StandardAnalyzer(),
+                "authors", new StandardAnalyzer(),
+                "keywords", new StandardAnalyzer(),
+                "abstract", new StandardAnalyzer(),
+                "content", new StandardAnalyzer()
+        );
     }
 
     @Bean
