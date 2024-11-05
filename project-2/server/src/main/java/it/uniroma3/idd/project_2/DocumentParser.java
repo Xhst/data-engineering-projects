@@ -17,6 +17,14 @@ public class DocumentParser {
         this.document = Jsoup.parse(file, "UTF-8");
     }
 
+    public String getFileName() {
+        String[] split = document.location().split("\\\\");
+        String fileNameWithExtension = split[split.length - 1];
+        String[] extensionSplit = fileNameWithExtension.split("\\.");
+        String extension = extensionSplit[extensionSplit.length - 1];
+        return fileNameWithExtension.replace("." + extension, "");
+    }
+
     public String getTitle() {
         return document.title();
     }

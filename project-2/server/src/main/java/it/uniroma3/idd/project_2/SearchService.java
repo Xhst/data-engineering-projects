@@ -1,6 +1,5 @@
 package it.uniroma3.idd.project_2;
 
-import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.TextField;
@@ -11,7 +10,6 @@ import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
-import org.apache.lucene.store.Directory;
 import org.springframework.stereotype.Service;
 
 import java.nio.file.*;
@@ -42,6 +40,7 @@ public class SearchService {
                 DocumentParser parser = new DocumentParser(path);
                 Document document = new Document();
 
+                document.add(new TextField("filename", parser.getFileName(), Field.Store.YES));
                 document.add(new TextField("title", parser.getTitle(), Field.Store.YES));
                 document.add(new TextField("authors", parser.getAuthors(), Field.Store.YES));
                 document.add(new TextField("keywords", parser.getKeywords(), Field.Store.YES));
@@ -76,6 +75,7 @@ public class SearchService {
                 Document doc = storedFields.document(scoreDoc.doc);
 
                 documents.add(new DocumentDto(
+                        doc.get("filename"),
                         doc.get("title"),
                         doc.get("authors"),
                         doc.get("keywords"),
