@@ -1,5 +1,8 @@
 package it.uniroma3.idd.project_2;
 
+import org.apache.lucene.analysis.core.WhitespaceTokenizerFactory;
+import org.apache.lucene.analysis.custom.CustomAnalyzer;
+import org.apache.lucene.analysis.pattern.PatternReplaceFilterFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -51,13 +54,23 @@ public class SearchConfig {
         return config;
     }
 
-    public Map<String, Analyzer> getPerFieldAnalyzers() {
+    public Map<String, Analyzer> getPerFieldAnalyzers(){
+
+       try {
+           CustomAnalyzer.Builder titleAnalyzerBuilder = CustomAnalyzer.builder()
+                   .withTokenizer(WhitespaceTokenizerFactory.class)  //Filter for remove whitespace
+                   .addTokenFilter(PatternReplaceFilterFactory.class); //Filter for remove punctuation
+
+
         return Map.of(
-                "title", new StandardAnalyzer(),
+                "title", titleAnalyzerBuilder.build(),
                 "authors", new StandardAnalyzer(),
                 "keywords", new StandardAnalyzer(),
                 "abstract", new StandardAnalyzer(),
                 "content", new StandardAnalyzer()
         );
+       } catch (IOException e) {
+           throw new RuntimeException(e);
+       }
     }
 }
