@@ -1,41 +1,41 @@
 package it.uniroma3.idd.project_2;
 
 import org.apache.lucene.analysis.Analyzer;
-
-import org.apache.lucene.analysis.miscellaneous.PerFieldAnalyzerWrapper;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.TextField;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.*;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
+import org.apache.lucene.queryparser.classic.ParseException;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.ScoreDoc;
+import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.springframework.stereotype.Service;
 
 import java.nio.file.*;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class SearchService {
 
-    private final Directory index;
-    private final IndexWriterConfig config;
-    private final Path sourcesPath;
+    private final SearchConfig config;
 
     public SearchService(SearchConfig searchConfig) throws IOException {
-        this.index = searchConfig.indexDirectory();
-        this.config = searchConfig.indexWriterConfig();
-        this.sourcesPath = searchConfig.getSourcesPath();
+        this.config = searchConfig;
 
         this.indexDocuments();
     }
 
     private void indexDocuments() throws IOException {
-        IndexWriter writer = new IndexWriter(index, config);
+        IndexWriter writer = new IndexWriter(config.indexDirectory(), config.indexWriterConfig());
         writer.deleteAll();
 
-        try (DirectoryStream<Path> stream = Files.newDirectoryStream(sourcesPath)) {
+        try (DirectoryStream<Path> stream = Files.newDirectoryStream(config.getSourcesPath())) {
             for (Path path : stream) {
                 if (Files.isDirectory(path)) continue;
 
@@ -54,6 +54,38 @@ public class SearchService {
 
         writer.commit();
         writer.close();
+    }
+
+    public List<DocumentDto> search(String queryString) throws IOException, ParseException {
+        List<DocumentDto> documents = new ArrayList<>();
+
+        MultiFieldQueryParser queryParser = new MultiFieldQueryParser(
+                config.getPerFieldAnalyzers().keySet().toArray(new String[0]),
+                config.analyzer()
+        );
+
+        Query query = queryParser.parse(queryString);
+
+        try (IndexReader indexReader = DirectoryReader.open(config.indexDirectory())) {
+            IndexSearcher indexSearcher = new IndexSearcher(indexReader);
+            TopDocs topDocs = indexSearcher.search(query, 50);
+
+            StoredFields storedFields = indexSearcher.storedFields();
+            for (int i = 0; i < topDocs.scoreDocs.length; i++) {
+                ScoreDoc scoreDoc = topDocs.scoreDocs[i];
+                Document doc = storedFields.document(scoreDoc.doc);
+
+                documents.add(new DocumentDto(
+                        doc.get("title"),
+                        doc.get("authors"),
+                        doc.get("keywords"),
+                        doc.get("abstract"),
+                        scoreDoc.score
+                ));
+            }
+        }
+
+        return documents;
     }
 
 }
