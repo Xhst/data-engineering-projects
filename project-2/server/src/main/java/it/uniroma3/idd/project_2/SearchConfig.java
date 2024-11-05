@@ -37,8 +37,13 @@ public class SearchConfig {
     }
 
     @Bean
+    public Analyzer analyzer() {
+        return new PerFieldAnalyzerWrapper(new StandardAnalyzer(), getPerFieldAnalyzers());
+    }
+
+    @Bean
     public IndexWriterConfig indexWriterConfig() {
-        Analyzer analyzer = new PerFieldAnalyzerWrapper(new StandardAnalyzer(), getPerFieldAnalyzers());
+        Analyzer analyzer = analyzer();
         IndexWriterConfig config = new IndexWriterConfig(analyzer);
 
         config.setCodec(new SimpleTextCodec());
@@ -46,7 +51,7 @@ public class SearchConfig {
         return config;
     }
 
-    private Map<String, Analyzer> getPerFieldAnalyzers() {
+    public Map<String, Analyzer> getPerFieldAnalyzers() {
         return Map.of(
                 "title", new StandardAnalyzer(),
                 "authors", new StandardAnalyzer(),
