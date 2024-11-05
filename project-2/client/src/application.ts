@@ -1,6 +1,7 @@
 import axios from "axios";
 
 let advancedSearchQueriesNumber = 0;
+let addFilterButton = document.getElementById("as-add-filter-button")
 
 let filtersIds: Set<number> = new Set();
 
@@ -28,16 +29,21 @@ function addFilter() {
         </div>
         `;
     
-        document.getElementById("as-filters-container").insertAdjacentHTML("beforeend", filterInputTemplate);
+    document.getElementById("as-filters-container").insertAdjacentHTML("beforeend", filterInputTemplate);
 
-    const removeButton = document.getElementById(`as-remove-filter-${advancedSearchQueriesNumber}`);
+    let removeButton = document.getElementById(`as-remove-filter-${advancedSearchQueriesNumber}`);
+    let number = advancedSearchQueriesNumber;
     removeButton.addEventListener("click", () => {
-        document.getElementById(`as-filter-container-${advancedSearchQueriesNumber}`).remove();
-        filtersIds.delete(advancedSearchQueriesNumber);
+        console.log("Remove: "+ number)
+        document.getElementById(`as-filter-container-${number}`).remove();
+        filtersIds.delete(number);
+        console.log(filtersIds)
     });
+
+    console.log(filtersIds)
 }
 
-document.getElementById("as-add-filter-button").addEventListener("click", () => { addFilter(); });
+addFilterButton.addEventListener("click", () => { addFilter(); });
 
 function buildAdvancedQuery() {
     let text = (document.getElementById("as-query") as HTMLInputElement).value;
@@ -49,7 +55,7 @@ function buildAdvancedQuery() {
     let query = `${filter}${text}`
 
     filtersIds.forEach((id) => {
-        operator = (document.getElementById(`as-operator-${id}`) as HTMLSelectElement).value;
+        operator = (document.getElementById(`as-operator-${id}`) as HTMLSelectElement).value.toUpperCase();
         filter = (document.getElementById(`as-filter-${id}`) as HTMLSelectElement).value;
         text = (document.getElementById(`as-query-${id}`) as HTMLInputElement).value;
 
@@ -80,6 +86,7 @@ searchInput.addEventListener("keydown", (event) => {
 });
 
 function sendQuery(query: string) {
+    console.log(query)
     axios.get(`http://localhost:3000/api/search?query=${query}`).then((response) => {
         console.log(response.data);
     });
