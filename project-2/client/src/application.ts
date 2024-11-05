@@ -62,8 +62,25 @@ function buildAdvancedQuery() {
 
     return query;
 }
-/*
-axios.get("http://localhost:3000/api/search?query=AAA").then((response) => {
-    console.log(response.data);
+
+document.getElementById("as-search-button").addEventListener("click", () => {
+    let query = buildAdvancedQuery();
+
+    sendQuery(query);
 });
-*/
+
+let searchInput = document.getElementById("search") as HTMLInputElement;
+
+searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        let query = searchInput.value;
+
+        sendQuery(query);
+    }
+});
+
+function sendQuery(query: string) {
+    axios.get(`http://localhost:3000/api/search?query=${query}`).then((response) => {
+        console.log(response.data);
+    });
+}
