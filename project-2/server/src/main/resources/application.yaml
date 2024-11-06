@@ -10,3 +10,5 @@ search:
     path: target/index
   sources:
     path: target/sources
+  synonyms:
+    path: src/main/resources/synonyms.txt
