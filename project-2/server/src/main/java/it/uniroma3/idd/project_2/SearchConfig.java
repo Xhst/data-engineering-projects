@@ -1,5 +1,6 @@
 package it.uniroma3.idd.project_2;
 
+import org.apache.lucene.analysis.core.KeywordTokenizerFactory;
 import org.apache.lucene.analysis.core.LowerCaseFilterFactory;
 import org.apache.lucene.analysis.core.StopFilterFactory;
 import org.apache.lucene.analysis.custom.CustomAnalyzer;
@@ -68,12 +69,18 @@ public class SearchConfig {
     public Map<String, Analyzer> getPerFieldAnalyzers(){
 
        try {
+
+           CustomAnalyzer.Builder filenameanalyzerBuilder = CustomAnalyzer.builder()
+                   // All content as a single token
+                   .withTokenizer(KeywordTokenizerFactory.class)
+                   // Removes whitespace at the beginning and end of tokens
+                   .addTokenFilter(TrimFilterFactory.class);
+
            CustomAnalyzer.Builder titleAnalyzerBuilder = CustomAnalyzer.builder()
                    // Filter that remove whitespace and punctuation
                    .withTokenizer(StandardTokenizerFactory.class)
                    // Converts all tokens to lowercase
                    .addTokenFilter(LowerCaseFilterFactory.class)
-                   // Removes whitespace at the beginning and end of tokens
                    .addTokenFilter(TrimFilterFactory.class);
 
            CustomAnalyzer.Builder authorsAnalyzerBuilder = CustomAnalyzer.builder()
@@ -122,6 +129,7 @@ public class SearchConfig {
 
 
         return Map.of(
+                "filename", filenameanalyzerBuilder.build(),
                 "title", titleAnalyzerBuilder.build(),
                 "authors", authorsAnalyzerBuilder.build(),
                 "keywords", keywordAnalyzerBuilder.build(),
