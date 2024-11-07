@@ -21,19 +21,28 @@ import java.util.List;
 @Service
 public class SearchService {
 
-    private final SearchConfig config;
+    private final Path sourcePath;
+    private final IndexWriter indexWriter;
+    private final IndexSearcher indexSearcher;
+    private final MultiFieldQueryParser queryParser;
 
-    public SearchService(SearchConfig searchConfig) throws IOException {
-        this.config = searchConfig;
+    public SearchService(
+            Path sourcePath,
+            IndexWriter indexWriter,
+            IndexSearcher indexSearcher,
+            MultiFieldQueryParser queryParser) throws IOException {
+        this.sourcePath = sourcePath;
+        this.indexWriter = indexWriter;
+        this.indexSearcher = indexSearcher;
+        this.queryParser = queryParser;
 
         this.indexDocuments();
     }
 
     private void indexDocuments() throws IOException {
-        IndexWriter writer = new IndexWriter(config.indexDirectory(), config.indexWriterConfig());
-        writer.deleteAll();
+        indexWriter.deleteAll();
 
-        try (DirectoryStream<Path> stream = Files.newDirectoryStream(config.getSourcesPath())) {
+        try (DirectoryStream<Path> stream = Files.newDirectoryStream(sourcePath)) {
             for (Path path : stream) {
                 if (Files.isDirectory(path)) continue;
 
@@ -47,42 +56,35 @@ public class SearchService {
                 document.add(new TextField("abstract", parser.getAbstract(), Field.Store.YES));
                 document.add(new TextField("content", parser.getContent(), Field.Store.NO));
 
-                writer.addDocument(document);
+                indexWriter.addDocument(document);
             }
         }
 
-        writer.commit();
-        writer.close();
+        indexWriter.commit();
+        indexWriter.close();
     }
 
     public List<DocumentDto> search(String queryString) throws IOException, ParseException {
         List<DocumentDto> documents = new ArrayList<>();
 
-        MultiFieldQueryParser queryParser = new MultiFieldQueryParser(
-                config.getPerFieldAnalyzers().keySet().toArray(new String[0]),
-                config.analyzer()
-        );
-
         Query query = queryParser.parse(queryString);
 
-        try (IndexReader indexReader = DirectoryReader.open(config.indexDirectory())) {
-            IndexSearcher indexSearcher = new IndexSearcher(indexReader);
-            TopDocs topDocs = indexSearcher.search(query, 50);
+        TopDocs topDocs = indexSearcher.search(query, 50);
 
-            StoredFields storedFields = indexSearcher.storedFields();
-            for (int i = 0; i < topDocs.scoreDocs.length; i++) {
-                ScoreDoc scoreDoc = topDocs.scoreDocs[i];
-                Document doc = storedFields.document(scoreDoc.doc);
+        StoredFields storedFields = indexSearcher.storedFields();
+        for (int i = 0; i < topDocs.scoreDocs.length; i++) {
+            ScoreDoc scoreDoc = topDocs.scoreDocs[i];
+            Document doc = storedFields.document(scoreDoc.doc);
 
-                documents.add(new DocumentDto(
-                        doc.get("filename"),
-                        doc.get("title"),
-                        doc.get("authors"),
-                        doc.get("keywords"),
-                        doc.get("abstract"),
-                        scoreDoc.score
-                ));
-            }
+            documents.add(new DocumentDto(
+                    doc.get("filename"),
+                    doc.get("title"),
+                    doc.get("authors"),
+                    doc.get("keywords"),
+                    doc.get("abstract"),
+                    scoreDoc.score
+            ));
+
         }
 
         return documents;

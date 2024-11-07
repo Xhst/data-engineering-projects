@@ -8,7 +8,11 @@ import org.apache.lucene.analysis.en.PorterStemFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.TrimFilterFactory;
-import org.apache.lucene.analysis.synonym.SynonymGraphFilterFactory;
+import org.apache.lucene.index.DirectoryReader;
+import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
+import org.apache.lucene.search.IndexSearcher;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -40,12 +44,12 @@ public class SearchConfig {
     @Value("${search.synonyms.path}")
     private String synonymsFilePath;
 
-    @Bean
     public Directory indexDirectory() throws IOException {
         Path indexDirPath = Paths.get(indexPath);
         return FSDirectory.open(indexDirPath);
     }
 
+    @Bean
     public Path getSourcesPath() {
         return Paths.get(sourcesPath);
     }
@@ -55,7 +59,6 @@ public class SearchConfig {
         return new PerFieldAnalyzerWrapper(new StandardAnalyzer(), getPerFieldAnalyzers());
     }
 
-    @Bean
     public IndexWriterConfig indexWriterConfig() {
         Analyzer analyzer = analyzer();
         IndexWriterConfig config = new IndexWriterConfig(analyzer);
@@ -63,6 +66,25 @@ public class SearchConfig {
         config.setCodec(new SimpleTextCodec());
 
         return config;
+    }
+
+    @Bean
+    public IndexWriter indexWriter() throws IOException {
+        return new IndexWriter(indexDirectory(), indexWriterConfig());
+    }
+
+    @Bean
+    public IndexSearcher indexSearcher() throws IOException {
+        IndexReader indexReader = DirectoryReader.open(indexDirectory());
+        return new IndexSearcher(indexReader);
+    }
+
+    @Bean
+    public MultiFieldQueryParser queryParser() {
+        return new MultiFieldQueryParser(
+                getPerFieldAnalyzers().keySet().toArray(new String[0]),
+                analyzer()
+        );
     }
 
 
