@@ -60,7 +60,14 @@ public class DocumentParser {
 
         if (el == null) return "";
 
-        return el.text();
+        String text = el.text();
+
+        // Check if the text starts with "Abstract" and remove it
+        if (text.startsWith("Abstract")) {
+            text = text.substring("Abstract".length()).trim();
+        }
+
+        return text;
     }
 
     public String getContent() {
