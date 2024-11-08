@@ -18,11 +18,22 @@ public class DocumentParser {
     }
 
     public String getFileName() {
+        // Split the path by backslashes to get the file name with extension
         String[] split = document.location().split("\\\\");
         String fileNameWithExtension = split[split.length - 1];
+
+        // Remove the file extension
         String[] extensionSplit = fileNameWithExtension.split("\\.");
-        String extension = extensionSplit[extensionSplit.length - 1];
-        return fileNameWithExtension.replace("." + extension, "");
+        String baseFileName = fileNameWithExtension.replace("." + extensionSplit[extensionSplit.length - 1], "");
+
+        // Check if the base name contains "arXiv" pattern and extract accordingly
+        if (baseFileName.contains("arXiv")) {
+            int arXivIndex = baseFileName.indexOf("arXiv");
+            // Return only the portion after "arXiv"
+            return baseFileName.substring(arXivIndex + "arXiv".length());
+        }
+
+        return baseFileName;
     }
 
     public String getTitle() {
