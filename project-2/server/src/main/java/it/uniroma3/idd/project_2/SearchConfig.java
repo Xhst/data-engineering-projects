@@ -44,6 +44,9 @@ public class SearchConfig {
     @Value("${search.synonyms.path}")
     private String synonymsFilePath;
 
+    @Value("${search.index.ram_buffer_size_mb}")
+    private double ramBufferSizeMb;
+
     public Directory indexDirectory() throws IOException {
         Path indexDirPath = Paths.get(indexPath);
         return FSDirectory.open(indexDirPath);
@@ -64,6 +67,8 @@ public class SearchConfig {
         IndexWriterConfig config = new IndexWriterConfig(analyzer);
 
         config.setCodec(new SimpleTextCodec());
+
+        config.setRAMBufferSizeMB(ramBufferSizeMb);
 
         return config;
     }

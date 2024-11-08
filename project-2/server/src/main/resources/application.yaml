@@ -8,7 +8,8 @@ spring:
 search:
   index:
     path: target/index
+    ram_buffer_size_mb: 2048.0
   sources:
-    path: target/sources
+    path: target/sources/html
   synonyms:
     path: src/main/resources/synonyms.txt
