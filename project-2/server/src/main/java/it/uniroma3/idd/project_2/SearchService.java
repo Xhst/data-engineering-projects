@@ -1,5 +1,6 @@
 package it.uniroma3.idd.project_2;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.TextField;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Slf4j
 public class SearchService {
 
     private final Path sourcePath;
@@ -39,8 +41,41 @@ public class SearchService {
         this.indexDocuments();
     }
 
+    private static void printLoadingBar(int indexedFiles, int totalFiles) {
+        int barLength = 100; // Total length of the loading bar
+        int progress = (int) ((double) indexedFiles / totalFiles * barLength);
+
+        StringBuilder bar = new StringBuilder();
+        bar.append("\r Indexing - [");
+        for (int i = 0; i < barLength; i++) {
+            if (i < progress) {
+                bar.append("#");
+            } else {
+                bar.append("-");
+            }
+        }
+        bar.append("] ");
+        bar.append(indexedFiles).append("/").append(totalFiles);
+        bar.append(" files.");
+
+        // Print the progress bar
+        System.out.print(bar);
+
+        // Print a new line when indexing is complete
+        if (indexedFiles == totalFiles) {
+            System.out.println();
+        }
+    }
+
     private void indexDocuments() throws IOException {
         indexWriter.deleteAll();
+
+        log.info("Start Indexing");
+
+        long startTime = System.currentTimeMillis();
+
+        int totalFiles = 9235; //9372;
+        int indexedFiles = 0;
 
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(sourcePath)) {
             for (Path path : stream) {
@@ -57,8 +92,16 @@ public class SearchService {
                 document.add(new TextField("content", parser.getContent(), Field.Store.NO));
 
                 indexWriter.addDocument(document);
+                indexedFiles++;
+
+                printLoadingBar(indexedFiles, totalFiles);
             }
         }
+
+        long endTime = System.currentTimeMillis();
+        long elapsedTime = endTime - startTime;
+
+        log.info("Indexing completed. Files: {}. Elapsed time: {} seconds", indexedFiles, elapsedTime / 1000);
 
         indexWriter.commit();
         indexWriter.close();
