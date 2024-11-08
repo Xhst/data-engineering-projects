@@ -85,6 +85,27 @@ searchInput.addEventListener("keydown", (event) => {
     }
 });
 
+let themeToggleButton = document.getElementById('theme-toggle') as HTMLButtonElement;
+let themeStylesheet = document.getElementById('theme-stylesheet') as HTMLLinkElement;
+
+// Check if the user has already chosen a theme previously
+let savedTheme: string | null = localStorage.getItem('theme');
+if (savedTheme) {
+  themeStylesheet.setAttribute('href', savedTheme);
+}
+
+// To change theme
+themeToggleButton.addEventListener('click', () => {
+  let currentTheme = themeStylesheet.getAttribute('href');
+  if (currentTheme === '/assets/css/style2.css') {
+    themeStylesheet.setAttribute('href', '/assets/css/style.css');
+    localStorage.setItem('theme', '/assets/css/style.css'); // Stores the user's preference
+  } else {
+    themeStylesheet.setAttribute('href', '/assets/css/style2.css');
+    localStorage.setItem('theme', '/assets/css/style2.css'); // Stores the user's preference
+  }
+});
+
 interface DocumentDto {
     filename: string;
     Title: string;
