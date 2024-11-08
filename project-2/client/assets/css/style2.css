@@ -1,12 +1,8 @@
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/forest_background.png');
     background-size: cover;
-    /* Copre l'intera area della pagina */
     background-position: center;
-    /* Centra l’immagine */
     background-attachment: fixed;
-    /* Rende il background fisso durante lo scroll */
-    /* Schiarisce l'immagine e abbassa l'opacità */
     color: #fff;
 }
 
@@ -18,30 +14,22 @@ body {
     z-index: 100;
     right: 8%;
     background-image: url('../img/theme_button.png');
-    /* Aggiungi l'immagine come sfondo */
     background-size: cover;
-    /* Assicurati che l'immagine copra l'intero elemento */
     background-position: center;
-    /* Posiziona l'immagine al centro dell'elemento */
     background-repeat: no-repeat;
-    /* Impedisce la ripetizione dell'immagine */
     background-color: transparent;
     border: none;
     transition: transform 0.1s ease, box-shadow 0.1s ease, border 0.1s ease;
 }
 
-/* Aggiunta di un effetto hover */
+
 #theme-toggle:hover {
     transform: scale(1.05);
-    /* Ingrandisce leggermente al passaggio del mouse */
 }
 
-/* Cambia il colore di sfondo e del testo del select */
 #as-filter {
     background-color: rgb(230, 228, 228);
-    /* Sfondo bianco */
     color: black;
-    /* Testo nero */
 }
 
 input {
