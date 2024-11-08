@@ -9,6 +9,8 @@ search:
   index:
     path: target/index
     ram_buffer_size_mb: 2048.0
+    recreate: true
+    use_debug_codec: false
   sources:
     path: target/sources/html
   synonyms:
