@@ -109,7 +109,7 @@ function sendQuery(query: string) {
 
         const queryTimeElement = document.getElementById('query-time');
         if (queryTimeElement) {
-            queryTimeElement.textContent = `Query executed in ${data.queryTimeMs} ms`;
+            queryTimeElement.textContent = `Query executed in ${data.queryTimeMs} ms, ${data.documents.length} results found.`;
         }
 
         const suggestionElement = document.getElementById('suggestion');
