@@ -47,6 +47,9 @@ public class SearchConfig {
     @Value("${search.index.ram_buffer_size_mb}")
     private double ramBufferSizeMb;
 
+    @Value("${search.index.use_debug_codec}")
+    private boolean useDebugCodec;
+
     public Directory indexDirectory() throws IOException {
         Path indexDirPath = Paths.get(indexPath);
         return FSDirectory.open(indexDirPath);
@@ -66,7 +69,9 @@ public class SearchConfig {
         Analyzer analyzer = analyzer();
         IndexWriterConfig config = new IndexWriterConfig(analyzer);
 
-        config.setCodec(new SimpleTextCodec());
+        if (useDebugCodec) {
+            config.setCodec(new SimpleTextCodec());
+        }
 
         config.setRAMBufferSizeMB(ramBufferSizeMb);
 
