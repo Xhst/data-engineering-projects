@@ -18,6 +18,14 @@ body {
     opacity: 0.75;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 #advanced-search-btn>.bi-chevron-right {
     display: none;
 }
