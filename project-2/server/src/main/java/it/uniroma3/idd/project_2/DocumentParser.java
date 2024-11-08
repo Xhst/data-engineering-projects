@@ -27,7 +27,16 @@ public class DocumentParser {
 
     public String getTitle() {
         String idTag = "[" + getFileName() + "]";
-        return document.title().replace(idTag, "").trim();
+        String title = document.title();
+
+        if (title.isEmpty()) {
+            Element el = document.selectFirst("h1, .ltx_title");
+            if (el == null) return "";
+
+            title = el.ownText();
+        }
+
+        return title.replace(idTag, "").trim();
     }
 
     public String getAuthors() {
