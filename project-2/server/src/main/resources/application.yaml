@@ -14,4 +14,4 @@ search:
   sources:
     path: target/sources/html
   synonyms:
-    path: src/main/resources/synonyms.txt
+    path: synonyms.txt

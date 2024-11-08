@@ -8,6 +8,7 @@ import org.apache.lucene.analysis.en.PorterStemFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.TrimFilterFactory;
+import org.apache.lucene.analysis.synonym.SynonymGraphFilterFactory;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
@@ -25,6 +26,7 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.standard.StandardTokenizerFactory;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
+import org.springframework.core.io.Resource;
 
 
 import java.io.IOException;
@@ -101,7 +103,6 @@ public class SearchConfig {
     public Map<String, Analyzer> getPerFieldAnalyzers(){
 
        try {
-
            CustomAnalyzer.Builder filenameanalyzerBuilder = CustomAnalyzer.builder()
                    // All content as a single token
                    .withTokenizer(KeywordTokenizerFactory.class)
@@ -136,11 +137,11 @@ public class SearchConfig {
                    // Removes consecutive duplicate tokens
                    .addTokenFilter(RemoveDuplicatesTokenFilterFactory.class)
                    // Converts accented characters to plain ASCII characters
-                   .addTokenFilter(ASCIIFoldingFilterFactory.class);
+                   .addTokenFilter(ASCIIFoldingFilterFactory.class)
                     // Handles synonyms, allowing you to map similar or alternative words to a common token
-//                   .addTokenFilter(SynonymGraphFilterFactory.class,
-//                           "synonyms", String.valueOf(Paths.get(synonymsFilePath)),  // Pass the path to the synonyms file
-//                           "expand", "true");  // Expand synonyms
+                   .addTokenFilter(SynonymGraphFilterFactory.class,
+                           "synonyms", synonymsFilePath,  // Pass the path to the synonyms file
+                           "expand", "true");  // Expand synonyms
 
            CustomAnalyzer.Builder contentAnalyzerBuilder = CustomAnalyzer.builder()
                    .withTokenizer(StandardTokenizerFactory.class)
@@ -153,11 +154,11 @@ public class SearchConfig {
                    // Removes consecutive duplicate tokens
                    .addTokenFilter(RemoveDuplicatesTokenFilterFactory.class)
                    // Converts accented characters to plain ASCII characters
-                   .addTokenFilter(ASCIIFoldingFilterFactory.class);
+                   .addTokenFilter(ASCIIFoldingFilterFactory.class)
                    // Handles synonyms, allowing you to map similar or alternative words to a common token
-//                   .addTokenFilter(SynonymGraphFilterFactory.class,
-//                           "synonyms", String.valueOf(Paths.get(synonymsFilePath)),  // Pass the path to the synonyms file
-//                           "expand", "true");  // Expand synonyms
+                   .addTokenFilter(SynonymGraphFilterFactory.class,
+                           "synonyms", synonymsFilePath,  // Pass the path to the synonyms file
+                           "expand", "true");  // Expand synonyms
 
 
         return Map.of(
