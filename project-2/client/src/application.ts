@@ -129,7 +129,7 @@ function sendQuery(query: string) {
                     resultDiv.classList.add('result-item');
 
                     const abstractText = (doc.Abstract ?? "No abstract available.").trim(); 
-                    const abstractSnippet = abstractText.split(' ').slice(0, 30).join(' ') + (abstractText.split(' ').length > 30 ? '...' : '');
+                    const abstractSnippet = abstractText.split(' ').slice(0, 60).join(' ') + (abstractText.split(' ').length > 60 ? '...' : '');
                     
                     const authorsText = (doc.Authors ?? "No authors available.").trim(); 
                     const authorsSnippet = authorsText.split(' ').slice(0, 15).join(' ') + (authorsText.split(' ').length > 15 ? '...' : '');
@@ -139,12 +139,12 @@ function sendQuery(query: string) {
                     resultDiv.innerHTML = `
                         <div class="my-4">
                             <h3 class="my-0" style="font-size: 1.1rem;">
-                                [<span>${doc.filename}</span>] <span class="text-primary">${doc.Title}</span> 
+                                [<span>${doc.filename}</span>] <a target="_blank" href="https://arxiv.org/abs/${doc.filename}" class="text-primary ">${doc.Title}</a> 
                                 <span style="font-size: 0.65rem;">[Score: ${doc.score.toFixed(2)}]</span>
                             </h3>
                             <p class="my-0" style="color: #777; font-size: 0.75em;">${keywordsText}</p>
                             <p class="my-0" style="font-size: 0.8em;">${authorsSnippet}</p>
-                            <p class="my-0" style="font-size: 0.9em;">${abstractSnippet}</p>
+                            <p class="my-0" style="font-size: 0.9em;"><strong>Abstract: </strong>${abstractSnippet}</p>
                         </div>
                     `;
                     resultsContainer.appendChild(resultDiv);
