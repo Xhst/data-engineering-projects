@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <button id="theme-toggle" aria-label="Cambia tema"></button>
+        <button id="theme-toggle"></button>
         <div class="forest input-group input-group-lg my-5">
             <span class="input-group-text shadow-lg"><i class="bi bi-search"></i></span>
             <input id="search" type="text" class="form-control shadow-lg">
@@ -22,10 +22,10 @@
         <button id="advanced-search-btn" type="button" class="btn btn-sm collapsed" data-bs-toggle="collapse"
             data-bs-target="#advanced-search" aria-expanded="false" aria-controls="advanced-search">Advanced Search <i
                 class="bi bi-chevron-right"></i><i class="bi bi-chevron-down"></i></button>
-        <div class="collapse p-2" id="advanced-search">
+        <div class="collapse p-2 rounded" id="advanced-search">
             <div class="row">
                 <div class="col col-12 col-md-8 border-0 border-md-2 border-end">
-                    <h3 id="qf" class="mb-4">Query filters</h3>
+                    <h3 class="mb-4">Query filters</h3>
                     <div class="input-group mb-3">
                         <input id="as-query" type="text" class="form-control">
                         <select id="as-filter" class="form-select" style="max-width: 160px">
@@ -53,21 +53,21 @@
                         <label class="form-check-label" for="show-authors">Show Authors</label>
                     </div>
                     <div class="form-check form-switch form-switch-md my-2">
-                        <input class="form-check-input" type="checkbox" role="switch" id="show-keywords">
+                        <input class="form-check-input" type="checkbox" role="switch" id="show-keywords" checked>
                         <label class="form-check-label" for="show-keywords">Show Keywords</label>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div id="search-result">
+        <div id="search-result" class="rounded p-2 my-2" style="display: none">
             <hr class="text-secondary">
             <div id="query-time" class="text-secondary mb-3"></div>
             <div id="suggestion"></div>
             <div id="results"></div>
         </div>
     </div>
-    <footer id="ft" class="mt-5 pt-5">
+    <footer class="mt-2 pt-2">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-secondary">
