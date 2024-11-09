@@ -3,7 +3,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #fff;
 }
 
 #theme-toggle {
@@ -27,34 +26,6 @@ body {
     transform: scale(1.05);
 }
 
-#as-filter {
-    background-color: rgb(230, 228, 228);
-    color: black;
-}
-
-input {
-    background-color: rgb(212, 211, 211)
-}
-
-#qf {
-    font-weight: bold;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1),
-        -2px -2px 0px rgba(0, 0, 0, 1),
-        2px -2px 0px rgba(0, 0, 0, 1),
-        -2px 2px 0px rgba(0, 0, 0, 1),
-        0px 2px 4px rgba(0, 0, 0, 0.5),
-        0px -2px 4px rgba(0, 0, 0, 0.5);
-}
-
-p{
-    color:#ffffff
-}
-
-
-#ft{
-    color: #000000;
-}
-
 .forest {
     padding-top: 70px;
 }
@@ -71,6 +42,14 @@ p{
     opacity: 0.75;
 }
 
+footer p {
+    color: #fff;
+}
+
+hr {
+    border-top: 1px solid #fff;
+}
+
 strong {
     color: green;
 }
@@ -82,6 +61,14 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+#advanced-search, #search-result {
+    background-color: #fff;
+}
+
+#advanced-search-btn {
+    color: #fff;
 }
 
 #advanced-search-btn>.bi-chevron-right {
