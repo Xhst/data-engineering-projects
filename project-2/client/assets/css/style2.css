@@ -43,11 +43,11 @@ body {
 }
 
 footer p {
-    color: #fff;
+    color: #ffffff;
 }
 
 hr {
-    border-top: 1px solid #fff;
+    border-top: 1px solid #ffffff9a;
 }
 
 strong {
@@ -64,11 +64,11 @@ a:hover {
 }
 
 #advanced-search, #search-result {
-    background-color: #fff;
+    background-color: #ffffff9a;
 }
 
 #advanced-search-btn {
-    color: #fff;
+    color: #ffffff;
 }
 
 #advanced-search-btn>.bi-chevron-right {
