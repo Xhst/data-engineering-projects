@@ -50,20 +50,25 @@ function buildAdvancedQuery() {
     let filter = (document.getElementById("as-filter") as HTMLSelectElement).value;
     let operator = ""
 
-    filter = filter === "all" ? "" : filter + ":";
+    function transformText(text: string, filter: string): string {
+        filter = filter == "all" ? "" : `${filter}:`;
+        const parts = text.match(/"[^"]*"|\S+/g);
+    
+        const transformedParts = parts?.map(part => { 
+            return `${filter}${part}`; 
+        });
+    
+        return transformedParts ? transformedParts.join(' ') : '';
+    }
 
-    let query = `${filter}${text}`
+    let query = transformText(text, filter);
 
     filtersIds.forEach((id) => {
         operator = (document.getElementById(`as-operator-${id}`) as HTMLSelectElement).value.toUpperCase();
         filter = (document.getElementById(`as-filter-${id}`) as HTMLSelectElement).value;
         text = (document.getElementById(`as-query-${id}`) as HTMLInputElement).value;
 
-        filter = filter === "all" ? "" : filter + ":";
-
-        if (text === "") return;
-
-        query += ` ${operator} ${filter}${text}`;
+        query += ` ${operator} ${transformText(text, filter)}`;
     });
 
     let maxResults = (document.getElementById("as-max-results") as HTMLInputElement).value;
