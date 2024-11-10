@@ -16,9 +16,9 @@ public class SearchController {
     private final SearchService searchService;
 
     @GetMapping
-    public ResponseEntity<?> search(@RequestParam String query) {
+    public ResponseEntity<?> search(@RequestParam String query, @RequestParam(defaultValue = "50") int numberOfResults) {
         try {
-            return ResponseEntity.ok(searchService.search(query));
+            return ResponseEntity.ok(searchService.search(query, numberOfResults));
         } catch (ParseException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {

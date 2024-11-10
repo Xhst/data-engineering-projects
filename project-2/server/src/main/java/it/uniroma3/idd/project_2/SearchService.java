@@ -14,9 +14,7 @@ import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 import org.springframework.stereotype.Service;
 
-import java.nio.file.*;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,13 +25,13 @@ public class SearchService {
     private final IndexSearcher indexSearcher;
     private final MultiFieldQueryParser queryParser;
 
-    public SearchDto search(String queryString) throws IOException, ParseException {
+    public SearchDto search(String queryString, int numberOfResults) throws IOException, ParseException {
         long startTime = System.currentTimeMillis();
         List<DocumentDto> documents = new ArrayList<>();
 
         Query query = queryParser.parse(queryString);
 
-        TopDocs topDocs = indexSearcher.search(query, 50);
+        TopDocs topDocs = indexSearcher.search(query, numberOfResults);
 
         StoredFields storedFields = indexSearcher.storedFields();
         for (int i = 0; i < topDocs.scoreDocs.length; i++) {

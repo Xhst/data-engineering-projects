@@ -66,7 +66,8 @@ function buildAdvancedQuery() {
         query += ` ${operator} ${filter}${text}`;
     });
 
-    return query;
+    let maxResults = (document.getElementById("as-max-results") as HTMLInputElement).value;
+    return query + `&numberOfResults=${maxResults}`;
 }
 
 document.getElementById("as-search-button").addEventListener("click", () => {
