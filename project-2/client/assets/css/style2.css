@@ -47,7 +47,7 @@ footer p {
 }
 
 hr {
-    border-top: 1px solid #ffffff9a;
+    border-top: 1px solid #212529aa;
 }
 
 strong {
@@ -64,7 +64,7 @@ a:hover {
 }
 
 #advanced-search, #search-result {
-    background-color: #ffffff9a;
+    background-color: #212529aa;
 }
 
 #advanced-search-btn {
