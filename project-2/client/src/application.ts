@@ -1,5 +1,9 @@
 import axios from "axios";
 
+type Theme = 'light' | 'dark';
+
+let currentTheme: Theme = 'light';
+
 let advancedSearchQueriesNumber = 0;
 let addFilterButton = document.getElementById("as-add-filter-button")
 
@@ -91,26 +95,23 @@ searchInput.addEventListener("keydown", (event) => {
     }
 });
 
-let themeToggleButton = document.getElementById('theme-toggle') as HTMLButtonElement;
-let themeStylesheet = document.getElementById('theme-stylesheet') as HTMLLinkElement;
+document.getElementById('theme-toggle').addEventListener('click', changeTheme);
 
-// Check if the user has already chosen a theme previously
-let savedTheme: string | null = localStorage.getItem('theme');
-if (savedTheme) {
-  themeStylesheet.setAttribute('href', savedTheme);
+function changeTheme() {
+    let themeStylesheet = document.getElementById('theme-stylesheet') as HTMLLinkElement;
+
+    if (currentTheme === 'light') {
+        themeStylesheet.setAttribute('href', '/assets/css/style2.css');
+        localStorage.setItem('theme', '/assets/css/style2.css'); // Stores the user's preference
+        currentTheme = 'dark';
+    } else {
+        themeStylesheet.setAttribute('href', '/assets/css/style.css');
+        localStorage.setItem('theme', '/assets/css/style.css'); // Stores the user's preference
+        currentTheme = 'light';
+    }
+
+    document.body.setAttribute('data-bs-theme', currentTheme);
 }
-
-// To change theme
-themeToggleButton.addEventListener('click', () => {
-  let currentTheme = themeStylesheet.getAttribute('href');
-  if (currentTheme === '/assets/css/style2.css') {
-    themeStylesheet.setAttribute('href', '/assets/css/style.css');
-    localStorage.setItem('theme', '/assets/css/style.css'); // Stores the user's preference
-  } else {
-    themeStylesheet.setAttribute('href', '/assets/css/style2.css');
-    localStorage.setItem('theme', '/assets/css/style2.css'); // Stores the user's preference
-  }
-});
 
 interface DocumentDto {
     filename: string;
