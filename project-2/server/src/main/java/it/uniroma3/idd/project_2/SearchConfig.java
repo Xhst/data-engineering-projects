@@ -137,11 +137,11 @@ public class SearchConfig {
                    // Removes consecutive duplicate tokens
                    .addTokenFilter(RemoveDuplicatesTokenFilterFactory.class)
                    // Converts accented characters to plain ASCII characters
-                   .addTokenFilter(ASCIIFoldingFilterFactory.class)
+                   .addTokenFilter(ASCIIFoldingFilterFactory.class);
                     // Handles synonyms, allowing you to map similar or alternative words to a common token
-                   .addTokenFilter(SynonymGraphFilterFactory.class,
-                           "synonyms", synonymsFilePath,  // Pass the path to the synonyms file
-                           "expand", "true");  // Expand synonyms
+//                   .addTokenFilter(SynonymGraphFilterFactory.class,
+//                           "synonyms", synonymsFilePath,  // Pass the path to the synonyms file
+//                           "expand", "true");  // Expand synonyms
 
            CustomAnalyzer.Builder contentAnalyzerBuilder = CustomAnalyzer.builder()
                    .withTokenizer(StandardTokenizerFactory.class)
@@ -154,11 +154,11 @@ public class SearchConfig {
                    // Removes consecutive duplicate tokens
                    .addTokenFilter(RemoveDuplicatesTokenFilterFactory.class)
                    // Converts accented characters to plain ASCII characters
-                   .addTokenFilter(ASCIIFoldingFilterFactory.class)
+                   .addTokenFilter(ASCIIFoldingFilterFactory.class);
                    // Handles synonyms, allowing you to map similar or alternative words to a common token
-                   .addTokenFilter(SynonymGraphFilterFactory.class,
-                           "synonyms", synonymsFilePath,  // Pass the path to the synonyms file
-                           "expand", "true");  // Expand synonyms
+//                   .addTokenFilter(SynonymGraphFilterFactory.class,
+//                           "synonyms", synonymsFilePath,  // Pass the path to the synonyms file
+//                           "expand", "true");  // Expand synonyms
 
 
         return Map.of(
