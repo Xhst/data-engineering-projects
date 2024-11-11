@@ -1,6 +1,6 @@
 # Data Engineering Projects
 
-- ### [Project 1](/project-1/README.md) - Data extraction:
+- ### [Project 1](/project-1/README.md) - Scraping & Data extraction:
 
   Downloading scientific papers from [Arxiv](https://arxiv.org/) (in html format) and extracting information regarding tables from them using xpaths.
 
