@@ -26,11 +26,25 @@ public class DocumentParser {
         String[] extensionSplit = fileNameWithExtension.split("\\.");
         String baseFileName = fileNameWithExtension.replace("." + extensionSplit[extensionSplit.length - 1], "");
 
+        // Check if the base name contains "arXiv_" pattern and extract accordingly
+        if (baseFileName.contains("arXiv_")) {
+            int arXivIndex = baseFileName.indexOf("arXiv_");
+            // Return only the portion after "arXiv_"
+            return baseFileName.substring(arXivIndex + "arXiv_".length());
+        }
+
         // Check if the base name contains "arXiv" pattern and extract accordingly
         if (baseFileName.contains("arXiv")) {
             int arXivIndex = baseFileName.indexOf("arXiv");
             // Return only the portion after "arXiv"
             return baseFileName.substring(arXivIndex + "arXiv".length());
+        }
+
+        // Check if the base name contains "ar5iv_article_" pattern and extract accordingly
+        if (baseFileName.contains("ar5iv_article_")) {
+            int arXivIndex = baseFileName.indexOf("ar5iv_article_");
+            // Return only the portion after "ar5iv_article_"
+            return baseFileName.substring(arXivIndex + "ar5iv_article_".length());
         }
 
         return baseFileName;
