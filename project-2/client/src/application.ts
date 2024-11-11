@@ -1,5 +1,10 @@
 import axios from "axios";
 
+console.log(
+    '🚀 Developed by %c 🌲 Xhst, Prox, Diggi 🌲',
+    'color: green; font-weight: bold;'
+);
+
 let advancedSearchQueriesNumber = 0;
 let addFilterButton = document.getElementById("as-add-filter-button")
 
