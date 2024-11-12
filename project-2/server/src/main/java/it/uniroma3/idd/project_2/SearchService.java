@@ -25,6 +25,16 @@ public class SearchService {
     private final IndexSearcher indexSearcher;
     private final MultiFieldQueryParser queryParser;
 
+    /**
+     * Search for documents in the index based on the query string and the number of results.
+     * 
+     * @param queryString The query string
+     * @param numberOfResults The max number of results that can be returned
+     *
+     * @return A SearchDto object containing the list of documents found, suggestions and the elapsed times
+     *
+     * @see SearchDto
+     */
     public SearchDto search(String queryString, int numberOfResults) throws IOException, ParseException {
         long startTime = System.currentTimeMillis();
         List<DocumentDto> documents = new ArrayList<>();
