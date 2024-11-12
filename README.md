@@ -1,10 +1,17 @@
 # Data Engineering Projects
 
-- **Project 1** --> data scraping:
+- ### [Project 1](/project-1/README.md) - Scraping & Data extraction:
 
-  Download papers from arcXive and extrations of table, table references, and other data for each paper, saved on json files (python).
+  Downloading scientific papers from [Arxiv](https://arxiv.org/) (in html format) and extracting information regarding tables from them using xpaths.
 
-- **Project 2** --> search engine:
+#
 
-  Search engine for scentific papers, extracted in the previous project, made with [Apache Lucene](https://lucene.apache.org/) library (java).  
-   _UI included (typescript)_
+- ### [Project 2](/project-2/README.md) - Search Engine:
+
+  Search engine for scientific papers, extracted in the previous project.
+  
+  Server made with [Apache Lucene](https://lucene.apache.org/) and [SpringBoot](https://spring.io/projects/spring-boot) (Java).
+  
+  Client made with Typescript and Bootstrap.
+
+#
