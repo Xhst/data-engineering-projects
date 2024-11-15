@@ -1,0 +1,93 @@
+body {
+    background-color: #fafafa;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#theme-toggle {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    right: 8%;
+    background-image: url('../img/theme_button_BW.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, border 0.1s ease;
+}
+
+.forest {
+    padding-top: 70px;
+}
+
+.forest::before {
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 300px;
+    height: 120px;
+    background: url('../img/forest.png') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#advanced-search-btn>.bi-chevron-right {
+    display: none;
+}
+
+#advanced-search-btn>.bi-chevron-down {
+    display: inline-block;
+}
+
+#advanced-search-btn.collapsed>.bi-chevron-right {
+    display: inline-block;
+}
+
+#advanced-search-btn.collapsed>.bi-chevron-down {
+    display: none;
+}
+
+.form-check-input {
+    clear: left;
+}
+
+
+.form-switch.form-switch-md .form-check-input {
+    height: 1.5rem;
+    width: calc(2rem + 0.75rem);
+    border-radius: 3rem;
+}
+
+.form-switch.form-switch-md .form-check-label {
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+}
+
+
+.border-0 {
+    border-width: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .border-md-2 {
+        border-width: 2px !important;
+    }
+}
