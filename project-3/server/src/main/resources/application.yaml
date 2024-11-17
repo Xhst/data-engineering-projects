@@ -7,11 +7,18 @@ spring:
 
 search:
   index:
-    path: target/index
+    paper:
+      path: target/index/paper
+      recreate: false
+    table:
+      path: target/index/table
+      recreate: true
     ram_buffer_size_mb: 2048.0
-    recreate: false
     use_debug_codec: false
   sources:
-    path: target/sources/html
+    paper:
+      path: target/sources/html
+    table:
+      path: target/sources/all_tables
   synonyms:
     path: synonyms.txt
