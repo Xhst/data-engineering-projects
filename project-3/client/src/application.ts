@@ -229,7 +229,7 @@ function sendQuery(query: string) {
 
     document.getElementById('search-result').style.display = 'block';
 
-    axios.get(`http://localhost:3000/api/search?query=${query}`).then((response) => {
+    axios.get(`http://localhost:3000/api/search/papers?query=${query}`).then((response) => {
         console.log(response.data);
 
         currentSearchResult = response.data;
