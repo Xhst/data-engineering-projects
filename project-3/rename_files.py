@@ -44,5 +44,5 @@ def rename_files_in_directory(directory_path):
 
 if __name__ == "__main__":
     # Input the directory path
-    directory_path = "server/target/sources/all_tables"
+    directory_path = "server/target/sources/html"
     rename_files_in_directory(directory_path)
