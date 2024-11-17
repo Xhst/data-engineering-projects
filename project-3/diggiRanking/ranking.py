@@ -4,7 +4,7 @@ import embedding
 import table_processor
 
 
-from typing import Dict
+from typing import Dict, Tuple
 from sklearn.metrics.pairwise import cosine_similarity
 
 json_folder = paths.JSON_FOLDER
@@ -12,7 +12,7 @@ json_folder = paths.JSON_FOLDER
 def rank(papers, query):
     
     embedded_query = embedding.get_sentence_embedding(query)
-    table_rank_dict: Dict[str, float] = {}
+    table_rank_dict: Dict[Tuple[str, str], float] = {}
     
     
     for paper in papers:
@@ -57,7 +57,9 @@ def rank(papers, query):
             #print(table_similarity)
             #print('\n')
             
-            return similarity_avg
+            table_rank_dict[paper, table_name] = similarity_avg
+            
+    return table_rank_dict
         
 #if __name__ == "__main__":{
 #    rank(["2102.09694"], "sigmoid")
