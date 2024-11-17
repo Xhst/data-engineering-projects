@@ -1,4 +1,4 @@
-package it.uniroma3.idd.project_2;
+package it.uniroma3.idd.project_3.paper;
 
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
@@ -6,6 +6,7 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -16,15 +17,17 @@ import java.nio.file.Path;
 
 @Slf4j
 @Component
-public class Indexer {
+public class PaperIndexer {
 
     private final Path sourcePath;
+
     private final IndexWriter indexWriter;
 
-    @Value("${search.index.recreate:true}")
+    @Value("${search.index.paper.recreate:true}")
     private boolean recreateIndex;
 
-    public Indexer(Path sourcePath, IndexWriter indexWriter) throws IOException {
+    public PaperIndexer(@Qualifier("paperSourcesPath") Path sourcePath,
+                        @Qualifier("paperIndexWriter") IndexWriter indexWriter) {
         this.sourcePath = sourcePath;
         this.indexWriter = indexWriter;
     }
@@ -38,18 +41,18 @@ public class Indexer {
 
         indexWriter.deleteAll();
 
-        log.info("Start Indexing");
+        log.info("Start Indexing Papers");
 
         long startTime = System.currentTimeMillis();
 
-        int totalFiles = 9235; //9372;
+        int totalFiles = 9032;
         int indexedFiles = 0;
 
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(sourcePath)) {
             for (Path path : stream) {
                 if (Files.isDirectory(path)) continue;
 
-                DocumentParser parser = new DocumentParser(path);
+                PaperParser parser = new PaperParser(path);
                 Document document = new Document();
 
                 document.add(new TextField("filename", parser.getFileName(), Field.Store.YES));

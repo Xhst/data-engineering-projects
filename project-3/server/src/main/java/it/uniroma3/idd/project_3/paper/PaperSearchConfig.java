@@ -1,4 +1,4 @@
-package it.uniroma3.idd.project_2;
+package it.uniroma3.idd.project_3.paper;
 
 import org.apache.lucene.analysis.core.KeywordTokenizerFactory;
 import org.apache.lucene.analysis.core.LowerCaseFilterFactory;
@@ -8,7 +8,6 @@ import org.apache.lucene.analysis.en.PorterStemFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.TrimFilterFactory;
-import org.apache.lucene.analysis.synonym.SynonymGraphFilterFactory;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
@@ -26,7 +25,6 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.standard.StandardTokenizerFactory;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
-import org.springframework.core.io.Resource;
 
 
 import java.io.IOException;
@@ -34,17 +32,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
 
-@Configuration
-public class SearchConfig {
+@Configuration("paperConfig")
+public class PaperSearchConfig {
 
-    @Value("${search.index.path}")
+    @Value("${search.index.paper.path}")
     private String indexPath;
 
-    @Value("${search.sources.path}")
+    @Value("${search.sources.paper.path}")
     private String sourcesPath;
-
-    @Value("${search.synonyms.path}")
-    private String synonymsFilePath;
 
     @Value("${search.index.ram_buffer_size_mb}")
     private double ramBufferSizeMb;
@@ -57,12 +52,11 @@ public class SearchConfig {
         return FSDirectory.open(indexDirPath);
     }
 
-    @Bean
-    public Path getSourcesPath() {
+    @Bean(name = "paperSourcesPath")
+    public Path sourcesPath() {
         return Paths.get(sourcesPath);
     }
 
-    @Bean
     public Analyzer analyzer() {
         return new PerFieldAnalyzerWrapper(new StandardAnalyzer(), getPerFieldAnalyzers());
     }
@@ -80,18 +74,18 @@ public class SearchConfig {
         return config;
     }
 
-    @Bean
+    @Bean(name = "paperIndexWriter")
     public IndexWriter indexWriter() throws IOException {
         return new IndexWriter(indexDirectory(), indexWriterConfig());
     }
 
-    @Bean
+    @Bean(name = "paperIndexSearcher")
     public IndexSearcher indexSearcher() throws IOException {
         IndexReader indexReader = DirectoryReader.open(indexDirectory());
         return new IndexSearcher(indexReader);
     }
 
-    @Bean
+    @Bean(name = "paperQueryParser")
     public MultiFieldQueryParser queryParser() {
         return new MultiFieldQueryParser(
                 getPerFieldAnalyzers().keySet().toArray(new String[0]),

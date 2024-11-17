@@ -1,4 +1,4 @@
-package it.uniroma3.idd.project_2;
+package it.uniroma3.idd.project_3;
 
 import lombok.NonNull;
 import org.springframework.context.annotation.Bean;

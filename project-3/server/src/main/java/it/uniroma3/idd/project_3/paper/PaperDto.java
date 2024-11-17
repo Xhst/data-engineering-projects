@@ -1,6 +1,6 @@
-package it.uniroma3.idd.project_2;
+package it.uniroma3.idd.project_3.paper;
 
-public record DocumentDto(
+public record PaperDto(
         String filename,
         String Title,
         String Authors,

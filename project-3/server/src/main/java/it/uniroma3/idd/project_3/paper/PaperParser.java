@@ -1,4 +1,4 @@
-package it.uniroma3.idd.project_2;
+package it.uniroma3.idd.project_3.paper;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -8,11 +8,11 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 
-public class DocumentParser {
+public class PaperParser {
 
     private final Document document;
 
-    public DocumentParser(Path filePath) throws IOException {
+    public PaperParser(Path filePath) throws IOException {
         File file = new File(filePath.toString());
         this.document = Jsoup.parse(file, "UTF-8");
     }

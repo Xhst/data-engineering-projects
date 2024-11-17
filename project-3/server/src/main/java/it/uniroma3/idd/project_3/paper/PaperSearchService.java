@@ -1,10 +1,6 @@
-package it.uniroma3.idd.project_2;
+package it.uniroma3.idd.project_3.paper;
 
-import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.lucene.document.Document;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.*;
 import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.queryparser.classic.ParseException;
@@ -12,6 +8,7 @@ import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -19,11 +16,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@AllArgsConstructor
-public class SearchService {
+public class PaperSearchService {
 
     private final IndexSearcher indexSearcher;
     private final MultiFieldQueryParser queryParser;
+
+    public PaperSearchService(@Qualifier("paperIndexSearcher") IndexSearcher indexSearcher,
+                              @Qualifier("paperQueryParser") MultiFieldQueryParser queryParser) {
+        this.indexSearcher = indexSearcher;
+        this.queryParser = queryParser;
+    }
 
     /**
      * Search for documents in the index based on the query string and the number of results.
@@ -33,11 +35,11 @@ public class SearchService {
      *
      * @return A SearchDto object containing the list of documents found, suggestions and the elapsed times
      *
-     * @see SearchDto
+     * @see PaperSearchDto
      */
-    public SearchDto search(String queryString, int numberOfResults) throws IOException, ParseException {
+    public PaperSearchDto search(String queryString, int numberOfResults) throws IOException, ParseException {
         long startTime = System.currentTimeMillis();
-        List<DocumentDto> documents = new ArrayList<>();
+        List<PaperDto> documents = new ArrayList<>();
 
         Query query = queryParser.parse(queryString);
 
@@ -48,7 +50,7 @@ public class SearchService {
             ScoreDoc scoreDoc = topDocs.scoreDocs[i];
             Document doc = storedFields.document(scoreDoc.doc);
 
-            documents.add(new DocumentDto(
+            documents.add(new PaperDto(
                     doc.get("filename"),
                     doc.get("title"),
                     doc.get("authors"),
@@ -62,7 +64,7 @@ public class SearchService {
         long endTime = System.currentTimeMillis();
         long elapsedTime = endTime - startTime;
 
-        return new SearchDto(documents, "", elapsedTime);
+        return new PaperSearchDto(documents, "", elapsedTime);
     }
 
 }

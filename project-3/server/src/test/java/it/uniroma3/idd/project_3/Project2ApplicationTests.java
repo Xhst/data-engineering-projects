@@ -1,4 +1,4 @@
-package it.uniroma3.idd.project_2;
+package it.uniroma3.idd.project_3;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
