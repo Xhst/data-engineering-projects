@@ -15,11 +15,20 @@
 <body>
     <div class="container">
         <button id="theme-toggle"></button>
-        <div class="forest input-group input-group-lg my-5">
+        <div class="forest input-group input-group-lg mt-5 mb-2">
             <span class="input-group-text shadow-lg"><i class="bi bi-search"></i></span>
             <input id="search" type="text" class="form-control shadow-lg">
         </div>
-        <button id="advanced-search-btn" type="button" class="ps-3 btn btn-sm collapsed" data-bs-toggle="collapse"
+
+        <div class="btn-group btn-group-sm my-2 mb-5 ps-3" role="group">
+            <input type="radio" class="btn-check" name="papers" id="search-type-papers" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="search-type-papers">Papers</label>
+          
+            <input type="radio" class="btn-check" name="tables" id="search-type-tables" autocomplete="off">
+            <label class="btn btn-outline-primary" for="search-type-tables">Tables</label>
+        </div>
+        
+        <button id="advanced-search-btn" type="button" class="ps-3 btn btn-sm collapsed d-block" data-bs-toggle="collapse"
             data-bs-target="#advanced-search" aria-expanded="false" aria-controls="advanced-search">Advanced Search <i
                 class="bi bi-chevron-right"></i><i class="bi bi-chevron-down"></i></button>
         <div class="collapse p-3 rounded" id="advanced-search">
@@ -66,7 +75,7 @@
             </div>
 
         </div>
-        <div id="search-result" class="rounded p-3 my-2" style="display: none">
+        <div id="search-result" class="rounded p-3 my-2 d-none">
             <hr class="text-secondary">
             <div id="query-time" class="text-secondary mb-3"></div>
             <div id="suggestion"></div>
