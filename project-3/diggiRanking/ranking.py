@@ -34,7 +34,7 @@ def rank(papers, query):
             ref_to_embed = (" ".join(table_references))
             filtered_table = table_processor.table_filter(table_name,html_content)
             
-            # Table's references and caption similariry 
+            # Table's references and caption embedding 
             ref_embedding = embedding.get_sentence_embedding(ref_to_embed)
             caption_embedding = embedding.get_sentence_embedding(table_caption)
             
