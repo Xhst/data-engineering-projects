@@ -96,7 +96,7 @@ public class TableSearchConfig {
     public Map<String, Analyzer> getPerFieldAnalyzers(){
 
        try {
-           CustomAnalyzer.Builder tableIdAnalyzer = CustomAnalyzer.builder()
+           CustomAnalyzer.Builder idAnalyzer = CustomAnalyzer.builder()
                    // All content as a single token
                    .withTokenizer(KeywordTokenizerFactory.class)
                    // Removes whitespace at the beginning and end of tokens
@@ -124,7 +124,8 @@ public class TableSearchConfig {
 
 
         return Map.of(
-                "table_id", tableIdAnalyzer.build(),
+                "paper_id", idAnalyzer.build(),
+                "table_id", idAnalyzer.build(),
                 "caption", textAnalyzer.build(),
                 "table", tableAnalyzer.build(),
                 "footnotes", textAnalyzer.build(),

@@ -61,7 +61,8 @@ public class TableIndexer {
                     for (TableData table : parser.getTables()) {
                         Document document = new Document();
 
-                        document.add(new TextField("table_id", table.paperId() + "#" + table.tableId(), Field.Store.YES));
+                        document.add(new TextField("paper_id", table.paperId(), Field.Store.YES));
+                        document.add(new TextField("table_id", table.tableId(), Field.Store.YES));
                         document.add(new TextField("table", table.htmlTable(), Field.Store.NO));
                         document.add(new TextField("caption", table.caption(), Field.Store.NO));
                         document.add(new TextField("references", table.references(), Field.Store.NO));
