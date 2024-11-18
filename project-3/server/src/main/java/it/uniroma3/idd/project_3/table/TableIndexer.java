@@ -9,6 +9,7 @@ import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -33,7 +34,7 @@ public class TableIndexer {
         this.indexWriter = indexWriter;
     }
 
-    @PostConstruct
+    @Bean(name = "tableIndexDocuments")
     private void indexDocuments() throws IOException {
         if (!recreateIndex) {
             indexWriter.close();

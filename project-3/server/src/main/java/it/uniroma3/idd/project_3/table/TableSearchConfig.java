@@ -24,6 +24,8 @@ import org.apache.lucene.store.FSDirectory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
+import org.springframework.core.annotation.Order;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -79,6 +81,7 @@ public class TableSearchConfig {
     }
 
     @Bean(name = "tableIndexSearcher")
+    @DependsOn("tableIndexDocuments")
     public IndexSearcher indexSearcher() throws IOException {
         IndexReader indexReader = DirectoryReader.open(indexDirectory());
         return new IndexSearcher(indexReader);

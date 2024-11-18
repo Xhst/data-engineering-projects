@@ -44,6 +44,7 @@ public class TableSearchService {
             Document doc = storedFields.document(scoreDoc.doc);
 
             tables.add(new TableDto(
+                    doc.get("paper_id"),
                     doc.get("table_id"),
                     scoreDoc.score
             ));

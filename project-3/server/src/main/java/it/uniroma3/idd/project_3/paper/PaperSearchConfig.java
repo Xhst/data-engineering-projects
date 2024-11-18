@@ -25,6 +25,8 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.standard.StandardTokenizerFactory;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
+import org.springframework.context.annotation.DependsOn;
+import org.springframework.core.annotation.Order;
 
 
 import java.io.IOException;
@@ -80,6 +82,7 @@ public class PaperSearchConfig {
     }
 
     @Bean(name = "paperIndexSearcher")
+    @DependsOn("paperIndexDocuments")
     public IndexSearcher indexSearcher() throws IOException {
         IndexReader indexReader = DirectoryReader.open(indexDirectory());
         return new IndexSearcher(indexReader);

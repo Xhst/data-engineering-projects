@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: project-2
+    name: project-3
 
 search:
   index:
@@ -12,7 +12,7 @@ search:
       recreate: false
     table:
       path: target/index/table
-      recreate: true
+      recreate: false
     ram_buffer_size_mb: 2048.0
     use_debug_codec: false
   sources:
