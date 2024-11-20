@@ -5,7 +5,7 @@ import table_preprocess
 import tokenizer
 
 
-from typing import Dict, Tuple
+from typing import Dict
 from sklearn.metrics.pairwise import cosine_similarity
 
 json_folder = paths.JSON_FOLDER
@@ -15,7 +15,7 @@ def rank(papers: str, query: str) -> Dict[Tuple[str, str], float]:
     """All table ranking from list of papers"""
     
     embedded_query = embedding.get_sentence_embedding(query)
-    table_rank_dict: Dict[Tuple[str, str], float] = {}
+    table_rank_dict: Dict[str, Dict[str, float]] = {}
     
     
     for paper in papers:
@@ -73,7 +73,7 @@ def rank(papers: str, query: str) -> Dict[Tuple[str, str], float]:
             #print(table_similarity)
             #print('\n')
             
-            table_rank_dict[paper, table_name] = similarity_wAvg
+            table_rank_dict[paper][table_name] = similarity_wAvg
             
     return table_rank_dict
         

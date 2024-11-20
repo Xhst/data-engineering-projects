@@ -5,7 +5,7 @@ import table_preprocess
 import tokenizer
 
 
-from typing import Dict, Tuple
+from typing import Dict
 from sklearn.metrics.pairwise import cosine_similarity
 
 json_folder = paths.JSON_FOLDER
@@ -51,7 +51,7 @@ def rank(papers: str, query: str) -> Dict[Tuple[str, str], float]:
             #print(table_similarity)
             #print('\n')
             
-            table_rank_dict[paper, table_name] = similarity
+            table_rank_dict[paper][table_name] = similarity
             
     return table_rank_dict
         
