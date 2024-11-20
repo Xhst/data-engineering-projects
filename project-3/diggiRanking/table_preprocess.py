@@ -11,7 +11,8 @@ import lxml
 
 
 # Function that filter table content
-def table_filter(table_name, html_content):
+def table_filter(table_name: str, html_content: str) -> str:
+
     
         if html_content:
             
@@ -47,7 +48,7 @@ def table_filter(table_name, html_content):
 
 
         else:
-            print(f"Il file non contiene dati HTML validi nella tabella {table_name}.\n\n")
+            print(f"No HTML in  {table_name}.\n")
             return ""
         
     
