@@ -1,5 +1,7 @@
 import json
 import paths
+import os
+import sys
 import embedding
 import table_preprocess
 import tokenizer
@@ -20,9 +22,12 @@ def rank(papers: str, query: str) -> Dict[str, Dict[str, float]]:
     
     for paper in papers:
         # Load JSON file
-        with open(f"{json_folder}/{paper}.json", 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            
+        file_path = f"{json_folder}/{paper}.json"
+        if os.path.exists(file_path):
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        else:
+            sys.exit(f"File '{file_path}': Not found.")
             
         # Rank for each table
         for table_name, table_data in data.items():
