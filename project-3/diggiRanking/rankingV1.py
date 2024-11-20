@@ -1,7 +1,8 @@
 import json
 import paths
 import embedding
-import table_processor
+import table_preprocess
+import tokenizer
 
 
 from typing import Dict, Tuple
@@ -9,7 +10,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 json_folder = paths.JSON_FOLDER
 
-def rank(papers, query):
+def rank(papers: str, query: str) -> Dict[Tuple[str, str], float]:
+
+    """All table ranking from list of papers"""
     
     embedded_query = embedding.get_sentence_embedding(query)
     table_rank_dict: Dict[Tuple[str, str], float] = {}
@@ -32,10 +35,10 @@ def rank(papers, query):
             #print(table_caption)
             
             ref_to_embed = (" ".join(table_references))
-            filtered_table = table_processor.table_filter(table_name,html_content)
+            filtered_table = table_preprocess.table_filter(table_name,html_content)
             
             # Table's references and caption embedding 
-            ref_embedding = embedding.get_sentence_embedding(ref_to_embed)
+            ref_embedding = tokenizer.tokenize_toString(embedding.get_sentence_embedding(ref_to_embed))
             caption_embedding = embedding.get_sentence_embedding(table_caption)
             
             # Tried to compute similarity for each token in a table and do mean for discover low level patterns
@@ -53,9 +56,9 @@ def rank(papers, query):
             
             
             # Weights
-            w_ref = 0.5
-            w_table = 0.3
-            w_caption = 0.2
+            w_table = 0.45
+            w_caption = 0.35
+            w_ref = 0.2
             
             # Weighted average
             similarity_wAvg = (

@@ -1,7 +1,8 @@
 import json
 import paths
 import embedding
-import table_processor
+import table_preprocess
+import tokenizer
 
 
 from typing import Dict, Tuple
@@ -9,7 +10,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 json_folder = paths.JSON_FOLDER
 
-def rank(papers, query):
+def rank(papers: str, query: str) -> Dict[Tuple[str, str], float]:
+
+    """All table ranking from list of papers (V2)"""
     
     embedded_query = embedding.get_sentence_embedding(query)
     table_rank_dict: Dict[Tuple[str, str], float] = {}
@@ -32,15 +35,16 @@ def rank(papers, query):
             #print(table_caption)
             
             ref_to_embed = (" ".join(table_references))
-            filtered_table = table_processor.table_filter(table_name,html_content)
+            tokenized_ref_to_embed = tokenizer.tokenize_toString(ref_to_embed)
+            filtered_table = table_preprocess.table_filter(table_name,html_content)
             
-            # All fields embedding for keep the contest 
-            to_embed = " ".join([filtered_table, ref_to_embed, table_caption])
-            embedding = embedding.get_sentence_embedding(to_embed)
+            # All fields embedding for more the contest (also the query)
+            to_embed = " ".join([query,filtered_table, tokenized_ref_to_embed, table_caption])
+            embed = embedding.get_sentence_embedding(to_embed)
             
            
             # Cosine similarity
-            similarity = cosine_similarity([embedded_query], [embedding])[0][0]
+            similarity = cosine_similarity([embedded_query], [embed])[0][0]
             
             
             #print(table_name)
