@@ -1,17 +1,21 @@
 import torch
-
+import numpy as np
 
 from transformers import AutoTokenizer, AutoModel
 from sklearn.metrics.pairwise import cosine_similarity
 
 
+
+# SciBERT is a pre-trained on a large corpus of scientific articles
+# (biomedical, computer science and other scientific areas)
+
 # Load pre-trained model
-model_name = "bert-base-uncased"
+model_name = "allenai/scibert_scivocab_uncased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
 
 # Compute vector from sentence (embedding)
-def get_sentence_embedding(sentence):
+def get_sentence_embedding(sentence: str) -> np.ndarray:
     tokens = tokenizer(sentence, return_tensors="pt", padding=True, truncation=True, max_length=512)
     with torch.no_grad():
         outputs = model(**tokens)
