@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 json_folder = paths.JSON_FOLDER
 
-def rank(papers: str, query: str) -> Dict[Tuple[str, str], float]:
+def rank(papers: str, query: str) -> Dict[str, Dict[str, float]]:
 
     """All table ranking from list of papers"""
     

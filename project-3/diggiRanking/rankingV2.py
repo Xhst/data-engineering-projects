@@ -10,12 +10,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 json_folder = paths.JSON_FOLDER
 
-def rank(papers: str, query: str) -> Dict[Tuple[str, str], float]:
+def rank(papers: str, query: str) -> Dict[str, Dict[str, float]]:
 
     """All table ranking from list of papers (V2)"""
     
     embedded_query = embedding.get_sentence_embedding(query)
-    table_rank_dict: Dict[Tuple[str, str], float] = {}
+    table_rank_dict: Dict[str, Dict[str, float]] = {}
     
     
     for paper in papers:
