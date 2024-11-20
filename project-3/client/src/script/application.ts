@@ -1,4 +1,5 @@
 import axios from "axios";
+import WebSocket from "ws";
 
 import { PaperSearchDto, TableSearchDto, isPaperSearchDto, isTableSearchDto } from "./model_dto";
 
@@ -330,5 +331,83 @@ function sendQuery(query: string) {
         if (resultsContainer) {
             resultsContainer.innerHTML = '<p>Error fetching results. Please try again later.</p>';
         }
+    });
+}
+
+
+/*******************   BERT RANK  ************************/
+
+async function RankingV1(papers: string, query: string): Promise<void> {
+    const uri = "ws://localhost:8765/rankV1"; // URL del server WebSocket
+
+    // Crete new WebSoocket connection
+    const ws = new WebSocket(uri);
+
+    // request for server
+    const message = { papers, query };
+
+    return new Promise<void>((resolve, reject) => {
+        // Open connection
+        ws.on('open', () => {
+            console.log("Connected to WebSocket server");
+
+            // JSON request
+            ws.send(JSON.stringify(message));
+        });
+
+        // Server response
+        ws.on('message', (data) => {
+            console.log("Risposta dal server:", data.toString());
+            resolve(); // Resolve promise
+        });
+
+        // iusses
+        ws.on('error', (error) => {
+            console.error("Errore WebSocket:", error);
+            reject(error);
+        });
+
+        // Close connection
+        ws.on('close', () => {
+            console.log("WebSocket connection closed");
+        });
+    });
+}
+
+
+async function RankingV2(papers: string, query: string): Promise<void> {
+    const uri = "ws://localhost:8765/rankV2"; // URL del server WebSocket
+
+    // Crete new WebSoocket connection
+    const ws = new WebSocket(uri);
+
+    // request for server
+    const message = { papers, query };
+
+    return new Promise<void>((resolve, reject) => {
+        // Open connection
+        ws.on('open', () => {
+            console.log("Connected to WebSocket server");
+
+            // JSON request
+            ws.send(JSON.stringify(message));
+        });
+
+        // Server response
+        ws.on('message', (data) => {
+            console.log("Risposta dal server:", data.toString());
+            resolve(); // Resolve promise
+        });
+
+        // iusses
+        ws.on('error', (error) => {
+            console.error("Errore WebSocket:", error);
+            reject(error);
+        });
+
+        // Close connection
+        ws.on('close', () => {
+            console.log("WebSocket connection closed");
+        });
     });
 }
