@@ -16,6 +16,11 @@ model = AutoModel.from_pretrained(model_name)
 
 # Compute vector from sentence (embedding)
 def get_sentence_embedding(sentence: str) -> np.ndarray:
+
+    # Choose device
+    device = assign_device("cuda")
+    model = model.to(device)
+
     tokens = tokenizer(sentence, return_tensors="pt", padding=True, truncation=True, max_length=512)
     with torch.no_grad():
         outputs = model(**tokens)
@@ -25,3 +30,17 @@ def get_sentence_embedding(sentence: str) -> np.ndarray:
     masked_embeddings = embeddings * mask
     sentence_embedding = masked_embeddings.sum(dim=1) / mask.sum(dim=1)
     return sentence_embedding.squeeze().numpy()
+
+
+def assign_device(device_name: str):
+    """Assign the appropriate computing device for embeddings."""
+    if device_name == "cuda" and torch.cuda.is_available():
+        device = torch.device("cuda")
+        print("Using GPU (CUDA).")
+    elif device_name == "mps" and torch.backends.mps.is_available():
+        device = torch.device("mps")
+        print("Using Apple Silicon GPU (MPS).")
+    else:
+        device = torch.device("cpu")
+        print("Using CPU.")
+    return device
