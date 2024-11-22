@@ -19,11 +19,11 @@ async def handle_connection(websocket, path):
         query = data.get("query")
 
         # Call the Python function passing the message (parameter)
-        result = rankV1(message)
+        result = rankV1(papers, query)
         
         
         # Convert the result to JSON format
-        json_result = json.dumps(papers,query)
+        json_result = json.dumps(result)
         
         # Send the result to the client
         await websocket.send(json_result)
@@ -38,10 +38,10 @@ async def handle_connection(websocket, path):
         papers = data.get("papers")
         query = data.get("query")
 
-        result = rankV2(message)
+        result = rankV2(papers, query)
         
         
-        json_result = json.dumps(papers,query)
+        json_result = json.dumps(result)
         
         await websocket.send(json_result)
        
