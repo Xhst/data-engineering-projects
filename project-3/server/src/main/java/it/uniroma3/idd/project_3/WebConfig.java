@@ -3,6 +3,7 @@ package it.uniroma3.idd.project_3;
 import lombok.NonNull;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -21,6 +22,11 @@ public class WebConfig {
                         .allowCredentials(false);
             }
         };
+    }
+
+    @Bean(name="restTemplate")
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 
 }
