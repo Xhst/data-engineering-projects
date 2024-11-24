@@ -20,19 +20,26 @@ def convert_json_to_entities(data, paper_id, embedder: Embedder, function):
     return entities
     
 
-def create_index(embedder: Embedder, function_name: str):
+def create_index(embedder: Embedder, function_name: str, is_ground_truth_index: bool = False):
     function = get_function_from_name(function_name)
 
-    collection_name = ("table_" + embedder.model_name + "_" + function_name).replace("/", "_").replace("-", "_")
+    collection_name_prefix = "table_"
+
+    if is_ground_truth_index:
+        collection_name_prefix += "gt_"
+
+    collection_name = (collection_name_prefix + embedder.model_name + "_" + function_name).replace("/", "_").replace("-", "_")
 
     if pm.has_collection(collection_name):
         pm.Collection(collection_name).drop()
 
     collection = pm.Collection(name=collection_name, schema=schema)
 
-    for filename in os.listdir(paths.TABLE_FOLDER):
+    folder = paths.GROUND_TRUTH + "/sample" if is_ground_truth_index else paths.TABLE_FOLDER
+
+    for filename in os.listdir(folder):
         if filename.endswith(".json"):
-            with open(os.path.join(paths.TABLE_FOLDER, filename), "r", encoding="utf-8") as file:
+            with open(os.path.join(folder, filename), "r", encoding="utf-8") as file:
                 paper_id = filename.replace(".json", "")
                 try:
                     data = json.load(file)

@@ -4,12 +4,16 @@ from dto import TableDto
 import pymilvus as pm
 
 
-def search(query: str, embedder: Embedder, function_name: str, paper_ids: list[str], use_hybrid: bool) -> list[TableDto]:
+def search(query: str, embedder: Embedder, function_name: str, paper_ids: list[str], use_hybrid: bool, use_groud_truth: bool) -> list[TableDto]:
     tables_dto: list[TableDto] = []
     query_vector = embedder.get_sentence_embedding(query).tolist()
 
     search_params = {"metric_type": "COSINE", "params": {"nprobe": 200}}
-    collection_name = ("table_" + embedder.model_name + "_" + function_name).replace("/", "_").replace("-", "_")
+
+    collection_name_prefix = "table_"
+    if use_groud_truth:
+        collection_name_prefix += "gt_"
+    collection_name = (collection_name_prefix + embedder.model_name + "_" + function_name).replace("/", "_").replace("-", "_")
     collection = pm.Collection(name=collection_name, schema=schema)
 
     results = collection.search(
@@ -23,6 +27,7 @@ def search(query: str, embedder: Embedder, function_name: str, paper_ids: list[s
     for hits in results:
         for hit in hits:
             if not use_hybrid or (hit.entity.get('paper_id') in paper_ids):
-                tables_dto.append(TableDto(hit.entity.get('paper_id'), hit.entity.get('table_id'), hit.distance))
+                dto = TableDto(hit.entity.get('paper_id'), hit.entity.get('table_id'), hit.distance)
+                tables_dto.append(dto)
 
     return tables_dto
