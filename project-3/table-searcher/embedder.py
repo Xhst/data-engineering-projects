@@ -1,15 +1,16 @@
 import torch
 import numpy as np
-
 from transformers import AutoTokenizer, AutoModel
 
+
 class Embedder:
-    def __init__(self, model_name: str = "allenai/scibert_scivocab_uncased"):
+    def __init__(self, model_name: str = "bert-base-uncased"):
         self.model_name = model_name
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         self.model = AutoModel.from_pretrained(self.model_name)
         self.device = self.assign_device("cuda")
         self.model = self.model.to(self.device)
+
 
     def get_sentence_embedding(self, sentence: str) -> np.ndarray:
         tokens = self.tokenizer(sentence, return_tensors="pt", padding=True, truncation=True, max_length=512)
@@ -25,6 +26,7 @@ class Embedder:
         
         return sentence_embedding.squeeze().cpu().numpy()
     
+
     def assign_device(self, device_name: str):
         if device_name == "cuda" and torch.cuda.is_available():
             device = torch.device("cuda")
