@@ -1,27 +1,26 @@
 from fastapi import FastAPI, Query
-from pydantic import BaseModel
+from dto import TableSearchDto
+from embedder import Embedder
+import searcher
 import time
 
 app = FastAPI()
 
-class TableDto(BaseModel):
-    paperId: str
-    tableId: str
-    score: float
-    
-
-class TableSearchDto(BaseModel):
-    tables: list[TableDto]
-    suggestion: str
-    queryTimeMs: int
-
-
 @app.get("/api/table/search", response_model=TableSearchDto)
-def get_tables(query: str, paper_ids: list[str] = Query(...)):
+def get_tables(
+    query: str, 
+    paper_ids: list[str] = Query(), 
+    model_name: str = Query("distilbert-base-uncased"), 
+    method_name: str = Query("tab_cap_embedding"),
+    use_hybrid: bool = Query(False)):
 
     print(query, paper_ids)
 
+    embedder = Embedder(model_name=model_name)
+
     start_time = time.time()
+    
+    searcher.search(query, embedder, method_name, paper_ids, use_hybrid)
 
     elapsed_time = time.time() - start_time
 
@@ -32,7 +31,5 @@ def get_tables(query: str, paper_ids: list[str] = Query(...)):
     )
 
     return response
-
-# docker run -d --name milvus-standalone -p 19530:19530 -p 9091:9091 milvusdb/milvus:latest
 
 # run with uvicorn app:app --reload --port 8000
