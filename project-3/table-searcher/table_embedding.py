@@ -74,8 +74,8 @@ def weighted_embedding(embedder: Embedder, table_data):
     references_embedding = embedder.get_sentence_embedding(tokenizer.filter(" ".join(table_data["references"])))
 
     w_tab = 0.5  # Weight for the table content
-    w_cap = 0.4  # Weight for the caption
-    w_ref = 0.1  # Weight for the references
+    w_cap = 0.35  # Weight for the caption
+    w_ref = 0.15  # Weight for the references
 
     return (w_tab * table_embedding + w_cap * caption_embedding + w_ref * references_embedding).tolist()
 
