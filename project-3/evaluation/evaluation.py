@@ -16,45 +16,51 @@ ground_truth_paper_ids: list[str] = ["2008.03797", "2102.08921", "2301.04366v1",
             "2406.02638v2", "2407.03440", "2407.09157v1", "2407.13531v1", "2408.04641v1", "2408.09646v1",
             "2409.10272", "2409.10309v2", "2409.17165v1", "2409.17400"]
 
-results_json = {}
+def evaluate(hybrid: bool = False): 
+    results_json = {}
 
-results_json["lucene"] = {}
-results_json["lucene"]["bm25"] = {}
-for i, query in enumerate(queries, start=1):
-    response = requests.get(f"http://localhost:3000/api/search/tables?query={query}&modelName=lucene&methodName=lucene&useHybrid=false&useGroundTruth=true")
-    query_key = f"q{i}"
-    results_json["lucene"]["bm25"][query_key] = {}
+    results_json["lucene"] = {}
+    results_json["lucene"]["bm25"] = {}
+    for i, query in enumerate(queries, start=1):
+        response = requests.get(f"http://localhost:3000/api/search/tables?query={query}&modelName=lucene&methodName=lucene&useHybrid={hybrid}&useGroundTruth=true")
+        query_key = f"q{i}"
+        results_json["lucene"]["bm25"][query_key] = {}
 
-    pos = 1
-    for table in response.json()['tables']:
-        # we only check on gt papers because we don't have gt_index on lucene for now
-        if (table.get('paperId') not in ground_truth_paper_ids): continue
-        
-        results_json["lucene"]["bm25"][query_key][str(pos)] = table.get('paperId') + "#" + table.get('tableId')
-        pos += 1
-        
-        # we only want the first 15
-        if pos >= 16: break
+        pos = 1
+        for table in response.json()['tables']:
+            # we only check on gt papers because we don't have gt_index on lucene for now
+            if (table.get('paperId') not in ground_truth_paper_ids): continue
+            
+            results_json["lucene"]["bm25"][query_key][str(pos)] = table.get('paperId') + "#" + table.get('tableId')
+            pos += 1
+            
+            # we only want the first 15
+            if pos >= 16: break
 
-for model in models:
-    results_json[model] = {}
-    for function in functions:
-        results_json[model][function] = {}
+    for model in models:
+        results_json[model] = {}
+        for function in functions:
+            results_json[model][function] = {}
 
-        for i, query in enumerate(queries, start=1):
-            response = requests.get(f"http://localhost:3000/api/search/tables?query={query}&modelName={model}&methodName={function}&useHybrid=false&useGroundTruth=true&numberOfResults=15")
-            query_key = f"q{i}"
-            results_json[model][function][query_key] = {}
+            for i, query in enumerate(queries, start=1):
+                response = requests.get(f"http://localhost:3000/api/search/tables?query={query}&modelName={model}&methodName={function}&useHybrid={hybrid}&useGroundTruth=true&numberOfResults=15")
+                query_key = f"q{i}"
+                results_json[model][function][query_key] = {}
 
-            pos = 1
-            for table in response.json()['tables']:
-                results_json[model][function][query_key][str(pos)] = table.get('paperId') + "#" + table.get('tableId')
-                pos += 1
+                pos = 1
+                for table in response.json()['tables']:
+                    results_json[model][function][query_key][str(pos)] = table.get('paperId') + "#" + table.get('tableId')
+                    pos += 1
 
-            print(f"Results for query {query_key} with model {model} and function {function} done.")
+                print(f"Results for query {query_key} with model {model} and function {function} done.")
 
-output_file = "./results.json"
-with open(output_file, "w") as f:
-    json.dump(results_json, f, indent=4)
+    output_file = "./results_hybrid.json" if hybrid else "./results.json"
 
-print(f"Results saved to {output_file}")
+    with open(output_file, "w") as f:
+        json.dump(results_json, f, indent=4)
+
+    print(f"Results saved to {output_file}")
+
+
+evaluate(hybrid=False)
+evaluate(hybrid=True)
