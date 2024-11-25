@@ -47,9 +47,8 @@ public class TableSearchService {
         List<TableDto> tables = new ArrayList<>();
         List<String> paperIds = new ArrayList<>();
 
-        if (!useHybridApproach) {
+        if (useHybridApproach || methodName.equals("lucene") || modelName.equals("lucene")) {
             Query query = queryParser.parse(queryString);
-
             TopDocs topDocs = indexSearcher.search(query, numberOfResults);
 
             StoredFields storedFields = indexSearcher.storedFields();
@@ -75,7 +74,6 @@ public class TableSearchService {
                 return new TableSearchDto(tables, "", elapsedTime);
             }
         }
-
         ResponseEntity<TableSearchDto> response = restTemplate.getForEntity(
                 "http://127.0.0.1:8000/api/table/search?query={query}&paper_ids={paper_ids}&model_name={model_name}&method_name={method_name}&use_hybrid_approach={use_hybrid_approach}",
                 TableSearchDto.class,
