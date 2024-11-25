@@ -5,15 +5,18 @@ from indexer import get_collection_name
 import pymilvus as pm
 
 
-def search(query: str, embedder: Embedder, function_name: str, number_of_results: int, paper_ids: list[str], use_hybrid: bool, use_groud_truth: bool) -> list[TableDto]:
+def search(query: str, embedder: Embedder, function_name: str, number_of_results: int, paper_ids: list[str], use_hybrid: bool, use_ground_truth: bool) -> list[TableDto]:
     tables_dto: list[TableDto] = []
+    
     query_vector = embedder.get_sentence_embedding(query).tolist()
 
     search_params = {"metric_type": "COSINE", "params": {"nprobe": 200}}
 
-    collection_name = get_collection_name(embedder, function_name, use_groud_truth)
+    collection_name = get_collection_name(embedder, function_name, use_ground_truth)
     
     collection = pm.Collection(name=collection_name, schema=schema)
+    
+    collection.load()
 
     results = collection.search(
         data=[query_vector],
