@@ -10,4 +10,4 @@ class TableDto(BaseModel):
 class TableSearchDto(BaseModel):
     tables: list[TableDto]
     suggestion: str
-    queryTimeMs: int
+    queryTimeMs: float
