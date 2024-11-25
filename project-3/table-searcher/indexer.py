@@ -23,12 +23,7 @@ def convert_json_to_entities(data, paper_id, embedder: Embedder, function):
 def create_index(embedder: Embedder, function_name: str, is_ground_truth_index: bool = False):
     function = get_function_from_name(function_name)
 
-    collection_name_prefix = "table_"
-
-    if is_ground_truth_index:
-        collection_name_prefix += "gt_"
-
-    collection_name = (collection_name_prefix + embedder.model_name + "_" + function_name).replace("/", "_").replace("-", "_")
+    collection_name = get_collection_name(embedder, function_name, is_ground_truth_index)
 
     if pm.has_collection(collection_name):
         pm.Collection(collection_name).drop()
@@ -53,6 +48,15 @@ def create_index(embedder: Embedder, function_name: str, is_ground_truth_index: 
     collection.create_index(field_name="vector", index_params=index_params)
 
     collection.load()
+
+
+def get_collection_name(embedder: Embedder, function_name: str, use_groud_truth: bool) -> str:
+    collection_name_prefix = ""
+    if use_groud_truth:
+        collection_name_prefix += "gt_"
+
+    model_name = "scibert" if embedder.model_name == "allenai/scibert_scivocab_uncased" else embedder.model_name 
+    return (collection_name_prefix + model_name + "_" + function_name).replace("/", "_").replace("-", "_")
 
 
 if __name__ == "__main__":
