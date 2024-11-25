@@ -54,8 +54,8 @@ public class TableSearchService {
         List<String> paperIds = new ArrayList<>();
 
         if (useHybridApproach) {
-            numberOfResults = useGroundTruth ? 10_000 : numberOfResults;
-            PaperSearchDto dto = paperSearchService.search(queryString, numberOfResults);
+            // search on all papers
+            PaperSearchDto dto = paperSearchService.search(queryString, 10_000);
             paperIds = dto.documents().stream().map(PaperDto::filename).toList();
         }
 
@@ -64,7 +64,7 @@ public class TableSearchService {
             useHybridApproach = true;
         }
 
-        return semanticSearch(queryString, modelName, methodName, numberOfResults, useGroundTruth, useHybridApproach, paperIds);
+        return semanticSearch(queryString, modelName, methodName, numberOfResults, useHybridApproach, useGroundTruth, paperIds);
     }
 
     public TableSearchDto luceneSearch(String queryString, int numberOfResults) throws IOException, ParseException {
@@ -93,12 +93,12 @@ public class TableSearchService {
     }
 
     public TableSearchDto semanticSearch(String queryString, String modelName, String methodName, int numberOfResults,
-                                         boolean useGroundTruth, boolean useHybrid, List<String> paperIds) {
+                                         boolean useHybrid, boolean useGroundTruth, List<String> paperIds) {
 
         long startTime = System.currentTimeMillis();
 
         ResponseEntity<TableSearchDto> response = restTemplate.getForEntity(
-                "http://127.0.0.1:8000/api/table/search?query={query}&model_name={model_name}&method_name={method_name}&number_of_results={numberOfResults}&use_hybrid={useHybrid}&use_ground_truth={use_ground_truth}" +
+                "http://127.0.0.1:13000/api/table/search?query={queryString}&model_name={modelName}&method_name={methodName}&number_of_results={numberOfResults}&use_hybrid={useHybrid}&use_ground_truth={useGroundTruth}" +
                         formatPaperIds(paperIds),
                 TableSearchDto.class,
                 queryString, modelName, methodName, numberOfResults, useHybrid, useGroundTruth
@@ -122,7 +122,8 @@ public class TableSearchService {
         // Join paper IDs into the required query string format
         if (paperIds.isEmpty()) return "";
 
-        return String.join("&paper_ids=", paperIds);
+        // The first is needed or will cause 422 because of bad formatting
+        return "&paper_ids=" + String.join("&paper_ids=", paperIds);
     }
 
 }
