@@ -47,16 +47,18 @@ public class TableSearchService {
 
     public TableSearchDto search(String queryString, String modelName, String methodName, int numberOfResults,
                                  boolean useHybridApproach, boolean useGroundTruth) throws IOException, ParseException {
-        if (methodName.equals("lucene") || modelName.equals("lucene")) {
-            numberOfResults = useGroundTruth ? 10_000 : numberOfResults;
-            return luceneSearch(queryString, numberOfResults);
-        }
+
         List<String> paperIds = new ArrayList<>();
 
         if (useHybridApproach) {
             // search on all papers
             PaperSearchDto dto = paperSearchService.search(queryString, 10_000);
             paperIds = dto.documents().stream().map(PaperDto::filename).toList();
+        }
+
+        if (methodName.equals("lucene") || modelName.equals("lucene")) {
+            numberOfResults = useGroundTruth ? 10_000 : numberOfResults;
+            return luceneSearch(queryString, numberOfResults, useHybridApproach, paperIds);
         }
 
         if (useGroundTruth) {
@@ -67,23 +69,40 @@ public class TableSearchService {
         return semanticSearch(queryString, modelName, methodName, numberOfResults, useHybridApproach, useGroundTruth, paperIds);
     }
 
-    public TableSearchDto luceneSearch(String queryString, int numberOfResults) throws IOException, ParseException {
+    public TableSearchDto luceneSearch(String queryString, int numberOfResults, boolean useHybridApproach,
+                                       List<String> paperIds) throws IOException, ParseException {
         long startTime = System.currentTimeMillis();
         List<TableDto> tables = new ArrayList<>();
 
         Query query = queryParser.parse(queryString);
-        TopDocs topDocs = indexSearcher.search(query, numberOfResults);
+
+        TopDocs topDocs;
+
+        if (useHybridApproach) {
+            topDocs = indexSearcher.search(query, 10_000);
+        } else {
+            topDocs = indexSearcher.search(query, numberOfResults);
+        }
+
+        int currentNumResults = 0;
 
         StoredFields storedFields = indexSearcher.storedFields();
+
         for (int i = 0; i < topDocs.scoreDocs.length; i++) {
+            if (currentNumResults >= numberOfResults) break;
+
             ScoreDoc scoreDoc = topDocs.scoreDocs[i];
             Document doc = storedFields.document(scoreDoc.doc);
 
+            if (useHybridApproach && !paperIds.contains(doc.get("paper_id"))) continue;
+
             tables.add(new TableDto(
-                    doc.get("paper_id"),
-                    doc.get("table_id"),
-                    scoreDoc.score
+                doc.get("paper_id"),
+                doc.get("table_id"),
+                scoreDoc.score
             ));
+
+            currentNumResults++;
         }
 
         long endTime = System.currentTimeMillis();
