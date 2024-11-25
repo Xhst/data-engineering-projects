@@ -1,5 +1,8 @@
 package it.uniroma3.idd.project_3.table;
 
+import it.uniroma3.idd.project_3.paper.PaperDto;
+import it.uniroma3.idd.project_3.paper.PaperSearchDto;
+import it.uniroma3.idd.project_3.paper.PaperSearchService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.StoredFields;
@@ -25,6 +28,7 @@ public class TableSearchService {
     private final IndexSearcher indexSearcher;
     private final MultiFieldQueryParser queryParser;
     private final RestTemplate restTemplate;
+    private final PaperSearchService paperSearchService;
 
     private final List<String> groundTruthPapers = List.of(
             "2008.03797", "2102.08921", "2301.04366v1", "2404.17723", "2405.02156v1", "2405.17060v1",
@@ -34,53 +38,91 @@ public class TableSearchService {
 
     public TableSearchService(@Qualifier("tableIndexSearcher") IndexSearcher indexSearcher,
                               @Qualifier("tableQueryParser") MultiFieldQueryParser queryParser,
-                              RestTemplate restTemplate) {
+                              RestTemplate restTemplate, PaperSearchService paperSearchService) {
         this.indexSearcher = indexSearcher;
         this.queryParser = queryParser;
         this.restTemplate = restTemplate;
+        this.paperSearchService = paperSearchService;
     }
-
 
     public TableSearchDto search(String queryString, String modelName, String methodName, int numberOfResults,
                                  boolean useHybridApproach, boolean useGroundTruth) throws IOException, ParseException {
-        long startTime = System.currentTimeMillis();
-        List<TableDto> tables = new ArrayList<>();
+        if (methodName.equals("lucene") || modelName.equals("lucene")) {
+            numberOfResults = useGroundTruth ? 10_000 : numberOfResults;
+            return luceneSearch(queryString, numberOfResults);
+        }
         List<String> paperIds = new ArrayList<>();
 
-        if (useHybridApproach || methodName.equals("lucene") || modelName.equals("lucene")) {
-            Query query = queryParser.parse(queryString);
-            TopDocs topDocs = indexSearcher.search(query, numberOfResults);
-
-            StoredFields storedFields = indexSearcher.storedFields();
-            for (int i = 0; i < topDocs.scoreDocs.length; i++) {
-                ScoreDoc scoreDoc = topDocs.scoreDocs[i];
-                Document doc = storedFields.document(scoreDoc.doc);
-
-                if (useGroundTruth && !groundTruthPapers.contains(doc.get("paper_id"))) continue;
-
-                paperIds.add(doc.get("paper_id"));
-
-                tables.add(new TableDto(
-                        doc.get("paper_id"),
-                        doc.get("table_id"),
-                        scoreDoc.score
-                ));
-            }
-
-            long endTime = System.currentTimeMillis();
-            long elapsedTime = endTime - startTime;
-
-            if (methodName.equals("lucene") || modelName.equals("lucene")) {
-                return new TableSearchDto(tables, "", elapsedTime);
-            }
+        if (useHybridApproach) {
+            numberOfResults = useGroundTruth ? 10_000 : numberOfResults;
+            PaperSearchDto dto = paperSearchService.search(queryString, numberOfResults);
+            paperIds = dto.documents().stream().map(PaperDto::filename).toList();
         }
+
+        if (useGroundTruth) {
+            paperIds = groundTruthPapers;
+            useHybridApproach = true;
+        }
+
+        return semanticSearch(queryString, modelName, methodName, numberOfResults, useGroundTruth, useHybridApproach, paperIds);
+    }
+
+    public TableSearchDto luceneSearch(String queryString, int numberOfResults) throws IOException, ParseException {
+        long startTime = System.currentTimeMillis();
+        List<TableDto> tables = new ArrayList<>();
+
+        Query query = queryParser.parse(queryString);
+        TopDocs topDocs = indexSearcher.search(query, numberOfResults);
+
+        StoredFields storedFields = indexSearcher.storedFields();
+        for (int i = 0; i < topDocs.scoreDocs.length; i++) {
+            ScoreDoc scoreDoc = topDocs.scoreDocs[i];
+            Document doc = storedFields.document(scoreDoc.doc);
+
+            tables.add(new TableDto(
+                    doc.get("paper_id"),
+                    doc.get("table_id"),
+                    scoreDoc.score
+            ));
+        }
+
+        long endTime = System.currentTimeMillis();
+        long elapsedTime = endTime - startTime;
+
+        return new TableSearchDto(tables, "", elapsedTime);
+    }
+
+    public TableSearchDto semanticSearch(String queryString, String modelName, String methodName, int numberOfResults,
+                                         boolean useGroundTruth, boolean useHybrid, List<String> paperIds) {
+
+        long startTime = System.currentTimeMillis();
+
         ResponseEntity<TableSearchDto> response = restTemplate.getForEntity(
-                "http://127.0.0.1:8000/api/table/search?query={query}&paper_ids={paper_ids}&model_name={model_name}&method_name={method_name}&use_hybrid_approach={use_hybrid_approach}",
+                "http://127.0.0.1:8000/api/table/search?query={query}&model_name={model_name}&method_name={method_name}&number_of_results={numberOfResults}&use_hybrid={useHybrid}&use_ground_truth={use_ground_truth}" +
+                        formatPaperIds(paperIds),
                 TableSearchDto.class,
-                queryString, paperIds, modelName, methodName, useHybridApproach
+                queryString, modelName, methodName, numberOfResults, useHybrid, useGroundTruth
         );
 
-        return response.getBody();
+        TableSearchDto dto = response.getBody();
+
+        if (dto == null) throw new RuntimeException("No dto");
+
+        if (!useHybrid) return dto;
+
+        List<TableDto> tables = dto.tables().stream().filter(table -> paperIds.contains(table.paperId())).toList();
+
+        long endTime = System.currentTimeMillis();
+        long elapsedTime = endTime - startTime;
+
+        return new TableSearchDto(tables, "", elapsedTime);
+    }
+
+    public String formatPaperIds(List<String> paperIds) {
+        // Join paper IDs into the required query string format
+        if (paperIds.isEmpty()) return "";
+
+        return String.join("&paper_ids=", paperIds);
     }
 
 }
