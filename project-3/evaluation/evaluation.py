@@ -19,17 +19,18 @@ ground_truth_paper_ids: list[str] = ["2008.03797", "2102.08921", "2301.04366v1",
 results_json = {}
 
 results_json["lucene"] = {}
+results_json["lucene"]["bm25"] = {}
 for i, query in enumerate(queries, start=1):
     response = requests.get(f"http://localhost:3000/api/search/tables?query={query}&modelName=lucene&methodName=lucene&useHybrid=false&useGroundTruth=true")
     query_key = f"q{i}"
-    results_json["lucene"][query_key] = {}
+    results_json["lucene"]["bm25"][query_key] = {}
 
     pos = 1
     for table in response.json()['tables']:
         # we only check on gt papers because we don't have gt_index on lucene for now
         if (table.get('paperId') not in ground_truth_paper_ids): continue
         
-        results_json["lucene"][query_key][str(pos)] = table.get('paperId') + "#" + table.get('tableId')
+        results_json["lucene"]["bm25"][query_key][str(pos)] = table.get('paperId') + "#" + table.get('tableId')
         pos += 1
         
         # we only want the first 15
