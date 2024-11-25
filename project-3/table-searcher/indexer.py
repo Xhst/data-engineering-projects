@@ -47,16 +47,13 @@ def create_index(embedder: Embedder, function_name: str, is_ground_truth_index: 
 
     collection.create_index(field_name="vector", index_params=index_params)
 
-    collection.load()
 
-
-def get_collection_name(embedder: Embedder, function_name: str, use_groud_truth: bool) -> str:
+def get_collection_name(embedder: Embedder, function_name: str, use_ground_truth: bool) -> str:
     collection_name_prefix = ""
-    if use_groud_truth:
+    if use_ground_truth:
         collection_name_prefix += "gt_"
 
-    model_name = "scibert" if embedder.model_name == "allenai/scibert_scivocab_uncased" else embedder.model_name 
-    return (collection_name_prefix + model_name + "_" + function_name).replace("/", "_").replace("-", "_")
+    return (collection_name_prefix + embedder.model_name + "_" + function_name).replace("/", "_").replace("-", "_")
 
 
 if __name__ == "__main__":
