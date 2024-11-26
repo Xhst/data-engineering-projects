@@ -1,7 +1,7 @@
 import json
 import requests
 
-models = ["allenai/scibert_scivocab_uncased", "bert-base-uncased", "distilbert-base-uncased"]
+models = ["all-mpnet-base-v2", "sentence-transformers/sentence-t5-large", "bert-base-uncased", "distilbert-base-uncased", "allenai/scibert_scivocab_uncased"]
 functions = ["tab_embedding", "tab_cap_embedding", "tab_cap_ref_embedding", "weighted_embedding"]
 queries = [
     "NDCG on movielens dataset",

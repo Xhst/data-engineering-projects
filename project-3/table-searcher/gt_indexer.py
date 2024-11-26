@@ -4,7 +4,8 @@ from indexer import create_index
 from embedder import Embedder
 
 if __name__ == "__main__":
-    models = ["bert-base-uncased", "distilbert-base-uncased", "allenai/scibert_scivocab_uncased"]
+    models = ["bert-base-uncased", "distilbert-base-uncased", "allenai/scibert_scivocab_uncased", 
+              "all-mpnet-base-v2", "sentence-transformers/sentence-t5-large"]
     functions = ["tab_embedding", "tab_cap_embedding", "tab_cap_ref_embedding", "weighted_embedding"]
 
     try:
