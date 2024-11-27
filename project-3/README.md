@@ -18,9 +18,9 @@
             - nella pratica possiamo controllare se l’elemento scelto dal motore ha almeno lo score massimo (potrebbero esserci dei parimerito)
         - Normalized Discounted Cumulative Gain con taglio $\text{K} = \set{5,15}$:
             
-            $$
+            $
             \text{NDCG@K}_q = \frac{\text{DCG@K}_q}{\text{IDCG@K}_q}
-            $$
+            $
             
             - dove dividiamo il $\text{DCG@K}_q = rel_1 + \sum_{i=2}^K \frac{rel_i}{\log_2 (i + 1)}$ con quello ideale, cioè dove il ranking è il migliore possibile
 4. Calcolare la media delle metriche:
