@@ -4,7 +4,7 @@ import paths
 import os
 import time
 from table_embedding import get_function_from_name
-from index_schema import schema
+from index_schema import get_schema
 from embedder import Embedder
 
 
@@ -28,7 +28,7 @@ def create_index(embedder: Embedder, function_name: str, is_ground_truth_index: 
     if pm.has_collection(collection_name):
         pm.Collection(collection_name).drop()
 
-    collection = pm.Collection(name=collection_name, schema=schema)
+    collection = pm.Collection(name=collection_name, schema=get_schema(embedder))
 
     folder = paths.GROUND_TRUTH + "/sample" if is_ground_truth_index else paths.TABLE_FOLDER
 
@@ -57,8 +57,16 @@ def get_collection_name(embedder: Embedder, function_name: str, use_ground_truth
 
 
 if __name__ == "__main__":
-    models = ["bert-base-uncased", "distilbert-base-uncased", "allenai/scibert_scivocab_uncased", 
-              "all-mpnet-base-v2", "sentence-transformers/sentence-t5-large"]
+    models = [
+        "bert-base-uncased", 
+        "distilbert-base-uncased", 
+        "allenai/scibert_scivocab_uncased", 
+        "all-mpnet-base-v2", 
+        "sentence-transformers/sentence-t5-large", 
+        "sentence-transformers/all-MiniLM-L6-v2", 
+        "deepset/sentence_bert",
+        "huggingface/roberta-large-nli-stsb-mean-tokens"
+    ]
     functions = ["tab_embedding", "tab_cap_embedding", "tab_cap_ref_embedding", "weighted_embedding"]
 
     try:

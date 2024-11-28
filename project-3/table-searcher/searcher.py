@@ -1,4 +1,4 @@
-from index_schema import schema
+from index_schema import get_schema
 from embedder import Embedder
 from dto import TableDto
 from indexer import get_collection_name
@@ -14,7 +14,7 @@ def search(query: str, embedder: Embedder, function_name: str, number_of_results
 
     collection_name = get_collection_name(embedder, function_name, use_ground_truth)
     
-    collection = pm.Collection(name=collection_name, schema=schema)
+    collection = pm.Collection(name=collection_name, schema=get_schema(embedder))
     
     collection.load()
 

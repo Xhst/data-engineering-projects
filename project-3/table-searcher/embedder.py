@@ -7,8 +7,9 @@ class Embedder:
     def __init__(self, model_name: str = "bert-base-uncased"):
         self.model_name = model_name
         self.model = SentenceTransformer(self.model_name)
-        self.device = self.assign_device("cuda")
+        self.device = self.assign_device("cpu")
         self.model = self.model.to(self.device)
+        self.embedding_size = self.model.get_sentence_embedding_dimension()
 
 
     def get_sentence_embedding(self, sentence: str) -> np.ndarray:
