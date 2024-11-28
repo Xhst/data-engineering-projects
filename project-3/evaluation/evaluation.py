@@ -1,15 +1,32 @@
 import json
 import requests
 
-models = ["all-mpnet-base-v2", "sentence-transformers/sentence-t5-large", "bert-base-uncased", "distilbert-base-uncased", "allenai/scibert_scivocab_uncased"]
+models = [
+    "bert-base-uncased", 
+    "distilbert-base-uncased", 
+    "allenai/scibert_scivocab_uncased", 
+    "all-mpnet-base-v2", 
+    "sentence-transformers/sentence-t5-large", 
+    "sentence-transformers/all-MiniLM-L6-v2", 
+    "deepset/sentence_bert"
+]
 functions = ["tab_embedding", "tab_cap_embedding", "tab_cap_ref_embedding", "weighted_embedding"]
 queries = [
-    "NDCG on movielens dataset",
-    "Recommender systems Recall on dataset goodbook",
-    "Recommender systems MRR",
-    "Deep Learning dataset Apple Flower",
-    "Deep Learning GPT-3 precision and f1",
-    "Deep Learning GPT-3 precision and f-measure"
+    "NDCG movielens",
+    "Recommender Recall Goodbook",
+    "Recommender MRR",
+    "Deep Learning Apple Flower",
+    "Deep Learning GPT-3 precision f1",
+    "Deep Learning GPT-3 precision f-measure"
+]
+
+metrics_arguments_querys_list = [
+    ('Recommender systems', " movielens NDCG"),
+    ('Recommender systems', "Recall Goodbook"),
+    ('Recommender systems', "MRR"),
+    ('Deep Learning', "Apple Flower"),
+    ('Deep Learning', "GPT-3 precision f1"),
+    ('Deep Learning', "GPT-3 precision f-measure")
 ]
 
 ground_truth_paper_ids: list[str] = ["2008.03797", "2102.08921", "2301.04366v1", "2404.17723", "2405.02156v1", "2405.17060v1",
@@ -21,8 +38,8 @@ def evaluate(hybrid: bool = False):
 
     results_json["lucene"] = {}
     results_json["lucene"]["bm25"] = {}
-    for i, query in enumerate(queries, start=1):
-        response = requests.get(f"http://localhost:3000/api/search/tables?query={query}&modelName=lucene&methodName=lucene&useHybrid={hybrid}&useGroundTruth=true")
+    for i, (queryArgument, queryTable) in enumerate(metrics_arguments_querys_list, start=1):
+        response = requests.get(f"http://localhost:3000/api/search/tables?queryArgument={queryArgument}&queryTable={queryTable}&modelName=lucene&methodName=lucene&useHybrid={hybrid}&useGroundTruth=true")
         query_key = f"q{i}"
         results_json["lucene"]["bm25"][query_key] = {}
 
@@ -42,8 +59,8 @@ def evaluate(hybrid: bool = False):
         for function in functions:
             results_json[model][function] = {}
 
-            for i, query in enumerate(queries, start=1):
-                response = requests.get(f"http://localhost:3000/api/search/tables?query={query}&modelName={model}&methodName={function}&useHybrid={hybrid}&useGroundTruth=true&numberOfResults=15")
+            for i, (queryArgument, queryTable) in enumerate(metrics_arguments_querys_list, start=1):
+                response = requests.get(f"http://localhost:3000/api/search/tables?queryArgument={queryArgument}&queryTable={queryTable}&modelName={model}&methodName={function}&useHybrid={hybrid}&useGroundTruth=true&numberOfResults=15")
                 query_key = f"q{i}"
                 results_json[model][function][query_key] = {}
 
@@ -62,5 +79,5 @@ def evaluate(hybrid: bool = False):
     print(f"Results saved to {output_file}")
 
 
-evaluate(hybrid=False)
 evaluate(hybrid=True)
+evaluate(hybrid=False)
