@@ -45,28 +45,48 @@ public class TableSearchService {
         this.paperSearchService = paperSearchService;
     }
 
-    public TableSearchDto search(String queryString, String modelName, String methodName, int numberOfResults,
+    public TableSearchDto search(String queryArgument, String queryTable, String modelName, String methodName, int numberOfResults,
                                  boolean useHybridApproach, boolean useGroundTruth) throws IOException, ParseException {
 
         List<String> paperIds = new ArrayList<>();
 
+
+
         if (useHybridApproach) {
             // search on all papers
-            PaperSearchDto dto = paperSearchService.search(queryString, 10_000);
-            paperIds = dto.documents().stream().map(PaperDto::filename).toList();
-        }
+            PaperSearchDto dto = paperSearchService.search(queryArgument, 10_000);
 
-        if (methodName.equals("lucene") || modelName.equals("lucene")) {
-            numberOfResults = useGroundTruth ? 10_000 : numberOfResults;
-            return luceneSearch(queryString, numberOfResults, useHybridApproach, paperIds);
+            log.info("{}", dto.documents().size());
+
+            paperIds = dto.documents().stream().map(PaperDto::filename).toList();
+        } else {
+            queryTable = queryArgument + " " + queryTable;
         }
 
         if (useGroundTruth) {
-            paperIds = groundTruthPapers;
+
+            if (useHybridApproach) {
+                // Filter the paperIds using only ground truth papers
+                List<String> tempList = new ArrayList<>(paperIds);
+                tempList.retainAll(groundTruthPapers);
+                paperIds = tempList;
+            } else {
+                paperIds = groundTruthPapers;
+            }
+
+            log.error(paperIds.toString());
+
             useHybridApproach = true;
         }
 
-        return semanticSearch(queryString, modelName, methodName, numberOfResults, useHybridApproach, useGroundTruth, paperIds);
+
+
+        if (methodName.equals("lucene") || modelName.equals("lucene")) {
+            numberOfResults = useGroundTruth ? 10_000 : numberOfResults;
+            return luceneSearch(queryTable, numberOfResults, useHybridApproach, paperIds);
+        }
+
+        return semanticSearch(queryTable, modelName, methodName, numberOfResults, useHybridApproach, useGroundTruth, paperIds);
     }
 
     public TableSearchDto luceneSearch(String queryString, int numberOfResults, boolean useHybridApproach,
@@ -76,21 +96,11 @@ public class TableSearchService {
 
         Query query = queryParser.parse(queryString);
 
-        TopDocs topDocs;
-
-        if (useHybridApproach) {
-            topDocs = indexSearcher.search(query, 10_000);
-        } else {
-            topDocs = indexSearcher.search(query, numberOfResults);
-        }
-
-        int currentNumResults = 0;
+        TopDocs topDocs = indexSearcher.search(query, numberOfResults);
 
         StoredFields storedFields = indexSearcher.storedFields();
 
         for (int i = 0; i < topDocs.scoreDocs.length; i++) {
-            if (currentNumResults >= numberOfResults) break;
-
             ScoreDoc scoreDoc = topDocs.scoreDocs[i];
             Document doc = storedFields.document(scoreDoc.doc);
 
@@ -101,8 +111,6 @@ public class TableSearchService {
                 doc.get("table_id"),
                 scoreDoc.score
             ));
-
-            currentNumResults++;
         }
 
         long endTime = System.currentTimeMillis();
