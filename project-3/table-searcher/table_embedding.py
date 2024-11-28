@@ -15,7 +15,7 @@ def tab_embedding(embedder: Embedder, table_data):
     Returns:
         numpy.ndarray: The embedding for the table content.
     """
-    return embedder.get_sentence_embedding(table_filter(table_data["table"]))
+    return embedder.get_sentence_embedding(table_data["paperTitle"] + table_filter(table_data["table"]))
 
 
 def tab_cap_embedding(embedder: Embedder, table_data):
@@ -31,7 +31,7 @@ def tab_cap_embedding(embedder: Embedder, table_data):
         numpy.ndarray: The embedding for the concatenated table content and caption.
     """
     return embedder.get_sentence_embedding(
-        table_filter(table_data["table"]) + table_data["caption"]
+        table_filter(table_data["paperTitle"] + table_data["table"]) + table_data["caption"]
     )
 
 
@@ -49,7 +49,8 @@ def tab_cap_ref_embedding(embedder: Embedder, table_data):
         numpy.ndarray: The embedding for the concatenated table content, caption, and references.
     """
     return embedder.get_sentence_embedding(
-        table_filter(table_data["table"]) 
+        table_data["paperTitle"]
+        + table_filter(table_data["table"]) 
         + table_data["caption"] 
         + tokenizer.filter(" ".join(table_data["references"]))
     )
@@ -70,7 +71,8 @@ def weighted_embedding(embedder: Embedder, table_data):
                        table content, caption, and references.
     """
     table_embedding = embedder.get_sentence_embedding(table_filter(table_data["table"]))
-    caption_embedding = embedder.get_sentence_embedding(table_data["caption"])
+    # Caption with paper title
+    caption_embedding = embedder.get_sentence_embedding(table_data["paperTitle"] + table_data["caption"])
     references_embedding = embedder.get_sentence_embedding(tokenizer.filter(" ".join(table_data["references"])))
 
     w_tab = 0.5  # Weight for the table content
