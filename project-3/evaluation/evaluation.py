@@ -2,14 +2,13 @@ import json
 import requests
 
 models = [
-    #"bert-base-uncased", 
-    #"distilbert-base-uncased", 
-    #"allenai/scibert_scivocab_uncased", 
-    #"all-mpnet-base-v2", 
-    #"sentence-transformers/sentence-t5-large",
-    #"sentence-transformers/all-MiniLM-L6-v2"
-    "sentence-transformers/all-MiniLM-L12-v2", 
-    #"deepset/sentence_bert"
+    "bert-base-uncased", 
+    "distilbert-base-uncased", 
+    "allenai/scibert_scivocab_uncased", 
+    "all-mpnet-base-v2", 
+    "sentence-transformers/sentence-t5-large",
+    "sentence-transformers/all-MiniLM-L6-v2"
+    "sentence-transformers/all-MiniLM-L12-v2"
 ]
 functions = [
     "tab_embedding", 
