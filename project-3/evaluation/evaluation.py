@@ -2,17 +2,23 @@ import json
 import requests
 
 models = [
-    "bert-base-uncased", 
-    "distilbert-base-uncased", 
-    "allenai/scibert_scivocab_uncased", 
-    "all-mpnet-base-v2", 
-    "sentence-transformers/sentence-t5-large", 
-    "sentence-transformers/all-MiniLM-L6-v2", 
-    "deepset/sentence_bert"
+    #"bert-base-uncased", 
+    #"distilbert-base-uncased", 
+    #"allenai/scibert_scivocab_uncased", 
+    #"all-mpnet-base-v2", 
+    #"sentence-transformers/sentence-t5-large",
+    #"sentence-transformers/all-MiniLM-L6-v2"
+    "sentence-transformers/all-MiniLM-L12-v2", 
+    #"deepset/sentence_bert"
 ]
-functions = ["tab_embedding", "tab_cap_embedding", "tab_cap_ref_embedding", "weighted_embedding"]
+functions = [
+    "tab_embedding", 
+    "tab_cap_embedding", 
+    "tab_cap_ref_embedding", 
+    "weighted_embedding"
+]
 queries = [
-    "NDCG movielens",
+    "NDCG MovieLens",
     "Recommender Recall Goodbook",
     "Recommender MRR",
     "Deep Learning Apple Flower",
@@ -79,5 +85,5 @@ def evaluate(hybrid: bool = False):
     print(f"Results saved to {output_file}")
 
 
-evaluate(hybrid=True)
 evaluate(hybrid=False)
+evaluate(hybrid=True)
