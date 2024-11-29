@@ -7,7 +7,7 @@ models = [
     "allenai/scibert_scivocab_uncased", 
     "all-mpnet-base-v2", 
     "sentence-transformers/sentence-t5-large",
-    "sentence-transformers/all-MiniLM-L6-v2"
+    "sentence-transformers/all-MiniLM-L6-v2",
     "sentence-transformers/all-MiniLM-L12-v2"
 ]
 functions = [
@@ -18,7 +18,7 @@ functions = [
 ]
 queries = [
     "NDCG MovieLens",
-    "Recommender Recall Goodbook",
+    "Recommender systems Recall Goodbook",
     "Recommender MRR",
     "Deep Learning Apple Flower",
     "Deep Learning GPT-3 precision f1",
@@ -26,7 +26,7 @@ queries = [
 ]
 
 metrics_arguments_querys_list = [
-    ('Recommender systems', " movielens NDCG"),
+    ('Recommender systems', "NDCG MovieLens"),
     ('Recommender systems', "Recall Goodbook"),
     ('Recommender systems', "MRR"),
     ('Deep Learning', "Apple Flower"),

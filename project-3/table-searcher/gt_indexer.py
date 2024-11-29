@@ -10,6 +10,7 @@ if __name__ == "__main__":
         "allenai/scibert_scivocab_uncased", 
         "all-mpnet-base-v2", 
         "sentence-transformers/sentence-t5-large", 
+        "sentence-transformers/all-MiniLM-L6-v2",
         "sentence-transformers/all-MiniLM-L12-v2"
     ]
     functions = ["tab_embedding", "tab_cap_embedding", "tab_cap_ref_embedding", "weighted_embedding"]
