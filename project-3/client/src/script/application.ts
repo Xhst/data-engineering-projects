@@ -1,5 +1,4 @@
 import axios from "axios";
-import WebSocket from "ws";
 
 import { PaperSearchDto, TableSearchDto, isPaperSearchDto, isTableSearchDto } from "./model_dto";
 
@@ -40,6 +39,9 @@ function switchSearchTypes(type: SearchType) {
             break;
     }
 }
+
+let useGroundTruth = true;
+let useHybrid = false;
 
 searchInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
@@ -160,12 +162,19 @@ function updateSearchResults() {
     if (isPaperSearchDto(currentSearchResult)) {
         console.log("PAPER RESULTS RECEIVED");
         updatePaperSearchResults();
+        return;
     } 
     // Type guard to check if it is TableSearchDto
-    else if (isTableSearchDto(currentSearchResult)) {
+    if (isTableSearchDto(currentSearchResult)) {
         console.log("TABLE RESULTS RECEIVED");
         updateTableSearchResults();
+        return;
     }
+
+    // if its empty
+    const resultsContainer = document.getElementById('results');
+
+    resultsContainer.innerHTML = '<p>No results found</p>';
 }
 
 function updateTableSearchResults() {
@@ -187,12 +196,7 @@ function updateTableSearchResults() {
 
     if (!resultsContainer) return;
 
-    resultsContainer.innerHTML = '';
-
-    if (searchResults.tables.length <= 0) {
-        resultsContainer.innerHTML = '<p>No results found</p>';
-        return;
-    }
+    resultsContainer.innerHTML = "";
 
     searchResults.tables.forEach(table => {
         const resultDiv = document.createElement('div');
@@ -227,13 +231,8 @@ function updatePaperSearchResults() {
 
     const resultsContainer = document.getElementById('results');
     if (!resultsContainer) return;
-    
-    resultsContainer.innerHTML = '';
 
-    if (searchResults.documents.length <= 0) {
-        resultsContainer.innerHTML = '<p>No results found</p>';
-        return;
-    }
+    resultsContainer.innerHTML = "";
 
     searchResults.documents.forEach(doc => {
         const resultDiv = document.createElement('div');
@@ -314,11 +313,16 @@ document.getElementById("as-search-button").addEventListener("click", () => {
 function sendQuery(query: string) {
     console.log(query)
 
-    let url = "http://localhost:3000/api/search/" + currentSearchType;
+    let url = "http://localhost:3000/api/search/" + currentSearchType + '?queryTable=' + query;
+
+    if (currentSearchType == "tables") {
+        let params = `&modelName=lucene&methodName=lucene&numberOfResults=15&useHybrid=${useHybrid}&useGroundTruth=${useGroundTruth}`;
+        url += params;
+    }
 
     document.getElementById('search-result').classList.remove("d-none");
 
-    axios.get(`${url}?query=${query}`).then((response) => {
+    axios.get(url).then((response) => {
         console.log(response.data);
 
         currentSearchResult = response.data;
