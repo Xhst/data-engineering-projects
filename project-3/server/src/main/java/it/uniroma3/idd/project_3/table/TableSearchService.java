@@ -74,12 +74,8 @@ public class TableSearchService {
                 paperIds = groundTruthPapers;
             }
 
-            log.error(paperIds.toString());
-
             useHybridApproach = true;
         }
-
-
 
         if (methodName.equals("lucene") || modelName.equals("lucene")) {
             numberOfResults = useGroundTruth ? 10_000 : numberOfResults;
