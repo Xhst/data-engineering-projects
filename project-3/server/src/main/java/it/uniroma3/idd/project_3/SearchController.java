@@ -33,7 +33,7 @@ public class SearchController {
 
     @GetMapping("/tables")
     public ResponseEntity<?> searchTables(
-            @RequestParam String queryArgument,
+            @RequestParam(defaultValue = "") String queryArgument,
             @RequestParam String queryTable,
             @RequestParam(defaultValue = "distilbert-base-uncased") String modelName,
             @RequestParam(defaultValue = "tab_cap_embedding") String methodName,
