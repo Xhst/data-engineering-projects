@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Query
-from dto import TableSearchDto
+from dto import TableSearchDto, TableDto
 from embedder import Embedder
 import pymilvus as pm
 import searcher
@@ -29,11 +29,11 @@ def get_tables(
 
     embedder = Embedder(model_name=model_name)
 
-    start_time = time.time() * 1000
+    start_time: float = time.time()
     
-    tables = searcher.search(query, embedder, method_name, number_of_results, paper_ids, use_hybrid, use_ground_truth)
+    tables: list[TableDto] = searcher.search(query, embedder, method_name, number_of_results, paper_ids, use_hybrid, use_ground_truth)
 
-    elapsed_time = (time.time() - start_time) * 1000
+    elapsed_time: float = (time.time() - start_time) * 1000
 
     response = TableSearchDto(
         tables=tables,
