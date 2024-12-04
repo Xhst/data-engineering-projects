@@ -34,7 +34,7 @@ public class SearchController {
     @GetMapping("/tables")
     public ResponseEntity<?> searchTables(
             @RequestParam(defaultValue = "") String queryArgument,
-            @RequestParam String queryTable,
+            @RequestParam String query,
             @RequestParam(defaultValue = "distilbert-base-uncased") String modelName,
             @RequestParam(defaultValue = "tab_cap_embedding") String methodName,
             @RequestParam(defaultValue = "10000") int numberOfResults,
@@ -42,7 +42,7 @@ public class SearchController {
             @RequestParam(defaultValue = "false") boolean useGroundTruth) {
         try {
             return ResponseEntity.ok(
-                    tableSearchService.search(queryArgument, queryTable, modelName, methodName, numberOfResults, useHybrid, useGroundTruth)
+                    tableSearchService.search(queryArgument, query, modelName, methodName, numberOfResults, useHybrid, useGroundTruth)
             );
         } catch (ParseException e) {
             log.error(e.getMessage());

@@ -40,7 +40,7 @@ function switchSearchTypes(type: SearchType) {
     }
 }
 
-let useGroundTruth = true;
+let useGroundTruth = false;
 let useHybrid = false;
 
 searchInput.addEventListener("keydown", (event) => {
@@ -313,10 +313,10 @@ document.getElementById("as-search-button").addEventListener("click", () => {
 function sendQuery(query: string) {
     console.log(query)
 
-    let url = "http://localhost:3000/api/search/" + currentSearchType + '?queryTable=' + query;
+    let url = "http://localhost:3000/api/search/" + currentSearchType + '?query=' + query;
 
     if (currentSearchType == "tables") {
-        let params = `&modelName=lucene&methodName=lucene&numberOfResults=15&useHybrid=${useHybrid}&useGroundTruth=${useGroundTruth}`;
+        let params = `&modelName=sentence-transformers/all-MiniLM-L12-v2&methodName=tab_cap_ref_embedding&numberOfResults=50&useHybrid=${useHybrid}&useGroundTruth=${useGroundTruth}`;
         url += params;
     }
 
