@@ -1,5 +1,9 @@
 # Data Engineering Projects
 
+Group projects for the course **Data Engineering** held by professor Paolo Merialdo at Roma Tre University. 
+
+#
+
 - ### [Project 1](/project-1/README.md) - Scraping & Data extraction:
 
   Downloading scientific papers from [Arxiv](https://arxiv.org/) (in html format) and extracting information regarding tables from them using xpaths.
