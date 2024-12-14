@@ -1,8 +1,15 @@
 import pandas as pd
 from bs4 import BeautifulSoup
-import itertools
+import os
+from groq import Groq
 import json
 import paths
+from dotenv import load_dotenv
+from pathlib import Path
+from io import StringIO
+from tabulate import tabulate
+
+load_dotenv(dotenv_path=Path('../.env'))
 
 def clean_table(html_table: str) -> str:
     """
@@ -44,48 +51,12 @@ def clean_table(html_table: str) -> str:
     return soup.prettify()
 
 
-def parse_html_table(html_table):
-    # Parse the HTML with BeautifulSoup
-    soup = BeautifulSoup(html_table, "html.parser")
-    table = soup.find("table")
+def parse_html_table(html_table: str):
+    html_buffer = StringIO(html_table)
+    df = pd.read_html(html_buffer)[0]
+    df_list = df.values.tolist()
 
-    if not table:
-        raise ValueError("No table found in the provided HTML.")
-
-    # Initialize grid for table data
-    rows = table.find_all("tr")
-    max_cols = max(
-        sum(int(cell.get("colspan", 1)) for cell in row.find_all(["td", "th"]))
-        for row in rows
-    )
-    grid = [[None] * max_cols for _ in range(len(rows))]
-
-    for row_idx, row in enumerate(rows):
-        col_idx = 0
-        for cell in row.find_all(["td", "th"]):
-            # Skip filled cells
-            while col_idx < max_cols and grid[row_idx][col_idx] is not None:
-                col_idx += 1
-
-            # Extract cell attributes
-            content = cell.get_text(strip=True)
-            rowspan = int(cell.get("rowspan", 1))
-            colspan = int(cell.get("colspan", 1))
-
-            # Fill grid positions
-            for i, j in itertools.product(
-                range(row_idx, row_idx + rowspan),
-                range(col_idx, col_idx + colspan),
-            ):
-                grid[i][j] = content
-
-            col_idx += colspan
-
-    # Process headers and data
-    headers = grid[0]
-    data = [dict(zip(headers, row)) for row in grid[1:] if any(row)]
-
-    return data
+    return tabulate(df_list[1:], headers='keys', tablefmt='pipe')
 
 
 if __name__ == "__main__":
@@ -94,8 +65,29 @@ if __name__ == "__main__":
         html_content = data['S4.T3']['table']
     
     html_content = clean_table(html_content)
-
-    print(html_content)
     
-    #parsed_table = parse_html_table(html_content)
-    #print(json.dumps(parsed_table, indent=4))
+    parsed_table = parse_html_table(html_content)
+
+    print(parsed_table)
+
+    content = """
+    {table} 
+
+    Extract data from this table.
+    """.format(table=parsed_table)
+
+    client = Groq(
+        api_key=os.environ.get("GROQ_API_KEY"),
+    )
+
+    chat_completion = client.chat.completions.create(
+        messages=[
+            {
+                "role": "user",
+                "content": content,
+            }
+        ],
+        model="llama-3.3-70b-versatile",
+    )
+
+    print(chat_completion.choices[0].message.content)
