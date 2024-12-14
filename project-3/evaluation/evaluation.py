@@ -44,7 +44,7 @@ def evaluate(hybrid: bool = False):
     results_json["lucene"] = {}
     results_json["lucene"]["bm25"] = {}
     for i, (queryArgument, queryTable) in enumerate(metrics_arguments_querys_list, start=1):
-        response = requests.get(f"http://localhost:3000/api/search/tables?queryArgument={queryArgument}&queryTable={queryTable}&modelName=lucene&methodName=lucene&useHybrid={hybrid}&useGroundTruth=true")
+        response = requests.get(f"http://localhost:3000/api/search/tables?queryArgument={queryArgument}&query={queryTable}&modelName=lucene&methodName=lucene&useHybrid={hybrid}&useGroundTruth=true")
         query_key = f"q{i}"
         results_json["lucene"]["bm25"][query_key] = {}
 
@@ -65,7 +65,7 @@ def evaluate(hybrid: bool = False):
             results_json[model][function] = {}
 
             for i, (queryArgument, queryTable) in enumerate(metrics_arguments_querys_list, start=1):
-                response = requests.get(f"http://localhost:3000/api/search/tables?queryArgument={queryArgument}&queryTable={queryTable}&modelName={model}&methodName={function}&useHybrid={hybrid}&useGroundTruth=true&numberOfResults=15")
+                response = requests.get(f"http://localhost:3000/api/search/tables?queryArgument={queryArgument}&query={queryTable}&modelName={model}&methodName={function}&useHybrid={hybrid}&useGroundTruth=true&numberOfResults=15")
                 query_key = f"q{i}"
                 results_json[model][function][query_key] = {}
 

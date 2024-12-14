@@ -10,7 +10,7 @@ def search(query: str, embedder: Embedder, function_name: str, number_of_results
     
     query_vector = embedder.get_sentence_embedding(query).tolist()
 
-    search_params = {"metric_type": "COSINE", "params": {"nprobe": 200}}
+    search_params = {"metric_type": "COSINE", "params": {"nprobe": 5}}
 
     collection_name = get_collection_name(embedder, function_name, use_ground_truth)
     
