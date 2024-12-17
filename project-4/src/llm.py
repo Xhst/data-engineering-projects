@@ -9,7 +9,7 @@ client = Groq(
     api_key=os.environ.get("GROQ_API_KEY"),
 )
 
-def query_groq(messages: list, model: str = "llama-3.3-70b-versatile", temperature: float = 0.2):
+def query_groq(messages: list, model: str = "llama-3.3-70b-versatile", temperature: float = 0):
     """
     Function to query the GROQ API with a list of messages.
     

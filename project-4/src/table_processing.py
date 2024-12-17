@@ -58,4 +58,4 @@ def parse_html_table(html_table: str) -> str:
     df = pd.read_html(html_buffer)[0].fillna('')
     df_list = df.values.tolist()
 
-    return tabulate(df_list)
+    return tabulate(df_list, tablefmt="pretty")
