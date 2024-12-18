@@ -22,7 +22,7 @@ def extract_table_claims(table_data: dict) -> str:
     system_prompt = """You are an expert in computer science and in understanding tables.
     Your task is to extract claims from papers' tables provided with their captions and references in this format:
     |{|Specification 1, Value|, |Specification 2, Value|}, Metric, Metric Value|
-
+    
     When no metrics are inside the table (data table) we only want the specifications included, without any "metric" field.
     ---
     Example with metrics: """ + example3.__str__() + """
@@ -47,7 +47,6 @@ def extract_table_claims(table_data: dict) -> str:
     #|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 7|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.315|
     #|{|Dataset, Form OOD|, |Range, [1,60]|, |Number of Integers, 8|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.169|
     """---
-    
     Response MUST only include the claims, nothing else.
     """
     
@@ -63,7 +62,7 @@ def extract_table_claims(table_data: dict) -> str:
     ])
 
 if __name__ == "__main__":
-    with open(paths.RAW + '/2406.02100.json', 'r') as file:
+    with open(paths.RAW + '/2401.13405.json', 'r') as file:
         data = json.load(file)
         table_data = data['S4.T2']
 
