@@ -31,9 +31,11 @@ def extract_table_claims(table_data: dict) -> str:
     Example data table:
     """ + example_data_table.__str__() + """
     ---
+    For each table and each claim, add a "Task" specification with a value representing the general topic of the paper's table (es. record linkage), it must not
+    be something from the table's terms but from the general context.
     Response MUST only include the claims, nothing else.
     """
-
+    
     content = f"""
     Please provide the claims from the following table:
     [Table]: 
@@ -67,7 +69,7 @@ def extract_table_claims(table_data: dict) -> str:
 if __name__ == "__main__":
     with open(paths.RAW + '/2406.02100.json', 'r') as file:
         data = json.load(file)
-        table_data = data['A1.T6']
+        table_data = data['S4.T2']
 
     response = extract_table_claims(table_data)
 
