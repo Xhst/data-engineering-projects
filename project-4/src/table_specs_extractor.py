@@ -23,16 +23,12 @@ def extract_table_claims(table_data: dict) -> str:
     Your task is to extract claims from papers' tables provided with their captions and references in this format:
     |{|Specification 1, Value|, |Specification 2, Value|}, Metric, Metric Value|
 
-    Example: """ + example3.__str__() + """
-    
+    When no metrics are inside the table (data table) we only want the specifications included, without any "metric" field.
     ---
-    Note that when no metrics are inside the table (data table) we only want the specifications included, without any "metric" field.
-    Like in this examples:
-    Example data table:
-    """ + example_data_table.__str__() + """
+    Example with metrics: """ + example3.__str__() + """
     ---
-    For each table and each claim, add a "Task" specification with a value representing the general topic of the paper's table (es. record linkage), it must not
-    be something from the table's terms but from the general context.
+     Example without metrics: """ + example_data_table.__str__() + """
+    ---
     Response MUST only include the claims, nothing else.
     """
     
