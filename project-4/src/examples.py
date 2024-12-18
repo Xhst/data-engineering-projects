@@ -191,3 +191,17 @@ example3 = ExtractionExample(
 |{|Model Type, General LLM|, |Model Name, ChatGPT-3.5-turbo|, |Parameter Size, 175B|, |Dataset, Spider dev|, |Difficulty Level, All|}, Execution Match , 0.623|
 """   
 )
+
+example_data_table = ExtractionExample(
+    table="""+-------------------------+--------------+-------------------+--------------+
+|     Hyperparameter      |    Value     |  Hyperparameter   |    Value     |
+|      Learning Rate      | 1    e  -  4 |      Epochs       |      5       |
+    """,
+    caption="Table 3: Hyperparameter Settings",
+    
+    references=[""],
+    result="""
+    |{|Hyperparameter, Learning Rate|, |Value, 1e-4|}|
+    |{|Hyperparameter, Epochs|, |Value, 5|}|
+"""  
+)
