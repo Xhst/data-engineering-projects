@@ -58,28 +58,27 @@ example1 = ExtractionExample(
     """
 )
 
-example2 = ExtractionExample(
+example2_long = ExtractionExample(
     table="""
-    -----------------  ---------------------  --------------  -------  -------  -------  -------  -----
-    Model Type         Model Name             Parameter Size  Level 1  Level 2  Level 3  Level 4  All
-    General LLM        ChatGPT-3.5-turbo      175B            0.760    0.799    0.408    0.493    0.623
-    General LLM        DIN-SQL+GPT-4          1.76T           0.861    0.866    0.700    0.654    0.762
-    General LLM        CodeX-Davinci-3        175B            0.730    0.799    0.392    0.382    0.570
-    General LLM        MPT-7B-instruct        7B              0.262    0.381    0.117    0.091    0.205
-    General LLM        ALPACA                 7B              0.311    0.460    0.192    0.083    0.242
-    General LLM        KOALA                  7B              0.195    0.218    0.017    0.071    0.131
-    General LLM        OpenAssistant-pythia   12B             0.202    0.322    0.025    0.069    0.157
-    General LLM        ORCA-mini              7B              0.243    0.280    0.101    0.076    0.169
-    General LLM        LLaMA-2                7B              0.225    0.393    0.101    0.081    0.192
-    Code Specific LLM  CodeGen2               7B              0.375    0.498    0.167    0.066    0.257
-    Code Specific LLM  Starcoder              15.5B           0.584    0.628    0.275    0.208    0.410
-    Code Specific LLM  Vicuna                 7B              0.060    0.134    0.008    0.042    0.064
-    Code Specific LLM  nsql                   6B              0.772    0.732    0.608    0.277    0.548
-    Seq-to-Seq Model   T5(tscholak/cxmefzzi)  3B              0.828    0.782    0.650    0.434    0.641
-    Seq-to-Seq Model   PICARD+T5              3B              0.790    0.799    0.558    0.502    0.652
-    Seq-to-Seq Model   RESDSQL                3B              0.872    0.857    0.666    0.696    0.775
-    -----------------  ---------------------  --------------  -------  -------  -------  -------  -----
-    """,
+| Model Type           | Model Name              | Parameter Size | Level 1   | Level 2   | Level 3   | Level 4   | All     |
+|:---------------------|:------------------------|:---------------|----------:|----------:|----------:|----------:|--------:|
+| General LLM          | ChatGPT-3.5-turbo       | 175B           |     0.760 |     0.799 |     0.408 |     0.493 |   0.623 |
+| General LLM          | DIN-SQL+GPT-4           | 1.76T          |     0.861 |     0.866 |     0.700 |     0.654 |   0.762 |
+| General LLM          | CodeX-Davinci-3         | 175B           |     0.730 |     0.799 |     0.392 |     0.382 |   0.570 |
+| General LLM          | MPT-7B-instruct         | 7B             |     0.262 |     0.381 |     0.117 |     0.091 |   0.205 |
+| General LLM          | ALPACA                  | 7B             |     0.311 |     0.460 |     0.192 |     0.083 |   0.242 |
+| General LLM          | KOALA                   | 7B             |     0.195 |     0.218 |     0.017 |     0.071 |   0.131 |
+| General LLM          | OpenAssistant-pythia    | 12B            |     0.202 |     0.322 |     0.025 |     0.069 |   0.157 |
+| General LLM          | ORCA-mini               | 7B             |     0.243 |     0.280 |     0.101 |     0.076 |   0.169 |
+| General LLM          | LLaMA-2                 | 7B             |     0.225 |     0.393 |     0.101 |     0.081 |   0.192 |
+| Code Specific LLM    | CodeGen2                | 7B             |     0.375 |     0.498 |     0.167 |     0.066 |   0.257 |
+| Code Specific LLM    | Starcoder               | 15.5B          |     0.584 |     0.628 |     0.275 |     0.208 |   0.410 |
+| Code Specific LLM    | Vicuna                  | 7B             |     0.060 |     0.134 |     0.008 |     0.042 |   0.064 |
+| Code Specific LLM    | nsql                    | 6B             |     0.772 |     0.732 |     0.608 |     0.277 |   0.548 |
+| Seq-to-Seq Model     | T5(tscholak/cxmefzzi)   | 3B             |     0.828 |     0.782 |     0.650 |     0.434 |   0.641 |
+| Seq-to-Seq Model     | PICARD+T5               | 3B             |     0.790 |     0.799 |     0.558 |     0.502 |   0.652 |
+| Seq-to-Seq Model     | RESDSQL                 | 3B             |     0.872 |     0.857 |     0.666 |     0.696 |   0.775 |
+""",
     
     caption="Table 1. Benchmark Results of Execution Match of all Models we tested on the 'dev' SPIDER dataset",
     
@@ -170,13 +169,12 @@ example2 = ExtractionExample(
 """   
 )
 
-example3 = ExtractionExample(
+example2_short = ExtractionExample(
     table="""
-    -----------------  ---------------------  --------------  -------  -------  -------  -------  -----
-    Model Type         Model Name             Parameter Size  Level 1  Level 2  Level 3  Level 4  All
-    General LLM        ChatGPT-3.5-turbo      175B            0.760    0.799    0.408    0.493    0.623
-    -----------------  ---------------------  --------------  -------  -------  -------  -------  -----
-    """,
+| Model Type   | Model Name         | Parameter Size   | Level 1   | Level 2   | Level 3   | Level 4   | All   |
+|:-------------|:-------------------|:-----------------|----------:|----------:|----------:|----------:|------:|
+| General LLM  | ChatGPT-3.5-turbo  | 175B             |     0.760 |     0.799 |     0.408 |     0.493 | 0.623 |
+""",
     
     caption="Table 1. Benchmark Results of Execution Match of all Models we tested on the 'dev' SPIDER dataset",
     
@@ -193,10 +191,11 @@ example3 = ExtractionExample(
 )
 
 example_data_table = ExtractionExample(
-    table="""+-------------------------+--------------+-------------------+--------------+
-|     Hyperparameter      |    Value     |  Hyperparameter   |    Value     |
-|      Learning Rate      | 1    e  -  4 |      Epochs       |      5       |
-    """,
+    table="""
+| Hyperparameter   | Value   | Hyperparameter   | Value   |
+|:-----------------|:--------|:-----------------|:--------|
+| Learning Rate    | 1e-4    | Epochs           | 5       |
+""",
     caption="Table 3: Hyperparameter Settings",
     
     references=[""],
@@ -208,26 +207,11 @@ example_data_table = ExtractionExample(
 )
 
 example_metric_column = ExtractionExample(
-    table="""| ('Dataset', 'Dataset')   | ('Metric (%)', 'Metric (%)')   |   ('Number of images', '50') |   ('Number of images', '100') |   ('Number of images', '150') |   ('Number of images', '200') | ('Number of images', '300')   | ('Number of images', '400')   | ('Number of images', '500')   | ('Number of images', '600')   |
+    table="""
+| ('Dataset', 'Dataset')   | ('Metric (%)', 'Metric (%)')   |   ('Number of images', '50') |   ('Number of images', '100') |   ('Number of images', '150') |   ('Number of images', '200') | ('Number of images', '300')   | ('Number of images', '400')   | ('Number of images', '500')   | ('Number of images', '600')   |
 |:-------------------------|:-------------------------------|-----------------------------:|------------------------------:|------------------------------:|------------------------------:|:------------------------------|:------------------------------|:------------------------------|:------------------------------|
 | Syn-only                 | AP@0.5                         |                         61.2 |                          69.3 |                          67.8 |                          77.7 | 79.6                          | 80.6                          | 76.5                          | 71.0                          |
-| Syn-only                 | AP@0.75                        |                         59   |                          67.3 |                          67.9 |                          75   | 77.5                          | 77.8                          | 74.0                          | 68.4                          |
-| Syn-only                 | AP@[0.5:0.95]                  |                         50.4 |                          60.1 |                          60.7 |                          68.1 | 70.5                          | 72.5                          | 65.9                          | 61.7                          |
-| Syn-only                 | AR@0.5                         |                         89.8 |                          85.2 |                          87.4 |                          89.2 | 89.6                          | 89.9                          | 85.8                          | 83.8                          |
-| Syn-only                 | AR@0.75                        |                         78.4 |                          78.7 |                          81.1 |                          83.2 | 84.9                          | 84.6                          | 80.7                          | 76.2                          |
-| Syn-only                 | AR@[0.5:0.95]                  |                         65.1 |                          67.7 |                          68.2 |                          73.4 | 74.9                          | 75.1                          | 73.1                          | 67.1                          |
-| CP-only                  | AP@0.5                         |                         60.1 |                          61.9 |                          65.2 |                          68.4 | 71.9                          | 72.5                          | 69.4                          | 67.7                          |
-| CP-only                  | AP@0.75                        |                         56.8 |                          60.2 |                          63.8 |                          66.8 | 70.3                          | 70.8                          | 67.5                          | 66.0                          |
-| CP-only                  | AP@[0.5:0.95]                  |                         49.8 |                          55   |                          58.6 |                          61.5 | 65.0                          | 65.6                          | 62.9                          | 61.0                          |
-| CP-only                  | AR@0.5                         |                         89.3 |                          86.1 |                          84.5 |                          85   | 86.0                          | 85.8                          | 82.2                          | 84.7                          |
-| CP-only                  | AR@0.75                        |                         76   |                          80.8 |                          80.5 |                          81.6 | 82.5                          | 83.4                          | 79.8                          | 80.2                          |
-| CP-only                  | AR@[0.5:0.95]                  |                         66.2 |                          69.8 |                          69.6 |                          71.4 | 72.9                          | 73.4                          | 71.0                          | 70.5                          |
-| Real-only                | AP@0.5                         |                         84   |                          83.7 |                          85   |                          85.1 | -                             | -                             | -                             | -                             |
-| Real-only                | AP@0.75                        |                         81.5 |                          81.4 |                          82.5 |                          82.5 | -                             | -                             | -                             | -                             |
-| Real-only                | AP@[0.5:0.95]                  |                         74.2 |                          75.7 |                          77.7 |                          78.4 | -                             | -                             | -                             | -                             |
-| Real-only                | AR@0.5                         |                         92.8 |                          92.1 |                          92.2 |                          92.6 | -                             | -                             | -                             | -                             |
-| Real-only                | AR@0.75                        |                         88.1 |                          87.6 |                          89.2 |                          89.4 | -                             | -                             | -                             | -                             |
-| Real-only                | AR@[0.5:0.95]                  |                         76.7 |                          79.7 |                          81.9 |                          82.9 | -                             | -                             | -                             | -                             |
+| CP-only                  | AR@[0.5:0.95]                  |                         66.2 |                          69.8 |                          69.6 |                          71.4 | 72.9                          | 73.4                          | 71.0                          | 70.5                          |                     81.9 |                          82.9 | -                             | -                             | -                             | -                             |
 """,
 
 caption="TABLE II: Average precision and recall of instance segmentation algorithm with the Real-only, Syn-only, and CP-only datasets.",

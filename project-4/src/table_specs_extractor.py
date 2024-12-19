@@ -1,6 +1,6 @@
-from table_processing import clean_table, parse_html_table
+from table_processing import clean_table, parse_html_table, parse_html_table_with_arbitrary_headers
 from llm import query_groq
-from examples import example1, example2, example3, example_data_table
+from examples import example1, example2_short, example2_long, example_metric_column, example_data_table
 import paths
 import json
 
@@ -23,11 +23,14 @@ def extract_table_claims(table_data: dict) -> str:
     Your task is to extract claims from papers' tables provided with their captions and references in this format:
     |{|Specification 1, Value|, |Specification 2, Value|}, Metric, Metric Value|
     
+    Remember that most of the times the caption and references retian most of the semantic information to infer the metrics or the specifications.
     When no metrics are inside the table (data table) we only want the specifications included, without any "metric" field.
     ---
-    Example with metrics: """ + example3.__str__() + """
+    Example 1 with metrics: """ + example2_short.__str__() + """
     ---
-     Example without metrics: """ + example_data_table.__str__() + """
+    Example 2 with metrics: """ + example_metric_column.__str__() + """
+    ---
+    Example without metrics: """ + example_data_table.__str__() + """
     ---
     Response MUST only include the claims, nothing else.
     """
@@ -64,7 +67,7 @@ def extract_table_claims(table_data: dict) -> str:
 if __name__ == "__main__":
     with open(paths.RAW + '/2401.13405.json', 'r') as file:
         data = json.load(file)
-        table_data = data['S4.T2']
+        table_data = data['S4.T3']
 
     response = extract_table_claims(table_data)
 
