@@ -203,5 +203,42 @@ example_data_table = ExtractionExample(
     result="""
     |{|Hyperparameter, Learning Rate|, |Value, 1e-4|}|
     |{|Hyperparameter, Epochs|, |Value, 5|}|
+    ...
 """  
+)
+
+example_metric_column = ExtractionExample(
+    table="""| ('Dataset', 'Dataset')   | ('Metric (%)', 'Metric (%)')   |   ('Number of images', '50') |   ('Number of images', '100') |   ('Number of images', '150') |   ('Number of images', '200') | ('Number of images', '300')   | ('Number of images', '400')   | ('Number of images', '500')   | ('Number of images', '600')   |
+|:-------------------------|:-------------------------------|-----------------------------:|------------------------------:|------------------------------:|------------------------------:|:------------------------------|:------------------------------|:------------------------------|:------------------------------|
+| Syn-only                 | AP@0.5                         |                         61.2 |                          69.3 |                          67.8 |                          77.7 | 79.6                          | 80.6                          | 76.5                          | 71.0                          |
+| Syn-only                 | AP@0.75                        |                         59   |                          67.3 |                          67.9 |                          75   | 77.5                          | 77.8                          | 74.0                          | 68.4                          |
+| Syn-only                 | AP@[0.5:0.95]                  |                         50.4 |                          60.1 |                          60.7 |                          68.1 | 70.5                          | 72.5                          | 65.9                          | 61.7                          |
+| Syn-only                 | AR@0.5                         |                         89.8 |                          85.2 |                          87.4 |                          89.2 | 89.6                          | 89.9                          | 85.8                          | 83.8                          |
+| Syn-only                 | AR@0.75                        |                         78.4 |                          78.7 |                          81.1 |                          83.2 | 84.9                          | 84.6                          | 80.7                          | 76.2                          |
+| Syn-only                 | AR@[0.5:0.95]                  |                         65.1 |                          67.7 |                          68.2 |                          73.4 | 74.9                          | 75.1                          | 73.1                          | 67.1                          |
+| CP-only                  | AP@0.5                         |                         60.1 |                          61.9 |                          65.2 |                          68.4 | 71.9                          | 72.5                          | 69.4                          | 67.7                          |
+| CP-only                  | AP@0.75                        |                         56.8 |                          60.2 |                          63.8 |                          66.8 | 70.3                          | 70.8                          | 67.5                          | 66.0                          |
+| CP-only                  | AP@[0.5:0.95]                  |                         49.8 |                          55   |                          58.6 |                          61.5 | 65.0                          | 65.6                          | 62.9                          | 61.0                          |
+| CP-only                  | AR@0.5                         |                         89.3 |                          86.1 |                          84.5 |                          85   | 86.0                          | 85.8                          | 82.2                          | 84.7                          |
+| CP-only                  | AR@0.75                        |                         76   |                          80.8 |                          80.5 |                          81.6 | 82.5                          | 83.4                          | 79.8                          | 80.2                          |
+| CP-only                  | AR@[0.5:0.95]                  |                         66.2 |                          69.8 |                          69.6 |                          71.4 | 72.9                          | 73.4                          | 71.0                          | 70.5                          |
+| Real-only                | AP@0.5                         |                         84   |                          83.7 |                          85   |                          85.1 | -                             | -                             | -                             | -                             |
+| Real-only                | AP@0.75                        |                         81.5 |                          81.4 |                          82.5 |                          82.5 | -                             | -                             | -                             | -                             |
+| Real-only                | AP@[0.5:0.95]                  |                         74.2 |                          75.7 |                          77.7 |                          78.4 | -                             | -                             | -                             | -                             |
+| Real-only                | AR@0.5                         |                         92.8 |                          92.1 |                          92.2 |                          92.6 | -                             | -                             | -                             | -                             |
+| Real-only                | AR@0.75                        |                         88.1 |                          87.6 |                          89.2 |                          89.4 | -                             | -                             | -                             | -                             |
+| Real-only                | AR@[0.5:0.95]                  |                         76.7 |                          79.7 |                          81.9 |                          82.9 | -                             | -                             | -                             | -                             |
+""",
+
+caption="TABLE II: Average precision and recall of instance segmentation algorithm with the Real-only, Syn-only, and CP-only datasets.",
+
+references=[""],
+
+result="""|{|Dataset, Syn-only|, |Number of images, 50|}, AP@0.5, 61.2|
+|{|Dataset, Syn-only|, |Number of images, 100|}, AP@0.5, 69.3|
+...
+|{|Dataset, CP-only|, |Number of images, 50|}, AR@[0.5:0.95], 66.2|
+|{|Dataset, CP-only|, |Number of images, 100|}, AR@[0.5:0.95], 69.8|
+...
+"""
 )
