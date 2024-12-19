@@ -56,6 +56,5 @@ def parse_html_table(html_table: str) -> str:
     """
     html_buffer = StringIO(html_table)
     df = pd.read_html(html_buffer)[0].fillna('')
-    df_list = df.values.tolist()
 
-    return tabulate(df_list, tablefmt="pretty")
+    return tabulate(df, headers="keys", tablefmt="pipe")
