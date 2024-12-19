@@ -56,5 +56,48 @@ def parse_html_table(html_table: str) -> str:
     """
     html_buffer = StringIO(html_table)
     df = pd.read_html(html_buffer)[0].fillna('')
+    
+    return tabulate(df , headers="keys", tablefmt="pipe", showindex=False)
 
-    return tabulate(df, headers="keys", tablefmt="pipe")
+
+def parse_html_table_with_arbitrary_headers(html_table: str) -> str:
+    """
+    Parses an HTML table into a tabulated string, formatting arbitrarily nested headers into separate rows.
+
+    Args:
+        html_table (str): The HTML table to parse.
+
+    Returns:
+        str: The processed and tabulated string representation with nested headers formatted as separate rows.
+    """
+    html_buffer = StringIO(html_table)
+    
+    # Attempt to parse as a multi-level header table first
+    try:
+        df = pd.read_html(html_buffer, header=[0, 1, 2])[0].fillna('')
+        is_multilevel = True
+    except ValueError:
+        try:
+            # Try two-level headers
+            df = pd.read_html(html_buffer, header=[0, 1])[0].fillna('')
+            is_multilevel = True
+        except ValueError:
+            # Fallback to single header
+            df = pd.read_html(html_buffer, header=0)[0].fillna('')
+            is_multilevel = False
+
+    if is_multilevel:
+        # Combine multi-level headers into separate rows
+        header_rows = []
+        for level in range(df.columns.nlevels):
+            header_rows.append([str(col) if col else '' for col in df.columns.get_level_values(level)])
+
+        # Combine header rows with data rows
+        data_rows = df.values.tolist()
+        combined_rows = header_rows + data_rows
+
+        # Tabulate the combined rows
+        return tabulate(combined_rows, tablefmt="pretty")
+    else:
+        # Single header case: directly tabulate with headers
+        return tabulate(df, headers="keys", tablefmt="pretty")
