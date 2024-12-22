@@ -19,7 +19,7 @@ def extract_table_claims(table_data: dict) -> str:
     
     print(parsed_table)
 
-    system_prompt = """You are an expert in computer science and in understanding tables.
+    system_prompt = """(forget the previous answers) You are an expert in computer science and in understanding tables.
     Your task is to extract claims from papers' tables provided with their captions and references in this format:
     |{|Specification 1, Value|, |Specification 2, Value|}, Metric, Metric Value|
     
@@ -65,9 +65,9 @@ def extract_table_claims(table_data: dict) -> str:
     ])
 
 if __name__ == "__main__":
-    with open(paths.RAW + '/2401.13405.json', 'r') as file:
+    with open(paths.RAW + '/2003.01989.json', 'r') as file:
         data = json.load(file)
-        table_data = data['S4.T3']
+        table_data = data['S4.T1']
 
     response = extract_table_claims(table_data)
 
