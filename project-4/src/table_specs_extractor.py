@@ -64,10 +64,12 @@ def extract_table_claims(table_data: dict) -> str:
         }
     ])
 
+# DA RIVEDERE S4.T4 DI 1812.05040 (del GT)
+
 if __name__ == "__main__":
-    with open(paths.RAW + '/2003.01989.json', 'r') as file:
+    with open(paths.RAW + '/1812.05040.json', 'r') as file:
         data = json.load(file)
-        table_data = data['S4.T1']
+        table_data = data['S4.T4']
 
     response = extract_table_claims(table_data)
 
