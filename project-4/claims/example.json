@@ -1,0 +1,79 @@
+[
+    {
+        "Claim": "0",
+        "Specifications": [
+            {
+                "name": "Model Type",
+                "value": "General LLM"
+            },
+            {
+                "name": "Model Name",
+                "value": "ChatGPT-3.5-turbo"
+            },
+            {
+                "name": "Parameter Size",
+                "value": "175B"
+            },
+            {
+                "name": "Dataset",
+                "value": "Spider dev"
+            },
+            {
+                "name": "Difficulty Level",
+                "value": "1"
+            }
+        ],
+        "Measure": "Execution Match",
+        "Outcome": "0.760"
+    },
+    {
+        "Claim": "1",
+        "Specifications": [
+            {
+                "name": "Model Type",
+                "value": "General LLM"
+            },
+            {
+                "name": "Model Name",
+                "value": "ChatGPT-4"
+            },
+            {
+                "name": "Parameter Size",
+                "value": "1.76T"
+            },
+            {
+                "name": "Dataset",
+                "value": "Spider dev"
+            },
+            {
+                "name": "Difficulty Level",
+                "value": "2"
+            }
+        ],
+        "Measure": "Execution Match",
+        "Outcome": "0.861"
+    },
+    {
+        "Claim": "2",
+        "Specifications": [
+            {
+                "name": "Model Top",
+                "value": "LLM"
+            },
+            {
+                "name": "Model",
+                "value": "ChatGPT"
+            },
+            {
+                "name": "Dataset",
+                "value": "Spider"
+            },
+            {
+                "name": "Difficulty Level",
+                "value": "3"
+            }
+        ],
+        "Measure": "Execution Match",
+        "Outcome": "0.861"
+    }
+]
