@@ -26,11 +26,15 @@ def extract_table_claims(table_data: dict) -> str:
     Remember that most of the times the caption and references retian most of the semantic information to infer the metrics or the specifications.
     When no metrics are inside the table (data table) we only want the specifications included, without any "metric" field.
     ---
-    Example 1 with metrics: """ + example2_short.__str__() + """
+    Example 1 with metrics: """ + example1.__str__() + """
     ---
-    Example 2 with metrics: """ + example_metric_column.__str__() + """
+    Example 2 with metrics: """ + example2_short.__str__() + """
+    ---
+    Example 3 with metrics: """ + example_metric_column.__str__() + """
     ---
     Example without metrics: """ + example_data_table.__str__() + """
+    ---
+    If you find the dataset mentioned in the text, include it as a specification.
     ---
     Response MUST only include the claims, nothing else.
     """
@@ -67,9 +71,9 @@ def extract_table_claims(table_data: dict) -> str:
 # DA RIVEDERE S4.T4 DI 1812.05040 (del GT)
 
 if __name__ == "__main__":
-    with open(paths.RAW + '/1812.05040.json', 'r') as file:
+    with open(paths.RAW + '/1911.07164.json', 'r') as file:
         data = json.load(file)
-        table_data = data['S4.T4']
+        table_data = data['S7.T4']
 
     response = extract_table_claims(table_data)
 
