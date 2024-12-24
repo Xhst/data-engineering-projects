@@ -1,6 +1,7 @@
 from table_processing import clean_table, parse_html_table, parse_html_table_with_arbitrary_headers
 from llm import query_groq
 from examples import example1, example2_short, example2_long, example_metric_column, example_data_table
+import claim_builder
 import paths
 import json
 
@@ -24,7 +25,7 @@ def extract_table_claims(table_data: dict) -> str:
     |{|Specification 1, Value|, |Specification 2, Value|}, Metric, Metric Value|
     
     Remember that most of the times the caption and references retian most of the semantic information to infer the metrics or the specifications.
-    When no metrics are inside the table (data table) we only want the specifications included, without any "metric" field.
+    When no metrics are inside the table (data table) we only want the specifications included, without any "metric" field (after each claim, move to a new line).
     ---
     Example 1 with metrics: """ + example1.__str__() + """
     ---
@@ -71,13 +72,14 @@ def extract_table_claims(table_data: dict) -> str:
 # DA RIVEDERE S4.T4 DI 1812.05040 (del GT)
 
 if __name__ == "__main__":
-    with open(paths.RAW + '/1911.07164.json', 'r') as file:
+    with open(paths.RAW + '/2206.10526.json', 'r') as file:
         data = json.load(file)
-        table_data = data['S7.T4']
+        table_data = data['S3.T1']
 
     response = extract_table_claims(table_data)
 
-    print("\n\033[92mLLM response:\033[0m\n")
+    print("\n\033[92mCreating claims files...\033[0m\n")
+    claim_builder.build(response, "prova", "prv")
     print(response)
 
     
