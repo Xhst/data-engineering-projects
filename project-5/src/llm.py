@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from pathlib import Path
 import os
 
-load_dotenv(dotenv_path=Path('../.env'))
+load_dotenv(dotenv_path=Path(__file__).parent.parent.joinpath(".env").resolve())
 
 client = Groq(
     api_key=os.environ.get("GROQ_API_KEY"),
