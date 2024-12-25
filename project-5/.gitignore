@@ -1,2 +1,4 @@
 *.pyc
 .env
+
+fields_descriptions_embeddings.json
