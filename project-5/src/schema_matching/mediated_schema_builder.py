@@ -159,7 +159,7 @@ def cluster_embeddings(embeddings, algorithm, **kwargs):
     return cluster_labels
 
 
-def flatten_dict(d, parent_key='', sep='_'):
+def flatten_dict(d, parent_key='', sep='__'):
     items = []
     for k, v in d.items():
         new_key = f"{parent_key}{sep}{k}" if parent_key else k
@@ -194,19 +194,23 @@ def save_clusters(item2embedding, cluster_labels, output_dir, output_file):
 if __name__ == '__main__':
     sources_data = load_sources_dataframes(SOURCES_FOLDER)
     
+    # Uncomment to get fields descriptions (may change the results due to the temperature parameter)
     #fields_descriptions = get_fields_descriptions(sources_data)
 
-    #with open('fields_descriptions.json', 'w') as f:
+    # Save fields descriptions
+    #with open('./descriptions/fields_descriptions.json', 'w') as f:
     #    json.dump(fields_descriptions, f, indent=4)
 
-    fields_descriptions = json.load(open('fields_descriptions.json'))
+    fields_descriptions = json.load(open('./descriptions/fields_descriptions.json'))
 
     fields_descriptions_embeddings = create_fields_descriptions_embeddings(fields_descriptions)
 
-    with open('fields_descriptions_embeddings.json', 'w') as f:
-        json.dump(fields_descriptions_embeddings, f, indent=4)
+    # Save embeddings
+    #with open('./descriptions/fields_descriptions_embeddings.json', 'w') as f:
+    #    json.dump(fields_descriptions_embeddings, f, indent=4)
 
-    fields_descriptions_embeddings = json.load(open('fields_descriptions_embeddings.json'))
+    # Load embeddings from file
+    #fields_descriptions_embeddings = json.load(open('./descriptions/fields_descriptions_embeddings.json'))
 
     fields_descriptions_embeddings = flatten_dict(fields_descriptions_embeddings)
 
