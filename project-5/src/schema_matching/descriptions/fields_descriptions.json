@@ -1,37 +1,20 @@
 {
     "ariregister.rik.ee": {
-        "wissel-activity-ariregister.rik.ee.csv": {
-            "ID azienda": "Unique identifier for each company.",
-            "Area of Activity": "Type of industry or business operation of the company.",
-            "EMTAK Code": "Estonian Classification of Economic Activities code.",
-            "NACE Code": "Industry classification code for companies.",
-            "Source": "Method of company data collection or submission source."
-        },
-        "wissel-aziende-ariregister.rik.ee.csv": {
-            "URL": "Company registration webpage URL.",
+        "wissel-aziende-activity-ariregister.rik.ee.csv": {
+            "URL": "Company registration URL.",
             "ID": "Unique identifier for each company.",
-            "Name": "Company name and registration number.",
+            "Name": "Company name and code.",
             "Code": "Unique identifier for each company.",
             "Legal form": "Type of company's legal structure or organization.",
-            "Status": "Company registration status.",
+            "Status": "Current company registration status.",
             "Registration Date": "Date when the company was officially registered.",
             "Capital": "Company's total invested capital amount.",
             "Address": "Company's physical location and mailing address.",
-            "Deletion Date": "Date when the company was deleted or removed."
-        },
-        "wissel-partners-ariregister.rik.ee.csv": {
-            "ID azienda": "Unique identifier for each company.",
-            "Name": "Company founder or owner full name.",
-            "Code": "Unique identifier for each company.",
-            "Participation": "Percentage of company ownership or stake.",
-            "Contribution": "Company's financial contribution amount in Euros."
-        },
-        "wissel-rappresentanti-ariregister.rik.ee.csv": {
-            "ID azienda": "Unique identifier for each company.",
-            "Name": "Company founder or owner full name.",
-            "Code": "Unique company identifier code.",
-            "Role": "Position held by an individual within the company.",
-            "Start Date": "Date when the company started operations."
+            "Deletion Date": "Date when the company was deleted or removed.",
+            "Area of Activity": "Type of industry or business sector the company operates in.",
+            "EMTAK Code": "Estonian Classification of Economic Activities code.",
+            "NACE Code": "Industry classification code for companies.",
+            "Source": "Method of company data submission or report source."
         }
     },
     "campaignindia": {
