@@ -5,6 +5,7 @@ import time
 import torch
 from sklearn.cluster import DBSCAN, KMeans, AgglomerativeClustering
 from hdbscan import HDBSCAN
+import umap.umap_ as umap
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -216,8 +217,15 @@ if __name__ == '__main__':
 
     # HDBSCAN
     embeddings = torch.tensor([value for value in fields_descriptions_embeddings.values()])
-    cluster_labels = cluster_embeddings(embeddings, 'hdbscan', min_cluster_size=2, min_samples=2)
+    cluster_labels = cluster_embeddings(embeddings, 'hdbscan', min_cluster_size=3, min_samples=2)
     save_clusters(fields_descriptions_embeddings, cluster_labels, 'clusters', f'clusters_hdbscan.json')
+
+    # UMAP + HDBSCAN
+    reducer = umap.UMAP(metric='cosine', output_metric='euclidean', n_neighbors=8)
+    umap_embeddings = torch.tensor(reducer.fit_transform(embeddings))
+    cluster_labels = cluster_embeddings(umap_embeddings, 'hdbscan', min_cluster_size=3, min_samples=2)
+    save_clusters(fields_descriptions_embeddings, cluster_labels, 'clusters', f'clusters_hdbscan_umap.json')
+
 
     
 

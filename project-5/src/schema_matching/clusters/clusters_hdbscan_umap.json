@@ -1,0 +1,174 @@
+{
+    "2": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__URL",
+        "disfold.com__disfold.com.json__link",
+        "ft.com__ft.com.json__link",
+        "globaldata.com__output_globaldata.json__website",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__URL",
+        "teamblind.com__DDD-teamblind.com.csv__website",
+        "valuetoday__valueToday_dataset.jsonl__company_website"
+    ],
+    "0": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__ID",
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Code",
+        "cbinsight.com__DDD-cbinsight.com.csv__id",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__id",
+        "gov.uk__output_govuk_bigsize.json__company_number",
+        "hithorizons__hitHorizons_dataset.jsonl__id",
+        "hithorizons__hitHorizons_dataset.jsonl__nation",
+        "hithorizons__hitHorizons_dataset.jsonl__hhid",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__INDEX",
+        "valuetoday__valueToday_dataset.jsonl__id"
+    ],
+    "1": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Name",
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Status",
+        "campaignindia__campaignindia.csv__BRAND NAME",
+        "cbinsight.com__DDD-cbinsight.com.csv__name",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__name",
+        "company_social_urls__company_social_urls.csv__Company",
+        "disfold.com__disfold.com.json__name",
+        "forbes.com__MalPatSaj-forbes.com.xls__Name",
+        "ft.com__ft.com.json__name",
+        "globaldata.com__output_globaldata.json__name",
+        "globaldata.com__output_globaldata.json__telephone",
+        "gov.uk__output_govuk_bigsize.json__name",
+        "gov.uk__output_govuk_bigsize.json__company_status",
+        "hithorizons__hitHorizons_dataset.jsonl__name",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Name",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Trade Name",
+        "teamblind.com__DDD-teamblind.com.csv__name",
+        "valuetoday__valueToday_dataset.jsonl__name",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Name",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Notes"
+    ],
+    "6": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Legal form",
+        "disfold.com__disfold.com.json__ceo",
+        "hithorizons__hitHorizons_dataset.jsonl__type",
+        "valuetoday__valueToday_dataset.jsonl__ceo"
+    ],
+    "4": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Registration Date",
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Deletion Date",
+        "cbinsight.com__DDD-cbinsight.com.csv__dateJoined",
+        "cbinsight.com__DDD-cbinsight.com.csv__founded",
+        "ft.com__ft.com.json__founded",
+        "gov.uk__output_govuk_bigsize.json__company_creation_date",
+        "hithorizons__hitHorizons_dataset.jsonl__est_of_ownership",
+        "teamblind.com__DDD-teamblind.com.csv__founded",
+        "valuetoday__valueToday_dataset.jsonl__founders",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Founded"
+    ],
+    "15": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Capital",
+        "cbinsight.com__DDD-cbinsight.com.csv__valuation",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__market_cap",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__share_price",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__change_1_year",
+        "disfold.com__disfold.com.json__market_cap",
+        "forbes.com__MalPatSaj-forbes.com.xls__Market Value",
+        "globaldata.com__output_globaldata.json__market_cap"
+    ],
+    "8": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Address",
+        "globaldata.com__output_globaldata.json__address",
+        "hithorizons__hitHorizons_dataset.jsonl__address",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Address Name",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Postalcode"
+    ],
+    "12": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Area of Activity",
+        "cbinsight.com__DDD-cbinsight.com.csv__industry",
+        "ft.com__ft.com.json__industry",
+        "globaldata.com__output_globaldata.json__industry",
+        "gov.uk__output_govuk_bigsize.json__company_type",
+        "gov.uk__output_govuk_bigsize.json__nature_of_business",
+        "hithorizons__hitHorizons_dataset.jsonl__industry",
+        "teamblind.com__DDD-teamblind.com.csv__industry",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Industry"
+    ],
+    "9": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__EMTAK Code",
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__NACE Code",
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Source",
+        "forbes.com__MalPatSaj-forbes.com.xls__Unnamed: 0",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Unnamed: 0",
+        "teamblind.com__DDD-teamblind.com.csv__Unnamed: 0",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Unnamed: 0"
+    ],
+    "10": [
+        "campaignindia__campaignindia.csv__RANK",
+        "campaignindia__campaignindia.csv__2010 RANK",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__rank",
+        "valuetoday__valueToday_dataset.jsonl__world_rank"
+    ],
+    "11": [
+        "campaignindia__campaignindia.csv__CATEGORY",
+        "campaignindia__campaignindia.csv__MAIN MARKET",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__categories",
+        "valuetoday__valueToday_dataset.jsonl__company_business",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Sector"
+    ],
+    "5": [
+        "cbinsight.com__DDD-cbinsight.com.csv__country",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__country",
+        "forbes.com__MalPatSaj-forbes.com.xls__Country",
+        "ft.com__ft.com.json__country",
+        "globaldata.com__output_globaldata.json__headquarters",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Country",
+        "valuetoday__valueToday_dataset.jsonl__headquarters_country",
+        "valuetoday__valueToday_dataset.jsonl__headquarters_continent"
+    ],
+    "13": [
+        "cbinsight.com__DDD-cbinsight.com.csv__city",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__City",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__State",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Location type",
+        "valuetoday__valueToday_dataset.jsonl__headquarters_region_city",
+        "valuetoday__valueToday_dataset.jsonl__headquarters_sub_region"
+    ],
+    "16": [
+        "cbinsight.com__DDD-cbinsight.com.csv__investors",
+        "cbinsight.com__DDD-cbinsight.com.csv__stage",
+        "cbinsight.com__DDD-cbinsight.com.csv__totalRaised"
+    ],
+    "-1": [
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__change_1_day",
+        "forbes.com__MalPatSaj-forbes.com.xls__Profit",
+        "forbes.com__MalPatSaj-forbes.com.xls__Assets",
+        "hithorizons__hitHorizons_dataset.jsonl__sic_code"
+    ],
+    "3": [
+        "company_social_urls__company_social_urls.csv__Facebook",
+        "company_social_urls__company_social_urls.csv__Twitter",
+        "company_social_urls__company_social_urls.csv__Instagram",
+        "company_social_urls__company_social_urls.csv__Pinterest"
+    ],
+    "14": [
+        "disfold.com__disfold.com.json__headquarters",
+        "gov.uk__output_govuk_bigsize.json__registered_office_address",
+        "teamblind.com__DDD-teamblind.com.csv__locations",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Headquarters"
+    ],
+    "7": [
+        "disfold.com__disfold.com.json__employees",
+        "ft.com__ft.com.json__employees",
+        "globaldata.com__output_globaldata.json__number_of_employees",
+        "teamblind.com__DDD-teamblind.com.csv__size",
+        "valuetoday__valueToday_dataset.jsonl__number_of_employees"
+    ],
+    "17": [
+        "forbes.com__MalPatSaj-forbes.com.xls__Sales",
+        "ft.com__ft.com.json__revenue",
+        "globaldata.com__output_globaldata.json__revenue",
+        "valuetoday__valueToday_dataset.jsonl__annual_revenue_in_usd",
+        "valuetoday__valueToday_dataset.jsonl__annual_net_income_in_usd",
+        "valuetoday__valueToday_dataset.jsonl__annual_results_for_year_ending"
+    ],
+    "18": [
+        "valuetoday__valueToday_dataset.jsonl__total_assets_in_usd",
+        "valuetoday__valueToday_dataset.jsonl__total_liabilities_in_usd",
+        "valuetoday__valueToday_dataset.jsonl__total_equity_in_usd"
+    ]
+}
