@@ -4,6 +4,8 @@ from examples import example1, example2_short, example2_long, example_metric_col
 import claim_builder
 import paths
 import json
+import os
+import time
 
 def extract_table_claims(table_data: dict) -> str:
     """
@@ -18,7 +20,7 @@ def extract_table_claims(table_data: dict) -> str:
     html_content = clean_table(table_data['table'])
     parsed_table = parse_html_table(html_content)
     
-    print(parsed_table)
+    #print(parsed_table)
 
     system_prompt = """(forget the previous answers) You are an expert in computer science and in understanding tables.
     Your task is to extract claims from papers' tables provided with their captions and references in this format:
@@ -69,17 +71,54 @@ def extract_table_claims(table_data: dict) -> str:
         }
     ])
 
+if __name__ == "__main__":
+
+    if not os.path.exists(paths.CLAIMS):
+        os.makedirs(paths.CLAIMS)
+        print(f"\033[32mCreated directory: {paths.CLAIMS}\033[0m\n")
+
+    start_time = time.time()
+    gt_path = "../GT-prv"
+    
+    for filename in os.listdir(gt_path):
+        if filename.endswith('.json'):
+            file_path = os.path.join(gt_path, filename)
+
+            print(f"\n\033[94mProcessing file: {filename.rstrip('.json')}\033[0m")
+
+            with open(file_path, 'r') as file:
+                data = json.load(file)
+
+            start_nested_time = time.time()
+
+            for table_key, table_data in data.items():
+        
+                response = extract_table_claims(table_data)
+
+                print("\033[96mCreating claims file for table " + table_key + "\033[0m")
+                claim_builder.build(response, filename.rstrip('.json'), table_key)
+            end_nested_time = time.time()
+            elapsed_nested_time = end_nested_time - start_time
+            print(f"\n\033[96m{filename.rstrip('.json')} completed successfully\033[0m ({elapsed_nested_time:.2f}s)")
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"\nPapers claims built in {elapsed_time:.2f}s.")
+
+
+    
+'''
 # DA RIVEDERE S4.T4 DI 1812.05040 (del GT)
 
 if __name__ == "__main__":
-    with open(paths.RAW + '/2206.10526.json', 'r') as file:
+    with open(paths.RAW + '/2001.11091.json', 'r') as file:
         data = json.load(file)
-        table_data = data['S3.T1']
+        table_data = data['S3.T5']
 
     response = extract_table_claims(table_data)
 
     print("\n\033[92mCreating claims files...\033[0m\n")
-    claim_builder.build(response, "prova", "prv")
+    #claim_builder.build(response, "prova", "prv")
     print(response)
 
-    
+    '''
