@@ -38,4 +38,4 @@ def build(input_data, paperId, tableId):
     with open(output_file, "w") as f:
         json.dump(claims, f, indent=4)
 
-    print(f"\033[92mFile JSON salvato come {output_file}\033[0m")
+    print(f"\033[32mFile JSON saved as {output_file}\033[0m")
