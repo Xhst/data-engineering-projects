@@ -1,6 +1,6 @@
-from table_processing import clean_table, parse_html_table, parse_html_table_with_arbitrary_headers
+from table_processing import clean_table, parse_html_table
 from llm import query_groq
-from examples import example1, example2_short, example2_long, example_metric_column, example_data_table
+from examples import example1, example2_short, example_metric_column, example_data_table
 import claim_builder
 import paths
 import json

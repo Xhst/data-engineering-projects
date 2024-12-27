@@ -1,6 +1,5 @@
 import pandas as pd
 import json
-import sys
 import os
 
 import paths
