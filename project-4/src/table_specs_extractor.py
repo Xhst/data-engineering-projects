@@ -98,7 +98,7 @@ if __name__ == "__main__":
                 print("\033[96mCreating claims file for table " + table_key + "\033[0m")
                 claim_builder.build(response, filename.rstrip('.json'), table_key)
             end_nested_time = time.time()
-            elapsed_nested_time = end_nested_time - start_time
+            elapsed_nested_time = end_nested_time - start_nested_time
             print(f"\n\033[96m{filename.rstrip('.json')} completed successfully\033[0m ({elapsed_nested_time:.2f}s)")
 
     end_time = time.time()
