@@ -11,7 +11,7 @@ def parse_claim(claim_string, claim_index):
     
     specs = []
     for spec in specs_part.split(", |"):
-        name, value = spec.split(", ")
+        name, value = spec.split(", ", 1)
         value = value.rstrip("|")
         specs.append({"name": name, "value": value})
     
