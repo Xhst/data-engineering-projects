@@ -27,7 +27,7 @@ def build(input_data, paperId, tableId):
     claims_strings = [claim for claim in input_data.split("\n") if claim.strip()]
     claims = [parse_claim(claim, idx) for idx, claim in enumerate(claims_strings)]
 
-    output_file = paths.CLAIMS + "/" + paperId + "_" + tableId + "claims.json"
+    output_file = paths.CLAIMS + "/" + paperId + "_" + tableId + "_claims.json"
     with open(output_file, "w") as f:
         json.dump(claims, f, indent=4)
 
