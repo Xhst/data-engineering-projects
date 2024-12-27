@@ -71,6 +71,7 @@ def extract_table_claims(table_data: dict) -> str:
         }
     ])
 
+
 if __name__ == "__main__":
 
     if not os.path.exists(paths.CLAIMS):
@@ -78,7 +79,7 @@ if __name__ == "__main__":
         print(f"\033[32mCreated directory: {paths.CLAIMS}\033[0m\n")
 
     start_time = time.time()
-    gt_path = "../GT-prv"
+    gt_path = paths.GROUND_TRUTH
     
     for filename in os.listdir(gt_path):
         if filename.endswith('.json'):
@@ -105,20 +106,19 @@ if __name__ == "__main__":
     elapsed_time = end_time - start_time
     print(f"\nPapers claims built in {elapsed_time:.2f}s.")
 
-
     
 '''
 # DA RIVEDERE S4.T4 DI 1812.05040 (del GT)
 
 if __name__ == "__main__":
-    with open(paths.RAW + '/2001.11091.json', 'r') as file:
+    with open(paths.RAW + '/1911.07164.json', 'r') as file:
         data = json.load(file)
-        table_data = data['S3.T5']
+        table_data = data['S5.T2']
 
     response = extract_table_claims(table_data)
 
     print("\n\033[92mCreating claims files...\033[0m\n")
-    #claim_builder.build(response, "prova", "prv")
     print(response)
-
-    '''
+    claim_builder.build(response, "prova", "prv")
+'''
+    
