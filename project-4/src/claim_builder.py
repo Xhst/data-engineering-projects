@@ -22,13 +22,26 @@ def parse_claim(claim_string, claim_index):
         name, value = spec.split(", ", 1)
         value = value.rstrip("|")
         specs.append({"name": name, "value": value})
-    
+
+    return {
+        str(claim_index): {
+            "specifications": {
+                str(i): spec
+                for i, spec in enumerate(specs)
+            },
+            "Measure": measure,
+            "Outcome": outcome
+        }
+    }
+
+'''    
     return {
         "Claim": str(claim_index),
         "Specifications": specs,
         "Measure": measure,
         "Outcome": outcome
     }
+'''
 
 def build(input_data, paperId, tableId):
 
