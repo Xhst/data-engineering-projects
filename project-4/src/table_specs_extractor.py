@@ -79,7 +79,7 @@ if __name__ == "__main__":
         print(f"\033[32mCreated directory: {paths.CLAIMS}\033[0m\n")
 
     start_time = time.time()
-    gt_path = paths.GROUND_TRUTH
+    gt_path = '../GT-prv'
     
     for filename in os.listdir(gt_path):
         if filename.endswith('.json'):

@@ -5,7 +5,15 @@ import paths
 def parse_claim(claim_string, claim_index):
     claim_string = claim_string.strip("|")
     
-    specs_part, measure, outcome = claim_string.rsplit(", ", 2)
+    if claim_string.strip().endswith("|}"):
+
+        specs_part = claim_string
+        measure = "-"
+        outcome = "-"
+    else:
+        # La stringa contiene metric e value
+        specs_part, measure, outcome = claim_string.rsplit(", ", 2)
+    
     
     specs_part = specs_part.strip("|{|").strip("|}")
     
