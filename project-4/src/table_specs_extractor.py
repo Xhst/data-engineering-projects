@@ -7,6 +7,26 @@ import json
 import os
 import time
 
+def save_llm_response(response, paperId, tableId):
+    """
+    Saves the LLM response content to a file.
+
+    Args:
+        response (str): The response content to save.
+        paperId (str): The paper ID.
+        tableId (str): The table ID.
+    """
+
+    filename = f"{paperId}_{tableId}_llmResponse.txt"
+    
+    try:
+        with open(paths.LLM_RESPONSE + "/" + filename, 'w', encoding='utf-8') as file:
+            file.write(response)
+        print(f"Response successfully saved to: {filename}")
+    except Exception as e:
+        print("\033[91m" + f"Error while saving the file: {e}" + "\033[0m")
+
+
 def extract_table_claims(table_data: dict) -> str:
     """
     Function to extract claims from a table in a research paper.
@@ -78,8 +98,14 @@ if __name__ == "__main__":
         os.makedirs(paths.CLAIMS)
         print(f"\033[32mCreated directory: {paths.CLAIMS}\033[0m\n")
 
+    if not os.path.exists(paths.LLM_RESPONSE):
+        os.makedirs(paths.LLM_RESPONSE)
+        print(f"\033[32mCreated directory: {paths.LLM_RESPONSE}\033[0m\n")
+
     start_time = time.time()
-    gt_path = '../GT-prv'
+    
+    #gt_path = '../GT-prv'
+    gt_path = paths.GROUND_TRUTH
     
     for filename in os.listdir(gt_path):
         if filename.endswith('.json'):
@@ -95,6 +121,7 @@ if __name__ == "__main__":
             for table_key, table_data in data.items():
         
                 response = extract_table_claims(table_data)
+                save_llm_response(response, filename.rstrip('.json'), table_key)
 
                 print("\033[96mCreating claims file for table " + table_key + "\033[0m")
                 claim_builder.build(response, filename.rstrip('.json'), table_key)
