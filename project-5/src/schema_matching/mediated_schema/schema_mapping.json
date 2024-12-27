@@ -1,0 +1,147 @@
+{
+    "company_name": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Name",
+        "campaignindia__campaignindia.csv__BRAND NAME",
+        "cbinsight.com__DDD-cbinsight.com.csv__name",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__name",
+        "company_social_urls__company_social_urls.csv__Company",
+        "disfold.com__disfold.com.json__name",
+        "forbes.com__MalPatSaj-forbes.com.xls__Name",
+        "ft.com__ft.com.json__name",
+        "globaldata.com__output_globaldata.json__name",
+        "gov.uk__output_govuk_bigsize.json__name",
+        "hithorizons__hitHorizons_dataset.jsonl__name",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Name",
+        "teamblind.com__DDD-teamblind.com.csv__name",
+        "valuetoday__valueToday_dataset.jsonl__name",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Name"
+    ],
+
+    "company_type": [
+        "gov.uk__output_govuk_bigsize.json__company_type",
+        "hithorizons__hitHorizons_dataset.jsonl__type"
+    ],
+
+    "link": [
+        "ft.com__ft.com.json__link",
+        "globaldata.com__output_globaldata.json__website",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__URL",
+        "teamblind.com__DDD-teamblind.com.csv__website",
+        "valuetoday__valueToday_dataset.jsonl__company_website"
+    ],
+
+    "number_of_empoyees": [
+        "disfold.com__disfold.com.json__employees",
+        "ft.com__ft.com.json__employees",
+        "globaldata.com__output_globaldata.json__number_of_employees",
+        "teamblind.com__DDD-teamblind.com.csv__size",
+        "valuetoday__valueToday_dataset.jsonl__number_of_employees"
+    ],
+
+    "founded": [
+        "cbinsight.com__DDD-cbinsight.com.csv__founded",
+        "ft.com__ft.com.json__founded",
+        "teamblind.com__DDD-teamblind.com.csv__founded",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Founded",
+        "gov.uk__output_govuk_bigsize.json__company_creation_date"
+    ],
+
+    "founders": [
+        "valuetoday__valueToday_dataset.jsonl__founders"
+    ],
+
+    "market_cap": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Capital",
+        "cbinsight.com__DDD-cbinsight.com.csv__valuation",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__market_cap",
+        "disfold.com__disfold.com.json__market_cap",
+        "forbes.com__MalPatSaj-forbes.com.xls__Market Value",
+        "globaldata.com__output_globaldata.json__market_cap"
+    ],
+
+    "annual_net_income_usd": [
+        "valuetoday__valueToday_dataset.jsonl__annual_net_income_in_usd"
+    ],
+
+    "total_assets_usd": [
+        "valuetoday__valueToday_dataset.jsonl__total_assets_in_usd"
+    ],
+
+    "total_equity_usd": [
+        "valuetoday__valueToday_dataset.jsonl__total_equity_in_usd"
+    ],
+
+    "total_liabilities_usd": [
+        "valuetoday__valueToday_dataset.jsonl__total_liabilities_in_usd"
+    ],
+
+    "annual_result_year_ending": [
+        "valuetoday__valueToday_dataset.jsonl__annual_results_for_year_ending"
+    ],
+
+    "industry": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Area of Activity",
+        "campaignindia__campaignindia.csv__CATEGORY",
+        "cbinsight.com__DDD-cbinsight.com.csv__industry",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__categories",
+        "ft.com__ft.com.json__industry",
+        "globaldata.com__output_globaldata.json__industry",
+        "gov.uk__output_govuk_bigsize.json__nature_of_business",
+        "hithorizons__hitHorizons_dataset.jsonl__industry",
+        "teamblind.com__DDD-teamblind.com.csv__industry",
+        "valuetoday__valueToday_dataset.jsonl__company_business",
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Industry"
+    ],
+
+    "address": [
+        "ariregister.rik.ee__wissel-aziende-activity-ariregister.rik.ee.csv__Address",
+        "disfold.com__disfold.com.json__headquarters",
+        "globaldata.com__output_globaldata.json__address",
+        "hithorizons__hitHorizons_dataset.jsonl__address",
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Address Name"
+    ],
+
+    "rank": [
+        "campaignindia__campaignindia.csv__RANK",
+        "companiesmarketcap__companiesMarketCap_dataset.jsonl__rank",
+        "valuetoday__valueToday_dataset.jsonl__world_rank"
+    ],
+
+    "ceo": [
+        "disfold.com__disfold.com.json__ceo",
+        "valuetoday__valueToday_dataset.jsonl__ceo"
+    ],
+
+    "telephone": [
+        "globaldata.com__output_globaldata.json__telephone"
+    ],
+
+    "facebook": [
+        "company_social_urls__company_social_urls.csv__Facebook"
+    ],
+
+    "twitter": [
+        "company_social_urls__company_social_urls.csv__Twitter"
+    ],
+
+    "instagram": [
+        "company_social_urls__company_social_urls.csv__Instagram"
+    ],
+
+    "pinterest": [
+        "company_social_urls__company_social_urls.csv__Pinterest"
+    ],
+
+    "postal_code": [
+        "info-clipper.com__wissel-aziende-info-clipper.com.csv__Postalcode"
+    ],
+
+    "investors": [
+        "cbinsight.com__DDD-cbinsight.com.csv__investors"
+    ],
+
+    "notes": [
+        "wikipedia.org__MalPatSaj-wikipedia.org.xls__Notes"
+    ]
+
+}
