@@ -5,13 +5,21 @@ import paths
 def parse_claim(claim_string, claim_index):
     claim_string = claim_string.strip("|")
     
-    specs_part, measure, outcome = claim_string.rsplit(", ", 2)
+    if claim_string.strip().endswith("|}"):
+
+        specs_part = claim_string
+        measure = "-"
+        outcome = "-"
+    else:
+        # La stringa contiene metric e value
+        specs_part, measure, outcome = claim_string.rsplit(", ", 2)
+    
     
     specs_part = specs_part.strip("|{|").strip("|}")
     
     specs = []
     for spec in specs_part.split(", |"):
-        name, value = spec.split(", ")
+        name, value = spec.split(", ", 1)
         value = value.rstrip("|")
         specs.append({"name": name, "value": value})
     
@@ -27,7 +35,7 @@ def build(input_data, paperId, tableId):
     claims_strings = [claim for claim in input_data.split("\n") if claim.strip()]
     claims = [parse_claim(claim, idx) for idx, claim in enumerate(claims_strings)]
 
-    output_file = paths.CLAIMS + "/" + paperId + "_" + tableId + "claims.json"
+    output_file = paths.CLAIMS + "/" + paperId + "_" + tableId + "_claims.json"
     with open(output_file, "w") as f:
         json.dump(claims, f, indent=4)
 
