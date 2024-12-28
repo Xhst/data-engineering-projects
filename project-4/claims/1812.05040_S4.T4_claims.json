@@ -1,0 +1,4482 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "11.5"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "19.6"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "30.8"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "wall"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "4.4"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "fence"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "20.3"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.1"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "11.7"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "42.3"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "68.7"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "51.2"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "3.8"
+        }
+    },
+    {
+        "12": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "54"
+        }
+    },
+    {
+        "13": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "3.2"
+        }
+    },
+    {
+        "14": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.2"
+        }
+    },
+    {
+        "15": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.6"
+        }
+    },
+    {
+        "16": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "20.1"
+        }
+    },
+    {
+        "17": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "FCNs Wld"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "22.9"
+        }
+    },
+    {
+        "18": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "65.2"
+        }
+    },
+    {
+        "19": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "26.1"
+        }
+    },
+    {
+        "20": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "74.9"
+        }
+    },
+    {
+        "21": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "wall"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.1"
+        }
+    },
+    {
+        "22": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "fence"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.5"
+        }
+    },
+    {
+        "23": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "10.7"
+        }
+    },
+    {
+        "24": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "3.7"
+        }
+    },
+    {
+        "25": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "3"
+        }
+    },
+    {
+        "26": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "76.1"
+        }
+    },
+    {
+        "27": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "70.6"
+        }
+    },
+    {
+        "28": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "47.1"
+        }
+    },
+    {
+        "29": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "8.2"
+        }
+    },
+    {
+        "30": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "43.2"
+        }
+    },
+    {
+        "31": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "20.7"
+        }
+    },
+    {
+        "32": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.7"
+        }
+    },
+    {
+        "33": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "13.1"
+        }
+    },
+    {
+        "34": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "29.0"
+        }
+    },
+    {
+        "35": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Curriculum"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "34.8"
+        }
+    },
+    {
+        "36": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "62.7"
+        }
+    },
+    {
+        "37": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "25.6"
+        }
+    },
+    {
+        "38": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "78.3"
+        }
+    },
+    {
+        "39": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "1.2"
+        }
+    },
+    {
+        "40": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "5.4"
+        }
+    },
+    {
+        "41": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "81.3"
+        }
+    },
+    {
+        "42": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "81"
+        }
+    },
+    {
+        "43": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "37.4"
+        }
+    },
+    {
+        "44": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "6.4"
+        }
+    },
+    {
+        "45": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "63.5"
+        }
+    },
+    {
+        "46": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "16.1"
+        }
+    },
+    {
+        "47": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "1.2"
+        }
+    },
+    {
+        "48": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "4.6"
+        }
+    },
+    {
+        "49": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cross-City"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "35.7"
+        }
+    },
+    {
+        "50": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "77.7"
+        }
+    },
+    {
+        "51": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "30"
+        }
+    },
+    {
+        "52": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "77.5"
+        }
+    },
+    {
+        "53": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "wall"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "9.6"
+        }
+    },
+    {
+        "54": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "fence"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.3"
+        }
+    },
+    {
+        "55": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "25.8"
+        }
+    },
+    {
+        "56": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "10.3"
+        }
+    },
+    {
+        "57": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "15.6"
+        }
+    },
+    {
+        "58": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "77.6"
+        }
+    },
+    {
+        "59": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "79.8"
+        }
+    },
+    {
+        "60": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "44.5"
+        }
+    },
+    {
+        "61": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "16.6"
+        }
+    },
+    {
+        "62": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "67.8"
+        }
+    },
+    {
+        "63": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "14.5"
+        }
+    },
+    {
+        "64": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "7"
+        }
+    },
+    {
+        "65": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "23.8"
+        }
+    },
+    {
+        "66": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "36.1"
+        }
+    },
+    {
+        "67": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ROAD-Net"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "41.7"
+        }
+    },
+    {
+        "68": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "78.9"
+        }
+    },
+    {
+        "69": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "29.2"
+        }
+    },
+    {
+        "70": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "75.5"
+        }
+    },
+    {
+        "71": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.1"
+        }
+    },
+    {
+        "72": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "4.8"
+        }
+    },
+    {
+        "73": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "72.6"
+        }
+    },
+    {
+        "74": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "76.7"
+        }
+    },
+    {
+        "75": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "43.4"
+        }
+    },
+    {
+        "76": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "8.8"
+        }
+    },
+    {
+        "77": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "71.1"
+        }
+    },
+    {
+        "78": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "16"
+        }
+    },
+    {
+        "79": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "3.6"
+        }
+    },
+    {
+        "80": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "8.4"
+        }
+    },
+    {
+        "81": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Tsai etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "37.6"
+        }
+    },
+    {
+        "82": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "80.1"
+        }
+    },
+    {
+        "83": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "29.1"
+        }
+    },
+    {
+        "84": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "77.5"
+        }
+    },
+    {
+        "85": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "wall"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "2.8"
+        }
+    },
+    {
+        "86": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "fence"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.4"
+        }
+    },
+    {
+        "87": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "26.8"
+        }
+    },
+    {
+        "88": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "11.1"
+        }
+    },
+    {
+        "89": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "18"
+        }
+    },
+    {
+        "90": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "78.1"
+        }
+    },
+    {
+        "91": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "76.7"
+        }
+    },
+    {
+        "92": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "48.2"
+        }
+    },
+    {
+        "93": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "15.2"
+        }
+    },
+    {
+        "94": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "70.5"
+        }
+    },
+    {
+        "95": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "17.4"
+        }
+    },
+    {
+        "96": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "8.7"
+        }
+    },
+    {
+        "97": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "16.7"
+        }
+    },
+    {
+        "98": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "36.1"
+        }
+    },
+    {
+        "99": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Sankaranarayanan etal."
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "42.1"
+        }
+    },
+    {
+        "100": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "69.6"
+        }
+    },
+    {
+        "101": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "28.7"
+        }
+    },
+    {
+        "102": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "69.5"
+        }
+    },
+    {
+        "103": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "wall"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "12.1"
+        }
+    },
+    {
+        "104": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "fence"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.1"
+        }
+    },
+    {
+        "105": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "25.4"
+        }
+    },
+    {
+        "106": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "11.9"
+        }
+    },
+    {
+        "107": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "13.6"
+        }
+    },
+    {
+        "108": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "82"
+        }
+    },
+    {
+        "109": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "81.9"
+        }
+    },
+    {
+        "110": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "49.1"
+        }
+    },
+    {
+        "111": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "14.5"
+        }
+    },
+    {
+        "112": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "66"
+        }
+    },
+    {
+        "113": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "6.6"
+        }
+    },
+    {
+        "114": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "3.7"
+        }
+    },
+    {
+        "115": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "32.4"
+        }
+    },
+    {
+        "116": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "35.4"
+        }
+    },
+    {
+        "117": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CBST"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "40.7"
+        }
+    },
+    {
+        "118": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "9.7"
+        }
+    },
+    {
+        "119": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "14.1"
+        }
+    },
+    {
+        "120": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "58.5"
+        }
+    },
+    {
+        "121": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "wall"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "4.7"
+        }
+    },
+    {
+        "122": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "fence"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.3"
+        }
+    },
+    {
+        "123": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "22.7"
+        }
+    },
+    {
+        "124": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "1.9"
+        }
+    },
+    {
+        "125": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "12.9"
+        }
+    },
+    {
+        "126": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "70.7"
+        }
+    },
+    {
+        "127": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "60.9"
+        }
+    },
+    {
+        "128": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "50.2"
+        }
+    },
+    {
+        "129": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "7.2"
+        }
+    },
+    {
+        "130": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "32.2"
+        }
+    },
+    {
+        "131": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "17.4"
+        }
+    },
+    {
+        "132": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "1.3"
+        }
+    },
+    {
+        "133": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "8"
+        }
+    },
+    {
+        "134": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "23.3"
+        }
+    },
+    {
+        "135": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Non Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "26.5"
+        }
+    },
+    {
+        "136": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "77"
+        }
+    },
+    {
+        "137": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "29.3"
+        }
+    },
+    {
+        "138": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "67.9"
+        }
+    },
+    {
+        "139": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "wall"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.1"
+        }
+    },
+    {
+        "140": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "fence"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.1"
+        }
+    },
+    {
+        "141": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "24.7"
+        }
+    },
+    {
+        "142": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "10.7"
+        }
+    },
+    {
+        "143": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "17.4"
+        }
+    },
+    {
+        "144": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "79.4"
+        }
+    },
+    {
+        "145": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "78.8"
+        }
+    },
+    {
+        "146": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "49.2"
+        }
+    },
+    {
+        "147": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "13.7"
+        }
+    },
+    {
+        "148": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "70.3"
+        }
+    },
+    {
+        "149": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "4.3"
+        }
+    },
+    {
+        "150": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "5.8"
+        }
+    },
+    {
+        "151": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "12.8"
+        }
+    },
+    {
+        "152": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "33.8"
+        }
+    },
+    {
+        "153": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "39.7"
+        }
+    },
+    {
+        "154": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "79.6"
+        }
+    },
+    {
+        "155": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "29.7"
+        }
+    },
+    {
+        "156": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "75.7"
+        }
+    },
+    {
+        "157": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "wall"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "11.4"
+        }
+    },
+    {
+        "158": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "fence"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.3"
+        }
+    },
+    {
+        "159": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "25.3"
+        }
+    },
+    {
+        "160": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "11.1"
+        }
+    },
+    {
+        "161": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "14.8"
+        }
+    },
+    {
+        "162": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "76.7"
+        }
+    },
+    {
+        "163": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "76.9"
+        }
+    },
+    {
+        "164": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "45.3"
+        }
+    },
+    {
+        "165": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "15.9"
+        }
+    },
+    {
+        "166": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "67.7"
+        }
+    },
+    {
+        "167": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "15.8"
+        }
+    },
+    {
+        "168": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "4.8"
+        }
+    },
+    {
+        "169": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "13.5"
+        }
+    },
+    {
+        "170": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "35.3"
+        }
+    },
+    {
+        "171": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Output-level Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "40.6"
+        }
+    },
+    {
+        "172": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "78.3"
+        }
+    },
+    {
+        "173": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sidewalk"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "29.2"
+        }
+    },
+    {
+        "174": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "76.9"
+        }
+    },
+    {
+        "175": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "wall"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "11.4"
+        }
+    },
+    {
+        "176": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "fence"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.3"
+        }
+    },
+    {
+        "177": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "26.5"
+        }
+    },
+    {
+        "178": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "10.8"
+        }
+    },
+    {
+        "179": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "17.2"
+        }
+    },
+    {
+        "180": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "81.7"
+        }
+    },
+    {
+        "181": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "81.9"
+        }
+    },
+    {
+        "182": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "person"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "45.8"
+        }
+    },
+    {
+        "183": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "rider"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "15.4"
+        }
+    },
+    {
+        "184": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "68"
+        }
+    },
+    {
+        "185": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bus"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "15.9"
+        }
+    },
+    {
+        "186": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "motorbike"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "7.5"
+        }
+    },
+    {
+        "187": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                },
+                "3": {
+                    "name": "Class",
+                    "value": "bicycle"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "30.4"
+        }
+    },
+    {
+        "188": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "37.3"
+        }
+    },
+    {
+        "189": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Ours (Input&Output Adapt)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "Cityscapes"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "VGG"
+                }
+            },
+            "Measure": "mIoU excl. *",
+            "Outcome": "43"
+        }
+    }
+]

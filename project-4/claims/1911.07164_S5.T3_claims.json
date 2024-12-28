@@ -1,0 +1,122 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MetaIRNet"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "Conv4"
+                },
+                "3": {
+                    "name": "Pre-training",
+                    "value": "None"
+                }
+            },
+            "Measure": "5-way-1-shot accuracy",
+            "Outcome": "65.86"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ProtoNet"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "Conv4"
+                },
+                "3": {
+                    "name": "Pre-training",
+                    "value": "None"
+                }
+            },
+            "Measure": "5-way-1-shot accuracy",
+            "Outcome": "63.50"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MatchingNet"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "Conv4"
+                },
+                "3": {
+                    "name": "Pre-training",
+                    "value": "None"
+                }
+            },
+            "Measure": "5-way-1-shot accuracy",
+            "Outcome": "61.16"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MAML"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "Conv4"
+                },
+                "3": {
+                    "name": "Pre-training",
+                    "value": "None"
+                }
+            },
+            "Measure": "5-way-1-shot accuracy",
+            "Outcome": "55.92"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "RelationNet"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                },
+                "2": {
+                    "name": "Backbone",
+                    "value": "Conv4"
+                },
+                "3": {
+                    "name": "Pre-training",
+                    "value": "None"
+                }
+            },
+            "Measure": "5-way-1-shot accuracy",
+            "Outcome": "62.45"
+        }
+    }
+]

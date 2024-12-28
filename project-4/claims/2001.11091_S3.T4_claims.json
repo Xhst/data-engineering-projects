@@ -1,0 +1,434 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "iDT+FV"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "84.8"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "iDT+FV"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "57.2"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Two-stream"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "88.0"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Two-stream"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "59.4"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Two-stream LSTM"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "88.6"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "L 2 STM"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "93.6"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "L 2 STM"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "66.2"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "TSN-2M"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "94.0"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "TSN-2M"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "68.5"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "TSN-3M"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "94.2"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "TSN-3M"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "69.5"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cool-TSN"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "94.2"
+        }
+    },
+    {
+        "12": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Cool-TSN"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "69.5"
+        }
+    },
+    {
+        "13": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "3D-ResNet-101"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "94.5"
+        }
+    },
+    {
+        "14": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "3D-ResNet-101"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "70.2"
+        }
+    },
+    {
+        "15": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Two-stream MiCT"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "94.7"
+        }
+    },
+    {
+        "16": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Two-stream MiCT"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "70.5"
+        }
+    },
+    {
+        "17": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CoViar"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "94.9"
+        }
+    },
+    {
+        "18": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "CoViar"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "70.2"
+        }
+    },
+    {
+        "19": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "OFF"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "96.0"
+        }
+    },
+    {
+        "20": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "OFF"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "74.2"
+        }
+    },
+    {
+        "21": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Two-stream I3D"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "98.0"
+        }
+    },
+    {
+        "22": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Two-stream I3D"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "80.7"
+        }
+    },
+    {
+        "23": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Network-2 (half of the generated videos)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "94.4"
+        }
+    },
+    {
+        "24": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Network-2 (half of the generated videos)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "71.8"
+        }
+    },
+    {
+        "25": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Network-2 (all of the generated videos)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "94.6"
+        }
+    },
+    {
+        "26": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Network-2 (all of the generated videos)"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "72.4"
+        }
+    }
+]

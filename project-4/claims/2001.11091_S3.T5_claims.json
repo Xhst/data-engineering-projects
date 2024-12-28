@@ -1,0 +1,222 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "100%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "0"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "96.66"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "100%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "2500"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "97.5"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "100%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "5000"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "97.8"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "50%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "0"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "96.34"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "50%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "2500"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "97.02"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "50%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "5000"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "97.7"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "10%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "0"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "77.4"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "10%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "2500"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "81.69"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "10%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "5000"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "85.41"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "0%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "2500"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "30.71"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Percentage of Real Videos",
+                    "value": "0%"
+                },
+                "2": {
+                    "name": "Number of Synthetic Videos",
+                    "value": "5000"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "52.7"
+        }
+    }
+]

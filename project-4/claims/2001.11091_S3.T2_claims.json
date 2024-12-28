@@ -1,0 +1,74 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Network-1"
+                },
+                "1": {
+                    "name": "Number of synthetic videos",
+                    "value": "4000"
+                },
+                "2": {
+                    "name": "Type of synthetic videos",
+                    "value": "background"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "72.3"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Network-2"
+                },
+                "1": {
+                    "name": "Number of synthetic videos",
+                    "value": "4000"
+                },
+                "2": {
+                    "name": "Type of synthetic videos",
+                    "value": "simplified"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "71.8"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Network-2"
+                },
+                "1": {
+                    "name": "Number of synthetic videos",
+                    "value": "8000"
+                },
+                "2": {
+                    "name": "Type of synthetic videos",
+                    "value": "simplified"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "72.4"
+        }
+    }
+]

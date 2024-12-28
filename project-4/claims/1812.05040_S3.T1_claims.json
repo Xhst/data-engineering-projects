@@ -1,0 +1,802 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "79.3"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "60.5"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "0.3"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "9.5"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "66.8"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "terrain"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "8.3"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "85.9"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "59.2"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Non Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "truck"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "4.8"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "83.2"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "67.4"
+        }
+    },
+    {
+        "12": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "10.8"
+        }
+    },
+    {
+        "13": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "21.9"
+        }
+    },
+    {
+        "14": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "24.5"
+        }
+    },
+    {
+        "15": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "68.8"
+        }
+    },
+    {
+        "16": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "terrain"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "6.5"
+        }
+    },
+    {
+        "17": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "88.3"
+        }
+    },
+    {
+        "18": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "77.8"
+        }
+    },
+    {
+        "19": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "truck"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "9.3"
+        }
+    },
+    {
+        "20": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "81.1"
+        }
+    },
+    {
+        "21": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "69.1"
+        }
+    },
+    {
+        "22": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "7.1"
+        }
+    },
+    {
+        "23": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "8.6"
+        }
+    },
+    {
+        "24": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "28.3"
+        }
+    },
+    {
+        "25": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "79.5"
+        }
+    },
+    {
+        "26": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "terrain"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "43.3"
+        }
+    },
+    {
+        "27": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "86"
+        }
+    },
+    {
+        "28": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "79.3"
+        }
+    },
+    {
+        "29": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Output Level Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "truck"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "17.8"
+        }
+    },
+    {
+        "30": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "road"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "81.4"
+        }
+    },
+    {
+        "31": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "building"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "71.2"
+        }
+    },
+    {
+        "32": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "pole"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "11.3"
+        }
+    },
+    {
+        "33": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "traffic light"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "26.6"
+        }
+    },
+    {
+        "34": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "traffic sign"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "23.6"
+        }
+    },
+    {
+        "35": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "vegetation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "82.8"
+        }
+    },
+    {
+        "36": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "terrain"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "56.5"
+        }
+    },
+    {
+        "37": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "sky"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "88.4"
+        }
+    },
+    {
+        "38": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "car"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "80.1"
+        }
+    },
+    {
+        "39": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Virtual KITTI\u2192KITTI"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "Input&Ouput Adapt"
+                },
+                "2": {
+                    "name": "Category",
+                    "value": "truck"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "12.7"
+        }
+    }
+]
