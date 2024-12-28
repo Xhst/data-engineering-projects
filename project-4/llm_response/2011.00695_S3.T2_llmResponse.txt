@@ -1,0 +1,8 @@
+|{|Model, baseline|, |Dataset, DCASE 2018|}, Audio tagging F1 score, 0.625|
+|{|Model, baseline|, |Dataset, DCASE 2019|}, Audio tagging F1 score, 0.630|
+|{|Model, IFD|, |Dataset, DCASE 2018|}, Audio tagging F1 score, 0.629|
+|{|Model, IFD|, |Dataset, DCASE 2019|}, Audio tagging F1 score, 0.609|
+|{|Model, SEDB|, |Dataset, DCASE 2018|}, Audio tagging F1 score, 0.635|
+|{|Model, SEDB|, |Dataset, DCASE 2019|}, Audio tagging F1 score, 0.663|
+|{|Model, SEDB & IFD|, |Dataset, DCASE 2018|}, Audio tagging F1 score, 0.645|
+|{|Model, SEDB & IFD|, |Dataset, DCASE 2019|}, Audio tagging F1 score, 0.638|
