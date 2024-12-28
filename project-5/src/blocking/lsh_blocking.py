@@ -3,7 +3,6 @@ import pandas as pd
 import re
 from datasketch import MinHash, MinHashLSH
 from nltk.tokenize import word_tokenize
-from nltk.util import ngrams
 
 def tokenize(text: str) -> set:
     # Define a set of common noise words
@@ -48,15 +47,14 @@ lsh = MinHashLSH(threshold=0.8, num_perm=128)
 
 # Create MinHash for each record and add it to LSH
 for i, record in df.iterrows():
-    tokens = tokenize(str(record['company_name']))  # Choose the appropriate column
+    tokens = tokenize(str(record['company_name']))  
     minhash = MinHash(num_perm=128)
     for token in tokens:
-        minhash.update(token.encode('utf8'))  # Update MinHash with each token
+        minhash.update(token.encode('utf8'))  
     lsh.insert(f"[{i}] {record['company_name']}", minhash)  # Use the record index as a unique key
 
 # Perform blocking (query similar records for each record)
 blocks = set()
-
 for i, record in df.iterrows():
     tokens = tokenize(str(record['company_name']))
     minhash = MinHash(num_perm=128)
@@ -64,7 +62,6 @@ for i, record in df.iterrows():
         minhash.update(token.encode('utf8'))
     # Query LSH for candidates with similar MinHashes
     candidates = frozenset(lsh.query(minhash))
-
     blocks.add(candidates)
 
 with open('./results/lsh_blocking.json', 'w') as f:
