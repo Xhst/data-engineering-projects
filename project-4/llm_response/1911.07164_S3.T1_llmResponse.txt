@@ -1,0 +1,9 @@
+|{|dataset, CUB|, |Training Data, Original|, |classifier, Nearest Neighbor|}, CUB 5-way-1-shot classification accuracy, 69.6|
+|{|dataset, CUB|, |Training Data, Original|, |classifier, Logistic Regression|}, CUB 5-way-1-shot classification accuracy, 75|
+|{|dataset, CUB|, |Training Data, Original|, |classifier, Softmax Regression|}, CUB 5-way-1-shot classification accuracy, 74.1|
+|{|dataset, CUB|, |Training Data, Original + Generated|, |classifier, Nearest Neighbor|}, CUB 5-way-1-shot classification accuracy, 70.1|
+|{|dataset, CUB|, |Training Data, Original + Generated|, |classifier, Logistic Regression|}, CUB 5-way-1-shot classification accuracy, 74.6|
+|{|dataset, CUB|, |Training Data, Original + Generated|, |classifier, Softmax Regression|}, CUB 5-way-1-shot classification accuracy, 73.8|
+|{|dataset, CUB|, |Training Data, Original + Mixed|, |classifier, Nearest Neighbor|}, CUB 5-way-1-shot classification accuracy, 70.6|
+|{|dataset, CUB|, |Training Data, Original + Mixed|, |classifier, Logistic Regression|}, CUB 5-way-1-shot classification accuracy, 75.5|
+|{|dataset, CUB|, |Training Data, Original + Mixed|, |classifier, Softmax Regression|}, CUB 5-way-1-shot classification accuracy, 74.8|

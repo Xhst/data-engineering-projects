@@ -1,0 +1,5 @@
+|{|Model, MetaIRNet|, |Dataset, CUB|, |Backbone, Conv4|, |Pre-training, None|}, 5-way-1-shot accuracy, 65.86|
+|{|Model, ProtoNet|, |Dataset, CUB|, |Backbone, Conv4|, |Pre-training, None|}, 5-way-1-shot accuracy, 63.50|
+|{|Model, MatchingNet|, |Dataset, CUB|, |Backbone, Conv4|, |Pre-training, None|}, 5-way-1-shot accuracy, 61.16|
+|{|Model, MAML|, |Dataset, CUB|, |Backbone, Conv4|, |Pre-training, None|}, 5-way-1-shot accuracy, 55.92|
+|{|Model, RelationNet|, |Dataset, CUB|, |Backbone, Conv4|, |Pre-training, None|}, 5-way-1-shot accuracy, 62.45|

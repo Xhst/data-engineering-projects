@@ -1,0 +1,8 @@
+|{|Model, baseline|, |Dataset, DCASE 2018|}, event-based F1 score, 0.315|
+|{|Model, baseline|, |Dataset, DCASE 2019|}, event-based F1 score, 0.320|
+|{|Model, IFD|, |Dataset, DCASE 2018|}, event-based F1 score, 0.331|
+|{|Model, IFD|, |Dataset, DCASE 2019|}, event-based F1 score, 0.361|
+|{|Model, SEDB|, |Dataset, DCASE 2018|}, event-based F1 score, 0.336|
+|{|Model, SEDB|, |Dataset, DCASE 2019|}, event-based F1 score, 0.377|
+|{|Model, SEDB & IFD|, |Dataset, DCASE 2018|}, event-based F1 score, 0.347|
+|{|Model, SEDB & IFD|, |Dataset, DCASE 2019|}, event-based F1 score, 0.390|

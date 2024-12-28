@@ -1,0 +1,40 @@
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, road|}, mIoU, 79.3|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, building|}, mIoU, 60.5|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, pole|}, mIoU, 0|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, traffic light|}, mIoU, 0.3|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, traffic sign|}, mIoU, 9.5|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, vegetation|}, mIoU, 66.8|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, terrain|}, mIoU, 8.3|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, sky|}, mIoU, 85.9|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, car|}, mIoU, 59.2|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Non Adapt|, |Category, truck|}, mIoU, 4.8|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, road|}, mIoU, 83.2|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, building|}, mIoU, 67.4|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, pole|}, mIoU, 10.8|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, traffic light|}, mIoU, 21.9|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, traffic sign|}, mIoU, 24.5|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, vegetation|}, mIoU, 68.8|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, terrain|}, mIoU, 6.5|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, sky|}, mIoU, 88.3|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, car|}, mIoU, 77.8|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input Level Adapt|, |Category, truck|}, mIoU, 9.3|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, road|}, mIoU, 81.1|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, building|}, mIoU, 69.1|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, pole|}, mIoU, 7.1|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, traffic light|}, mIoU, 8.6|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, traffic sign|}, mIoU, 28.3|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, vegetation|}, mIoU, 79.5|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, terrain|}, mIoU, 43.3|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, sky|}, mIoU, 86|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, car|}, mIoU, 79.3|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Output Level Adapt|, |Category, truck|}, mIoU, 17.8|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, road|}, mIoU, 81.4|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, building|}, mIoU, 71.2|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, pole|}, mIoU, 11.3|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, traffic light|}, mIoU, 26.6|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, traffic sign|}, mIoU, 23.6|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, vegetation|}, mIoU, 82.8|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, terrain|}, mIoU, 56.5|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, sky|}, mIoU, 88.4|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, car|}, mIoU, 80.1|
+|{|Dataset, Virtual KITTI→KITTI|, |Method, Input&Ouput Adapt|, |Category, truck|}, mIoU, 12.7|

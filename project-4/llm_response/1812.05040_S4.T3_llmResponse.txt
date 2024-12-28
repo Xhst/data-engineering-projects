@@ -1,0 +1,5 @@
+|{|Output Level Adaptation, non-adaptive baseline|}, mIoU, 37.5|
+|{|Output Level Adaptation, semantic segmentation output map|}, mIoU, 45.9|
+|{|Output Level Adaptation, depth output map|}, mIoU, 43.8|
+|{|Output Level Adaptation, individually aligning both semantic segmentation and depth estimation|}, mIoU, 46.3|
+|{|Output Level Adaptation, joint output space of depth estimation and semantic segmentation|}, mIoU, 50.0|

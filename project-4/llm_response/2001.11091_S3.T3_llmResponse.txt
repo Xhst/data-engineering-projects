@@ -1,0 +1,6 @@
+|{|Dataset, HMDB-38|, |Setting, Real only|}, Performance, 71.8|
+|{|Dataset, UCF-25|, |Setting, Real only|}, Performance, 96.66|
+|{|Dataset, HMDB-38|, |Setting, Videos+Real|}, Performance, 73.66|
+|{|Dataset, UCF-25|, |Setting, Videos+Real|}, Performance, 97.5|
+|{|Dataset, HMDB-38|, |Setting, Videos+Real|}, Performance, 74.62|
+|{|Dataset, UCF-25|, |Setting, Videos+Real|}, Performance, 97.8|

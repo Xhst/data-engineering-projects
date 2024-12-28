@@ -1,0 +1,140 @@
+|{|Model, ResNet100|, |Quantization, -|, |Parameter Size, 65.2M|, |Bit, FP32|, |Size (MB), 261.22|}, LFW, 99.83|
+|{|Model, ResNet100|, |Quantization, -|, |Parameter Size, 65.2M|, |Bit, FP32|, |Size (MB), 261.22|}, CFP, 98.40|
+|{|Model, ResNet100|, |Quantization, -|, |Parameter Size, 65.2M|, |Bit, FP32|, |Size (MB), 261.22|}, AgeDb-30, 98.33|
+|{|Model, ResNet100|, |Quantization, -|, |Parameter Size, 65.2M|, |Bit, FP32|, |Size (MB), 261.22|}, CALFW, 96.13|
+|{|Model, ResNet100|, |Quantization, -|, |Parameter Size, 65.2M|, |Bit, FP32|, |Size (MB), 261.22|}, CPLFW, 93.22|
+|{|Model, ResNet100|, |Quantization, -|, |Parameter Size, 65.2M|, |Bit, FP32|, |Size (MB), 261.22|}, IJB-C, 96.50|
+|{|Model, ResNet100|, |Quantization, -|, |Parameter Size, 65.2M|, |Bit, FP32|, |Size (MB), 261.22|}, IJB-B, 95.25|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, LFW, 99.80|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, CFP, 98.31|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, AgeDb-30, 98.13|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, CALFW, 96.05|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, CPLFW, 92.92|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, IJB-C, 96.38|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, IJB-B, 95.13|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, LFW, 99.80|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, CFP, 98.14|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, AgeDb-30, 97.95|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, CALFW, 96.02|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, CPLFW, 92.90|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, IJB-C, 96.09|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w8a8|, |Size (MB), 65.31|}, IJB-B, 94.74|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, LFW, 99.55|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, CFP, 89.14|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, AgeDb-30, 95.85|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, CALFW, 95.42|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, CPLFW, 85.63|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, IJB-C, 85.80|
+|{|Model, ResNet100|, |Quantization, Real data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, IJB-B, 84.08|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, LFW, 99.45|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, CFP, 91.00|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, AgeDb-30, 96.43|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, CALFW, 95.58|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, CPLFW, 86.60|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, IJB-C, 87.00|
+|{|Model, ResNet100|, |Quantization, Synthetic data|, |Parameter Size, 65.2M|, |Bit, w6a6|, |Size (MB), 49.01|}, IJB-B, 85.06|
+|{|Model, ResNet50|, |Quantization, -|, |Parameter Size, 43.6M|, |Bit, FP32|, |Size (MB), 174.68|}, LFW, 99.80|
+|{|Model, ResNet50|, |Quantization, -|, |Parameter Size, 43.6M|, |Bit, FP32|, |Size (MB), 174.68|}, CFP, 98.01|
+|{|Model, ResNet50|, |Quantization, -|, |Parameter Size, 43.6M|, |Bit, FP32|, |Size (MB), 174.68|}, AgeDb-30, 98.08|
+|{|Model, ResNet50|, |Quantization, -|, |Parameter Size, 43.6M|, |Bit, FP32|, |Size (MB), 174.68|}, CALFW, 96.10|
+|{|Model, ResNet50|, |Quantization, -|, |Parameter Size, 43.6M|, |Bit, FP32|, |Size (MB), 174.68|}, CPLFW, 92.43|
+|{|Model, ResNet50|, |Quantization, -|, |Parameter Size, 43.6M|, |Bit, FP32|, |Size (MB), 174.68|}, IJB-C, 95.74|
+|{|Model, ResNet50|, |Quantization, -|, |Parameter Size, 43.6M|, |Bit, FP32|, |Size (MB), 174.68|}, IJB-B, 94.19|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, LFW, 99.78|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, CFP, 97.70|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, AgeDb-30, 98.00|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, CALFW, 96.00|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, CPLFW, 92.17|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, IJB-C, 95.66|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, IJB-B, 94.15|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, LFW, 99.78|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, CFP, 97.43|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, AgeDb-30, 97.97|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, CALFW, 95.87|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, CPLFW, 92.08|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, IJB-C, 95.18|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w8a8|, |Size (MB), 43.67|}, IJB-B, 93.67|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, LFW, 99.70|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, CFP, 95.00|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, AgeDb-30, 97.17|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, CALFW, 95.87|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, CPLFW, 90.17|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, IJB-C, 91.74|
+|{|Model, ResNet50|, |Quantization, Real data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, IJB-B, 90.07|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, LFW, 99.68|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, CFP, 95.17|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, AgeDb-30, 97.43|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, CALFW, 95.70|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, CPLFW, 90.38|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, IJB-C, 90.72|
+|{|Model, ResNet50|, |Quantization, Synthetic data|, |Parameter Size, 43.6M|, |Bit, w6a6|, |Size (MB), 32.77|}, IJB-B, 89.44|
+|{|Model, ResNet18|, |Quantization, -|, |Parameter Size, 24.0M|, |Bit, FP32|, |Size (MB), 96.22|}, LFW, 99.67|
+|{|Model, ResNet18|, |Quantization, -|, |Parameter Size, 24.0M|, |Bit, FP32|, |Size (MB), 96.22|}, CFP, 94.47|
+|{|Model, ResNet18|, |Quantization, -|, |Parameter Size, 24.0M|, |Bit, FP32|, |Size (MB), 96.22|}, AgeDb-30, 97.13|
+|{|Model, ResNet18|, |Quantization, -|, |Parameter Size, 24.0M|, |Bit, FP32|, |Size (MB), 96.22|}, CALFW, 95.70|
+|{|Model, ResNet18|, |Quantization, -|, |Parameter Size, 24.0M|, |Bit, FP32|, |Size (MB), 96.22|}, CPLFW, 89.73|
+|{|Model, ResNet18|, |Quantization, -|, |Parameter Size, 24.0M|, |Bit, FP32|, |Size (MB), 96.22|}, IJB-C, 93.56|
+|{|Model, ResNet18|, |Quantization, -|, |Parameter Size, 24.0M|, |Bit, FP32|, |Size (MB), 96.22|}, IJB-B, 91.64|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, LFW, 99.63|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, CFP, 94.46|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, AgeDb-30, 97.03|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, CALFW, 95.72|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, CPLFW, 89.48|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, IJB-C, 93.56|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, IJB-B, 91.57|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, LFW, 99.55|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, CFP, 94.04|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, AgeDb-30, 97.07|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, CALFW, 95.58|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, CPLFW, 89.53|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, IJB-C, 92.87|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w8a8|, |Size (MB), 24.10|}, IJB-B, 91.01|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, LFW, 99.52|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, CFP, 93.23|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, AgeDb-30, 96.55|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, CALFW, 95.58|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, CPLFW, 88.37|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, IJB-C, 93.03|
+|{|Model, ResNet18|, |Quantization, Real data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, IJB-B, 91.08|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, LFW, 99.55|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, CFP, 93.34|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, AgeDb-30, 96.62|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, CALFW, 95.32|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, CPLFW, 89.05|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, IJB-C, 92.36|
+|{|Model, ResNet18|, |Quantization, Synthetic data|, |Parameter Size, 24.0M|, |Bit, w6a6|, |Size (MB), 18.10|}, IJB-B, 90.38|
+|{|Model, MobileFaceNet|, |Quantization, -|, |Parameter Size, 1.1M|, |Bit, FP32|, |Size (MB), 4.21|}, LFW, 99.47|
+|{|Model, MobileFaceNet|, |Quantization, -|, |Parameter Size, 1.1M|, |Bit, FP32|, |Size (MB), 4.21|}, CFP, 91.59|
+|{|Model, MobileFaceNet|, |Quantization, -|, |Parameter Size, 1.1M|, |Bit, FP32|, |Size (MB), 4.21|}, AgeDb-30, 95.62|
+|{|Model, MobileFaceNet|, |Quantization, -|, |Parameter Size, 1.1M|, |Bit, FP32|, |Size (MB), 4.21|}, CALFW, 95.15|
+|{|Model, MobileFaceNet|, |Quantization, -|, |Parameter Size, 1.1M|, |Bit, FP32|, |Size (MB), 4.21|}, CPLFW, 87.98|
+|{|Model, MobileFaceNet|, |Quantization, -|, |Parameter Size, 1.1M|, |Bit, FP32|, |Size (MB), 4.21|}, IJB-C, 90.88|
+|{|Model, MobileFaceNet|, |Quantization, -|, |Parameter Size, 1.1M|, |Bit, FP32|, |Size (MB), 4.21|}, IJB-B, 88.54|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, LFW, 99.43|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, CFP, 91.40|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, AgeDb-30, 95.47|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, CALFW, 95.05|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, CPLFW, 87.95|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, IJB-C, 90.57|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, IJB-B, 88.32|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, LFW, 99.35|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, CFP, 90.84|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, AgeDb-30, 94.37|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, CALFW, 94.78|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, CPLFW, 87.73|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, IJB-C, 89.21|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w8a8|, |Size (MB), 1.10|}, IJB-B, 86.98|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, LFW, 98.87|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, CFP, 87.69|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, AgeDb-30, 93.03|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, CALFW, 93.30|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, CPLFW, 84.57|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, IJB-C, 83.13|
+|{|Model, MobileFaceNet|, |Quantization, Real data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, IJB-B, 80.53|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, LFW, 99.08|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, CFP, 87.64|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, AgeDb-30, 91.77|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, CALFW, 93.48|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, CPLFW, 84.85|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, IJB-C, 82.94|
+|{|Model, MobileFaceNet|, |Quantization, Synthetic data|, |Parameter Size, 1.1M|, |Bit, w6a6|, |Size (MB), 0.79|}, IJB-B, 80.58|

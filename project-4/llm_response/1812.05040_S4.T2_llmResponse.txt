@@ -1,0 +1,6 @@
+|{|Method, non-adaptive baseline|}, mIoU, 37.5|
+|{|Method, image translation with CycleGAN|}, mIoU, 39.8|
+|{|Method, image transform network guided by task network|}, mIoU, 43.5|
+|{|Method, image transform network guided by task network with additional depth input|}, mIoU, 44.2|
+|{|Method, image transform network guided by task network with additional semantic label input|}, mIoU, 44.7|
+|{|Method, image transform network guided by task network with both depth and semantic labels as additional input|}, mIoU, 45.9|
