@@ -1,0 +1,12 @@
+|{|Type, Training|, |Fruit, Apple|}, Elapsed Time, 1404.35|
+|{|Type, Training|, |Fruit, Banana|}, Elapsed Time, 1395.2|
+|{|Type, Training|, |Fruit, Strawberry|}, Elapsed Time, 1411.18|
+|{|Type, Training|, |Fruit, Orange|}, Elapsed Time, 1397.56|
+|{|Type, Training|, |Fruit, Peach|}, Elapsed Time, 1389.97|
+|{|Type, Training|, |Fruit, Plum|}, Elapsed Time, 1433.73|
+|{|Type, Sampling|, |Fruit, Apple|}, Elapsed Time, 68.3|
+|{|Type, Sampling|, |Fruit, Banana|}, Elapsed Time, 70.68|
+|{|Type, Sampling|, |Fruit, Strawberry|}, Elapsed Time, 58.91|
+|{|Type, Sampling|, |Fruit, Orange|}, Elapsed Time, 67.29|
+|{|Type, Sampling|, |Fruit, Peach|}, Elapsed Time, 68.52|
+|{|Type, Sampling|, |Fruit, Plum|}, Elapsed Time, 67.92|

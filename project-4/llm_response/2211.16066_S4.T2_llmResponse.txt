@@ -1,0 +1,5 @@
+|{|Layers Retrained, All|}, AP, 81.26|
+|{|Layers Retrained, Stage 3+|}, AP, 76.71|
+|{|Layers Retrained, Stage 4+|}, AP, 80.77|
+|{|Layers Retrained, Stage 5+|}, AP, 77.13|
+|{|Layers Retrained, Heads|}, AP, 71.52|

@@ -1,0 +1,9 @@
+|{|Method, K-means|}, AP, 57.8|
+|{|Method, K-means|}, AR, 89.2|
+|{|Method, K-means|}, F1 score, 70.1|
+|{|Method, DBSCAN|}, AP, 58.1|
+|{|Method, DBSCAN|}, AR, 89.4|
+|{|Method, DBSCAN|}, F1 score, 70.4|
+|{|Method, Gen-Hybrid|}, AP, 91.6|
+|{|Method, Gen-Hybrid|}, AR, 92.6|
+|{|Method, Gen-Hybrid|}, F1 score, 92.1|
