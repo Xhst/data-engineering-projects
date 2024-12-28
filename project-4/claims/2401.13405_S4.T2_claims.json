@@ -1,0 +1,1922 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "61.2"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "69.3"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "67.8"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "77.7"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "79.6"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "80.6"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "76.5"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "71.0"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "59"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "67.3"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "67.9"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "75"
+        }
+    },
+    {
+        "12": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "77.5"
+        }
+    },
+    {
+        "13": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "77.8"
+        }
+    },
+    {
+        "14": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "74.0"
+        }
+    },
+    {
+        "15": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "68.4"
+        }
+    },
+    {
+        "16": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "50.4"
+        }
+    },
+    {
+        "17": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "60.1"
+        }
+    },
+    {
+        "18": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "60.7"
+        }
+    },
+    {
+        "19": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "68.1"
+        }
+    },
+    {
+        "20": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "70.5"
+        }
+    },
+    {
+        "21": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "72.5"
+        }
+    },
+    {
+        "22": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "65.9"
+        }
+    },
+    {
+        "23": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "61.7"
+        }
+    },
+    {
+        "24": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "89.8"
+        }
+    },
+    {
+        "25": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "85.2"
+        }
+    },
+    {
+        "26": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "87.4"
+        }
+    },
+    {
+        "27": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "89.2"
+        }
+    },
+    {
+        "28": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "89.6"
+        }
+    },
+    {
+        "29": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "89.9"
+        }
+    },
+    {
+        "30": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "85.8"
+        }
+    },
+    {
+        "31": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "83.8"
+        }
+    },
+    {
+        "32": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "78.4"
+        }
+    },
+    {
+        "33": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "78.7"
+        }
+    },
+    {
+        "34": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "81.1"
+        }
+    },
+    {
+        "35": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "83.2"
+        }
+    },
+    {
+        "36": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "84.9"
+        }
+    },
+    {
+        "37": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "84.6"
+        }
+    },
+    {
+        "38": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "80.7"
+        }
+    },
+    {
+        "39": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "76.2"
+        }
+    },
+    {
+        "40": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "65.1"
+        }
+    },
+    {
+        "41": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "67.7"
+        }
+    },
+    {
+        "42": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "68.2"
+        }
+    },
+    {
+        "43": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "73.4"
+        }
+    },
+    {
+        "44": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "74.9"
+        }
+    },
+    {
+        "45": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "75.1"
+        }
+    },
+    {
+        "46": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "73.1"
+        }
+    },
+    {
+        "47": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Syn-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "67.1"
+        }
+    },
+    {
+        "48": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "60.1"
+        }
+    },
+    {
+        "49": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "61.9"
+        }
+    },
+    {
+        "50": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "65.2"
+        }
+    },
+    {
+        "51": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "68.4"
+        }
+    },
+    {
+        "52": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "71.9"
+        }
+    },
+    {
+        "53": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "72.5"
+        }
+    },
+    {
+        "54": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "69.4"
+        }
+    },
+    {
+        "55": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "67.7"
+        }
+    },
+    {
+        "56": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "56.8"
+        }
+    },
+    {
+        "57": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "60.2"
+        }
+    },
+    {
+        "58": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "63.8"
+        }
+    },
+    {
+        "59": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "66.8"
+        }
+    },
+    {
+        "60": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "70.3"
+        }
+    },
+    {
+        "61": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "70.8"
+        }
+    },
+    {
+        "62": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "67.5"
+        }
+    },
+    {
+        "63": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "66.0"
+        }
+    },
+    {
+        "64": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "49.8"
+        }
+    },
+    {
+        "65": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "55"
+        }
+    },
+    {
+        "66": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "58.6"
+        }
+    },
+    {
+        "67": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "61.5"
+        }
+    },
+    {
+        "68": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "65.0"
+        }
+    },
+    {
+        "69": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "65.6"
+        }
+    },
+    {
+        "70": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "62.9"
+        }
+    },
+    {
+        "71": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "61.0"
+        }
+    },
+    {
+        "72": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "89.3"
+        }
+    },
+    {
+        "73": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "86.1"
+        }
+    },
+    {
+        "74": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "84.5"
+        }
+    },
+    {
+        "75": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "85"
+        }
+    },
+    {
+        "76": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "86.0"
+        }
+    },
+    {
+        "77": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "85.8"
+        }
+    },
+    {
+        "78": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "82.2"
+        }
+    },
+    {
+        "79": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "84.7"
+        }
+    },
+    {
+        "80": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "76"
+        }
+    },
+    {
+        "81": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "80.8"
+        }
+    },
+    {
+        "82": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "80.5"
+        }
+    },
+    {
+        "83": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "81.6"
+        }
+    },
+    {
+        "84": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "82.5"
+        }
+    },
+    {
+        "85": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "83.4"
+        }
+    },
+    {
+        "86": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "79.8"
+        }
+    },
+    {
+        "87": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "80.2"
+        }
+    },
+    {
+        "88": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "66.2"
+        }
+    },
+    {
+        "89": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "69.8"
+        }
+    },
+    {
+        "90": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "69.6"
+        }
+    },
+    {
+        "91": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "71.4"
+        }
+    },
+    {
+        "92": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "300"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "72.9"
+        }
+    },
+    {
+        "93": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "400"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "73.4"
+        }
+    },
+    {
+        "94": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "500"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "71.0"
+        }
+    },
+    {
+        "95": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "CP-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "600"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "70.5"
+        }
+    },
+    {
+        "96": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "84"
+        }
+    },
+    {
+        "97": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "83.7"
+        }
+    },
+    {
+        "98": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "85"
+        }
+    },
+    {
+        "99": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AP@0.5",
+            "Outcome": "85.1"
+        }
+    },
+    {
+        "100": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "81.5"
+        }
+    },
+    {
+        "101": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "81.4"
+        }
+    },
+    {
+        "102": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "82.5"
+        }
+    },
+    {
+        "103": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AP@0.75",
+            "Outcome": "82.5"
+        }
+    },
+    {
+        "104": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "74.2"
+        }
+    },
+    {
+        "105": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "75.7"
+        }
+    },
+    {
+        "106": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "77.7"
+        }
+    },
+    {
+        "107": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AP@[0.5:0.95]",
+            "Outcome": "78.4"
+        }
+    },
+    {
+        "108": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "92.8"
+        }
+    },
+    {
+        "109": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "92.1"
+        }
+    },
+    {
+        "110": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "92.2"
+        }
+    },
+    {
+        "111": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AR@0.5",
+            "Outcome": "92.6"
+        }
+    },
+    {
+        "112": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "88.1"
+        }
+    },
+    {
+        "113": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "87.6"
+        }
+    },
+    {
+        "114": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "89.2"
+        }
+    },
+    {
+        "115": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AR@0.75",
+            "Outcome": "89.4"
+        }
+    },
+    {
+        "116": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "50"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "76.7"
+        }
+    },
+    {
+        "117": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "100"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "79.7"
+        }
+    },
+    {
+        "118": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "150"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "81.9"
+        }
+    },
+    {
+        "119": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Real-only"
+                },
+                "1": {
+                    "name": "Number of images",
+                    "value": "200"
+                }
+            },
+            "Measure": "AR@[0.5:0.95]",
+            "Outcome": "82.9"
+        }
+    }
+]

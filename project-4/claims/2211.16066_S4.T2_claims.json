@@ -1,0 +1,62 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "All"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "81.26"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "Stage 3+"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "76.71"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "Stage 4+"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "80.77"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "Stage 5+"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "77.13"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "Heads"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "71.52"
+        }
+    }
+]
