@@ -74,6 +74,8 @@ Filename for the alignment is `YOUR_NAME_ALIGNMENT.json`
 
 # Note
 ### Claims
+- 2211.16066 completed successfully (2.70s)
+- 2401.13405 completed successfully (20.30s)
 
 
 
