@@ -1,0 +1,27 @@
+|{|Method, iDT+FV|, |Dataset, UCF-101|}, Accuracy, 84.8|
+|{|Method, iDT+FV|, |Dataset, HMDB-51|}, Accuracy, 57.2|
+|{|Method, Two-stream|, |Dataset, UCF-101|}, Accuracy, 88.0|
+|{|Method, Two-stream|, |Dataset, HMDB-51|}, Accuracy, 59.4|
+|{|Method, Two-stream LSTM|, |Dataset, UCF-101|}, Accuracy, 88.6|
+|{|Method, L 2 STM|, |Dataset, UCF-101|}, Accuracy, 93.6|
+|{|Method, L 2 STM|, |Dataset, HMDB-51|}, Accuracy, 66.2|
+|{|Method, TSN-2M|, |Dataset, UCF-101|}, Accuracy, 94.0|
+|{|Method, TSN-2M|, |Dataset, HMDB-51|}, Accuracy, 68.5|
+|{|Method, TSN-3M|, |Dataset, UCF-101|}, Accuracy, 94.2|
+|{|Method, TSN-3M|, |Dataset, HMDB-51|}, Accuracy, 69.5|
+|{|Method, Cool-TSN|, |Dataset, UCF-101|}, Accuracy, 94.2|
+|{|Method, Cool-TSN|, |Dataset, HMDB-51|}, Accuracy, 69.5|
+|{|Method, 3D-ResNet-101|, |Dataset, UCF-101|}, Accuracy, 94.5|
+|{|Method, 3D-ResNet-101|, |Dataset, HMDB-51|}, Accuracy, 70.2|
+|{|Method, Two-stream MiCT|, |Dataset, UCF-101|}, Accuracy, 94.7|
+|{|Method, Two-stream MiCT|, |Dataset, HMDB-51|}, Accuracy, 70.5|
+|{|Method, CoViar|, |Dataset, UCF-101|}, Accuracy, 94.9|
+|{|Method, CoViar|, |Dataset, HMDB-51|}, Accuracy, 70.2|
+|{|Method, OFF|, |Dataset, UCF-101|}, Accuracy, 96.0|
+|{|Method, OFF|, |Dataset, HMDB-51|}, Accuracy, 74.2|
+|{|Method, Two-stream I3D|, |Dataset, UCF-101|}, Accuracy, 98.0|
+|{|Method, Two-stream I3D|, |Dataset, HMDB-51|}, Accuracy, 80.7|
+|{|Method, Network-2 (half of the generated videos)|, |Dataset, UCF-101|}, Accuracy, 94.4|
+|{|Method, Network-2 (half of the generated videos)|, |Dataset, HMDB-51|}, Accuracy, 71.8|
+|{|Method, Network-2 (all of the generated videos)|, |Dataset, UCF-101|}, Accuracy, 94.6|
+|{|Method, Network-2 (all of the generated videos)|, |Dataset, HMDB-51|}, Accuracy, 72.4|

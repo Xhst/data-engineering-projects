@@ -1,0 +1,1010 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Apple"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "27/30"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Apple"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "17/30"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Apple"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "28/30"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Apple"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "20/30"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Apple"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "29/30"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Apple"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "24/30"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Banana"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "27/30"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Banana"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "17/30"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Banana"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "29/30"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Banana"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "18/30"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Banana"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "30/30"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Banana"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "21/30"
+        }
+    },
+    {
+        "12": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Strawberry"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "30/30"
+        }
+    },
+    {
+        "13": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Strawberry"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "12/30"
+        }
+    },
+    {
+        "14": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Strawberry"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "30/30"
+        }
+    },
+    {
+        "15": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Strawberry"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "15/30"
+        }
+    },
+    {
+        "16": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Strawberry"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "30/30"
+        }
+    },
+    {
+        "17": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Strawberry"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "17/30"
+        }
+    },
+    {
+        "18": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Orange"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "26/30"
+        }
+    },
+    {
+        "19": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Orange"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "15/30"
+        }
+    },
+    {
+        "20": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Orange"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "28/30"
+        }
+    },
+    {
+        "21": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Orange"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "18/30"
+        }
+    },
+    {
+        "22": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Orange"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "30/30"
+        }
+    },
+    {
+        "23": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Orange"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "6"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "22/30"
+        }
+    },
+    {
+        "24": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Peach"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "8"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "27/30"
+        }
+    },
+    {
+        "25": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Peach"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "8"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "15/30"
+        }
+    },
+    {
+        "26": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Peach"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "8"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "28/30"
+        }
+    },
+    {
+        "27": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Peach"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "8"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "18/30"
+        }
+    },
+    {
+        "28": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Peach"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "8"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "29/30"
+        }
+    },
+    {
+        "29": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Peach"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "8"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "20/30"
+        }
+    },
+    {
+        "30": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Plum"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "29/30"
+        }
+    },
+    {
+        "31": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Plum"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "17/30"
+        }
+    },
+    {
+        "32": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Plum"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "30/30"
+        }
+    },
+    {
+        "33": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Plum"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "19/30"
+        }
+    },
+    {
+        "34": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Plum"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "30/30"
+        }
+    },
+    {
+        "35": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Plum"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "12"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "22/30"
+        }
+    },
+    {
+        "36": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Total"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "56"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "92.2%"
+        }
+    },
+    {
+        "37": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Total"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "56"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Real-only"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "51.2%"
+        }
+    },
+    {
+        "38": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Total"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "56"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "96.1%"
+        }
+    },
+    {
+        "39": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Total"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "56"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "CP-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "60%"
+        }
+    },
+    {
+        "40": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Total"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "56"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Labelling"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "98.9%"
+        }
+    },
+    {
+        "41": {
+            "specifications": {
+                "0": {
+                    "name": "Item",
+                    "value": "Total"
+                },
+                "1": {
+                    "name": "Instance",
+                    "value": "56"
+                },
+                "2": {
+                    "name": "Setting",
+                    "value": "Gen-Hybrid"
+                },
+                "3": {
+                    "name": "Task",
+                    "value": "Grasping"
+                }
+            },
+            "Measure": "Sorting success rate",
+            "Outcome": "70%"
+        }
+    }
+]

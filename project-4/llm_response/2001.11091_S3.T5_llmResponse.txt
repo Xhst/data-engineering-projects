@@ -1,0 +1,11 @@
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 100%|, |Number of Synthetic Videos, 0|}, Accuracy, 96.66|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 100%|, |Number of Synthetic Videos, 2500|}, Accuracy, 97.5|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 100%|, |Number of Synthetic Videos, 5000|}, Accuracy, 97.8|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 50%|, |Number of Synthetic Videos, 0|}, Accuracy, 96.34|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 50%|, |Number of Synthetic Videos, 2500|}, Accuracy, 97.02|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 50%|, |Number of Synthetic Videos, 5000|}, Accuracy, 97.7|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 10%|, |Number of Synthetic Videos, 0|}, Accuracy, 77.4|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 10%|, |Number of Synthetic Videos, 2500|}, Accuracy, 81.69|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 10%|, |Number of Synthetic Videos, 5000|}, Accuracy, 85.41|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 0%|, |Number of Synthetic Videos, 2500|}, Accuracy, 30.71|
+|{|Dataset, UCF-25|, |Percentage of Real Videos, 0%|, |Number of Synthetic Videos, 5000|}, Accuracy, 52.7|

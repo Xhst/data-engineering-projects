@@ -1,0 +1,10 @@
+|{|Method, Nearest neighbor|, |Base Network, ResNet18|, |Initialization, ImageNet|, |Dataset, CUB|}, Accuracy, 89.44|
+|{|Method, Softmax regression|, |Base Network, ResNet18|, |Initialization, ImageNet|, |Dataset, CUB|}, Accuracy, 92.28|
+|{|Method, Logistic regression|, |Base Network, ResNet18|, |Initialization, ImageNet|, |Dataset, CUB|}, Accuracy, 92.34|
+|{|Method, ProtoNet|, |Base Network, ResNet18|, |Initialization, ImageNet|, |Dataset, CUB|}, Accuracy, 92.97|
+|{|Method, MetaIRNet (Ours)|, |Base Network, ResNet18|, |Initialization, ImageNet|, |Dataset, CUB|}, Accuracy, 93.09|
+|{|Method, MAML|, |Base Network, Conv-4|, |Initialization, Random|, |Dataset, CUB|}, Accuracy, 72.09|
+|{|Method, MatchingNet|, |Base Network, Conv-4|, |Initialization, Random|, |Dataset, CUB|}, Accuracy, 72.86|
+|{|Method, RelationNet|, |Base Network, Conv-4|, |Initialization, Random|, |Dataset, CUB|}, Accuracy, 76.11|
+|{|Method, ProtoNet|, |Base Network, Conv-4|, |Initialization, Random|, |Dataset, CUB|}, Accuracy, 80.75|
+|{|Method, MetaIRNet (Ours)|, |Base Network, Conv-4|, |Initialization, Random|, |Dataset, CUB|}, Accuracy, 81.16|

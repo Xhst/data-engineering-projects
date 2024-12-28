@@ -1,0 +1,6 @@
+|{|Image Count, 1755|}, AP, 69.42|
+|{|Image Count, 4387|}, AP, 72.23|
+|{|Image Count, 8775|}, AP, 72.58|
+|{|Image Count, 17550|}, AP, 73.01|
+|{|Image Count, 35100|}, AP, 72.01|
+|{|Image Count, 70200|}, AP, 71.52|

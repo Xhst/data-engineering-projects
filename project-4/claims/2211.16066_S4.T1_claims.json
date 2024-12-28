@@ -1,0 +1,74 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Image Count",
+                    "value": "1755"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "69.42"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Image Count",
+                    "value": "4387"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "72.23"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Image Count",
+                    "value": "8775"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "72.58"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Image Count",
+                    "value": "17550"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "73.01"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Image Count",
+                    "value": "35100"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "72.01"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Image Count",
+                    "value": "70200"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "71.52"
+        }
+    }
+]

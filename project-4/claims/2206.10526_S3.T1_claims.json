@@ -1,0 +1,3922 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "261.22"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.83"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "261.22"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "98.40"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "261.22"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "98.33"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "261.22"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "96.13"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "261.22"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "93.22"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "261.22"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "96.50"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "261.22"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "95.25"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.80"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "98.31"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "98.13"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "96.05"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "92.92"
+        }
+    },
+    {
+        "12": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "96.38"
+        }
+    },
+    {
+        "13": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "95.13"
+        }
+    },
+    {
+        "14": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.80"
+        }
+    },
+    {
+        "15": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "98.14"
+        }
+    },
+    {
+        "16": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "97.95"
+        }
+    },
+    {
+        "17": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "96.02"
+        }
+    },
+    {
+        "18": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "92.90"
+        }
+    },
+    {
+        "19": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "96.09"
+        }
+    },
+    {
+        "20": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "65.31"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "94.74"
+        }
+    },
+    {
+        "21": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.55"
+        }
+    },
+    {
+        "22": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "89.14"
+        }
+    },
+    {
+        "23": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "95.85"
+        }
+    },
+    {
+        "24": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.42"
+        }
+    },
+    {
+        "25": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "85.63"
+        }
+    },
+    {
+        "26": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "85.80"
+        }
+    },
+    {
+        "27": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "84.08"
+        }
+    },
+    {
+        "28": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.45"
+        }
+    },
+    {
+        "29": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "91.00"
+        }
+    },
+    {
+        "30": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "96.43"
+        }
+    },
+    {
+        "31": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.58"
+        }
+    },
+    {
+        "32": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "86.60"
+        }
+    },
+    {
+        "33": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "87.00"
+        }
+    },
+    {
+        "34": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet100"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "65.2M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "49.01"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "85.06"
+        }
+    },
+    {
+        "35": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "174.68"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.80"
+        }
+    },
+    {
+        "36": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "174.68"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "98.01"
+        }
+    },
+    {
+        "37": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "174.68"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "98.08"
+        }
+    },
+    {
+        "38": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "174.68"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "96.10"
+        }
+    },
+    {
+        "39": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "174.68"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "92.43"
+        }
+    },
+    {
+        "40": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "174.68"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "95.74"
+        }
+    },
+    {
+        "41": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "174.68"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "94.19"
+        }
+    },
+    {
+        "42": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.78"
+        }
+    },
+    {
+        "43": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "97.70"
+        }
+    },
+    {
+        "44": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "98.00"
+        }
+    },
+    {
+        "45": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "96.00"
+        }
+    },
+    {
+        "46": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "92.17"
+        }
+    },
+    {
+        "47": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "95.66"
+        }
+    },
+    {
+        "48": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "94.15"
+        }
+    },
+    {
+        "49": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.78"
+        }
+    },
+    {
+        "50": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "97.43"
+        }
+    },
+    {
+        "51": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "97.97"
+        }
+    },
+    {
+        "52": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.87"
+        }
+    },
+    {
+        "53": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "92.08"
+        }
+    },
+    {
+        "54": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "95.18"
+        }
+    },
+    {
+        "55": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "43.67"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "93.67"
+        }
+    },
+    {
+        "56": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.70"
+        }
+    },
+    {
+        "57": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "95.00"
+        }
+    },
+    {
+        "58": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "97.17"
+        }
+    },
+    {
+        "59": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.87"
+        }
+    },
+    {
+        "60": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "90.17"
+        }
+    },
+    {
+        "61": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "91.74"
+        }
+    },
+    {
+        "62": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "90.07"
+        }
+    },
+    {
+        "63": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.68"
+        }
+    },
+    {
+        "64": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "95.17"
+        }
+    },
+    {
+        "65": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "97.43"
+        }
+    },
+    {
+        "66": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.70"
+        }
+    },
+    {
+        "67": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "90.38"
+        }
+    },
+    {
+        "68": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "90.72"
+        }
+    },
+    {
+        "69": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet50"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "43.6M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "32.77"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "89.44"
+        }
+    },
+    {
+        "70": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "96.22"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.67"
+        }
+    },
+    {
+        "71": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "96.22"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "94.47"
+        }
+    },
+    {
+        "72": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "96.22"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "97.13"
+        }
+    },
+    {
+        "73": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "96.22"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.70"
+        }
+    },
+    {
+        "74": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "96.22"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "89.73"
+        }
+    },
+    {
+        "75": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "96.22"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "93.56"
+        }
+    },
+    {
+        "76": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "96.22"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "91.64"
+        }
+    },
+    {
+        "77": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.63"
+        }
+    },
+    {
+        "78": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "94.46"
+        }
+    },
+    {
+        "79": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "97.03"
+        }
+    },
+    {
+        "80": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.72"
+        }
+    },
+    {
+        "81": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "89.48"
+        }
+    },
+    {
+        "82": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "93.56"
+        }
+    },
+    {
+        "83": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "91.57"
+        }
+    },
+    {
+        "84": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.55"
+        }
+    },
+    {
+        "85": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "94.04"
+        }
+    },
+    {
+        "86": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "97.07"
+        }
+    },
+    {
+        "87": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.58"
+        }
+    },
+    {
+        "88": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "89.53"
+        }
+    },
+    {
+        "89": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "92.87"
+        }
+    },
+    {
+        "90": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "24.10"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "91.01"
+        }
+    },
+    {
+        "91": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.52"
+        }
+    },
+    {
+        "92": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "93.23"
+        }
+    },
+    {
+        "93": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "96.55"
+        }
+    },
+    {
+        "94": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.58"
+        }
+    },
+    {
+        "95": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "88.37"
+        }
+    },
+    {
+        "96": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "93.03"
+        }
+    },
+    {
+        "97": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "91.08"
+        }
+    },
+    {
+        "98": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.55"
+        }
+    },
+    {
+        "99": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "93.34"
+        }
+    },
+    {
+        "100": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "96.62"
+        }
+    },
+    {
+        "101": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.32"
+        }
+    },
+    {
+        "102": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "89.05"
+        }
+    },
+    {
+        "103": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "92.36"
+        }
+    },
+    {
+        "104": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "ResNet18"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "24.0M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "18.10"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "90.38"
+        }
+    },
+    {
+        "105": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "4.21"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.47"
+        }
+    },
+    {
+        "106": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "4.21"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "91.59"
+        }
+    },
+    {
+        "107": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "4.21"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "95.62"
+        }
+    },
+    {
+        "108": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "4.21"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.15"
+        }
+    },
+    {
+        "109": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "4.21"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "87.98"
+        }
+    },
+    {
+        "110": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "4.21"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "90.88"
+        }
+    },
+    {
+        "111": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "-"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "FP32"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "4.21"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "88.54"
+        }
+    },
+    {
+        "112": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.43"
+        }
+    },
+    {
+        "113": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "91.40"
+        }
+    },
+    {
+        "114": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "95.47"
+        }
+    },
+    {
+        "115": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "95.05"
+        }
+    },
+    {
+        "116": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "87.95"
+        }
+    },
+    {
+        "117": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "90.57"
+        }
+    },
+    {
+        "118": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "88.32"
+        }
+    },
+    {
+        "119": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.35"
+        }
+    },
+    {
+        "120": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "90.84"
+        }
+    },
+    {
+        "121": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "94.37"
+        }
+    },
+    {
+        "122": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "94.78"
+        }
+    },
+    {
+        "123": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "87.73"
+        }
+    },
+    {
+        "124": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "89.21"
+        }
+    },
+    {
+        "125": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w8a8"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "1.10"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "86.98"
+        }
+    },
+    {
+        "126": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "98.87"
+        }
+    },
+    {
+        "127": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "87.69"
+        }
+    },
+    {
+        "128": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "93.03"
+        }
+    },
+    {
+        "129": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "93.30"
+        }
+    },
+    {
+        "130": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "84.57"
+        }
+    },
+    {
+        "131": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "83.13"
+        }
+    },
+    {
+        "132": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Real data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "80.53"
+        }
+    },
+    {
+        "133": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "LFW",
+            "Outcome": "99.08"
+        }
+    },
+    {
+        "134": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "CFP",
+            "Outcome": "87.64"
+        }
+    },
+    {
+        "135": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "AgeDb-30",
+            "Outcome": "91.77"
+        }
+    },
+    {
+        "136": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "CALFW",
+            "Outcome": "93.48"
+        }
+    },
+    {
+        "137": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "CPLFW",
+            "Outcome": "84.85"
+        }
+    },
+    {
+        "138": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "IJB-C",
+            "Outcome": "82.94"
+        }
+    },
+    {
+        "139": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "MobileFaceNet"
+                },
+                "1": {
+                    "name": "Quantization",
+                    "value": "Synthetic data"
+                },
+                "2": {
+                    "name": "Parameter Size",
+                    "value": "1.1M"
+                },
+                "3": {
+                    "name": "Bit",
+                    "value": "w6a6"
+                },
+                "4": {
+                    "name": "Size (MB)",
+                    "value": "0.79"
+                }
+            },
+            "Measure": "IJB-B",
+            "Outcome": "80.58"
+        }
+    }
+]

@@ -1,0 +1,3 @@
+|{|Method, Network-1|, |Number of synthetic videos, 4000|, |Type of synthetic videos, background|, |Dataset, HMDB-51|}, Accuracy, 72.3|
+|{|Method, Network-2|, |Number of synthetic videos, 4000|, |Type of synthetic videos, simplified|, |Dataset, HMDB-51|}, Accuracy, 71.8|
+|{|Method, Network-2|, |Number of synthetic videos, 8000|, |Type of synthetic videos, simplified|, |Dataset, HMDB-51|}, Accuracy, 72.4|

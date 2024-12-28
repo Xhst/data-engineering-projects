@@ -1,0 +1,98 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "HMDB-38"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Real only"
+                }
+            },
+            "Measure": "Performance",
+            "Outcome": "71.8"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Real only"
+                }
+            },
+            "Measure": "Performance",
+            "Outcome": "96.66"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "HMDB-38"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Videos+Real"
+                }
+            },
+            "Measure": "Performance",
+            "Outcome": "73.66"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Videos+Real"
+                }
+            },
+            "Measure": "Performance",
+            "Outcome": "97.5"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "HMDB-38"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Videos+Real"
+                }
+            },
+            "Measure": "Performance",
+            "Outcome": "74.62"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Videos+Real"
+                }
+            },
+            "Measure": "Performance",
+            "Outcome": "97.8"
+        }
+    }
+]
