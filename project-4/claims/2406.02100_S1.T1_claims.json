@@ -1,0 +1,18 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Synthetic Data"
+                },
+                "1": {
+                    "name": "Description",
+                    "value": "Example of prompt and response"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    }
+]

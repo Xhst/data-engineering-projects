@@ -1,0 +1,74 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "2-Shot Prompting"
+                },
+                "1": {
+                    "name": "OOD-N",
+                    "value": "0"
+                },
+                "2": {
+                    "name": "OOD-F",
+                    "value": "0"
+                },
+                "3": {
+                    "name": "OOD-1000",
+                    "value": "0"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "8-Shot Prompting"
+                },
+                "1": {
+                    "name": "OOD-N",
+                    "value": "0"
+                },
+                "2": {
+                    "name": "OOD-F",
+                    "value": "0"
+                },
+                "3": {
+                    "name": "OOD-1000",
+                    "value": "0"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "Chain-of-Thought"
+                },
+                "1": {
+                    "name": "OOD-N",
+                    "value": "0"
+                },
+                "2": {
+                    "name": "OOD-F",
+                    "value": "0"
+                },
+                "3": {
+                    "name": "OOD-1000",
+                    "value": "0"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    }
+]

@@ -1,0 +1,242 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "DeepSeek LLM 67B Chat"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "67B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "53.2"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Phi-3-Mini-4K-Instruct"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "3.8B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "68.3"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Yi-1.5-34B-Chat"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "34B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "70.4"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Qwen1.5-72B-Chat"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "72B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "60.7"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Qwen1.5-110B-Chat"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "110B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "73.0"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Qwen2-7B-Instruct"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "7B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "72.1"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Qwen2-72B-Instruct"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "72B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "77.2"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Llama-3-8B-Instruct"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "8B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "39.8"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Llama-3-70B-Instruct"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "70B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "63.5"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "gpt-4-turbo-2024-04-09"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "?"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "88.1"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "gpt-4o-2024-05-13"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "?"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "91.2"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Qwen2-7B (fine-tuned w/ the 1.07M synthesized instances)"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "7B"
+                },
+                "2": {
+                    "name": "Dataset",
+                    "value": "11.6K synthetic test instances"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "79.4"
+        }
+    }
+]
