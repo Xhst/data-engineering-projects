@@ -1,0 +1,1 @@
+|{|Type, Synthetic Data|, |Description, Example of prompt and response|}|

@@ -1,0 +1,14 @@
+|{|Model, gpt-4o-2024-05-13|}, Accuracy, 76.6|
+|{|Model, gpt-4-turbo-2024-04-09|}, Accuracy, 73.4|
+|{|Model, gpt-4-turbo-0125-preview|}, Accuracy, 64.5|
+|{|Model, gpt-4-turbo-1106-preview|}, Accuracy, 64.3|
+|{|Model, gpt-4|}, Accuracy, 52.6|
+|{|Model, Claude 3.5 Sonnet|}, Accuracy, 71.1|
+|{|Model, Claude 3 Opus|}, Accuracy, 63.8|
+|{|Model, Gemini Pro 1.5 (May 2024)|}, Accuracy, 67.7|
+|{|Model, Gemini Ultra|}, Accuracy, 53.2|
+|{|Model, DeepSeek-Coder-V2-Instruct|, |Model Size, 236B/21B|}, Accuracy, 75.7|
+|{|Model, Llama-3-70B-Instruct|, |Model Size, 70B|}, Accuracy, 52.8|
+|{|Model, Qwen2-72B-Instruct|, |Model Size, 72B|}, Accuracy, 59.7|
+|{|Model, Qwen2-7B-Instruct|, |Model Size, 7B|}, Accuracy, 49.6|
+|{|Model, Qwen2-7B (fine-tuned w/ the 1.07M synthesized instances)|, |Model Size, 7B|}, Accuracy, 64.9|

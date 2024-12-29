@@ -1,0 +1,39 @@
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 5|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.224|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 5|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.428|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 5|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.471|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 6|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.208|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 6|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.363|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 6|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.432|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 7|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.205|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 7|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.360|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 7|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.425|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 567|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.216|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 567|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.383|
+|{|Dataset, ID|, |Range, [1,60]|, |Number of Integers, 567|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.443|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 5|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.163|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 5|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.239|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 5|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.364|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 6|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.137|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 6|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.199|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 6|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.331|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 7|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.126|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 7|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.186|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 7|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.315|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 567|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.141|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 567|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.205|
+|{|Dataset, Numerical OOD|, |Range, [1,100]|, |Number of Integers, 567|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.326|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 5|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.131|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 5|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.181|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 5|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.229|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 6|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.030|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 6|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.051|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 6|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.063|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 7|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.111|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 7|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.163|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 7|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.220|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 567|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.091|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 567|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.132|
+|{|Dataset, Numerical OOD|, |Range, [1,1000]|, |Number of Integers, 567|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.170|
+|{|Dataset, Form OOD|, |Range, [1,60]|, |Number of Integers, 8|, |Fine-tuned on, 1M|}, Zero-shot pass@1, 0.169|
+|{|Dataset, Form OOD|, |Range, [1,60]|, |Number of Integers, 8|, |Fine-tuned on, 10M|}, Zero-shot pass@1, 0.231|
+|{|Dataset, Form OOD|, |Range, [1,60]|, |Number of Integers, 8|, |Fine-tuned on, 100M|}, Zero-shot pass@1, 0.352|

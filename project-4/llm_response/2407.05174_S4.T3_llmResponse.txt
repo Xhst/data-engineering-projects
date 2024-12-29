@@ -1,0 +1,12 @@
+|{|Approach, FedAvg|, |Class, Plane|}, Recall, 55.9%|
+|{|Approach, FedAvg|, |Class, Cat|}, Recall, 15.6%|
+|{|Approach, FedAvg|, |Class, Ship|}, Recall, 35.1%|
+|{|Approach, FedAvg|, |Class, Truck|}, Recall, 46.5%|
+|{|Approach, FedProx|, |Class, Plane|}, Recall, 40.6%|
+|{|Approach, FedProx|, |Class, Cat|}, Recall, 19.3%|
+|{|Approach, FedProx|, |Class, Ship|}, Recall, 53.2%|
+|{|Approach, FedProx|, |Class, Truck|}, Recall, 44.6%|
+|{|Approach, DPSDA-FL|, |Class, Plane|}, Recall, 58.86%|
+|{|Approach, DPSDA-FL|, |Class, Cat|}, Recall, 42.4%|
+|{|Approach, DPSDA-FL|, |Class, Ship|}, Recall, 58.6%|
+|{|Approach, DPSDA-FL|, |Class, Truck|}, Recall, 56.46%|

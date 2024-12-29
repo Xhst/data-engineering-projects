@@ -1,0 +1,12 @@
+|{|Model, GPT4|, |Metric, ID|}, OOD detection metric, 0.002|
+|{|Model, GPT4|, |Metric, OOD-N|}, OOD detection metric, 0.001|
+|{|Model, GPT4|, |Metric, OOD-F|}, OOD detection metric, 0|
+|{|Model, GPT4|, |Metric, OOD-1000|}, OOD detection metric, 0.001|
+|{|Model, Llama-2-7B|, |Metric, ID|}, OOD detection metric, 0|
+|{|Model, Llama-2-7B|, |Metric, OOD-N|}, OOD detection metric, 0|
+|{|Model, Llama-2-7B|, |Metric, OOD-F|}, OOD detection metric, 0|
+|{|Model, Llama-2-7B|, |Metric, OOD-1000|}, OOD detection metric, 0|
+|{|Model, Deepseek-Coder-33B|, |Metric, ID|}, OOD detection metric, 0.001|
+|{|Model, Deepseek-Coder-33B|, |Metric, OOD-N|}, OOD detection metric, 0|
+|{|Model, Deepseek-Coder-33B|, |Metric, OOD-F|}, OOD detection metric, 0.001|
+|{|Model, Deepseek-Coder-33B|, |Metric, OOD-1000|}, OOD detection metric, 0|

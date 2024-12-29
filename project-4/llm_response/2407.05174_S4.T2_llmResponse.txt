@@ -1,0 +1,3 @@
+|{|Approach, FedAvg|, |Data Augmentation, No|, |% of Synthetic Data Shared, 0|, |Classes/Client, 2|}, Global Model Accuracy, 28.30|
+|{|Approach, FedProx|, |Data Augmentation, No|, |% of Synthetic Data Shared, 0|, |Classes/Client, 2|}, Global Model Accuracy, 31.70|
+|{|Approach, DPSDA-FL|, |Data Augmentation, Yes|, |% of Synthetic Data Shared, 50|, |Classes/Client, 2|}, Global Model Accuracy, 37.20|
