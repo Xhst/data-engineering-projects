@@ -3,19 +3,21 @@ import pandas as pd
 import re
 from datasketch import MinHash, MinHashLSH
 from nltk.tokenize import word_tokenize
+from unidecode import unidecode
 
 
 def remove_noise_words(text: str) -> str:
-     # Define a set of common noise words
+    # Define a set of common noise words
     noise_words = {
         "inc", "ltd", "llc", "corp", "corporation", "co", "company", "srl", "spa", "limited", "ou", "as", "firm",
-        "group", "tbk", "hf", "gmbh", "ag", "plc", "pty", "nv", "sa", "bv", "ab", "aps", "oy", "kk", "kabushiki", 
-        "ulc", "eeig", "sarl", "sas", "snc", "societa", "gesellschaft", "aktiengesellschaft", "trust", "holdings", 
-        "associates", "partners", "enterprise", "enterprises", "ventures", "corporate", "business", "uc", "lp",
-        "industries", "solutions", "services", "technologies", "systems", "international", "global", "studios",
+        "group", "tbk", "hf", "gmbh", "ag", "plc", "pty", "nv", "sa", "saa", "bv", "ab", "aps", "oy", "kk", "kabushiki", 
+        "ulc", "eeig", "sarl", "sas", "snc", "societa", "gesellschaft", "aktiengesellschaft", "trust", "holdings", "llp",
+        "associates", "partners", "enterprise", "enterprises", "ventures", "corporate", "uc", "lp", "constructions",
+        "industries", "solutions", "services", "technologies", "systems", "global", "studios", "construction", "pllc",
         "regional", "private", "public", "joint stock company", "proprietary", "foundation", "chartered", "kaisha",
-        "unlimited", "partnership", "llp", "pllc", "society", "incorporated", "vereniging", "foundation", "grupo",
-        "nonprofit", "kabushiki", "gaisha", "financial", "gayrimenkul", "yatirim", "ortakligi", "gyo", "gruppo", "groupe"
+        "unlimited", "partnership", "society", "incorporated", "vereniging", "foundation", "grupo",  "technology",
+        "nonprofit", "kabushiki", "gaisha", "financial", "gayrimenkul", "yatirim", "ortakligi", "gyo", "gruppo", "groupe",
+        "gruppen", "holdings", "holding", "finance", "finances", "careers", "consultants", "consult", "consults"
     }   
 
     # Split the text into tokens and remove noise words
@@ -23,6 +25,19 @@ def remove_noise_words(text: str) -> str:
 
     # Return the filtered text
     return ' '.join(tokens)
+
+
+def split_pascal_case(text):
+    """
+    Splits a PascalCase string into separate words.
+    
+    Args:
+    text (str): The PascalCase string to split.
+    
+    Returns:
+    str: The string with words separated by spaces.
+    """
+    return re.sub(r'(?<!^)(?<![A-Z])(?=[A-Z])', ' ', text)
 
 
 def get_acronym(record: pd.Series) -> str:
@@ -43,9 +58,16 @@ def clean_text(text: str) -> str:
     # Replace dashes with spaces
     text = re.sub(r"[-_]", " ", text)
 
-    # Convert to lowercase, remove unwanted characters
+    # Split pascal case
+    text = split_pascal_case(text)
+
+    # Remove accents and special characters
+    text = unidecode(text)
+
+    # Convert to lowercase, remove extra spaces and punctuation
     text = re.sub(r"[^a-zA-Z0-9&\s]", "", text.lower().strip())
 
+    # Remove words that are usally not relevant for matching
     text = remove_noise_words(text)
 
     return text
@@ -71,7 +93,7 @@ def bigram_tokenize(record: pd.Series) -> set[str]:
     return tokens
 
 
-def lsh_blocking(df: pd.DataFrame, outputfile: str, threshold=0.8, num_perm=128, tokenizer=tokenize, use_acronym=False):
+def lsh_blocking(df: pd.DataFrame, outputfile: str, threshold=0.75, num_perm=128, tokenizer=tokenize, use_acronym=False):
     # Initialize LSH with a similarity threshold and number of permutations
     lsh = MinHashLSH(threshold=threshold, num_perm=num_perm)
 
@@ -110,11 +132,12 @@ def lsh_blocking(df: pd.DataFrame, outputfile: str, threshold=0.8, num_perm=128,
 
     with open(outputfile, 'w') as f:
         json.dump([list(block) for block in blocks], f, indent=4)
+    
+    print(f"Blocking completed, results written on {outputfile}")
 
 
 if __name__ == "__main__":
     datafile = "../schema_matching/mediated_schema/aggregated_sources.csv"
-    outputfile = "./results/lsh_blocking.json"
 
     df = pd.read_csv(datafile, low_memory=False)
     
