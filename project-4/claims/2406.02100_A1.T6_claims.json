@@ -1,0 +1,194 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "GPT4"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "ID"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0.002"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "GPT4"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "OOD-N"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0.001"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "GPT4"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "OOD-F"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "GPT4"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "OOD-1000"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0.001"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Llama-2-7B"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "ID"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Llama-2-7B"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "OOD-N"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Llama-2-7B"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "OOD-F"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Llama-2-7B"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "OOD-1000"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Deepseek-Coder-33B"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "ID"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0.001"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Deepseek-Coder-33B"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "OOD-N"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Deepseek-Coder-33B"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "OOD-F"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0.001"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Deepseek-Coder-33B"
+                },
+                "1": {
+                    "name": "Metric",
+                    "value": "OOD-1000"
+                }
+            },
+            "Measure": "OOD detection metric",
+            "Outcome": "0"
+        }
+    }
+]

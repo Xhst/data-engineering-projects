@@ -1,0 +1,9 @@
+|{|Name, FL architecture|, |Value, Cross-Silo Horizontal FL|}|
+|{|Name, Dataset|, |Value, CIFAR-10|}|
+|{|Name, NN architecture|, |Value, CNN|}|
+|{|Name, Number of clients|, |Value, 5|}|
+|{|Name, Number of local epochs|, |Value, 2|}|
+|{|Name, Number of global rounds|, |Value, 20|}|
+|{|Name, Learning rate|, |Value, 0.1|}|
+|{|Name, Batch size|, |Value, 32|}|
+|{|Name, Optimizer|, |Value, Stochastic gradient descent|}|

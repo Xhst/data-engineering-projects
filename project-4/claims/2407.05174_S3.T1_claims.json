@@ -1,0 +1,146 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Name",
+                    "value": "FL architecture"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "Cross-Silo Horizontal FL"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Name",
+                    "value": "Dataset"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "CIFAR-10"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Name",
+                    "value": "NN architecture"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "CNN"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Name",
+                    "value": "Number of clients"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "5"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Name",
+                    "value": "Number of local epochs"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "2"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Name",
+                    "value": "Number of global rounds"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "20"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Name",
+                    "value": "Learning rate"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "0.1"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Name",
+                    "value": "Batch size"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "32"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Name",
+                    "value": "Optimizer"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "Stochastic gradient descent"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    }
+]

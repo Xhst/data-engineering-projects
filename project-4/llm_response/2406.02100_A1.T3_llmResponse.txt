@@ -1,0 +1,20 @@
+|{|Hyperparameter, Learning Rate|, |Value, 1e-4|}|
+|{|Hyperparameter, Epochs|, |Value, 5|}|
+|{|Hyperparameter, Learning Rate Scheduler|, |Value, Cosine|}|
+|{|Hyperparameter, Warmup Step|, |Value, 0|}|
+|{|Hyperparameter, GPU Nums|, |Value, 8|}|
+|{|Hyperparameter, Optimizer|, |Value, Adamw|}|
+|{|Hyperparameter, Batch Size Per GPU|, |Value, 50|}|
+|{|Hyperparameter, Max Query Length|, |Value, 36|}|
+|{|Hyperparameter, Max Answer Length|, |Value, 130|}|
+|{|Hyperparameter, Max Generated Length|, |Value, 167|}|
+|{|Hyperparameter, Precision|, |Value, AMP|}|
+|{|Hyperparameter, LoRA Rank|, |Value, 8|}|
+|{|Hyperparameter, LoRA α|, |Value, 32|}|
+|{|Hyperparameter, LoRA Dropout|, |Value, 0.05|}|
+|{|Hyperparameter, Vocabulary Size|, |Value, 32002|}|
+|{|Hyperparameter, Optimizer β 1|, |Value, 0.9|}|
+|{|Hyperparameter, Optimizer β 2|, |Value, 0.95|}|
+|{|Hyperparameter, Optimizer ϵ|, |Value, 1e-9|}|
+|{|Hyperparameter, Seed|, |Value, 1234|}|
+|{|Hyperparameter, Precision|, |Value, bfloat16|}|

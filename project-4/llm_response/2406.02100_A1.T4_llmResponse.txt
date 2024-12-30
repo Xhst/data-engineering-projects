@@ -1,0 +1,3 @@
+|{|Approach, 2-Shot Prompting|, |OOD-N, 0|, |OOD-F, 0|, |OOD-1000, 0|}|
+|{|Approach, 8-Shot Prompting|, |OOD-N, 0|, |OOD-F, 0|, |OOD-1000, 0|}|
+|{|Approach, Chain-of-Thought|, |OOD-N, 0|, |OOD-F, 0|, |OOD-1000, 0|}|
