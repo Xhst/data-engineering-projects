@@ -13,10 +13,11 @@ def create_profiling(data):
 
     # Claims extractions
     for claim in data:
-        for spec in claim['Specifications']:
-            all_entries_name.append({'Key': spec['name'], 'Count': 1})
-            all_entries_value.append({'Key': spec['value'], 'Count': 1})
-        all_entries_metric.append({'Key': claim['Measure'], 'Count': 1})
+        for key, row in claim.items():
+            for spec_key, spec in row['specifications'].items():
+                all_entries_name.append({'Key': spec['name'], 'Count': 1})
+                all_entries_value.append({'Key': spec['value'], 'Count': 1})
+            all_entries_metric.append({'Key': row['Measure'], 'Count': 1})
 
 
     profiling_df_name = pd.DataFrame(all_entries_name)

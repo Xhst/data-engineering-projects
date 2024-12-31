@@ -1,0 +1,32 @@
+Key,Count
+-,35
+5-way-1-shot accuracy,23
+AP,14
+AP@0.5,20
+AP@0.75,20
+AP@[0.5:0.95],20
+AR,3
+AR@0.5,20
+AR@0.75,20
+AR@[0.5:0.95],20
+Accuracy,77
+AgeDb-30,20
+Audio tagging F1 score,8
+CALFW,20
+CFP,20
+CPLFW,20
+CUB 5-way-1-shot classification accuracy,9
+Elapsed Time,12
+F1 score,3
+Global Model Accuracy,3
+IJB-B,20
+IJB-C,20
+LFW,20
+OOD detection metric,12
+Performance,6
+Recall,12
+Sorting success rate,42
+Zero-shot pass@1,39
+event-based F1 score,8
+mIoU,230
+mIoU excl. *,11
