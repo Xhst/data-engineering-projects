@@ -1,0 +1,50 @@
+Key,Count
+% of Synthetic Data Shared,3
+Approach,18
+Backbone,195
+Background Videos,2
+Background-less Videos,2
+Base Network,10
+Bit,140
+Category,40
+Class,182
+Classes,2
+Classes/Client,3
+Data Augmentation,21
+Dataset,499
+Description,1
+Fine-tuned on,39
+Fruit,12
+Hyperparameter,20
+Image Count,6
+Initialization,10
+Instance,42
+Item,42
+Layers Retrained,5
+Method,303
+Metric,12
+Model,199
+Model Size,17
+Name,9
+Number of Integers,39
+Number of Synthetic Videos,11
+Number of images,120
+Number of synthetic videos,3
+OOD-1000,3
+OOD-F,3
+OOD-N,3
+Output Level Adaptation,5
+Parameter Size,140
+Percentage of Real Videos,11
+Pre-training,5
+Quantization,140
+Range,39
+Setting,48
+Size (MB),140
+Task,42
+Training Data,9
+Type,13
+Type of synthetic videos,3
+Value,29
+classifier,9
+dataset,9
