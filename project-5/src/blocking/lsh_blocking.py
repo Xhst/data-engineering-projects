@@ -17,7 +17,8 @@ def remove_noise_words(text: str) -> str:
         "regional", "private", "public", "joint stock company", "proprietary", "foundation", "chartered", "kaisha",
         "unlimited", "partnership", "society", "incorporated", "vereniging", "foundation", "grupo",  "technology",
         "nonprofit", "kabushiki", "gaisha", "financial", "gayrimenkul", "yatirim", "ortakligi", "gyo", "gruppo", "groupe",
-        "gruppen", "holdings", "holding", "finance", "finances", "careers", "consultants", "consult", "consults"
+        "gruppen", "holdings", "holding", "finance", "finances", "careers", "consultants", "consult", "consults",
+        "communication", "communications" #business international
     }   
 
     # Split the text into tokens and remove noise words
