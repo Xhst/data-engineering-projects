@@ -73,7 +73,12 @@ Filename for the alignment is `YOUR_NAME_ALIGNMENT.json`
 
 
 # Note
-### Claims
+### 
+- 1812.05040 completed successfully (92.64s)
+- 1911.07164 completed successfully (51.82s)
+- 2001.11091 completed successfully (130.07s)
+- 2011.00695 completed successfully (49.57s)
+- 2206.10526 completed successfully (68.41s)
 - 2211.16066 completed successfully (3.70s)
 - 2401.13405 completed successfully (20.30s)
 - 2406.02100 completed successfully (43.42s)
