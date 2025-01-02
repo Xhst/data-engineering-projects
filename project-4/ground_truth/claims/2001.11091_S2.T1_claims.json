@@ -1,0 +1,50 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "HMDB-51"
+                },
+                "1": {
+                    "name": "Classes",
+                    "value": "38"
+                },
+                "2": {
+                    "name": "Background Videos",
+                    "value": "3817"
+                },
+                "3": {
+                    "name": "Background-less Videos",
+                    "value": "8528"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-101"
+                },
+                "1": {
+                    "name": "Classes",
+                    "value": "25"
+                },
+                "2": {
+                    "name": "Background Videos",
+                    "value": "0"
+                },
+                "3": {
+                    "name": "Background-less Videos",
+                    "value": "5514"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    }
+]
