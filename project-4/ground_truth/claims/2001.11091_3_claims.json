@@ -1,0 +1,98 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "HMDB-38"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Real only"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "71.8"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Real only"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "96.66"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "HMDB-38"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Half Synthetic Videos+Real"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "73.66"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "Half Synthetic Videos+Real"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "97.5"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "HMDB-38"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "All Synthetic Videos+Real"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "74.62"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "UCF-25"
+                },
+                "1": {
+                    "name": "Setting",
+                    "value": "All Synthetic Videos+Real"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "97.8"
+        }
+    }
+]
