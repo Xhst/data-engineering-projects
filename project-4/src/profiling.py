@@ -24,7 +24,7 @@ def create_profiling(data):
     profiling_df_value = pd.DataFrame(all_entries_value)
     profiling_df_metric = pd.DataFrame(all_entries_metric)
     
-    # Remove duplicate
+    # Group-by to manage duplicate
     profiling_df_dict['name'] = (profiling_df_name.groupby('Key').sum().reset_index())
     profiling_df_dict['value'] = (profiling_df_value.groupby('Key').sum().reset_index())
     profiling_df_dict['metric'] = (profiling_df_metric.groupby('Key').sum().reset_index())
