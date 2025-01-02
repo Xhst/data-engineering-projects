@@ -1,0 +1,82 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Output Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "non-adaptive baseline"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "37.5"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Output Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "semantic segmentation output map"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "45.9"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Output Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "depth output map"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "43.8"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Output Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "individually aligning both semantic segmentation and depth estimation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "46.3"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Output Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "joint output space of depth estimation and semantic segmentation"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "50.0"
+        }
+    }
+]
