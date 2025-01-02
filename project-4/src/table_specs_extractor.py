@@ -104,12 +104,11 @@ if __name__ == "__main__":
 
     start_time = time.time()
     
-    #gt_path = '../GT-prv'
-    gt_path = paths.GROUND_TRUTH
+    gt_path_papers = paths.GROUND_TRUTH.PAPERS
     
-    for filename in os.listdir(gt_path):
+    for filename in os.listdir(gt_path_papers):
         if filename.endswith('.json'):
-            file_path = os.path.join(gt_path, filename)
+            file_path = os.path.join(gt_path_papers, filename)
 
             print(f"\n\033[94mProcessing file: {filename.rstrip('.json')}\033[0m")
 
@@ -124,7 +123,7 @@ if __name__ == "__main__":
                 save_llm_response(response, filename.rstrip('.json'), table_key)
 
                 print("\033[96mCreating claims file for table " + table_key + "\033[0m")
-                claim_builder.build(response, filename.rstrip('.json'), table_key)
+                claim_builder.build(response, filename.rstrip('.json'), table_key, paths.CLAIMS)
             end_nested_time = time.time()
             elapsed_nested_time = end_nested_time - start_nested_time
             print(f"\n\033[96m{filename.rstrip('.json')} completed successfully\033[0m ({elapsed_nested_time:.2f}s)")

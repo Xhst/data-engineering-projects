@@ -43,13 +43,20 @@ def parse_claim(claim_string, claim_index):
     }
 '''
 
-def build(input_data, paperId, tableId):
+def build(input_data, paperId, tableId, output_dir):
 
     claims_strings = [claim for claim in input_data.split("\n") if claim.strip()]
     claims = [parse_claim(claim, idx) for idx, claim in enumerate(claims_strings)]
 
-    output_file = paths.CLAIMS + "/" + paperId + "_" + tableId + "_claims.json"
+    output_file = output_dir + "/" + paperId + "_" + tableId + "_claims.json"
     with open(output_file, "w") as f:
         json.dump(claims, f, indent=4)
 
     print(f"\033[32mFile JSON saved as {output_file}\033[0m")
+    
+
+# helper sugo, dw about it
+with open(paths.LLM_RESPONSE + "/1812.05040_S3.T1_llmResponse.txt", "r") as file:
+    content = file.read()
+    
+    build(content, "1812.05040", "1", paths.GROUND_TRUTH.CLAIMS.value)
