@@ -1,0 +1,98 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Input Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "non-adaptive baseline"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "37.5"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Input Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "image translation with CycleGAN"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "39.8"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Input Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "image transform network guided by task network"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "43.5"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Input Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "image transform network guided by task network with additional depth input"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "44.2"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Input Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "image transform network guided by task network with additional semantic label input"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "44.7"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Input Level Adaptation"
+                },
+                "1": {
+                    "name": "Method",
+                    "value": "image transform network guided by task network with both depth and semantic labels as additional input"
+                }
+            },
+            "Measure": "mIoU",
+            "Outcome": "45.9"
+        }
+    }
+]
