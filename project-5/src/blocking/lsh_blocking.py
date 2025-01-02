@@ -145,7 +145,7 @@ if __name__ == "__main__":
     
     lsh_blocking(df, "./results/lsh_words_blocking.json")
     lsh_blocking(df, "./results/lsh_bigram_blocking.json", tokenizer=bigram_tokenize)
-    lsh_blocking(df, "./results/lsh_words_aq_blocking_.json", use_acronym=True)
+    lsh_blocking(df, "./results/lsh_words_aq_blocking.json", use_acronym=True)
     lsh_blocking(df, "./results/lsh_bigram_aq_blocking.json", tokenizer=bigram_tokenize, use_acronym=True)
 
 
