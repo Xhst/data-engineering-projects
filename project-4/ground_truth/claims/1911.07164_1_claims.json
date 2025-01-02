@@ -1,0 +1,182 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "dataset",
+                    "value": "CUB"
+                },
+                "1": {
+                    "name": "Training Data",
+                    "value": "Original"
+                },
+                "2": {
+                    "name": "classifier",
+                    "value": "Nearest Neighbor"
+                }
+            },
+            "Measure": "5-way-1-shot classification accuracy",
+            "Outcome": "69.6"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "dataset",
+                    "value": "CUB"
+                },
+                "1": {
+                    "name": "Training Data",
+                    "value": "Original"
+                },
+                "2": {
+                    "name": "classifier",
+                    "value": "Logistic Regression"
+                }
+            },
+            "Measure": "5-way-1-shot classification accuracy",
+            "Outcome": "75"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "dataset",
+                    "value": "CUB"
+                },
+                "1": {
+                    "name": "Training Data",
+                    "value": "Original"
+                },
+                "2": {
+                    "name": "classifier",
+                    "value": "Softmax Regression"
+                }
+            },
+            "Measure": "5-way-1-shot classification accuracy",
+            "Outcome": "74.1"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "dataset",
+                    "value": "CUB"
+                },
+                "1": {
+                    "name": "Training Data",
+                    "value": "Original + Generated"
+                },
+                "2": {
+                    "name": "classifier",
+                    "value": "Nearest Neighbor"
+                }
+            },
+            "Measure": "5-way-1-shot classification accuracy",
+            "Outcome": "70.1"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "dataset",
+                    "value": "CUB"
+                },
+                "1": {
+                    "name": "Training Data",
+                    "value": "Original + Generated"
+                },
+                "2": {
+                    "name": "classifier",
+                    "value": "Logistic Regression"
+                }
+            },
+            "Measure": "5-way-1-shot classification accuracy",
+            "Outcome": "74.6"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "dataset",
+                    "value": "CUB"
+                },
+                "1": {
+                    "name": "Training Data",
+                    "value": "Original + Generated"
+                },
+                "2": {
+                    "name": "classifier",
+                    "value": "Softmax Regression"
+                }
+            },
+            "Measure": "5-way-1-shot classification accuracy",
+            "Outcome": "73.8"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "dataset",
+                    "value": "CUB"
+                },
+                "1": {
+                    "name": "Training Data",
+                    "value": "Original + Mixed"
+                },
+                "2": {
+                    "name": "classifier",
+                    "value": "Nearest Neighbor"
+                }
+            },
+            "Measure": "5-way-1-shot classification accuracy",
+            "Outcome": "70.6"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "dataset",
+                    "value": "CUB"
+                },
+                "1": {
+                    "name": "Training Data",
+                    "value": "Original + Mixed"
+                },
+                "2": {
+                    "name": "classifier",
+                    "value": "Logistic Regression"
+                }
+            },
+            "Measure": "5-way-1-shot classification accuracy",
+            "Outcome": "75.5"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "dataset",
+                    "value": "CUB"
+                },
+                "1": {
+                    "name": "Training Data",
+                    "value": "Original + Mixed"
+                },
+                "2": {
+                    "name": "classifier",
+                    "value": "Softmax Regression"
+                }
+            },
+            "Measure": "5-way-1-shot classification accuracy",
+            "Outcome": "74.8"
+        }
+    }
+]
