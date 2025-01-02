@@ -120,12 +120,13 @@ def lsh_blocking(df: pd.DataFrame, outputfile: str, threshold=0.75, num_perm=128
         if use_acronym:
             acronym = get_acronym(record)
 
-            minhash_acronym = MinHash(num_perm=num_perm)
-            minhash_acronym.update(acronym.encode('utf8'))
-            
-            acronym_query = lsh.query(minhash_acronym)
+            if len(acronym) > 1:
+                minhash_acronym = MinHash(num_perm=num_perm)
+                minhash_acronym.update(acronym.encode('utf8'))
+                
+                acronym_query = lsh.query(minhash_acronym)
 
-            query += acronym_query
+                query += acronym_query
         
         # Query LSH for candidates with similar MinHashes
         candidates = frozenset(query)
