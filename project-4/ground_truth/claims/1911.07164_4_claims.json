@@ -1,0 +1,242 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Nearest neighbor"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "ResNet18"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "ImageNet"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "89.44"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Softmax regression"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "ResNet18"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "ImageNet"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "92.28"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "Logistic regression"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "ResNet18"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "ImageNet"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "92.34"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ProtoNet"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "ResNet18"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "ImageNet"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "92.97"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "MetaIRNet (Ours)"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "ResNet18"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "ImageNet"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "93.09"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "MAML"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "Conv-4"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "Random"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "72.09"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "MatchingNet"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "Conv-4"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "Random"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "72.86"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "RelationNet"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "Conv-4"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "Random"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "76.11"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "ProtoNet"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "Conv-4"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "Random"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "80.75"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Method",
+                    "value": "MetaIRNet (Ours)"
+                },
+                "1": {
+                    "name": "Base Network",
+                    "value": "Conv-4"
+                },
+                "2": {
+                    "name": "Initialization",
+                    "value": "Random"
+                },
+                "3": {
+                    "name": "Dataset",
+                    "value": "CUB"
+                }
+            },
+            "Measure": "5-way-5-shot Accuracy (%) ",
+            "Outcome": "81.16"
+        }
+    }
+]
