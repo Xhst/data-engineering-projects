@@ -1,0 +1,74 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedAvg"
+                },
+                "1": {
+                    "name": "Data Augmentation",
+                    "value": "No"
+                },
+                "2": {
+                    "name": "% of Synthetic Data Shared",
+                    "value": "0"
+                },
+                "3": {
+                    "name": "Classes/Client",
+                    "value": "2"
+                }
+            },
+            "Measure": "Global Model Accuracy",
+            "Outcome": "28.30"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedProx"
+                },
+                "1": {
+                    "name": "Data Augmentation",
+                    "value": "No"
+                },
+                "2": {
+                    "name": "% of Synthetic Data Shared",
+                    "value": "0"
+                },
+                "3": {
+                    "name": "Classes/Client",
+                    "value": "2"
+                }
+            },
+            "Measure": "Global Model Accuracy",
+            "Outcome": "31.70"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "DPSDA-FL"
+                },
+                "1": {
+                    "name": "Data Augmentation",
+                    "value": "Yes"
+                },
+                "2": {
+                    "name": "% of Synthetic Data Shared",
+                    "value": "50"
+                },
+                "3": {
+                    "name": "Classes/Client",
+                    "value": "2"
+                }
+            },
+            "Measure": "Global Model Accuracy",
+            "Outcome": "37.20"
+        }
+    }
+]

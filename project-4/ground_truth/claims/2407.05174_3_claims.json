@@ -1,0 +1,242 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedAvg"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Plane"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "55.9%"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedAvg"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Cat"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "15.6%"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedAvg"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Ship"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "35.1%"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedAvg"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Truck"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "46.5%"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedProx"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Plane"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "40.6%"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedProx"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Cat"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "19.3%"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedProx"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Ship"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "53.2%"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "FedProx"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Truck"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "44.6%"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "DPSDA-FL"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Plane"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "58.86%"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "DPSDA-FL"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Cat"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "42.4%"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "DPSDA-FL"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Ship"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "58.6%"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "DPSDA-FL"
+                },
+                "1": {
+                    "name": "Class",
+                    "value": "Truck"
+                },
+                "2": {
+                    "name": "Clients",
+                    "value": "2"
+                }
+            },
+            "Measure": "Recall",
+            "Outcome": "56.46%"
+        }
+    }
+]
