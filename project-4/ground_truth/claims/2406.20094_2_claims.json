@@ -1,0 +1,246 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "gpt-4o-2024-05-13"
+                },
+                "1": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "76.6"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "gpt-4-turbo-2024-04-09"
+                },
+                "1": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "73.4"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "gpt-4-turbo-0125-preview"
+                },
+                "1": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "64.5"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "gpt-4-turbo-1106-preview"
+                },
+                "1": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "64.3"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "gpt-4"
+                },
+                "1": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "52.6"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Claude 3.5 Sonnet"
+                },
+                "1": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "71.1"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Claude 3 Opus"
+                },
+                "1": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "63.8"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Gemini Pro 1.5 (May 2024)"
+                },
+                "1": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "67.7"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Gemini Ultra"
+                },
+                "1": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "53.2"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "DeepSeek-Coder-V2-Instruct"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "236B/21B"
+                },
+                "2": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "75.7"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Llama-3-70B-Instruct"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "70B"
+                },
+                "2": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "52.8"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Qwen2-72B-Instruct"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "72B"
+                },
+                "2": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "59.7"
+        }
+    },
+    {
+        "12": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Qwen2-7B-Instruct"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "7B"
+                },
+                "2": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "49.6"
+        }
+    },
+    {
+        "13": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "Qwen2-7B (fine-tuned w/ the 1.07M synthesized instances)"
+                },
+                "1": {
+                    "name": "Model Size",
+                    "value": "7B"
+                },
+                "2": {
+                    "name": "benchmark",
+                    "value": "MATH"
+                }
+            },
+            "Measure": "Accuracy",
+            "Outcome": "64.9"
+        }
+    }
+]
