@@ -1,0 +1,194 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Training"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Apple"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "1404.35"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Training"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Banana"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "1395.2"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Training"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Strawberry"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "1411.18"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Training"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Orange"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "1397.56"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Training"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Peach"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "1389.97"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Training"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Plum"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "1433.73"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Sampling"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Apple"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "68.3"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Sampling"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Banana"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "70.68"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Sampling"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Strawberry"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "58.91"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Sampling"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Orange"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "67.29"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Sampling"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Peach"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "68.52"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Type",
+                    "value": "Sampling"
+                },
+                "1": {
+                    "name": "Fruit",
+                    "value": "Plum"
+                }
+            },
+            "Measure": "Elapsed Time of WGAN-GP algorithm",
+            "Outcome": "67.92"
+        }
+    }
+]
