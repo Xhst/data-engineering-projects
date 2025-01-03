@@ -1,0 +1,82 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "All"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "random synthetic"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "81.26"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "Stage 3+"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "random synthetic"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "76.71"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "Stage 4+"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "random synthetic"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "80.77"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "Stage 5+"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "random synthetic"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "77.13"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Layers Retrained",
+                    "value": "Heads"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "random synthetic"
+                }
+            },
+            "Measure": "AP",
+            "Outcome": "71.52"
+        }
+    }
+]
