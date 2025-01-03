@@ -1,0 +1,938 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.224"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.428"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.471"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "6"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.208"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "6"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.363"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "6"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.432"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.205"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.360"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.425"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Total ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5,6,7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.216"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Total ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5,6,7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.383"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Total ID"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5,6,7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.443"
+        }
+    },
+    {
+        "12": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.163"
+        }
+    },
+    {
+        "13": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.239"
+        }
+    },
+    {
+        "14": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.364"
+        }
+    },
+    {
+        "15": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "6"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.137"
+        }
+    },
+    {
+        "16": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "6"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.199"
+        }
+    },
+    {
+        "17": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "6"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.331"
+        }
+    },
+    {
+        "18": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.126"
+        }
+    },
+    {
+        "19": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.186"
+        }
+    },
+    {
+        "20": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.315"
+        }
+    },
+    {
+        "21": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Total Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5,6,7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.141"
+        }
+    },
+    {
+        "22": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Total Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5,6,7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.205"
+        }
+    },
+    {
+        "23": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Total Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,100]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5,6,7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.326"
+        }
+    },
+    {
+        "24": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.131"
+        }
+    },
+    {
+        "25": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.181"
+        }
+    },
+    {
+        "26": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.229"
+        }
+    },
+    {
+        "27": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "6"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.030"
+        }
+    },
+    {
+        "28": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "6"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.051"
+        }
+    },
+    {
+        "29": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "6"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.063"
+        }
+    },
+    {
+        "30": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.111"
+        }
+    },
+    {
+        "31": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.163"
+        }
+    },
+    {
+        "32": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.220"
+        }
+    },
+    {
+        "33": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Total Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5,6,7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.091"
+        }
+    },
+    {
+        "34": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Total Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5,6,7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.132"
+        }
+    },
+    {
+        "35": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Total Numerical OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,1000]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "5,6,7"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.170"
+        }
+    },
+    {
+        "36": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Form OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "8"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "1M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.169"
+        }
+    },
+    {
+        "37": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Form OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "8"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "10M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.231"
+        }
+    },
+    {
+        "38": {
+            "specifications": {
+                "0": {
+                    "name": "Dataset",
+                    "value": "Form OOD"
+                },
+                "1": {
+                    "name": "Range",
+                    "value": "[1,60]"
+                },
+                "2": {
+                    "name": "Number of Integers",
+                    "value": "8"
+                },
+                "3": {
+                    "name": "Fine-tuned on",
+                    "value": "100M"
+                }
+            },
+            "Measure": "Zero-shot pass@1",
+            "Outcome": "0.352"
+        }
+    }
+]

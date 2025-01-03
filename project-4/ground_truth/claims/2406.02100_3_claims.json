@@ -1,0 +1,322 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Learning Rate"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "1e-4"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Epochs"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "5"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Learning Rate Scheduler"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "Cosine"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Warmup Step"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "0"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "GPU Nums"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "8"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Optimizer"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "Adamw"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Batch Size Per GPU"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "50"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Max Query Length"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "36"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Max Answer Length"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "130"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Max Generated Length"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "167"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Precision"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "AMP"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "LoRA Rank"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "8"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "12": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "LoRA \u00ce\u00b1"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "32"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "13": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "LoRA Dropout"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "0.05"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "14": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Vocabulary Size"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "32002"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "15": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Optimizer \u00ce\u00b2 1"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "0.9"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "16": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Optimizer \u00ce\u00b2 2"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "0.95"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "17": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Optimizer \u00cf\u00b5"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "1e-9"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "18": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Seed"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "1234"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    },
+    {
+        "19": {
+            "specifications": {
+                "0": {
+                    "name": "Hyperparameter",
+                    "value": "Precision"
+                },
+                "1": {
+                    "name": "Value",
+                    "value": "bfloat16"
+                }
+            },
+            "Measure": "-",
+            "Outcome": "-"
+        }
+    }
+]

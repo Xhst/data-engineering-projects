@@ -1,0 +1,194 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "2-Shot Prompting"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "ID",
+            "Outcome": "0"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "2-Shot Prompting"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "OOD-N",
+            "Outcome": "0"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "2-Shot Prompting"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "OOD-F",
+            "Outcome": "0"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "2-Shot Prompting"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "OOD-1000",
+            "Outcome": "0"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "8-Shot Prompting"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "ID",
+            "Outcome": "0"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "8-Shot Prompting"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "OOD-N",
+            "Outcome": "0"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "8-Shot Prompting"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "OOD-F",
+            "Outcome": "0"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "8-Shot Prompting"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "OOD-1000",
+            "Outcome": "0"
+        }
+    },
+    {
+        "8": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "Chain-of-Thought"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "ID",
+            "Outcome": "0"
+        }
+    },
+    {
+        "9": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "Chain-of-Thought"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "OOD-N",
+            "Outcome": "0"
+        }
+    },
+    {
+        "10": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "Chain-of-Thought"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "OOD-F",
+            "Outcome": "0"
+        }
+    },
+    {
+        "11": {
+            "specifications": {
+                "0": {
+                    "name": "Approach",
+                    "value": "Chain-of-Thought"
+                },
+                "1": {
+                    "name": "base model",
+                    "value": "open-llama-3B"
+                }
+            },
+            "Measure": "OOD-1000",
+            "Outcome": "0"
+        }
+    }
+]
