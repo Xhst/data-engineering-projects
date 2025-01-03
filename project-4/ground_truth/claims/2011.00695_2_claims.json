@@ -1,0 +1,130 @@
+[
+    {
+        "0": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "baseline"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "DCASE 2018"
+                }
+            },
+            "Measure": "Audio tagging F1 score",
+            "Outcome": "0.625"
+        }
+    },
+    {
+        "1": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "baseline"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "DCASE 2019"
+                }
+            },
+            "Measure": "Audio tagging F1 score",
+            "Outcome": "0.630"
+        }
+    },
+    {
+        "2": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "IFD"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "DCASE 2018"
+                }
+            },
+            "Measure": "Audio tagging F1 score",
+            "Outcome": "0.629"
+        }
+    },
+    {
+        "3": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "IFD"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "DCASE 2019"
+                }
+            },
+            "Measure": "Audio tagging F1 score",
+            "Outcome": "0.609"
+        }
+    },
+    {
+        "4": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "SEDB"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "DCASE 2018"
+                }
+            },
+            "Measure": "Audio tagging F1 score",
+            "Outcome": "0.635"
+        }
+    },
+    {
+        "5": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "SEDB"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "DCASE 2019"
+                }
+            },
+            "Measure": "Audio tagging F1 score",
+            "Outcome": "0.663"
+        }
+    },
+    {
+        "6": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "SEDB & IFD"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "DCASE 2018"
+                }
+            },
+            "Measure": "Audio tagging F1 score",
+            "Outcome": "0.645"
+        }
+    },
+    {
+        "7": {
+            "specifications": {
+                "0": {
+                    "name": "Model",
+                    "value": "SEDB & IFD"
+                },
+                "1": {
+                    "name": "Dataset",
+                    "value": "DCASE 2019"
+                }
+            },
+            "Measure": "Audio tagging F1 score",
+            "Outcome": "0.638"
+        }
+    }
+]
