@@ -56,7 +56,7 @@ def build(input_data, paperId, tableId, output_dir):
     
 
 # helper sugo, dw about it
-with open(paths.LLM_RESPONSE + "/1812.05040_S3.T1_llmResponse.txt", "r") as file:
+with open(paths.LLM_RESPONSE + "/2206.10526_S3.T1_llmResponse.txt", "r") as file:
     content = file.read()
     
-    build(content, "1812.05040", "1", paths.GROUND_TRUTH.CLAIMS.value)
+    build(content, "2206.10526", "1", paths.GROUND_TRUTH.CLAIMS.value)  # ===> mi rifiuto di farla...
