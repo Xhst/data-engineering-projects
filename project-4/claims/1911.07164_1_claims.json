@@ -15,7 +15,7 @@
                     "value": "Nearest Neighbor"
                 }
             },
-            "Measure": "CUB 5-way-1-shot classification accuracy",
+            "Measure": "5-way-1-shot classification accuracy",
             "Outcome": "69.6"
         }
     },
@@ -35,7 +35,7 @@
                     "value": "Logistic Regression"
                 }
             },
-            "Measure": "CUB 5-way-1-shot classification accuracy",
+            "Measure": "5-way-1-shot classification accuracy",
             "Outcome": "75"
         }
     },
@@ -55,7 +55,7 @@
                     "value": "Softmax Regression"
                 }
             },
-            "Measure": "CUB 5-way-1-shot classification accuracy",
+            "Measure": "5-way-1-shot classification accuracy",
             "Outcome": "74.1"
         }
     },
@@ -75,7 +75,7 @@
                     "value": "Nearest Neighbor"
                 }
             },
-            "Measure": "CUB 5-way-1-shot classification accuracy",
+            "Measure": "5-way-1-shot classification accuracy",
             "Outcome": "70.1"
         }
     },
@@ -95,7 +95,7 @@
                     "value": "Logistic Regression"
                 }
             },
-            "Measure": "CUB 5-way-1-shot classification accuracy",
+            "Measure": "5-way-1-shot classification accuracy",
             "Outcome": "74.6"
         }
     },
@@ -115,7 +115,7 @@
                     "value": "Softmax Regression"
                 }
             },
-            "Measure": "CUB 5-way-1-shot classification accuracy",
+            "Measure": "5-way-1-shot classification accuracy",
             "Outcome": "73.8"
         }
     },
@@ -135,7 +135,7 @@
                     "value": "Nearest Neighbor"
                 }
             },
-            "Measure": "CUB 5-way-1-shot classification accuracy",
+            "Measure": "5-way-1-shot classification accuracy",
             "Outcome": "70.6"
         }
     },
@@ -155,7 +155,7 @@
                     "value": "Logistic Regression"
                 }
             },
-            "Measure": "CUB 5-way-1-shot classification accuracy",
+            "Measure": "5-way-1-shot classification accuracy",
             "Outcome": "75.5"
         }
     },
@@ -175,7 +175,7 @@
                     "value": "Softmax Regression"
                 }
             },
-            "Measure": "CUB 5-way-1-shot classification accuracy",
+            "Measure": "5-way-1-shot classification accuracy",
             "Outcome": "74.8"
         }
     }
