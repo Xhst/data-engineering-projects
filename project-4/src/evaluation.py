@@ -1,146 +1,154 @@
-import os
 import json
+from pathlib import Path
+from dataclasses import dataclass
 
-import paths
+# Constants for ANSI colors
+RED = "\033[31m"
+GREEN = "\033[32m"
+BLUE = "\033[34m"
+CYAN = "\033[36m"
+RESET = "\033[0m"
 
-# Precision on claims
-def evaluate_claims(gt_path: str, claim_path: str) -> tuple[float, float, int]:
+@dataclass
+class Claim():
+    specs: list[tuple[str,str]]
+    measure: str
+    outcome: str
 
-    print("- \033[31mCLAIMS evaluation started:\033[0m")
 
-    gt_files = set(os.listdir(gt_path))
-    claim_files = set(os.listdir(claim_path))
-    
-    # Files intersection
-    common_files = gt_files.intersection(claim_files)
-    correct_claims = 0
-    
-    file_number = 0
+def extract_claims_from_directory(directory_path: str) -> dict[str, list[Claim]]:
+    """
+    Extracts claims from all JSON files in a directory and stores them in a dictionary.
 
-    claims_len = 0
-    gt_claims_len = 0
-    
+    Args:
+        directory_path (str): Path to the directory containing JSON files.
+
+    Returns:
+        dict[str, list[Claim]]: Dictionary where the key is the file name and the value is a list of Claim objects.
+    """
+    claims_dict = {}
+    directory = Path(directory_path)
+
+    if not directory.is_dir():
+        raise ValueError(f"The provided path '{directory_path}' is not a directory.")
+
+    # Iterate over all JSON files in the directory
+    for file_path in directory.glob("*.json"):
+        file_name = file_path.name  # Extract file name
+
+        try:
+            with open(file_path, 'r') as file:
+                data = json.load(file)
+
+            claims = []
+
+            for entry in data:
+                for _, content in entry.items():
+                    # Extract specifications
+                    specs = []
+                    if "specifications" in content:
+                        for spec_id, spec in content["specifications"].items():
+                            specs.append((spec["name"], spec["value"]))
+
+                    # Extract measure and outcome
+                    measure = content.get("Measure", "")
+                    outcome = content.get("Outcome", "")
+
+                    # Create a Claim object
+                    claim = Claim(specs=specs, measure=measure, outcome=outcome)
+                    claims.append(claim)
+
+            # Add to dictionary with file_name as the key
+            claims_dict[file_name] = claims
+
+        except Exception as e:
+            print(f"Error processing file {file_name}: {e}")
+
+    return claims_dict
+
+
+def evaluate_claims(gt_dict: dict[str, list[Claim]], pred_dict: dict[str, list[Claim]]) -> tuple[float, float, int]:
+    """
+    Evaluates precision and recall for claims using pre-extracted Claim objects.
+
+    Args:
+        gt_dict (dict[str, list[Claim]]): Ground truth claims.
+        pred_dict (dict[str, list[Claim]]): Predicted claims.
+
+    Returns:
+        tuple[float, float, int]: Precision, recall, and the number of files evaluated.
+    """
+    print(f"- {RED}CLAIMS evaluation started:{RESET}")
+
+    common_files = set(gt_dict.keys()).intersection(set(pred_dict.keys()))
+    true_positives = 0
+    false_positives = 0
+    false_negatives = 0
+    file_number = len(common_files)
+
     for file_name in common_files:
+        gt_claims = {tuple(claim.specs) + (claim.measure, claim.outcome) for claim in gt_dict[file_name]}
+        pred_claims = {tuple(claim.specs) + (claim.measure, claim.outcome) for claim in pred_dict[file_name]}
 
-        if file_name == "1812.05040_4_claims.json":
-            continue
+        # True Positives: Claims present in both ground truth and predictions
+        true_positives += len(gt_claims & pred_claims)
 
-        file_number += 1
+        # False Positives: Claims present in predictions but not in ground truth
+        false_positives += len(pred_claims - gt_claims)
 
-        #print(f"\n\033[34mProcessing file: {file_name} ...")
+        # False Negatives: Claims present in ground truth but not in predictions
+        false_negatives += len(gt_claims - pred_claims)
 
-        gt_file = os.path.join(gt_path, file_name)
-        claim_file = os.path.join(claim_path, file_name)
-        
-        with open(gt_file, 'r') as gt, open(claim_file, 'r') as claim:
-            gt_data = json.load(gt)
-            claim_data = json.load(claim)
-        
-        local_correct_claims = 0
+    # Precision: TP / (TP + FP)
+    precision = true_positives / (true_positives + false_positives) if (true_positives + false_positives) > 0 else 0
 
-        claims_len += len(claim_data)
-        gt_claims_len += len(gt_data)
+    # Recall: TP / (TP + FN)
+    recall = true_positives / (true_positives + false_negatives) if (true_positives + false_negatives) > 0 else 0
 
-        gt_dict = {list(item.keys())[0]: item[list(item.keys())[0]] for item in gt_data}
-        claim_dict = {list(item.keys())[0]: item[list(item.keys())[0]] for item in claim_data}
-        
-        # Confrontare le chiavi numeriche
-        for key in range(len(claim_data)):
-
-            if str(key) in gt_dict and gt_dict[str(key)] == claim_dict[str(key)]:
-                correct_claims += 1
-                local_correct_claims += 1
-
-        # Local precision
-        #print(f"\033[36mFile completed with:\nP = \033[0m{local_correct_claims / len(claim_data) if len(claim_data) > 0 else 0}")
-
-        # Local recall
-        #print(f"\033[36mR = \033[0m{local_correct_claims / len(gt_data) if len(gt_data) > 0 else 0}")
-    
-    # Precision
-    precision = correct_claims / claims_len if claims_len > 0 else 0
-
-    # Recall
-    recall = correct_claims / gt_claims_len if gt_claims_len > 0 else 0
-    
-    return (precision, recall, file_number)
+    return precision, recall, file_number
 
 
-# Precision on claims
-def evaluate_specs(gt_path: str, claim_path: str) -> tuple[float, float, int]:
+def evaluate_specs(gt_dict: dict[str, list[Claim]], pred_dict: dict[str, list[Claim]]) -> tuple[float, float, int]:
+    """
+    Evaluates precision and recall for specifications using pre-extracted Claim objects.
 
-    print("- \033[31mSPECS evaluation started:\033[0m")
+    Args:
+        gt_dict (dict[str, list[Claim]]): Ground truth claims.
+        pred_dict (dict[str, list[Claim]]): Predicted claims.
 
-    gt_files = set(os.listdir(gt_path))
-    claim_files = set(os.listdir(claim_path))
-    
-    # Files intersection
-    common_files = gt_files.intersection(claim_files)
-    correct_specs = 0
-    
-    file_number = 0
+    Returns:
+        tuple[float, float, int]: Precision, recall, and the number of files evaluated.
+    """
+    print(f"- {RED}SPECS evaluation started:{RESET}")
 
-    specs_len = 0
-    gt_specs_len = 0
+    common_files = set(gt_dict.keys()).intersection(set(pred_dict.keys()))
+    true_positives = 0
+    false_positives = 0
+    false_negatives = 0
+    file_number = len(common_files)
 
-    
     for file_name in common_files:
+        # Extract specifications as sets of tuples
+        gt_specs = {
+            (name, value) for claim in gt_dict[file_name] for name, value in claim.specs
+        }
+        pred_specs = {
+            (name, value) for claim in pred_dict[file_name] for name, value in claim.specs
+        }
 
-        file_number += 1
+        # True Positives: Specifications present in both ground truth and predictions
+        true_positives += len(gt_specs & pred_specs)
 
-        #print(f"\n\033[34mProcessing file: {file_name} ...\033[0m")
+        # False Positives: Specifications present in predictions but not in ground truth
+        false_positives += len(pred_specs - gt_specs)
 
-        gt_file = os.path.join(gt_path, file_name)
-        claim_file = os.path.join(claim_path, file_name)
-        
-        with open(gt_file, 'r') as gt, open(claim_file, 'r') as claim:
-            gt_data = json.load(gt)
-            claim_data = json.load(claim)
+        # False Negatives: Specifications present in ground truth but not in predictions
+        false_negatives += len(gt_specs - pred_specs)
 
-        # For number of GT specs
-        for gt in claim_data:
-            for k, v in gt.items():
-                if 'specifications' in v:
-                    for spc in v['specifications'].values():
-                        specs_len += 1
-        
-        
-        for claim_entry, gt_entry in zip(claim_data, gt_data):
-            for gt_key, gt_value in gt_entry.items():
-                if 'specifications' in gt_value:
-                    for gt_spec in gt_value['specifications'].values():
-                        gt_specs_len += 1
+    # Precision: TP / (TP + FP)
+    precision = true_positives / (true_positives + false_positives) if (true_positives + false_positives) > 0 else 0
 
-                        for key, value in claim_entry.items():
-                            if 'specifications' in value:
-                                for spec in value['specifications'].values():
-                                    if gt_spec['name'] == spec['name'] and gt_spec['value'] == spec['value']:
-                                        correct_specs += 1
-                                        break
-    
-    # Precision
-    precision = correct_specs / specs_len if specs_len > 0 else 0
+    # Recall: TP / (TP + FN)
+    recall = true_positives / (true_positives + false_negatives) if (true_positives + false_negatives) > 0 else 0
 
-    # Recall
-    recall = correct_specs / gt_specs_len if gt_specs_len > 0 else 0
-
-    return (precision, recall, file_number)
-
-if __name__ == "__main__":
-
-    precision, recall, file_number = evaluate_claims(paths.GROUND_TRUTH.CLAIMS.value, paths.CLAIMS)
-    f1 = 2 * ((precision * recall) / (precision + recall)) if (precision + recall) > 0 else 0
-
-    print(f"\033[32\nmDone! \033[0m{file_number}\033[32m files were analyzed\033[0m")
-    print(f"\033[32mPrecision = \033[0m {precision:.2f}")
-    print(f"\033[32mRecall = \033[0m {recall:.2f}")
-    print(f"\033[32mF1 = \033[0m {f1:.2f}\n")
-
-
-    precision, recall, file_number = evaluate_specs(paths.GROUND_TRUTH.CLAIMS.value, paths.CLAIMS)
-    f1 = 2 * ((precision * recall) / (precision + recall)) if (precision + recall) > 0 else 0
-
-    print(f"\033[32\nmDone! \033[0m{file_number}\033[32m files were analyzed\033[0m")
-    print(f"\033[32mPrecision = \033[0m {precision:.2f}")
-    print(f"\033[32mRecall = \033[0m {recall:.2f}")
-    print(f"\033[32mF1 = \033[0m {f1:.2f}\n")
+    return precision, recall, file_number
