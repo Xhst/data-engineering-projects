@@ -16,7 +16,7 @@ def create_profiling(data):
         for key, row in claim.items():
             for spec_key, spec in row['specifications'].items():
                 all_entries_name.append({'Key': spec['name'], 'Count': 1})
-                all_entries_value.append({'Key': spec['value'], 'Count': 1})
+                all_entries_value.append({'Key': spec['name'] + "::" + spec['value'], 'Count': 1})
             all_entries_metric.append({'Key': row['Measure'], 'Count': 1})
 
 
@@ -44,7 +44,6 @@ def load_json_files_from_directory(directory_path):
 
 
 if __name__ == "__main__":
-
     try:
         if not os.path.exists(paths.PROFILING):
             os.makedirs(paths.PROFILING)
@@ -57,7 +56,6 @@ if __name__ == "__main__":
         profiling_df_dict = create_profiling(all_data)
 
         for key in profiling_df_dict:
-
             filename = paths.PROFILING + '/' + key + '_profiling.csv'
             profiling_df_dict[key].to_csv(filename, index=False)
 
