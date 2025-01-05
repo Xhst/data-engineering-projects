@@ -54,9 +54,9 @@ def build(input_data, paperId, tableId, output_dir):
 
     print(f"\033[32mFile JSON saved as {output_file}\033[0m")
     
-
-# helper sugo, dw about it
-with open(paths.LLM_RESPONSE + "/2206.10526_S3.T1_llmResponse.txt", "r") as file:
-    content = file.read()
-    
-    build(content, "2206.10526", "1", paths.GROUND_TRUTH.CLAIMS.value)  # ===> mi rifiuto di farla...
+if __name__ == "__main__":
+    # helper sugo, dw about it
+    with open(paths.LLM_RESPONSE + "/2206.10526_S3.T1_llmResponse.txt", "r") as file:
+        content = file.read()
+        
+        build(content, "2206.10526", "1", paths.GROUND_TRUTH.CLAIMS.value)  # ===> mi rifiuto di farla...
