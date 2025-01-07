@@ -1,0 +1,13 @@
+Key,Count
+-,35
+5-way-1-shot accuracy,32
+Accuracy,226
+Average Precision,74
+Average Recall,63
+Elapsed Time,12
+F1 score,19
+OOD detection metric,12
+Recall,12
+Sorting success rate,42
+Zero-shot pass@1,39
+mIoU,241

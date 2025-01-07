@@ -1,0 +1,304 @@
+Key,Count
+% of Synthetic Data Shared::0,2
+% of Synthetic Data Shared::50,1
+Background Videos::0,1
+Background Videos::3817,1
+Background-less Videos::5514,1
+Background-less Videos::8528,1
+Base Network::Conv-4,5
+Base Network::Conv4,5
+Base Network::ResNet18,40
+Base Network::VGG,190
+Bit::FP32,28
+Bit::w6a6,56
+Bit::w8a8,56
+Class::Cat,3
+Class::Plane,3
+Class::Ship,3
+Class::Truck,7
+Class::bicycle,11
+Class::building,15
+Class::bus,11
+Class::car,15
+Class::fence,9
+Class::motorbike,11
+Class::person,11
+Class::pole,13
+Class::rider,11
+Class::road,15
+Class::sidewalk,11
+Class::sky,15
+Class::terrain,4
+Class::traffic light,15
+Class::traffic sign,15
+Class::vegetation,15
+Class::wall,9
+Classes/Client::2,3
+Classes::25,1
+Classes::38,1
+Data Augmentation::-,8
+Data Augmentation::FinetuneGAN,4
+"Data Augmentation::FinetuneGAN, Flip",2
+Data Augmentation::Flip,2
+Data Augmentation::Gaussian,2
+Data Augmentation::No,2
+Data Augmentation::Yes,1
+Dataset::11.6K synthetic test instances,12
+Dataset::CP-only,48
+Dataset::CUB,33
+Dataset::Cityscapes,190
+Dataset::DCASE 2018,8
+Dataset::DCASE 2019,8
+Dataset::DPSDA-FL,5
+Dataset::Form OOD,3
+Dataset::HMDB-38,3
+Dataset::HMDB-51,17
+Dataset::ID,12
+Dataset::NAB,9
+Dataset::Numerical OOD,24
+Dataset::OOD-1000,3
+Dataset::OOD-F,3
+Dataset::OOD-N,3
+Dataset::Original,3
+Dataset::Original + Generated,3
+Dataset::Original + Mixed,3
+Dataset::Real Data,40
+Dataset::Synthetic Data,48
+Dataset::UCF-101,15
+Dataset::UCF-25,14
+Dataset::Videos+Real,4
+Dataset::Virtual KITTI→KITTI,40
+Description::Example of prompt and response,1
+Fine-tuned on::100M,13
+Fine-tuned on::10M,13
+Fine-tuned on::1M,13
+Fruit::Apple,8
+Fruit::Banana,8
+Fruit::Orange,8
+Fruit::Peach,8
+Fruit::Plum,8
+Fruit::Strawberry,8
+Fruit::Total,6
+Hyperparameter::Batch Size Per GPU,1
+Hyperparameter::Epochs,1
+Hyperparameter::GPU Nums,1
+Hyperparameter::Learning Rate,1
+Hyperparameter::Learning Rate Scheduler,1
+Hyperparameter::LoRA Dropout,1
+Hyperparameter::LoRA Rank,1
+Hyperparameter::LoRA α,1
+Hyperparameter::Max Answer Length,1
+Hyperparameter::Max Generated Length,1
+Hyperparameter::Max Query Length,1
+Hyperparameter::Optimizer,1
+Hyperparameter::Optimizer β 1,1
+Hyperparameter::Optimizer β 2,1
+Hyperparameter::Optimizer ϵ,1
+Hyperparameter::Precision,2
+Hyperparameter::Seed,1
+Hyperparameter::Vocabulary Size,1
+Hyperparameter::Warmup Step,1
+Initialization::ImageNet,5
+Initialization::Random,5
+Instance::12,18
+Instance::56,6
+Instance::6,12
+Instance::8,6
+Layers Retrained::All,1
+Layers Retrained::Heads,1
+Layers Retrained::Stage 3+,1
+Layers Retrained::Stage 4+,1
+Layers Retrained::Stage 5+,1
+Method::2-Shot Prompting,1
+Method::8-Shot Prompting,1
+Method::CBST,18
+Method::Chain-of-Thought,1
+Method::CoViar,2
+Method::Cool-TSN,2
+Method::Cross-City,14
+Method::Curriculum,18
+Method::DBSCAN,3
+Method::FCNs Wld,18
+Method::FedAvg,5
+Method::FedProx,5
+Method::Gen-Hybrid,3
+Method::Input Level Adapt,28
+Method::Input&Ouput Adapt,28
+Method::K-means,3
+Method::L 2 STM,2
+Method::Logistic Regression,6
+Method::MAML,1
+Method::MetaIRNet,6
+Method::Nearest Neighbor,6
+Method::Network-1,1
+Method::Network-2,2
+Method::Network-2 (all of the generated videos),2
+Method::Network-2 (half of the generated videos),2
+Method::Non Adapt,28
+Method::OFF,2
+Method::Output Level Adapt,28
+Method::ProtoNet,10
+Method::ROAD-Net,18
+Method::Sankaranarayanan etal.,18
+Method::Softmax Regression,6
+Method::TSN-2M,2
+Method::TSN-3M,2
+Method::Tsai etal.,14
+Method::Two-stream,2
+Method::Two-stream I3D,2
+Method::Two-stream LSTM,1
+Method::Two-stream MiCT,2
+Method::iDT+FV,2
+Method::image transform network guided by task network,1
+Method::image transform network guided by task network with additional depth input,1
+Method::image transform network guided by task network with additional semantic label input,1
+Method::image transform network guided by task network with both depth and semantic labels as additional input,1
+Method::image translation with CycleGAN,1
+Method::non-adaptive baseline,1
+Metric::ID,3
+Model Size::1.1M,35
+Model Size::110B,1
+Model Size::236B/21B,1
+Model Size::24.0M,35
+Model Size::3.8B,1
+Model Size::34B,1
+Model Size::43.6M,35
+Model Size::65.2M,35
+Model Size::67B,1
+Model Size::70B,2
+Model Size::72B,3
+Model Size::7B,4
+Model Size::8B,1
+Model Size::?,2
+Model::3D-ResNet-101,2
+Model::Claude 3 Opus,1
+Model::Claude 3.5 Sonnet,1
+Model::DeepSeek LLM 67B Chat,1
+Model::DeepSeek-Coder-V2-Instruct,1
+Model::Deepseek-Coder-33B,4
+Model::GPT-4,5
+Model::GPT-4 Turbo,4
+Model::Gemini Pro 1.5 (May 2024),1
+Model::Gemini Ultra,1
+Model::IFD,4
+Model::Llama-2-7B,4
+Model::Llama-3-70B-Instruct,2
+Model::Llama-3-8B-Instruct,1
+Model::MAML,1
+Model::MatchingNet,2
+Model::MetaIRNet,1
+Model::MobileFaceNet,35
+Model::Phi-3-Mini-4K-Instruct,1
+Model::ProtoNet,1
+Model::Qwen1.5-110B-Chat,1
+Model::Qwen1.5-72B-Chat,1
+Model::Qwen2-72B-Instruct,2
+Model::Qwen2-7B (fine-tuned w/ the 1.07M synthesized instances),2
+Model::Qwen2-7B-Instruct,2
+Model::RelationNet,2
+Model::ResNet100,35
+Model::ResNet50,35
+Model::SEDB,4
+Model::SEDB & IFD,4
+Model::Yi-1.5-34B-Chat,1
+Model::baseline,4
+Model::gpt-4o-2024-05-13,2
+Name::Batch size,1
+Name::Dataset,1
+Name::FL architecture,1
+Name::Learning Rate,1
+Name::NN architecture,1
+Name::Number of clients,1
+Name::Number of global rounds,1
+Name::Number of local epochs,1
+Name::Optimizer,1
+Number of Integers::5,9
+Number of Integers::567,9
+Number of Integers::6,9
+Number of Integers::7,9
+Number of Integers::8,3
+Number of Synthetic Videos::0,3
+Number of Synthetic Videos::2500,4
+Number of Synthetic Videos::4000,2
+Number of Synthetic Videos::5000,4
+Number of Synthetic Videos::8000,1
+Number of images::100,18
+Number of images::150,18
+Number of images::1755,1
+Number of images::17550,1
+Number of images::200,18
+Number of images::300,12
+Number of images::35100,1
+Number of images::400,12
+Number of images::4387,1
+Number of images::50,18
+Number of images::500,12
+Number of images::600,12
+Number of images::70200,1
+Number of images::8775,1
+OOD-1000::0,3
+OOD-F::0,3
+OOD-N::0,3
+Output Level Adaptation::depth output map,1
+Output Level Adaptation::individually aligning both semantic segmentation and depth estimation,1
+Output Level Adaptation::joint output space of depth estimation and semantic segmentation,1
+Output Level Adaptation::non-adaptive baseline,1
+Output Level Adaptation::semantic segmentation output map,1
+Percentage of Real Videos::0%,2
+Percentage of Real Videos::10%,3
+Percentage of Real Videos::100%,3
+Percentage of Real Videos::50%,3
+Pre-training::None,5
+Quantization::-,28
+Quantization::Real Data,56
+Quantization::Synthetic Data,56
+"Range::[1,1000]",12
+"Range::[1,100]",12
+"Range::[1,60]",15
+Setting::CP-Hybrid,14
+Setting::Gen-Hybrid,14
+Size (MB)::0.79,14
+Size (MB)::1.10,14
+Size (MB)::174.68,7
+Size (MB)::18.10,14
+Size (MB)::24.10,14
+Size (MB)::261.22,7
+Size (MB)::32.77,14
+Size (MB)::4.21,7
+Size (MB)::43.67,14
+Size (MB)::49.01,14
+Size (MB)::65.31,14
+Size (MB)::96.22,7
+Task::Grasping,21
+Task::Labelling,21
+Type of synthetic videos::background,1
+Type of synthetic videos::simplified,2
+Type::Sampling,6
+Type::Synthetic Data,1
+Type::Training,6
+Value::0,1
+Value::0.05,1
+Value::0.1,1
+Value::0.9,1
+Value::0.95,1
+Value::1234,1
+Value::130,1
+Value::167,1
+Value::1e-4,1
+Value::1e-9,1
+Value::2,1
+Value::20,1
+Value::32,2
+Value::32002,1
+Value::36,1
+Value::5,2
+Value::50,1
+Value::8,2
+Value::AMP,1
+Value::Adamw,1
+Value::CIFAR-10,1
+Value::CNN,1
+Value::Cosine,1
+Value::Cross-Silo Horizontal FL,1
+Value::Stochastic gradient descent,1
+Value::bfloat16,1
