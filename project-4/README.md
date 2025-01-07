@@ -86,7 +86,10 @@ Filename for the alignment is `YOUR_NAME_ALIGNMENT.json`
 - 2407.05174 completed successfully (75.94s)
 
 
+# Man hours spent
 
+- Ground truth: ∼5 hours
+- Alignment: ∼30 mins for ∼30 names, ∼300 values, ∼30 metrics
 
 
 
