@@ -131,7 +131,7 @@ def create_alignment(directory_path):
                             for value_to_align in values_to_align:
                                 for value in values_to_align[value_to_align]:
                                     if value == spec["value"]:
-                                        names_alignment[value_to_align].append(full_id)
+                                        values_alignment[value_to_align].append(full_id)
                                         found = True
                                         break
                                 if found:
