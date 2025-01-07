@@ -1,0 +1,47 @@
+{
+    "-1": [
+        "mIoU",
+        "AgeDb-30",
+        "CALFW",
+        "IJB-C",
+        "IJB-B",
+        "Elapsed Time",
+        "OOD detection metric",
+        "Global Model Accuracy",
+        "Recall"
+    ],
+    "1": [
+        "mIoU excl. *",
+        "-"
+    ],
+    "4": [
+        "5-way-1-shot classification accuracy",
+        "5-way-1-shot accuracy",
+        "Accuracy",
+        "Zero-shot pass@1"
+    ],
+    "2": [
+        "Performance",
+        "Sorting success rate"
+    ],
+    "3": [
+        "event-based F1 score",
+        "Audio tagging F1 score",
+        "F1 score"
+    ],
+    "0": [
+        "LFW",
+        "CFP",
+        "CPLFW"
+    ],
+    "5": [
+        "AP",
+        "AP@0.5",
+        "AP@0.75",
+        "AP@[0.5:0.95]",
+        "AR@0.5",
+        "AR@0.75",
+        "AR@[0.5:0.95]",
+        "AR"
+    ]
+}

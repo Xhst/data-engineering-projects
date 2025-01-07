@@ -1,0 +1,74 @@
+{
+  "Truck": [
+    "truck",
+    "Truck"
+  ],
+
+  "Real Data": [
+    "Real data",
+    "Real-only",
+    "Real only"
+  ],
+
+  "Synthetic Data": [
+    "Synthetic data",
+    "Synthetic Data",
+    "Syn-only"
+  ],
+
+  "Nearest Neighbor": [
+    "Nearest Neighbor",
+    "Nearest neighbor"
+  ],
+
+  "Logistic Regression": [
+    "Logistic Regression",
+    "Logistic regression"
+  ],
+
+  "MetaIRNet": [
+    "MetaIRNet (Ours)",
+    "MetaIRNet"
+  ],
+
+  "Learning Rate": [
+    "Learning Rate",
+    "Learning rate"
+  ],
+
+  "GPT-4 Turbo": [
+    "gpt-4-turbo-2024-04-09",
+    "gpt-4-turbo-0125-preview",
+    "gpt-4-turbo-1106-preview"
+  ],
+
+  "GPT-4": [
+    "gpt-4",
+    "GPT4"
+  ],
+
+  "Non Adapt": [
+    "Non Adapt",
+    "Ours (Non Adapt)"
+  ],
+
+  "Input Level Adapt": [
+    "Input Level Adapt",
+    "Ours (Input-level Adapt)"
+  ],
+
+  "Output Level Adapt": [
+    "Output Level Adapt",
+    "Ours (Output-level Adapt)"
+  ],
+  
+  "Input&Ouput Adapt": [
+    "Input&Ouput Adapt",
+    "Ours (Input&Output Adapt)"
+  ],
+
+  "Softmax Regression": [
+    "Softmax Regression",
+    "Softmax regression"
+  ]
+}
