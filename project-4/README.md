@@ -91,5 +91,20 @@ Filename for the alignment is `YOUR_NAME_ALIGNMENT.json`
 - Ground truth: ∼5 hours
 - Alignment: ∼30 mins for ∼30 names, ∼300 values, ∼30 metrics
 
+# chatgpt prompt
+
+I will give you a paper code taken from ar5iv. You must return to me the main data approach that you find in the abstract (only one) of the paper provided. (example: Record Linkage, Synthetic Data, Machine Learning, Data Structures and Algorithms, Operating Systems, Artificial Intelligence, Other Computer Science...)
+
+- 1812.05040 ->  Synthetic Data
+- 1911.07164 ->  Synthetic Data
+- 2001.11091 ->  Synthetic Data
+- 2011.00695 ->  Metric Learning
+- 2206.10526 ->  Synthetic Data
+- 2211.16066 ->  Synthetic Data
+- 2401.13405 ->  Synthetic Data
+- 2406.02100 ->  Synthetic Data
+- 2406.20094 ->  Synthetic Data
+- 2407.05174 ->  Synthetic Data
+
 
 
