@@ -5,6 +5,10 @@
                 "0": {
                     "name": "Model",
                     "value": "GPT4"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "ID",
@@ -17,6 +21,10 @@
                 "0": {
                     "name": "Model",
                     "value": "GPT4"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "OOD-N",
@@ -29,6 +37,10 @@
                 "0": {
                     "name": "Model",
                     "value": "GPT4"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "OOD-F",
@@ -41,6 +53,10 @@
                 "0": {
                     "name": "Model",
                     "value": "GPT4"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "OOD-1000",
@@ -53,6 +69,10 @@
                 "0": {
                     "name": "Model",
                     "value": "Llama-2-7B"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "ID",
@@ -65,6 +85,10 @@
                 "0": {
                     "name": "Model",
                     "value": "Llama-2-7B"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "OOD-N",
@@ -77,6 +101,10 @@
                 "0": {
                     "name": "Model",
                     "value": "Llama-2-7B"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "OOD-F",
@@ -89,6 +117,10 @@
                 "0": {
                     "name": "Model",
                     "value": "Llama-2-7B"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "OOD-1000",
@@ -101,6 +133,10 @@
                 "0": {
                     "name": "Model",
                     "value": "Deepseek-Coder-33B"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "ID",
@@ -113,6 +149,10 @@
                 "0": {
                     "name": "Model",
                     "value": "Deepseek-Coder-33B"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "OOD-N",
@@ -125,6 +165,10 @@
                 "0": {
                     "name": "Model",
                     "value": "Deepseek-Coder-33B"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "OOD-F",
@@ -137,6 +181,10 @@
                 "0": {
                     "name": "Model",
                     "value": "Deepseek-Coder-33B"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "OOD-1000",
