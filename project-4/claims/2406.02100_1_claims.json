@@ -9,6 +9,10 @@
                 "1": {
                     "name": "Description",
                     "value": "Example of prompt and response"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "-",
