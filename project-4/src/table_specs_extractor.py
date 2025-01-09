@@ -131,20 +131,4 @@ if __name__ == "__main__":
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"\nPapers claims built in {elapsed_time:.2f}s.")
-
-    
-'''
-# DA RIVEDERE S4.T4 DI 1812.05040 (del GT)
-
-if __name__ == "__main__":
-    with open(paths.RAW + '/1911.07164.json', 'r') as file:
-        data = json.load(file)
-        table_data = data['S5.T2']
-
-    response = extract_table_claims(table_data)
-
-    print("\n\033[92mCreating claims files...\033[0m\n")
-    print(response)
-    claim_builder.build(response, "prova", "prv")
-'''
     
