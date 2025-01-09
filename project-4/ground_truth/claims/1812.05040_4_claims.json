@@ -17,6 +17,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -41,6 +45,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -65,6 +73,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -89,6 +101,10 @@
                 "3": {
                     "name": "Class",
                     "value": "wall"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -113,6 +129,10 @@
                 "3": {
                     "name": "Class",
                     "value": "fence"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -137,6 +157,10 @@
                 "3": {
                     "name": "Class",
                     "value": "pole"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -161,6 +185,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -185,6 +213,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -209,6 +241,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -233,6 +269,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -257,6 +297,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -281,6 +325,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -305,6 +353,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -329,6 +381,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -353,6 +409,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -377,6 +437,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -397,6 +461,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -417,6 +485,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -441,6 +513,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -465,6 +541,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -489,6 +569,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -513,6 +597,10 @@
                 "3": {
                     "name": "Class",
                     "value": "wall"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -537,6 +625,10 @@
                 "3": {
                     "name": "Class",
                     "value": "fence"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -561,6 +653,10 @@
                 "3": {
                     "name": "Class",
                     "value": "pole"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -585,6 +681,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -609,6 +709,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -633,6 +737,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -657,6 +765,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -681,6 +793,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -705,6 +821,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -729,6 +849,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -753,6 +877,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -777,6 +905,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -801,6 +933,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -821,6 +957,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -841,6 +981,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -865,6 +1009,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -889,6 +1037,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -913,6 +1065,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -937,6 +1093,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -961,6 +1121,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -985,6 +1149,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1009,6 +1177,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1033,6 +1205,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1057,6 +1233,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1081,6 +1261,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1105,6 +1289,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1129,6 +1317,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1153,6 +1345,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1173,6 +1369,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -1197,6 +1397,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1221,6 +1425,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1245,6 +1453,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1269,6 +1481,10 @@
                 "3": {
                     "name": "Class",
                     "value": "wall"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1293,6 +1509,10 @@
                 "3": {
                     "name": "Class",
                     "value": "fence"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1317,6 +1537,10 @@
                 "3": {
                     "name": "Class",
                     "value": "pole"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1341,6 +1565,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1365,6 +1593,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1389,6 +1621,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1413,6 +1649,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1437,6 +1677,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1461,6 +1705,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1485,6 +1733,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1509,6 +1761,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1533,6 +1789,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1557,6 +1817,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1577,6 +1841,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -1597,6 +1865,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -1621,6 +1893,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1645,6 +1921,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1669,6 +1949,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1693,6 +1977,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1717,6 +2005,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1741,6 +2033,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1765,6 +2061,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1789,6 +2089,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1813,6 +2117,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1837,6 +2145,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1861,6 +2173,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1885,6 +2201,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1909,6 +2229,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1929,6 +2253,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -1953,6 +2281,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -1977,6 +2309,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2001,6 +2337,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2025,6 +2365,10 @@
                 "3": {
                     "name": "Class",
                     "value": "wall"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2049,6 +2393,10 @@
                 "3": {
                     "name": "Class",
                     "value": "fence"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2073,6 +2421,10 @@
                 "3": {
                     "name": "Class",
                     "value": "pole"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2097,6 +2449,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2121,6 +2477,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2145,6 +2505,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2169,6 +2533,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2193,6 +2561,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2217,6 +2589,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2241,6 +2617,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2265,6 +2645,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2289,6 +2673,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2313,6 +2701,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2333,6 +2725,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -2353,6 +2749,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -2377,6 +2777,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2401,6 +2805,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2425,6 +2833,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2449,6 +2861,10 @@
                 "3": {
                     "name": "Class",
                     "value": "wall"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2473,6 +2889,10 @@
                 "3": {
                     "name": "Class",
                     "value": "fence"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2497,6 +2917,10 @@
                 "3": {
                     "name": "Class",
                     "value": "pole"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2521,6 +2945,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2545,6 +2973,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2569,6 +3001,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2593,6 +3029,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2617,6 +3057,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2641,6 +3085,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2665,6 +3113,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2689,6 +3141,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2713,6 +3169,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2737,6 +3197,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2757,6 +3221,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -2777,6 +3245,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -2801,6 +3273,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2825,6 +3301,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2849,6 +3329,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2873,6 +3357,10 @@
                 "3": {
                     "name": "Class",
                     "value": "wall"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2897,6 +3385,10 @@
                 "3": {
                     "name": "Class",
                     "value": "fence"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2921,6 +3413,10 @@
                 "3": {
                     "name": "Class",
                     "value": "pole"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2945,6 +3441,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2969,6 +3469,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -2993,6 +3497,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3017,6 +3525,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3041,6 +3553,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3065,6 +3581,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3089,6 +3609,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3113,6 +3637,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3137,6 +3665,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3161,6 +3693,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3181,6 +3717,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -3201,6 +3741,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -3225,6 +3769,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3249,6 +3797,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3273,6 +3825,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3297,6 +3853,10 @@
                 "3": {
                     "name": "Class",
                     "value": "wall"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3321,6 +3881,10 @@
                 "3": {
                     "name": "Class",
                     "value": "fence"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3345,6 +3909,10 @@
                 "3": {
                     "name": "Class",
                     "value": "pole"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3369,6 +3937,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3393,6 +3965,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3417,6 +3993,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3441,6 +4021,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3465,6 +4049,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3489,6 +4077,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3513,6 +4105,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3537,6 +4133,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3561,6 +4161,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3585,6 +4189,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3605,6 +4213,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -3625,6 +4237,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -3649,6 +4265,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3673,6 +4293,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3697,6 +4321,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3721,6 +4349,10 @@
                 "3": {
                     "name": "Class",
                     "value": "wall"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3745,6 +4377,10 @@
                 "3": {
                     "name": "Class",
                     "value": "fence"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3769,6 +4405,10 @@
                 "3": {
                     "name": "Class",
                     "value": "pole"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3793,6 +4433,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3817,6 +4461,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3841,6 +4489,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3865,6 +4517,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3889,6 +4545,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3913,6 +4573,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3937,6 +4601,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3961,6 +4629,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -3985,6 +4657,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4009,6 +4685,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4029,6 +4709,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -4049,6 +4733,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
@@ -4073,6 +4761,10 @@
                 "3": {
                     "name": "Class",
                     "value": "road"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4097,6 +4789,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sidewalk"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4121,6 +4817,10 @@
                 "3": {
                     "name": "Class",
                     "value": "building"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4145,6 +4845,10 @@
                 "3": {
                     "name": "Class",
                     "value": "wall"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4169,6 +4873,10 @@
                 "3": {
                     "name": "Class",
                     "value": "fence"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4193,6 +4901,10 @@
                 "3": {
                     "name": "Class",
                     "value": "pole"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4217,6 +4929,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic light"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4241,6 +4957,10 @@
                 "3": {
                     "name": "Class",
                     "value": "traffic sign"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4265,6 +4985,10 @@
                 "3": {
                     "name": "Class",
                     "value": "vegetation"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4289,6 +5013,10 @@
                 "3": {
                     "name": "Class",
                     "value": "sky"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4313,6 +5041,10 @@
                 "3": {
                     "name": "Class",
                     "value": "person"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4337,6 +5069,10 @@
                 "3": {
                     "name": "Class",
                     "value": "rider"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4361,6 +5097,10 @@
                 "3": {
                     "name": "Class",
                     "value": "car"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4385,6 +5125,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bus"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4409,6 +5153,10 @@
                 "3": {
                     "name": "Class",
                     "value": "motorbike"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4433,6 +5181,10 @@
                 "3": {
                     "name": "Class",
                     "value": "bicycle"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "IoU",
@@ -4453,6 +5205,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -4473,6 +5229,10 @@
                 "2": {
                     "name": "Backbone",
                     "value": "VGG"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU excl. *",
