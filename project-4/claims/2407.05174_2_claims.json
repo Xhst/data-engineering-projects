@@ -17,6 +17,10 @@
                 "3": {
                     "name": "Classes/Client",
                     "value": "2"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Global Model Accuracy",
@@ -41,6 +45,10 @@
                 "3": {
                     "name": "Classes/Client",
                     "value": "2"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Global Model Accuracy",
@@ -65,6 +73,10 @@
                 "3": {
                     "name": "Classes/Client",
                     "value": "2"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Global Model Accuracy",

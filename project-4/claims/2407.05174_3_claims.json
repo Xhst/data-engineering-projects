@@ -9,6 +9,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Plane"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -25,6 +29,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Cat"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -41,6 +49,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Ship"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -57,6 +69,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Truck"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -73,6 +89,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Plane"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -89,6 +109,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Cat"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -105,6 +129,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Ship"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -121,6 +149,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Truck"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -137,6 +169,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Plane"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -153,6 +189,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Cat"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -169,6 +209,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Ship"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
@@ -185,6 +229,10 @@
                 "1": {
                     "name": "Class",
                     "value": "Truck"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Recall",
