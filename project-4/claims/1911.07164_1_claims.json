@@ -13,6 +13,10 @@
                 "2": {
                     "name": "classifier",
                     "value": "Nearest Neighbor"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-1-shot classification accuracy",
@@ -33,6 +37,10 @@
                 "2": {
                     "name": "classifier",
                     "value": "Logistic Regression"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-1-shot classification accuracy",
@@ -53,6 +61,10 @@
                 "2": {
                     "name": "classifier",
                     "value": "Softmax Regression"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-1-shot classification accuracy",
@@ -73,6 +85,10 @@
                 "2": {
                     "name": "classifier",
                     "value": "Nearest Neighbor"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-1-shot classification accuracy",
@@ -93,6 +109,10 @@
                 "2": {
                     "name": "classifier",
                     "value": "Logistic Regression"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-1-shot classification accuracy",
@@ -113,6 +133,10 @@
                 "2": {
                     "name": "classifier",
                     "value": "Softmax Regression"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-1-shot classification accuracy",
@@ -133,6 +157,10 @@
                 "2": {
                     "name": "classifier",
                     "value": "Nearest Neighbor"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-1-shot classification accuracy",
@@ -153,6 +181,10 @@
                 "2": {
                     "name": "classifier",
                     "value": "Logistic Regression"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-1-shot classification accuracy",
@@ -173,6 +205,10 @@
                 "2": {
                     "name": "classifier",
                     "value": "Softmax Regression"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-1-shot classification accuracy",
