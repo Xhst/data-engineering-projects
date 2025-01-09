@@ -17,6 +17,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
@@ -41,6 +45,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
@@ -65,6 +73,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
@@ -89,6 +101,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
@@ -113,6 +129,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
@@ -137,6 +157,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
@@ -161,6 +185,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
@@ -185,6 +213,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
@@ -209,6 +241,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
@@ -233,6 +269,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "CUB"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "5-way-5-shot Accuracy (%) ",
