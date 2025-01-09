@@ -5,6 +5,10 @@
                 "0": {
                     "name": "Layers Retrained",
                     "value": "All"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AP",
@@ -17,6 +21,10 @@
                 "0": {
                     "name": "Layers Retrained",
                     "value": "Stage 3+"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AP",
@@ -29,6 +37,10 @@
                 "0": {
                     "name": "Layers Retrained",
                     "value": "Stage 4+"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AP",
@@ -41,6 +53,10 @@
                 "0": {
                     "name": "Layers Retrained",
                     "value": "Stage 5+"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AP",
@@ -53,6 +69,10 @@
                 "0": {
                     "name": "Layers Retrained",
                     "value": "Heads"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AP",
