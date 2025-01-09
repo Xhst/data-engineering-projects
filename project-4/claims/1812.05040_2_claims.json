@@ -5,6 +5,10 @@
                 "0": {
                     "name": "Method",
                     "value": "non-adaptive baseline"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -17,6 +21,10 @@
                 "0": {
                     "name": "Method",
                     "value": "image translation with CycleGAN"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -29,6 +37,10 @@
                 "0": {
                     "name": "Method",
                     "value": "image transform network guided by task network"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -41,6 +53,10 @@
                 "0": {
                     "name": "Method",
                     "value": "image transform network guided by task network with additional depth input"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -53,6 +69,10 @@
                 "0": {
                     "name": "Method",
                     "value": "image transform network guided by task network with additional semantic label input"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -65,6 +85,10 @@
                 "0": {
                     "name": "Method",
                     "value": "image transform network guided by task network with both depth and semantic labels as additional input"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",

@@ -13,6 +13,10 @@
                 "2": {
                     "name": "Category",
                     "value": "road"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -33,6 +37,10 @@
                 "2": {
                     "name": "Category",
                     "value": "building"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -53,6 +61,10 @@
                 "2": {
                     "name": "Category",
                     "value": "pole"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -73,6 +85,10 @@
                 "2": {
                     "name": "Category",
                     "value": "traffic light"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -93,6 +109,10 @@
                 "2": {
                     "name": "Category",
                     "value": "traffic sign"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -113,6 +133,10 @@
                 "2": {
                     "name": "Category",
                     "value": "vegetation"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -133,6 +157,10 @@
                 "2": {
                     "name": "Category",
                     "value": "terrain"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -153,6 +181,10 @@
                 "2": {
                     "name": "Category",
                     "value": "sky"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -173,6 +205,10 @@
                 "2": {
                     "name": "Category",
                     "value": "car"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -193,6 +229,10 @@
                 "2": {
                     "name": "Category",
                     "value": "truck"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -213,6 +253,10 @@
                 "2": {
                     "name": "Category",
                     "value": "road"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -233,6 +277,10 @@
                 "2": {
                     "name": "Category",
                     "value": "building"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -253,6 +301,10 @@
                 "2": {
                     "name": "Category",
                     "value": "pole"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -273,6 +325,10 @@
                 "2": {
                     "name": "Category",
                     "value": "traffic light"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -293,6 +349,10 @@
                 "2": {
                     "name": "Category",
                     "value": "traffic sign"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -313,6 +373,10 @@
                 "2": {
                     "name": "Category",
                     "value": "vegetation"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -333,6 +397,10 @@
                 "2": {
                     "name": "Category",
                     "value": "terrain"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -353,6 +421,10 @@
                 "2": {
                     "name": "Category",
                     "value": "sky"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -373,6 +445,10 @@
                 "2": {
                     "name": "Category",
                     "value": "car"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -393,6 +469,10 @@
                 "2": {
                     "name": "Category",
                     "value": "truck"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -413,6 +493,10 @@
                 "2": {
                     "name": "Category",
                     "value": "road"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -433,6 +517,10 @@
                 "2": {
                     "name": "Category",
                     "value": "building"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -453,6 +541,10 @@
                 "2": {
                     "name": "Category",
                     "value": "pole"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -473,6 +565,10 @@
                 "2": {
                     "name": "Category",
                     "value": "traffic light"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -493,6 +589,10 @@
                 "2": {
                     "name": "Category",
                     "value": "traffic sign"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -513,6 +613,10 @@
                 "2": {
                     "name": "Category",
                     "value": "vegetation"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -533,6 +637,10 @@
                 "2": {
                     "name": "Category",
                     "value": "terrain"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -553,6 +661,10 @@
                 "2": {
                     "name": "Category",
                     "value": "sky"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -573,6 +685,10 @@
                 "2": {
                     "name": "Category",
                     "value": "car"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -593,6 +709,10 @@
                 "2": {
                     "name": "Category",
                     "value": "truck"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -613,6 +733,10 @@
                 "2": {
                     "name": "Category",
                     "value": "road"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -633,6 +757,10 @@
                 "2": {
                     "name": "Category",
                     "value": "building"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -653,6 +781,10 @@
                 "2": {
                     "name": "Category",
                     "value": "pole"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -673,6 +805,10 @@
                 "2": {
                     "name": "Category",
                     "value": "traffic light"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -693,6 +829,10 @@
                 "2": {
                     "name": "Category",
                     "value": "traffic sign"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -713,6 +853,10 @@
                 "2": {
                     "name": "Category",
                     "value": "vegetation"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -733,6 +877,10 @@
                 "2": {
                     "name": "Category",
                     "value": "terrain"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -753,6 +901,10 @@
                 "2": {
                     "name": "Category",
                     "value": "sky"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -773,6 +925,10 @@
                 "2": {
                     "name": "Category",
                     "value": "car"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -793,6 +949,10 @@
                 "2": {
                     "name": "Category",
                     "value": "truck"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",

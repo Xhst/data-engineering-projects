@@ -5,6 +5,10 @@
                 "0": {
                     "name": "Output Level Adaptation",
                     "value": "non-adaptive baseline"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -17,6 +21,10 @@
                 "0": {
                     "name": "Output Level Adaptation",
                     "value": "semantic segmentation output map"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -29,6 +37,10 @@
                 "0": {
                     "name": "Output Level Adaptation",
                     "value": "depth output map"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -41,6 +53,10 @@
                 "0": {
                     "name": "Output Level Adaptation",
                     "value": "individually aligning both semantic segmentation and depth estimation"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
@@ -53,6 +69,10 @@
                 "0": {
                     "name": "Output Level Adaptation",
                     "value": "joint output space of depth estimation and semantic segmentation"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "mIoU",
