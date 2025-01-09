@@ -9,6 +9,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Apple"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -25,6 +29,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Banana"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -41,6 +49,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Strawberry"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -57,6 +69,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Orange"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -73,6 +89,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Peach"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -89,6 +109,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Plum"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -105,6 +129,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Apple"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -121,6 +149,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Banana"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -137,6 +169,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Strawberry"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -153,6 +189,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Orange"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -169,6 +209,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Peach"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",
@@ -185,6 +229,10 @@
                 "1": {
                     "name": "Fruit",
                     "value": "Plum"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Elapsed Time of WGAN-GP algorithm",

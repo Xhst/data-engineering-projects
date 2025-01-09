@@ -5,6 +5,10 @@
                 "0": {
                     "name": "Method",
                     "value": "K-means"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AP",
@@ -17,6 +21,10 @@
                 "0": {
                     "name": "Method",
                     "value": "K-means"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AR",
@@ -29,6 +37,10 @@
                 "0": {
                     "name": "Method",
                     "value": "K-means"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "F1 score",
@@ -41,6 +53,10 @@
                 "0": {
                     "name": "Method",
                     "value": "DBSCAN"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AP",
@@ -53,6 +69,10 @@
                 "0": {
                     "name": "Method",
                     "value": "DBSCAN"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AR",
@@ -65,6 +85,10 @@
                 "0": {
                     "name": "Method",
                     "value": "DBSCAN"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "F1 score",
@@ -77,6 +101,10 @@
                 "0": {
                     "name": "Method",
                     "value": "Gen-Hybrid"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AP",
@@ -89,6 +117,10 @@
                 "0": {
                     "name": "Method",
                     "value": "Gen-Hybrid"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "AR",
@@ -101,6 +133,10 @@
                 "0": {
                     "name": "Method",
                     "value": "Gen-Hybrid"
+                },
+                "1": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "F1 score",
