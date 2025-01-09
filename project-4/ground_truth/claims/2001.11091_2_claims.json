@@ -17,6 +17,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "HMDB-51"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -41,6 +45,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "HMDB-51"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -65,6 +73,10 @@
                 "3": {
                     "name": "Dataset",
                     "value": "HMDB-51"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
