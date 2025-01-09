@@ -17,6 +17,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -41,6 +45,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -65,6 +73,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -89,6 +101,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -113,6 +129,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -137,6 +157,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -161,6 +185,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -185,6 +213,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -209,6 +241,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -233,6 +269,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -257,6 +297,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -281,6 +325,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -305,6 +353,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -329,6 +381,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -353,6 +409,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -377,6 +437,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -401,6 +465,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -425,6 +493,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -449,6 +521,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -473,6 +549,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -497,6 +577,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -521,6 +605,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -545,6 +633,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -569,6 +661,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -593,6 +689,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -617,6 +717,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -641,6 +745,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -665,6 +773,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -689,6 +801,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -713,6 +829,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -737,6 +857,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -761,6 +885,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -785,6 +913,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -809,6 +941,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -833,6 +969,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -857,6 +997,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -881,6 +1025,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -905,6 +1053,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -929,6 +1081,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -953,6 +1109,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -977,6 +1137,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Labelling"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
@@ -1001,6 +1165,10 @@
                 "3": {
                     "name": "Task",
                     "value": "Grasping"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Sorting success rate",
