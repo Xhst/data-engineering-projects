@@ -302,3 +302,5 @@ Value::Cosine,1
 Value::Cross-Silo Horizontal FL,1
 Value::Stochastic gradient descent,1
 Value::bfloat16,1
+task::Metric Learning,16
+task::Synthetic Data,791

@@ -336,3 +336,5 @@ classifier::Logistic Regression,3
 classifier::Nearest Neighbor,3
 classifier::Softmax Regression,3
 dataset::CUB,9
+task::Metric Learning,16
+task::Synthetic Data,791
