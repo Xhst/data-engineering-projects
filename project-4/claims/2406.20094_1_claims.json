@@ -13,6 +13,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -33,6 +37,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -53,6 +61,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -73,6 +85,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -93,6 +109,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -113,6 +133,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -133,6 +157,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -153,6 +181,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -173,6 +205,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -193,6 +229,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -213,6 +253,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
@@ -233,6 +277,10 @@
                 "2": {
                     "name": "Dataset",
                     "value": "11.6K synthetic test instances"
+                },
+                "3": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Accuracy",
