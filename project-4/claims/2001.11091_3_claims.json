@@ -9,6 +9,10 @@
                 "1": {
                     "name": "Setting",
                     "value": "Real only"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Performance",
@@ -25,6 +29,10 @@
                 "1": {
                     "name": "Setting",
                     "value": "Real only"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Performance",
@@ -41,6 +49,10 @@
                 "1": {
                     "name": "Setting",
                     "value": "Videos+Real"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Performance",
@@ -57,6 +69,10 @@
                 "1": {
                     "name": "Setting",
                     "value": "Videos+Real"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Performance",
@@ -73,6 +89,10 @@
                 "1": {
                     "name": "Setting",
                     "value": "Videos+Real"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Performance",
@@ -89,6 +109,10 @@
                 "1": {
                     "name": "Setting",
                     "value": "Videos+Real"
+                },
+                "2": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "Performance",

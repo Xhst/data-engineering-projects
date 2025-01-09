@@ -17,6 +17,10 @@
                 "3": {
                     "name": "Background-less Videos",
                     "value": "8528"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "-",
@@ -41,6 +45,10 @@
                 "3": {
                     "name": "Background-less Videos",
                     "value": "5514"
+                },
+                "4": {
+                    "name": "task",
+                    "value": "Synthetic Data"
                 }
             },
             "Measure": "-",
