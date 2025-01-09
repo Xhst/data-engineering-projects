@@ -12,7 +12,7 @@
                 },
                 "2": {
                     "name": "task",
-                    "value": "Synthetic Data"
+                    "value": "Metric Learning"
                 }
             },
             "Measure": "event-based F1 score",
@@ -32,7 +32,7 @@
                 },
                 "2": {
                     "name": "task",
-                    "value": "Synthetic Data"
+                    "value": "Metric Learning"
                 }
             },
             "Measure": "event-based F1 score",
@@ -52,7 +52,7 @@
                 },
                 "2": {
                     "name": "task",
-                    "value": "Synthetic Data"
+                    "value": "Metric Learning"
                 }
             },
             "Measure": "event-based F1 score",
@@ -72,7 +72,7 @@
                 },
                 "2": {
                     "name": "task",
-                    "value": "Synthetic Data"
+                    "value": "Metric Learning"
                 }
             },
             "Measure": "event-based F1 score",
@@ -92,7 +92,7 @@
                 },
                 "2": {
                     "name": "task",
-                    "value": "Synthetic Data"
+                    "value": "Metric Learning"
                 }
             },
             "Measure": "event-based F1 score",
@@ -112,7 +112,7 @@
                 },
                 "2": {
                     "name": "task",
-                    "value": "Synthetic Data"
+                    "value": "Metric Learning"
                 }
             },
             "Measure": "event-based F1 score",
@@ -132,7 +132,7 @@
                 },
                 "2": {
                     "name": "task",
-                    "value": "Synthetic Data"
+                    "value": "Metric Learning"
                 }
             },
             "Measure": "event-based F1 score",
@@ -152,7 +152,7 @@
                 },
                 "2": {
                     "name": "task",
-                    "value": "Synthetic Data"
+                    "value": "Metric Learning"
                 }
             },
             "Measure": "event-based F1 score",
