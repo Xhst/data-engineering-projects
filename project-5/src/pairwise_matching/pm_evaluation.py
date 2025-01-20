@@ -23,8 +23,11 @@ def evaluate(gt_file_path, json_file_path):
 
 
     gt_pairs = set()
+
+    # To take only the predicted pairs of the same vocabulary as the GT 
     gt_name_set = set()
 
+    # GT pairs set
     for line in gt_lines:
         line = line.strip()
         if not line:
@@ -41,6 +44,7 @@ def evaluate(gt_file_path, json_file_path):
 
     predicted_pairs = set()
 
+    # Predicted pairs set (filtered on GT vocabulary)
     for entry in json_data:
         pair = (entry['entry1'], entry['entry2'])
 
@@ -48,6 +52,7 @@ def evaluate(gt_file_path, json_file_path):
         if str1 in gt_name_set and str2 in gt_name_set:
             predicted_pairs.add(pair)
 
+    # Normalization
     gt_pairs_normalized = {normalize_pair(pair) for pair in gt_pairs}
     predicted_pairs_normalized = {normalize_pair(pair) for pair in predicted_pairs}
 
