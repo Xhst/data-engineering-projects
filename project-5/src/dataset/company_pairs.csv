@@ -45,7 +45,7 @@ U CREATIVE LIMITED,U CREATIVE COMMUNICATIONS LIMITED,1
 Canoo Careers,Canoo,1
 Fountain,FOUNTAIN FINANCES LIMITED,1
 Global Blue Group Holding AG,Global Blue Group,1
-[15246] Calliditas Therapeutics AB (publ),Calliditas Therapeutics,1
+Calliditas Therapeutics AB (publ),Calliditas Therapeutics,1
 NEW AGE MENTAL HEALTH LTD,NEW AGE HEALTH LTD,1
 Dic Asset,Dic Asset ag,1
 Hubei Feilihua Quartz Glass Co. Ltd,Hubei Feilihua Quartz Glass,1
@@ -78,10 +78,10 @@ Shoals Technologies,Shoals Technologies Group Inc.,1
 TCL,Tcl Corporation,1
 Exclaimer,Exclaimer Group,1
 EATON ELECTRIC LIMITED,EATON ELECTRICAL SYSTEMS LIMITED,1
-[36838] Hokkaido Electric Power Co Inc,Hokkaido Electric Power Company,1
+Hokkaido Electric Power Co Inc,Hokkaido Electric Power Company,1
 Westrock Co,Westrock Company,1
 Tpi Polene Power Public Company,TPI Polene Public Company Ltd,1
-[13382] China Industrial Securities International Financial Group Ltd,China Industrial Securities,1
+China Industrial Securities International Financial Group Ltd,China Industrial Securities,1
 
 
 Tesla Inc.,Tesla,1
@@ -356,6 +356,137 @@ Brother Industries,Brother,1
 Ricoh Company  Ltd.,Ricoh,1
 Sharp Corporation,Sharp,1
 Lexmark International Inc.,Lexmark,1
+
+Apple Inc.,Samsung Electronics,0
+Microsoft Corporation,Alphabet Inc.,0
+Amazon.com Inc.,Alibaba Group,0
+Toyota Motor Corporation,Ford Motor Company,0
+JPMorgan Chase & Co.,Bank of America,0
+Exxon Mobil Corporation,Chevron Corporation,0
+Johnson & Johnson,Pfizer Inc.,0
+Procter & Gamble Co.,Unilever NV,0
+Nestlé SA,The Coca-Cola Company,0
+Intel Corporation,Advanced Micro Devices Inc.,0
+Facebook Inc.,Twitter Inc.,0
+Berkshire Hathaway Inc.,BlackRock Inc.,0
+Visa Inc.,Mastercard Incorporated,0
+The Walt Disney Company,Comcast Corporation,0
+AT&T Inc.,Verizon Communications Inc.,0
+Novartis AG,Roche Holding AG,0
+Nike Inc.,Adidas AG,0
+PepsiCo Inc.,Mondelez International Inc.,0
+Sony Corporation,Panasonic Corporation,0
+HSBC Holdings plc,Citigroup Inc.,0
+Volkswagen AG,General Motors Company,0
+McDonald's Corporation,Yum! Brands Inc.,0
+Siemens AG,General Electric Company,0
+TotalEnergies SE,BP plc,0
+L'Oréal SA,Estée Lauder Companies Inc.,0
+Airbus SE,The Boeing Company,0
+GlaxoSmithKline plc,Sanofi SA,0
+Royal Dutch Shell plc,ConocoPhillips,0
+Costco Wholesale Corporation,Walmart Inc.,0
+Bristol Myers Squibb Company,Eli Lilly and Company,0
+Honda Motor Co. Ltd.,Nissan Motor Co. Ltd.,0
+IBM Corporation,Oracle Corporation,0
+Lockheed Martin Corporation,Northrop Grumman Corporation,0
+Starbucks Corporation,Dunkin' Brands Group Inc.,0
+Renault SA,Peugeot SA,0
+Caterpillar Inc.,Deere & Company,0
+Dell Technologies Inc.,Hewlett Packard Enterprise Company,0
+Uber Technologies Inc.,Lyft Inc.,0
+PayPal Holdings Inc.,Square Inc.,0
+Netflix Inc.,Hulu LLC,0
+Airbus SE,Lockheed Martin Corporation,0
+Anheuser-Busch InBev SA/NV,Heineken NV,0
+Barclays plc,Deutsche Bank AG,0
+Bayer AG,BASF SE,0
+Bristol-Myers Squibb Company,Merck & Co. Inc.,0
+Canon Inc.,Nikon Corporation,0
+Cisco Systems Inc.,Juniper Networks Inc.,0
+Colgate-Palmolive Company,Kimberly-Clark Corporation,0
+Danone SA,Kellogg Company,0
+Delta Air Lines Inc.,American Airlines Group Inc.,0
+FedEx Corporation,United Parcel Service Inc.,0
+Fiat Chrysler Automobiles NV,Tesla Inc.,0
+Goldman Sachs Group Inc.,Morgan Stanley,0
+Honeywell International Inc.,3M Company,0
+Hyundai Motor Company,Kia Motors Corporation,0
+ING Groep NV,UBS Group AG,0
+Kraft Heinz Company,General Mills Inc.,0
+Lloyds Banking Group plc,Royal Bank of Scotland Group plc,0
+Mitsubishi Corporation,Mitsui & Co. Ltd.,0
+Panasonic Corporation,LG Electronics Inc.,0
+Philips NV,Siemens Healthineers AG,0
+Rio Tinto Group,BHP Group,0
+Royal Bank of Canada,Toronto-Dominion Bank,0
+SAP SE,Salesforce.com Inc.,0
+Schneider Electric SE,ABB Ltd.,0
+Sony Corporation,LG Electronics Inc.,0
+Tata Consultancy Services Limited,Infosys Limited,0
+Texas Instruments Incorporated,Qualcomm Incorporated,0
+UBS Group AG,Credit Suisse Group AG,0
+Vodafone Group plc,Orange SA,0
+WPP plc,Omnicom Group Inc.,0
+Zurich Insurance Group AG,Allianz SE,0
+Accenture plc,Capgemini SE,0
+Airbus SE,Embraer SA,0
+Alibaba Group Holding Limited,JD.com Inc.,0
+American Express Company,Discover Financial Services,0
+AstraZeneca plc,Moderna Inc.,0
+Baidu Inc.,Tencent Holdings Ltd.,0
+Biogen Inc.,Regeneron Pharmaceuticals Inc.,0
+Blackstone Group Inc.,KKR & Co. Inc.,0
+Booking Holdings Inc.,Expedia Group Inc.,0
+Bristol-Myers Squibb Company,Gilead Sciences Inc.,0
+Broadcom Inc.,NVIDIA Corporation,0
+Charter Communications Inc.,Dish Network Corporation,0
+Chubb Limited,AIG,0
+Cigna Corporation,Humana Inc.,0
+CME Group Inc.,Intercontinental Exchange Inc.,0
+Colgate-Palmolive Company,Procter & Gamble Co.,0
+ConocoPhillips,Marathon Oil Corporation,0
+CVS Health Corporation,Walgreens Boots Alliance Inc.,0
+Daimler AG,BMW AG,0
+Diageo plc,Pernod Ricard SA,0
+eBay Inc.,Etsy Inc.,0
+Enel SpA,Iberdrola SA,0
+Eni SpA,Repsol SA,0
+Equinor ASA,Lundin Energy AB,0
+Facebook Inc.,Snap Inc.,0
+Ferrari NV,Lamborghini SpA,0
+Glencore plc,Anglo American plc,0
+H&M Hennes & Mauritz AB,Inditex SA,0
+Halliburton Company,Schlumberger Limited,0
+Hitachi Ltd.,Toshiba Corporation,0
+Honda Motor Co. Ltd.,Yamaha Motor Co. Ltd.,0
+HSBC Holdings plc,Standard Chartered plc,0
+Intel Corporation,ARM Holdings plc,0
+Intesa Sanpaolo SpA,UniCredit,0
+American Express,American Eagle Outfitters,0
+Phoenix Group,Phoenix Contact,0
+Sun Microsystems,Sun Chemical,0
+Liberty Mutual,Liberty Global,0
+Boston Consulting Group,Boston Dynamics,0
+Alliance Healthcare,Alliance Data Systems,0
+United Airlines,United Rentals,0
+Silver Lake Partners,Silverlake Automotive,0
+Blue Cross Blue Shield,Blue Origin,0
+Capital One,Capitol Records,0
+Western Union,Union Pacific,0
+Standard Life,Standard Chartered,0
+Next plc,Nextdoor,0
+Crown Holdings,Crown Resorts,0
+Green Energy Group,Green Energy Markets,0
+Bright Horizons,Bright Health Group,0
+Bridgewater Associates,Bridgewater Bank,0
+BlackRock,Blackstone,0
+Lloyds Bank,Lloyd's of London,0
+Brookfield Asset Management,Brookfield Properties,0
+Rio Tinto,Rio Energy,0
+Vanguard Group,Vanguard Logistics,0
+United Health Group,United Technologies,0
+
 
 
 
