@@ -63,10 +63,11 @@ def evaluate(gt_file_path, json_file_path):
     recall = len(correct_pairs) / len(gt_pairs_normalized) if gt_pairs_normalized else 0
     f1 = 2 * ((precision * recall) / (precision + recall)) if (precision + recall) > 0 else 0
 
+    print(len(predicted_pairs))
     print(f"\n{CYAN}Pairwise matching EVALUATION for {json_file_path.rsplit('/', 1)[-1]}{RESET}")
-    print(f"- {GREEN}Precision: {RESET}{precision}")
-    print(f"- {GREEN}Precision: {RESET}{recall}")
-    print(f"- {GREEN}F1: {RESET}{f1}\n")
+    print(f"- {GREEN}Precision: {RESET}{precision:.2f}")
+    print(f"- {GREEN}Recall: {RESET}{recall:.2f}")
+    print(f"- {GREEN}F1: {RESET}{f1:.2f}\n")
     
 
 
