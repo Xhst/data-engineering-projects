@@ -1,0 +1,8 @@
+=========Best Model Params:=========
+- Learning rate: 0.0001
+- Batch Size: 16
+- Epochs: 10
+=========Best Model Performance (test set):=========
+- F1 Score: 88.46153259277344
+- Precision: 86.79
+- Recall: 90.20
