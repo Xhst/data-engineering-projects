@@ -2,3 +2,5 @@
 .env
 
 fields_descriptions_embeddings.json
+
+cacheddata.pth
