@@ -20,28 +20,29 @@ nltk.download('punkt_tab')
 def load_and_split_data(dataset: str):
     
     # Load dataset
-    file_path = dataset  # Modifica con il percorso del tuo file
+    file_path = dataset  
     df = pd.read_csv(file_path)
 
-    # Mischia il dataset
-    df = df.sample(frac=1, random_state=42).reset_index(drop=True)  # Mischia i dati
+    # Shuffle the dataset
+    df = df.sample(frac=1, random_state=42).reset_index(drop=True)
+    # Labels -> int
     df['label'] = df['label'].astype(int)
 
-    # Suddividi in train, validation e test
+    
     train_size = 0.7
     valid_size = 0.15
     test_size = 0.15
 
-    # Calcola le proporzioni per validation e test rispetto al restante dataset
+    
     valid_test_ratio = valid_size / (valid_size + test_size)
 
-    # Primo split: train vs (validation + test)
+    
     train, valid_test = train_test_split(df, test_size=(1 - train_size), random_state=42)
 
-    # Secondo split: validation vs test
+    
     validation, test = train_test_split(valid_test, test_size=valid_test_ratio, random_state=42)
 
-    # Verifica la suddivisione
+    
     print(f"{CYAN}Train size:{RESET} {len(train)}")
     print(f"{CYAN}Validation size:{RESET} {len(validation)}")
     print(f"{CYAN}Test size:{RESET} {len(test)}")
@@ -51,7 +52,7 @@ def load_and_split_data(dataset: str):
     if not os.path.exists(data_splits_path):
         os.makedirs(data_splits_path)
 
-    # Salva i file separati
+   
     train.to_csv(f"{data_splits_path}/train.csv", index=False)
     validation.to_csv(f"{data_splits_path}/validation.csv", index=False)
     test.to_csv(f"{data_splits_path}/test.csv", index=False)
