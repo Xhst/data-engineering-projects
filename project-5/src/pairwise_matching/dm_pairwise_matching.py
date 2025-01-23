@@ -89,9 +89,9 @@ def predict_pairs(directory):
 
 if __name__ == "__main__":
     
-    directory = paths.BLOCKING.RESULTS.value
-    pairs_csv_builder(directory)
+    blocking_directory = paths.BLOCKING.RESULTS.value
+    pairs_csv_builder(blocking_directory)
     
-    #directory = paths.PAIRWISE_MATCHING.RESULTS_DM_UNLABELED.value
-    #predict_pairs(directory)
+    #unlabeled_pairs_directory = paths.PAIRWISE_MATCHING.RESULTS_DM_UNLABELED.value
+    #predict_pairs(unlabeled_pairs_directory)
 
