@@ -74,7 +74,7 @@ def predict_pairs(directory):
             df = pd.read_csv(filepath)
 
             model = dm.MatchingModel()
-            model.load_state(paths.MODELS.DEEP_MATCHER.value)
+            model.load_state(f"{paths.MODELS.DEEP_MATCHER.value}/pw_matching_DM_model_lr0.0001_bs_16_epochs_10.pth")
 
             processed_data = dm.data.process_unlabeled(path = filepath,
                                                        trained_model=model)

@@ -5,7 +5,7 @@ DATASET = '../dataset'
 
 class MODELS(Enum):
     DATA_SPLITS = '../models/data_splits'
-    DEEP_MATCHER = '../models/deep_matcher/pw_matching_DM_model_lr0.0001_bs_16_epochs_10.pth'
+    DEEP_MATCHER = '../models/deep_matcher'
 
 class BLOCKING(Enum): 
     RESULTS = '../blocking/results/'
