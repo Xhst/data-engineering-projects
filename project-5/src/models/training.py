@@ -62,6 +62,9 @@ def load_and_split_data(dataset: str):
 
 def train_dm(dataset: str):
 
+    if not os.path.exists(paths.MODELS.DEEP_MATCHER.value):
+        os.makedirs(paths.MODELS.DEEP_MATCHER.value)
+
     load_and_split_data(dataset)
 
     try:
