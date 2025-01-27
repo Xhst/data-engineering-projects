@@ -1,0 +1,10 @@
+[
+  {
+    "name": "companies",
+    "task_type": "classification",
+    "vocab": ["0", "1"],
+    "trainset": "../../models/data_splits/train.txt",
+    "validset": "../../models/data_splits/validation.txt",
+    "testset": "../../models/data_splits/test.txt"
+  }
+]

@@ -75,7 +75,7 @@ def evaluate(gt_file_path, json_file_path):
 if __name__ == "__main__":
 
     gt_file_path = f"{paths.GROUND_TRUTH}/gt.txt"
-    json_file_path = f"{paths.PAIRWISE_MATCHING.RESULTS_JAROWINKLER.value}/lsh_words.json"
+    json_file_path = f"{paths.PAIRWISE_MATCHING.RESULTS_JAROWINKLER.value}/lsh_bigram.json"
 
     evaluate(gt_file_path, json_file_path)
 

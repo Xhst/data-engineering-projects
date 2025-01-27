@@ -1,5 +1,6 @@
 *.pyc
 .env
+model.pt
 
 fields_descriptions_embeddings.json
 
