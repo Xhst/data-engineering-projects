@@ -79,9 +79,9 @@ def train_dm(dataset: str):
         return
     
     # Grid search for hyperparameter tuning
-    learning_rates = [0.0001, 0.001, 0.01, 0.1]
-    batch_sizes = [16, 32, 64]
-    epochs = [10, 20]
+    learning_rates = [0.00001, 0.0001, 0.001, 0.01]
+    batch_sizes = [8, 16]
+    epochs = [5, 10]
 
     param_grid = list(itertools.product(learning_rates, batch_sizes, epochs))
 
@@ -125,7 +125,7 @@ def train_dm(dataset: str):
         file.write(f"- Learning rate: {best_params[0]}\n")
         file.write(f"- Batch Size: {best_params[1]}\n")
         file.write(f"- Epochs: {best_params[2]}\n")
-        file.write(f"=========Best Model Performance:=========\n")
+        file.write(f"=========Best Model Performance (on test set):=========\n")
         file.write(f"- F1 Score: {f1}\n")
         file.write(f"- Precision:\n") # Taken from the logs
         file.write(f"- Recall:\n") # Taken from the logs
