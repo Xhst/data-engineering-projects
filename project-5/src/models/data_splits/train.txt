@@ -1,0 +1,339 @@
+Diageo plc || Pernod Ricard SA || 0
+Wells Fargo & Co. || Wells Fargo || 1
+Progressive Corporation || Progressive || 1
+Mars Inc. || Mars || 1
+Airbus SE || Lockheed Martin Corporation || 0
+Allianz SE || Allianz || 1
+Cigna Corporation || Cigna || 1
+American Woodmark || American Woodmark Corporation || 1
+Baidu Inc. || Tencent Holdings Ltd. || 0
+ePlus Inc || E-Plus || 1
+Green Energy Group || Green Energy Markets || 0
+Sony Corporation || LG Electronics Inc. || 0
+PANINI SPA || PANINI SPA || 1
+AmerisourceBergen || AmerisourceBergen || 1
+Tata Consultancy Services || TCS || 1
+Cigna Corporation || Humana Inc. || 0
+Guangdong Zhongsheng Pharmaceutical || Shanxi Zhendong Pharmaceutical || 0
+Thermo Fisher Scientific Inc. || Thermo Fisher || 1
+Nationwide Mutual Insurance Company || Nationwide || 1
+Lululemon Athletica || Lululemon || 1
+Halliburton Company || Schlumberger Limited || 0
+Xerox Holdings || Xerox || 1
+Biogen Inc. || Regeneron Pharmaceuticals Inc. || 0
+LinkedIn Corporation || LinkedIn || 1
+Eni SpA || Repsol SA || 0
+JPMorgan Chase & Co. || Bank of America || 0
+Engie S.A. || Engie || 1
+Bright Horizons || Bright Health Group || 0
+Calliditas Therapeutics AB (publ) || Calliditas Therapeutics || 1
+U and I Group plc || U AND I GROUP LIMITED || 1
+Tesla Inc. || Tesla || 1
+Estée Lauder Companies Inc. || Estée Lauder || 1
+Novartis AG || Roche Holding AG || 0
+Walgreens Boots Alliance Inc. || Walgreens || 1
+Procter & Gamble Co. || P&G || 1
+Toyota Motor Corporation || Ford Motor Company || 0
+Caterpillar Inc. || Deere & Company || 0
+Zimmer Biomet Holdings Inc. || Zimmer Biomet || 1
+AS ONE Corporation || OneTrust || 0
+Sony Corporation || Sony || 1
+Foxconn (hon Hai Precision Industry) || Foxconn Technology Co Ltd || 1
+Texas Instruments Incorporated || Qualcomm Incorporated || 0
+Eversource Energy || Eversource || 1
+TCL || Tcl Corporation || 1
+Microchip Technology Inc. || Microchip || 1
+State Farm Insurance || State Farm || 1
+Macy's Inc. || Macy's || 1
+DTE Energy || DTE || 1
+Cigna Health ||  Cigna || 1
+Cognizant Technology Solutions || Cognizant || 1
+Halliburton Company || Halliburton || 1
+Glencore plc || Anglo American plc || 0
+The Hartford || The Hartford || 1
+Corteva Agriscience || Corteva || 1
+Boston Consulting Group || Boston Dynamics || 0
+Johnson & Johnson Services || Johnson & Johnson || 1
+Capital One || Capitol Records || 0
+Apple Inc. || Samsung Electronics || 0
+Siemens Healthineers AG || Siemens Healthineers || 1
+Zebra Technologies Corporation || Zebra || 1
+Grupo Posadas S.A.B. de C.V. || Nemak S. A. B. De C. V || 0
+EOG Resources || EOG || 1
+Texas Instruments Inc. || Texas Instruments || 1
+Stryker Corporation || Stryker || 1
+HUNT AND PALMER PLC || J. B. Hunt || 0
+Dic Asset || Dic Asset ag || 1
+Nike Inc. || Adidas AG || 0
+DuPont de Nemours Inc. || DuPont || 1
+3M Company || 3M || 1
+Mastercard Incorporated || Mastercard || 1
+Home Depot Inc. || Home Depot || 1
+Philips Healthcare || Philips Healthcare || 1
+Dropbox Inc. || Dropbox || 1
+GlaxoSmithKline plc || Sanofi SA || 0
+Intel Corporation || Intel || 1
+U CREATIVE LIMITED || U CREATIVE COMMUNICATIONS LIMITED || 1
+Hewlett-Packard || HP || 1
+Delta Air Lines Inc. || American Airlines Group Inc. || 0
+Dillard's Inc. || Dillard's || 1
+Alliant Energy || Alliant || 1
+Mettler Toledo || Mettler Toledo || 1
+Eli Lilly and Company || Eli Lilly || 1
+Trendy Group International || Circor International || 0
+Spotify Technology || Spotify || 1
+Canoo Careers || Canoo || 1
+Danone S.A. || Danone || 1
+Procter & Gamble Co. || Unilever NV || 0
+Snap Inc. || Snap || 1
+Exxon Mobil Corporation || Chevron Corporation || 0
+Kroger Co. || Kroger || 1
+Occidental Petroleum || Occidental || 1
+Western Union || Union Pacific || 0
+Alibaba Group Holding Limited || JD.com Inc. || 0
+Facebook Inc. || Twitter Inc. || 0
+Walgreens Boots Alliance || Walgreens || 1
+Broadcom Inc. || NVIDIA Corporation || 0
+LyondellBasell Industries || LyondellBasell || 1
+Ferrari NV || Lamborghini SpA || 0
+NextEra Energy || Inc. NextEra Energy || 1
+Atos SE || Atos || 1
+PayPal Holdings Inc. || Square Inc. || 0
+American International Group || AIG || 1
+Colgate-Palmolive Company || Colgate || 1
+NiSource Inc. || NiSource || 1
+Airbus SE || Embraer SA || 0
+Next plc || Nextdoor || 0
+Bristol-Myers Squibb Company || Gilead Sciences Inc. || 0
+ConocoPhillips || ConocoPhillips || 1
+ScottishPower Limited || ScottishPower || 1
+Zoom Video Communications || Zoom || 1
+eBay Inc. || Etsy Inc. || 0
+Rio Tinto Group || BHP Group || 0
+Centene Corporation || Centene || 1
+Lloyds Banking Group plc || Royal Bank of Scotland Group plc || 0
+American Express Company || American Express || 1
+NOS SGPS SA || Nos S.g.p.s || 1
+Workday Inc. || Workday || 1
+PSEG || PSEG || 1
+Shopify Inc. || Shopify || 1
+Shiseido Company || Shiseido || 1
+The Allstate Corporation || Allstate || 1
+Colgate-Palmolive Company || Kimberly-Clark Corporation || 0
+Rio Tinto || Rio Energy || 0
+Tata Consultancy Services Limited || Infosys Limited || 0
+Uber Technologies || Uber || 1
+Fiat Chrysler Automobiles NV || Tesla Inc. || 0
+Valero Energy Corporation || Valero || 1
+Puma AG || Puma || 1
+ACEA S.p.A. || Acea SpA || 1
+Brother Industries || Brother || 1
+Ambu A/s || Ambu || 1
+FinecoBank Banca Fineco S.p.A. || Banca Farmafactoring S.p.A. || 0
+Enbridge Inc. || Enbridge || 1
+Geico Corporation || Geico || 1
+Mitsubishi Corporation || Mitsui & Co. Ltd. || 0
+Bank of New York Mellon || BNY Mellon || 1
+Enel SpA || Iberdrola SA || 0
+MetLife Inc. || MetLife || 1
+DaVita Inc. || DaVita || 1
+Bank of America || BofA || 1
+Zurich Insurance Group AG || Allianz SE || 0
+Edwards Lifesciences Corporation || Edwards Lifesciences || 1
+Vertex Pharmaceuticals || Vertex || 1
+Samsung Electronics || Samung || 1
+Best Buy Co. Inc. || Best Buy || 1
+Zalando SE || Zalando || 1
+HP Inc. || HP || 1
+Foot Locker Inc. || Foot Locker || 1
+Sanofi S.A. || Sanofi || 1
+CME Group Inc. || Intercontinental Exchange Inc. || 0
+Horiba Ltd. || Horiba || 1
+HCL Technologies || HCL || 1
+Ericsson AB || Ericsson || 1
+Prudential Financial || Prudential || 1
+NEW AGE MENTAL HEALTH LTD || NEW AGE HEALTH LTD || 1
+Anheuser-Busch InBev SA/NV || Heineken NV || 0
+Chevron Corporation || Chevron || 1
+Costco Wholesale Corporation || Walmart Inc. || 0
+Colgate-Palmolive Company || Procter & Gamble Co. || 0
+Goldman Sachs || Goldman Sachs || 1
+Grupo Pochteca S.A.B. de C.V. || Grupo Lamosa S.A.B. de C.V. || 0
+SAP SE || SAP || 1
+Fountain || FOUNTAIN FINANCES LIMITED || 1
+State Street Corporation || State Street || 1
+Alliance Healthcare || Alliance Data Systems || 0
+BP p.l.c. || BP || 1
+Gap Inc. || Gap || 1
+Sappi Limited || Sappi Ltd || 1
+ADATA Technology Co Ltd || Global Mixed-Mode Technology Inc. || 0
+Daimler AG || BMW AG || 0
+Panasonic Corporation || Panasonic || 1
+Amazon.com Inc. || Alibaba Group || 0
+Grupo Puma || PUMA || 0
+Alibaba Group || Alibaba || 1
+Duke Energy Corporation || Duke Energy || 1
+Msa Safety || MSA Safety Incorporated || 1
+BlackRock || Blackstone || 0
+Deep Industries Ltd || PARALLEL APPLICATIONS LTD || 0
+EATON ELECTRIC LIMITED || EATON ELECTRICAL SYSTEMS LIMITED || 1
+Biogen || Biogen || 1
+Samsung Electronics Italia Spa || Shenzhen Colibri Technologies || 0
+Boston Scientific Corporation || Boston Scientific || 1
+Nestlé SA || The Coca-Cola Company || 0
+Costco Wholesale Corporation || Costco || 1
+HSBC Holdings || HSBC || 1
+Bristol-Myers Squibb Company || Merck & Co. Inc. || 0
+Vanguard Group || Vanguard Logistics || 0
+Regeneron Pharmaceuticals Inc. || Regeneron || 1
+Fineos Corporation Holdings || FINEOS || 1
+Berkshire Hathaway Inc. || BlackRock Inc. || 0
+Bristol-Myers Squibb || Bristol-Myers Squibb || 1
+Arthur J. Gallagher & Co || BEAUTY BOULEVARD LTD || 0
+Humana Inc. || Humana || 1
+Blackstone Group Inc. || KKR & Co. Inc. || 0
+Nokia Corporation || Nokia || 1
+CMS Energy || CMS || 1
+Devon Energy || Devon || 1
+Medtronic PLC || Medtronic || 1
+Liberty Mutual || Liberty Global || 0
+Barclays plc || Deutsche Bank AG || 0
+Syngenta || Syngenta || 1
+Philips NV || Siemens Healthineers AG || 0
+Monsanto Company || Monsanto || 1
+CVS Health || CVS || 1
+ING Group NV || ING Group Careers || 1
+Thermo Fisher Scientific Inc. || Thermo Fisher || 1
+Oracle Corporation || Oracle || 1
+Lincoln National Corporation || Lincoln Financial || 1
+ServiceNow || ServiceNow || 1
+Charter Communications Inc. || Dish Network Corporation || 0
+Schlumberger Limited || Schlumberger || 1
+Morgan Stanley || Morgan Stanley || 1
+PayPal Holdings || PayPal || 1
+Pinterest Inc. || Pinterest || 1
+Blue Cross Blue Shield || Blue Origin || 0
+AIRBUS GROUP INC. || Airbus || 1
+China Industrial Securities International Financial Group Ltd || China Industrial Securities || 1
+Larsen & Toubro || L&T || 1
+Citigroup Inc. || Citi || 1
+Wipro Limited || Wipro || 1
+Tpi Polene Power Public Company || TPI Polene Public Company Ltd || 1
+Agilent Technologies || Agilent || 1
+New Balance Athletic Shoe Inc. || New Balance || 1
+PUMA || puma || 1
+Danone SA || Kellogg Company || 0
+Intesa Sanpaolo SpA || UniCredit || 0
+Lloyds Bank || Lloyd's of London || 0
+Starbucks Corporation || Dunkin' Brands Group Inc. || 0
+Adyen N.V. || Adyen || 1
+Alphabet Inc. || Google || 1
+Capgemini || CAPGEMINI || 1
+FirstEnergy Corp. || FirstEnergy || 1
+Silver Crest Acquisition Corp || Zall Smart Commerce Group || 0
+Airbnb Inc. || Airbnb || 1
+Coca-Cola Company || Coca-Cola || 1
+Abbott Laboratories || Abbott || 1
+Liberty Mutual Insurance || Liberty Mutual || 1
+Visa Inc. || Mastercard Incorporated || 0
+Anadolu Anonim Tucrk Sigorta Sirketi || Turkiye Sigorta Anonim Sirketi || 1
+The Walt Disney Company || Comcast Corporation || 0
+Southern Company || The Southern Company || 1
+Shell PLC || Shell || 1
+Gedeon Richter Plc || Richter Gedeon Co. || 1
+H&M Hennes & Mauritz AB || Inditex SA || 0
+Slack Technologies || Slack || 1
+Mondelez International || Mondelez || 1
+BASF SE || BASF || 1
+Consolidated Edison Inc. || Con Edison || 1
+Brookfield Asset Management || Brookfield Properties || 0
+Uber Technologies Inc. || Lyft Inc. || 0
+Baker Hughes || Baker Hughes || 1
+Bayer AG || Bayer || 1
+PepsiCo Inc. || Mondelez International Inc. || 0
+Facebook Inc. || Snap Inc. || 0
+Phoenix Group || Phoenix Contact || 0
+Mylan N.V. || Mylan || 1
+Nordstrom Inc. || Nordstrom || 1
+Kraft Heinz Company || General Mills Inc. || 0
+Schneider Electric SE || ABB Ltd. || 0
+Marathon Petroleum Corporation || Marathon || 1
+Thermo Fisher Scientific Inc. || Thermo Fisher || 1
+Pioneer Natural Resources || Pioneer || 1
+Crown Holdings || Crown Resorts || 0
+Renault SA || Peugeot SA || 0
+Johnson & Johnson || Pfizer Inc. || 0
+AT&T Careers || AT&T || 1
+VMware Inc. || VMware || 1
+Sony Corporation || Panasonic Corporation || 0
+Cosmos Pharmaceutical || Corbus Pharmaceuticals || 0
+Waters Corporation || Waters || 1
+Autodesk Inc. || Autodesk || 1
+PCCW || PCCW Ltd || 1
+GlaxoSmithKline || GlaxoSmithKline || 1
+Lockheed Martin Corporation || Northrop Grumman Corporation || 0
+Johnson & Johnson || Johnson & Johnson || 1
+Gilead Sciences Inc. || Gilead || 1
+Chesapeake Energy || Chesapeake || 1
+Reckitt Benckiser Group || Reckitt || 1
+BlackRock Inc. || BlackRock || 1
+Nyxoah || Nyxoah SA || 1
+Chateau International Development Co. Ltd || Melco International Development || 0
+Xcel Energy || Xcel || 1
+Goldman Sachs Group Inc. || Morgan Stanley || 0
+Box Inc. || Box || 1
+Pfizer Inc. || Pfizer || 1
+North China Pharmaceutical Company. Ltd || Northeast Pharmaceutical Group Co Ltd || 0
+Roche Holding AG || Roche || 1
+TotalEnergies || TotalEnergies || 1
+Lyft Inc. || Lyft || 1
+Nestlé S.A. || Nestlé || 1
+Square Inc. || Square || 1
+Bristol Myers Squibb Company || Eli Lilly and Company || 0
+Royal Dutch Shell || Shell || 1
+American Express Company || Discover Financial Services || 0
+Microsoft Corporation || Alphabet Inc. || 0
+Amgen Inc. || Amgen || 1
+Cardinal Health Inc. || Cardinal Health || 1
+Sharp Corporation || Sharp || 1
+Unilever PLC || Unilever || 1
+Broadcom Inc. || Broadcom || 1
+Hitachi Ltd. || Toshiba Corporation || 0
+Nvidia Corporation || Nvidia || 1
+Occidental Petroleum || Occidental || 1
+Veeva Systems || Veeva || 1
+Bridgewater Associates || Bridgewater Bank || 0
+Global Blue Group Holding AG || Global Blue Group || 1
+Walmart Inc. || Walmart || 1
+Hyundai Motor Company || Kia Motors Corporation || 0
+H&M || H&M || 1
+PerkinElmer Inc. || PerkinElmer || 1
+Credit Suisse || Credit Suisse || 1
+Williams Companies Inc. || Williams || 1
+Heritage Financial || Heritage Trust Company Careers || 1
+Booking Holdings Inc. || Expedia Group Inc. || 0
+UBS Group AG || Credit Suisse Group AG || 0
+Dell Technologies || Dell || 1
+IBM Corporation || IBM || 1
+Vodafone Group plc || Orange SA || 0
+FedEx Corporation || United Parcel Service Inc. || 0
+T A CARPENTRY & CONSTRUCTION (MIDLANDS) LIMITED || T & A CONSULT LTD || 1
+Merck & Co. Inc. || Merck || 1
+Charles Schwab Corporation || Charles Schwab || 1
+McDonald's Corporation || Yum! Brands Inc. || 0
+Square Inc. || Square || 1
+MUFG || MUFG Careers || 1
+Mori Hills Reit Investment Corporation || Mori Hills REIT Investment Corp || 1
+HSBC Holdings plc || Citigroup Inc. || 0
+Bayer AG || BASF SE || 0
+Advanced Micro Devices Inc. || AMD || 1
+Danaher Corporation || Danaher || 1
+Microsoft Corporation || Microsoft || 1
+Technology One Limited || Technology One || 1
+Siemens AG || General Electric Company || 0
+Salesforce.com || Salesforce || 1
+Uniqlo || Uniqlo || 1
+Becton Dickinson || Becton Dickinson || 1
+Fidelity Investments || Fidelity || 1
+Hewlett Packard || HP || 1
+International Business Machines || IBM || 1

@@ -86,7 +86,6 @@ def classify(sentence_pairs, model,
     """
     inputs = sentence_pairs
     # print('max_len =', max_len)
-    #print(inputs)
     dataset = DittoDataset(inputs,
                            max_len=max_len,
                            lm=lm)
@@ -116,67 +115,6 @@ def classify(sentence_pairs, model,
     return pred, all_logits
 
 def predict(input_path, output_path, config,
-            model,
-            summarizer=None,
-            lm='distilbert',
-            max_len=256,
-            dk_injector=None,
-            threshold=None):
-    """Run the model over the input file containing blocks of candidates.
-
-    Args:
-        input_path (str): the input file path
-        output_path (str): the output file path
-        config (Dictionary): task configuration
-        model (DittoModel): the model for prediction
-        batch_size (int): the batch size
-        summarizer (Summarizer, optional): the summarization module
-        max_len (int, optional): the max sequence length
-        dk_injector (DKInjector, optional): the domain-knowledge injector
-        threshold (float, optional): the threshold of the 0's class
-
-    Returns:
-        None
-    """
-    def process_block(block, writer):
-        pairs = []
-        rows = []
-
-        # Generate all pairs within the block
-        for i in range(len(block)):
-            for j in range(i + 1, len(block)):
-                pairs.append(to_str(block[i], block[j], summarizer, max_len, dk_injector))
-                rows.append((block[i], block[j]))
-
-        if not pairs:
-            return
-
-        # Classify the pairs
-        predictions, logits = classify(pairs, model, lm=lm,
-                                       max_len=max_len,
-                                       threshold=threshold)
-        scores = softmax(logits, axis=1)
-        for (item1, item2), pred, score in zip(rows, predictions, scores):
-            output = f"{item1} || {item2} || {pred}"
-            writer.write(output + "\n")
-
-    # Read blocks and process them
-    start_time = time.time()
-    with open(input_path, 'r') as reader, open(output_path, 'w', encoding="utf8") as writer:
-        #print(reader)
-        blocks = json.load(reader)
-        for block in blocks:
-            if len(block) <= 1:
-                continue
-            process_block(block, writer)
-
-    run_time = time.time() - start_time
-    run_tag = '%s_lm=%s_dk=%s_su=%s' % (config['name'], lm, str(dk_injector != None), str(summarizer != None))
-    os.system('echo %s %f >> log.txt' % (run_tag, run_time))
-
-
-
-def predict_for_threshold(input_path, output_path, config,
             model,
             batch_size=1024,
             summarizer=None,
@@ -249,6 +187,7 @@ def predict_for_threshold(input_path, output_path, config,
     run_tag = '%s_lm=%s_dk=%s_su=%s' % (config['name'], lm, str(dk_injector != None), str(summarizer != None))
     os.system('echo %s %f >> log.txt' % (run_tag, run_time))
 
+
 def tune_threshold(config, model, hp):
     """Tune the prediction threshold for a given model on a validation set"""
     validset = config['validset']
@@ -288,7 +227,7 @@ def tune_threshold(config, model, hp):
 
     # verify F1
     set_seed(123)
-    predict_for_threshold(validset, "tmp.jsonl", config, model,
+    predict(validset, "tmp.jsonl", config, model,
             summarizer=summarizer,
             max_len=hp.max_len,
             lm=hp.lm,
@@ -314,7 +253,7 @@ def tune_threshold(config, model, hp):
 
 
 
-def load_model(task, path, lm, use_gpu):
+def load_model(task, path, lm, use_gpu, fp16=True):
     """Load a model for a specific task.
 
     Args:
@@ -359,6 +298,7 @@ if __name__ == "__main__":
     parser.add_argument("--output_path", type=str, default='../results/ditto/ditto_predict.txt')
     parser.add_argument("--lm", type=str, default='distilbert')
     parser.add_argument("--use_gpu", dest="use_gpu", action="store_true")
+    parser.add_argument("--fp16", dest="fp16", action="store_true")
     parser.add_argument("--checkpoint_path", type=str, default='checkpoints/')
     parser.add_argument("--dk", type=str, default=None)
     parser.add_argument("--summarize", dest="summarize", action="store_true")
@@ -368,7 +308,7 @@ if __name__ == "__main__":
     # load the models
     set_seed(123)
     config, model = load_model(hp.task, hp.checkpoint_path,
-                       hp.lm, hp.use_gpu)
+                       hp.lm, hp.use_gpu, hp.fp16)
 
     summarizer = dk_injector = None
     if hp.summarize:
@@ -386,7 +326,7 @@ if __name__ == "__main__":
     # run prediction
     predict(hp.input_path, hp.output_path, config, model,
             summarizer=summarizer,
-            lm=hp.lm,
             max_len=hp.max_len,
+            lm=hp.lm,
             dk_injector=dk_injector,
             threshold=threshold)
