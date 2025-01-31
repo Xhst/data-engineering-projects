@@ -335,3 +335,5 @@ Salesforce.com || Salesforce || 1
 Uniqlo || Uniqlo || 1
 Becton Dickinson || Becton Dickinson || 1
 Fidelity Investments || Fidelity || 1
+Hewlett Packard || HP || 1
+International Business Machines || IBM || 1
