@@ -25,15 +25,15 @@ def load_and_split_data(dataset: str):
 
     # Shuffle the dataset
     df = df.sample(frac=1, random_state=42).reset_index(drop=True)
+
     # Labels -> int
     df['label'] = df['label'].astype(int)
-
+    
     
     train_size = 0.7
     valid_size = 0.15
     test_size = 0.15
 
-    
     valid_test_ratio = valid_size / (valid_size + test_size)
 
     
@@ -81,7 +81,7 @@ def train_dm(dataset: str):
     # Grid search for hyperparameter tuning
     learning_rates = [0.00001, 0.0001, 0.001, 0.01]
     batch_sizes = [8, 16]
-    epochs = [5, 10]
+    epochs = [5, 10, 15]
 
     param_grid = list(itertools.product(learning_rates, batch_sizes, epochs))
 
