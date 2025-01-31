@@ -121,7 +121,8 @@ def predict(input_path, output_path, config,
             lm='distilbert',
             max_len=256,
             dk_injector=None,
-            threshold=None):
+            threshold=None,
+            pairs_to_evaluate=None):
     """Run the model over the input file containing the candidate entry pairs
 
     Args:
@@ -139,25 +140,38 @@ def predict(input_path, output_path, config,
         None
     """
     pairs = []
-
-    def process_batch(rows, pairs, writer):
+    
+    def process_batch(rows, pairs, writer=None):
         predictions, logits = classify(pairs, model, lm=lm,
                                        max_len=max_len,
                                        threshold=threshold)
-        # try:
-        #     predictions, logits = classify(pairs, model, lm=lm,
-        #                                    max_len=max_len,
-        #                                    threshold=threshold)
-        # except:
-        #     # ignore the whole batch
-        #     return
         scores = softmax(logits, axis=1)
+        results = []
         for row, pred, score in zip(rows, predictions, scores):
-            output = {'left': row[0], 'right': row[1],
-                'match': pred,
-                'match_confidence': score[int(pred)]}
-            writer.write(output)
+            if writer is not None:
+                output = {'left': row[0], 'right': row[1],
+                    'match': pred,
+                    'match_confidence': score[int(pred)]}
+                writer.write(output)
+            results.append((row[0], row[1], pred))
+        return results
 
+    if pairs_to_evaluate is not None:
+        start_time = time.time()
+        eval_results = []
+        for i in range(0, len(pairs_to_evaluate), batch_size):
+            batch = pairs_to_evaluate[i:i + batch_size]
+            
+            eval_results.extend(process_batch(batch, [ f"{item1} || {item2}" for item1, item2 in batch ]))
+        with open(output_path, 'w') as f:
+            for pair in eval_results:
+                f.write(f"{pair[0]} || {pair[1]} || {pair[2]}\n")
+        run_time = time.time() - start_time
+        run_tag = '%s_lm=%s_dk=%s_su=%s' % (config['name'], lm, str(dk_injector != None), str(summarizer != None))
+        os.system('echo %s %f >> log.txt' % (run_tag, run_time))
+        
+        return
+    
     # input_path can also be train/valid/test.txt
     # convert to jsonlines
     if '.txt' in input_path:
@@ -291,42 +305,65 @@ def load_model(task, path, lm, use_gpu, fp16=True):
     return config, model
 
 
+def pairwise_matching(task='companies',
+         input_path='../../blocking/results/lsh_bigram_blocking.json',
+         output_path='../results/ditto/ditto_predict_lsh_bigram_blocking.txt',
+         lm='distilbert',
+         use_gpu=False,
+         fp16=False,
+         checkpoint_path='checkpoints/',
+         dk=None,
+         summarize=False,
+         max_len=256,
+         pairs_to_evaluate=None):
+    
+    # Load the models
+    set_seed(123)
+    config, model = load_model(task, checkpoint_path, lm, use_gpu, fp16)
+
+    summarizer = dk_injector = None
+    if summarize:
+        summarizer = Summarizer(config, lm)
+
+    if dk is not None:
+        if 'product' in dk:
+            dk_injector = ProductDKInjector(config, dk)
+        else:
+            dk_injector = GeneralDKInjector(config, dk)
+
+    # Tune threshold
+    threshold = tune_threshold(config, model, argparse.Namespace(
+        task=task, input_path=input_path, output_path=output_path, lm=lm,
+        use_gpu=use_gpu, fp16=fp16, checkpoint_path=checkpoint_path, dk=dk,
+        summarize=summarize, max_len=max_len
+    ))
+
+    # Run prediction
+    predict(input_path, output_path, config, model,
+            summarizer=summarizer,
+            max_len=max_len,
+            lm=lm,
+            dk_injector=dk_injector,
+            threshold=threshold,
+            pairs_to_evaluate=pairs_to_evaluate)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--task", type=str, default='companies')
     parser.add_argument("--input_path", type=str, default='../../blocking/results/lsh_bigram_blocking.json')
-    parser.add_argument("--output_path", type=str, default='../results/ditto/ditto_predict.txt')
+    parser.add_argument("--output_path", type=str, default='../results/ditto/ditto_predict_lsh_bigram_blocking.txt')
     parser.add_argument("--lm", type=str, default='distilbert')
-    parser.add_argument("--use_gpu", dest="use_gpu", action="store_true")
-    parser.add_argument("--fp16", dest="fp16", action="store_true")
+    parser.add_argument("--use_gpu", action="store_true")
+    parser.add_argument("--fp16", action="store_true")
     parser.add_argument("--checkpoint_path", type=str, default='checkpoints/')
     parser.add_argument("--dk", type=str, default=None)
-    parser.add_argument("--summarize", dest="summarize", action="store_true")
+    parser.add_argument("--summarize", action="store_true")
     parser.add_argument("--max_len", type=int, default=256)
-    hp = parser.parse_args()
+    
+    args = parser.parse_args()
+    
+    pairwise_matching(args.task, args.input_path, args.output_path, args.lm,
+         args.use_gpu, args.fp16, args.checkpoint_path, args.dk,
+         args.summarize, args.max_len)
 
-    # load the models
-    set_seed(123)
-    config, model = load_model(hp.task, hp.checkpoint_path,
-                       hp.lm, hp.use_gpu, hp.fp16)
-
-    summarizer = dk_injector = None
-    if hp.summarize:
-        summarizer = Summarizer(config, hp.lm)
-
-    if hp.dk is not None:
-        if 'product' in hp.dk:
-            dk_injector = ProductDKInjector(config, hp.dk)
-        else:
-            dk_injector = GeneralDKInjector(config, hp.dk)
-
-    # tune threshold
-    threshold = tune_threshold(config, model, hp)
-
-    # run prediction
-    predict(hp.input_path, hp.output_path, config, model,
-            summarizer=summarizer,
-            max_len=hp.max_len,
-            lm=hp.lm,
-            dk_injector=dk_injector,
-            threshold=threshold)
