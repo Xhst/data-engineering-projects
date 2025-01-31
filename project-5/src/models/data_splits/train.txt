@@ -61,10 +61,10 @@ ConocoPhillips || Marathon Oil Corporation || 0
 Atlassian Corporation || Atlassian || 1
 Zurich Insurance Group AG || Allianz SE || 0
 Rio Tinto Group || BHP Group || 0
-Prudential Financial || "Prudential Financial ||  Inc." || 1
+Prudential Financial || "Prudential Financial, Inc." || 1
 U INTERNATIONAL LIMITED || ICF International Inc || 0
 Hyundai Glovis || Hyundai Glovis || 1
-Edison International || "U INTERNATIONAL GROUP CO. ||  LTD" || 0
+Edison International || "U INTERNATIONAL GROUP CO., LTD" || 0
 Hana Financial Group || Hana Financial Group || 1
 Dropbox Inc. || Dropbox || 1
 Qualcomm Inc. || Qualcomm || 1
@@ -104,7 +104,7 @@ HSBC Holdings plc || Citigroup Inc. || 0
 Topsports International Holdings Ltd || 361 Degrees International || 0
 Infosys Technologies || Infosys || 1
 FINANCE SYSTEMS INTEGRATION LTD. || Yara International || 0
-Woori Financial Group Inc || "Woori Financial Group ||  Inc." || 1
+Woori Financial Group Inc || "Woori Financial Group, Inc." || 1
 Brother Industries || Brother || 1
 Voltas || Voltage || 0
 Samsung Electronics || Samung || 1
@@ -138,7 +138,7 @@ Intel Corporation || Advanced Micro Devices Inc. || 0
 Q & A CONSULTING LIMITED || Q & A CONSULTANTS LTD || 1
 Stolt-Nielsen Limited Careers || Stolt-Nielsen Limited Careers || 1
 CT Real Estate Investment Trust || CT Real Estate Investment Trust || 1
-Banco Bilbao Vizcaya Argentaria (BBVA) || "Banco Bilbao Vizcaya Argentaria ||  SA" || 1
+Banco Bilbao Vizcaya Argentaria (BBVA) || "Banco Bilbao Vizcaya Argentaria, SA" || 1
 GOOD BEE CO LONDON LTD || GOOD BEE CO LONDON LTD || 1
 Kinder Morgan || Kinder Morgan || 1
 Intuit Inc. || Intuit || 1
@@ -154,7 +154,7 @@ Green Energy Group || Green Energy Markets || 0
 Thermo Fisher Scientific Inc. || Thermo Fisher || 1
 Great Panther Mining Limited || Great Panther Mining Limited || 1
 FedEx Corporation || United Parcel Service Inc. || 0
-Align Technology || "Align Technology ||  Inc." || 1
+Align Technology || "Align Technology, Inc." || 1
 China Aluminum International Engineering Corporation || China Aluminum International Engineering Corp Ltd || 1
 Foot Locker Inc. || Foot Locker || 1
 The Mosaic Company || The Mosaic Company || 1
@@ -171,7 +171,7 @@ Wells Fargo & Co. || Wells Fargo || 1
 Exxon Mobil Corporation || Chevron Corporation || 0
 AIDSS || AIDSS || 1
 U AND I (INNOVATION HUBS) LIMITED || U AND I (DEVELOPMENT AND TRADING) LIMITED || 1
-Woori Financial Group || "Woori Financial Group ||  Inc." || 1
+Woori Financial Group || "Woori Financial Group, Inc." || 1
 Abbott Laboratories || Abbott || 1
 Globaltrans Investment || Globaltrans Investment || 1
 ADATA Technology Co Ltd || Global Mixed-Mode Technology Inc. || 0
@@ -199,7 +199,7 @@ T & A SHOE LIMITED || T. & A. RESIN LTD. || 0
 Renault SA || Peugeot SA || 0
 JD.com Inc. || JD || 1
 RUBIX GROUP INTERNATIONAL LIMITED || Edison International || 0
-Twitter || "Twitter ||  Inc." || 1
+Twitter || "Twitter, Inc." || 1
 Henkel AG & Co. KGaA || Henkel || 1
 Dow Inc. || Dow || 1
 Woori Financial Group || Woori Financial Group || 1
@@ -241,7 +241,7 @@ Occidental Petroleum || Occidental || 1
 Broadcom Inc. || NVIDIA Corporation || 0
 Wayfair Inc. || Wayfair || 1
 Eni SpA || Repsol SA || 0
-"Center International Group Co. || Ltd." || ASM International || 0
+"Center International Group Co.,Ltd." || ASM International || 0
 Thermo Fisher Scientific Inc. || Thermo Fisher || 1
 Chevron Corporation || Chevron || 1
 UnitedHealth Group || UnitedHealth || 1
@@ -347,7 +347,7 @@ TotalEnergies SE || BP plc || 0
 Shell PLC || Shell || 1
 Exclaimer || Exclaimer Group || 1
 Union Pacific Corporation || Union Pacific Corp || 1
-Prudential Financial || "Prudential Financial ||  Inc." || 1
+Prudential Financial || "Prudential Financial, Inc." || 1
 Kyochon Food&Beverage Co. Ltd || FOOD & BEVERAGE SOLUTIONS (UK) LTD || 0
 American Express Company || American Express || 1
 Xtep International Holdings || Zk International Group || 0
@@ -390,14 +390,14 @@ Chateau International Development Co. Ltd || Melco International Development || 
 Western Union || Union Pacific || 0
 Emperor International Holdings Ltd || YHI International Ltd || 0
 Pfizer Inc. || Pfizer || 1
-"U INTERNATIONAL GROUP CO. ||  LTD" || "U INTERNATIONAL GROUP CO. ||  LTD" || 1
+"U INTERNATIONAL GROUP CO., LTD" || "U INTERNATIONAL GROUP CO., LTD" || 1
 Humana Inc. || Humana || 1
 Duke Energy Corporation || Duke Energy || 1
 JPMorgan Chase & Co. || Bank of America || 0
 Cms Energy || Cms Energy || 1
 Minor International Public Company || AVANADE INTERNATIONAL CORPORATION || 0
 Rakuten Inc. || Rakuten || 1
-Twitter || "TWITTER ||  INC." || 1
+Twitter || "TWITTER, INC." || 1
 Oge Energy || Mge Energy || 0
 Netflix Inc. || Netflix || 1
 Zheshang Securities Co. Ltd || Zheshang Securities || 1
@@ -484,7 +484,7 @@ Trendy Group International || Circor International || 0
 Apple Computer || Apple || 1
  RDC Semiconductor Co. Ltd ||  RDC Semiconductor || 1
 Aegon N.V. || Aegon || 1
-U INTERNATIONAL LIMITED || "ADIDAS INTERNATIONAL ||  INC." || 0
+U INTERNATIONAL LIMITED || "ADIDAS INTERNATIONAL, INC." || 0
 Grupo Pochteca S.A.B. de C.V. || Grupo Lamosa S.A.B. de C.V. || 0
 asSP International || Topsports International Holdings || 0
 Join Business Management Consulting || H - A BUSINESS CONSULTING LTD || 0
