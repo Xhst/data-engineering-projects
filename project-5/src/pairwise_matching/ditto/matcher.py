@@ -54,19 +54,19 @@ def to_str(ent1, ent2, summarizer=None, max_len=256, dk_injector=None):
         else:
             for attr in ent.keys():
                 content += 'COL %s VAL %s ' % (attr, ent[attr])
-        content += '\t'
+        content += ' || '
 
     content += '0'
 
     if summarizer is not None:
         content = summarizer.transform(content, max_len=max_len)
 
-    new_ent1, new_ent2, _ = content.split('\t')
+    new_ent1, new_ent2, _ = content.split(' || ')
     if dk_injector is not None:
         new_ent1 = dk_injector.transform(new_ent1)
         new_ent2 = dk_injector.transform(new_ent2)
 
-    return new_ent1 + '\t' + new_ent2 + '\t0'
+    return new_ent1 + ' || ' + new_ent2 + ' || 0'
 
 
 def classify(sentence_pairs, model,
@@ -86,6 +86,7 @@ def classify(sentence_pairs, model,
     """
     inputs = sentence_pairs
     # print('max_len =', max_len)
+    #print(inputs)
     dataset = DittoDataset(inputs,
                            max_len=max_len,
                            lm=lm)
@@ -115,6 +116,67 @@ def classify(sentence_pairs, model,
     return pred, all_logits
 
 def predict(input_path, output_path, config,
+            model,
+            summarizer=None,
+            lm='distilbert',
+            max_len=256,
+            dk_injector=None,
+            threshold=None):
+    """Run the model over the input file containing blocks of candidates.
+
+    Args:
+        input_path (str): the input file path
+        output_path (str): the output file path
+        config (Dictionary): task configuration
+        model (DittoModel): the model for prediction
+        batch_size (int): the batch size
+        summarizer (Summarizer, optional): the summarization module
+        max_len (int, optional): the max sequence length
+        dk_injector (DKInjector, optional): the domain-knowledge injector
+        threshold (float, optional): the threshold of the 0's class
+
+    Returns:
+        None
+    """
+    def process_block(block, writer):
+        pairs = []
+        rows = []
+
+        # Generate all pairs within the block
+        for i in range(len(block)):
+            for j in range(i + 1, len(block)):
+                pairs.append(to_str(block[i], block[j], summarizer, max_len, dk_injector))
+                rows.append((block[i], block[j]))
+
+        if not pairs:
+            return
+
+        # Classify the pairs
+        predictions, logits = classify(pairs, model, lm=lm,
+                                       max_len=max_len,
+                                       threshold=threshold)
+        scores = softmax(logits, axis=1)
+        for (item1, item2), pred, score in zip(rows, predictions, scores):
+            output = f"{item1} || {item2} || {pred}"
+            writer.write(output + "\n")
+
+    # Read blocks and process them
+    start_time = time.time()
+    with open(input_path, 'r') as reader, open(output_path, 'w', encoding="utf8") as writer:
+        #print(reader)
+        blocks = json.load(reader)
+        for block in blocks:
+            if len(block) <= 1:
+                continue
+            process_block(block, writer)
+
+    run_time = time.time() - start_time
+    run_tag = '%s_lm=%s_dk=%s_su=%s' % (config['name'], lm, str(dk_injector != None), str(summarizer != None))
+    os.system('echo %s %f >> log.txt' % (run_tag, run_time))
+
+
+
+def predict_for_threshold(input_path, output_path, config,
             model,
             batch_size=1024,
             summarizer=None,
@@ -163,7 +225,7 @@ def predict(input_path, output_path, config,
     if '.txt' in input_path:
         with jsonlines.open(input_path + '.jsonl', mode='w') as writer:
             for line in open(input_path):
-                writer.write(line.split('\t')[:2])
+                writer.write(line.split(' || ')[:2])
         input_path += '.jsonl'
 
     # batch processing
@@ -186,7 +248,6 @@ def predict(input_path, output_path, config,
     run_time = time.time() - start_time
     run_tag = '%s_lm=%s_dk=%s_su=%s' % (config['name'], lm, str(dk_injector != None), str(summarizer != None))
     os.system('echo %s %f >> log.txt' % (run_tag, run_time))
-
 
 def tune_threshold(config, model, hp):
     """Tune the prediction threshold for a given model on a validation set"""
@@ -227,7 +288,7 @@ def tune_threshold(config, model, hp):
 
     # verify F1
     set_seed(123)
-    predict(validset, "tmp.jsonl", config, model,
+    predict_for_threshold(validset, "tmp.jsonl", config, model,
             summarizer=summarizer,
             max_len=hp.max_len,
             lm=hp.lm,
@@ -243,7 +304,7 @@ def tune_threshold(config, model, hp):
     labels = []
     with open(validset) as fin:
         for line in fin:
-            labels.append(int(line.split('\t')[-1]))
+            labels.append(int(line.split(' || ')[-1]))
 
     real_f1 = sklearn.metrics.f1_score(labels, predicts)
     print("load_f1 =", f1)
@@ -253,7 +314,7 @@ def tune_threshold(config, model, hp):
 
 
 
-def load_model(task, path, lm, use_gpu, fp16=True):
+def load_model(task, path, lm, use_gpu):
     """Load a model for a specific task.
 
     Args:
@@ -293,9 +354,9 @@ def load_model(task, path, lm, use_gpu, fp16=True):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--task", type=str, default='Structured/Beer')
-    parser.add_argument("--input_path", type=str, default='input/candidates_small.jsonl')
-    parser.add_argument("--output_path", type=str, default='output/matched_small.jsonl')
+    parser.add_argument("--task", type=str, default='companies')
+    parser.add_argument("--input_path", type=str, default='../../blocking/results/lsh_bigram_blocking.json')
+    parser.add_argument("--output_path", type=str, default='../results/ditto/ditto_predict.txt')
     parser.add_argument("--lm", type=str, default='distilbert')
     parser.add_argument("--use_gpu", dest="use_gpu", action="store_true")
     parser.add_argument("--checkpoint_path", type=str, default='checkpoints/')
@@ -307,7 +368,7 @@ if __name__ == "__main__":
     # load the models
     set_seed(123)
     config, model = load_model(hp.task, hp.checkpoint_path,
-                       hp.lm, hp.use_gpu, hp.fp16)
+                       hp.lm, hp.use_gpu)
 
     summarizer = dk_injector = None
     if hp.summarize:
@@ -325,7 +386,7 @@ if __name__ == "__main__":
     # run prediction
     predict(hp.input_path, hp.output_path, config, model,
             summarizer=summarizer,
-            max_len=hp.max_len,
             lm=hp.lm,
+            max_len=hp.max_len,
             dk_injector=dk_injector,
             threshold=threshold)
