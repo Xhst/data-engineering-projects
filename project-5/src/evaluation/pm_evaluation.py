@@ -1,7 +1,7 @@
 import json
 import sys
 import os
-import re
+from itertools import combinations
 
 ### --------- ###
 prv_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -26,11 +26,10 @@ def evaluate(gt_file_path, predict_file_path):
         item1, item2, label = line.split(' || ')
         pair = item1, item2           
         
-        if pair in gt_pairs:
-            if int(label) == 0: 
-                print("False negative: " + str(pair))
-            else:
-                true_positive.add(pair)
+        if int(label) == 0: 
+            print("False negative: " + str(pair))
+        else:
+            true_positive.add(pair)
 
     
     # PRECISION VIENE 1 PERCHE NON ABBIAMO FALSI POSITIVIIIIII :((((((((
@@ -44,24 +43,17 @@ def evaluate(gt_file_path, predict_file_path):
     print(f"- {GREEN}F1: {RESET}{f1:.2f}\n")
 
 
-def get_pairs_for_pairwise_matching(blockin_path: str, gt_file_path: str):
+def get_pairs_for_pairwise_matching(blockin_path: str):
     pairs_to_evaluate = set()
-    
-    with open(gt_file_path, 'r', encoding='utf-8') as gt_file:
-        gt_lines = gt_file.readlines()
 
-    with open(blockin_path, 'r', encoding='utf-8') as blocking_file:
+    with open(paths.BLOCKING.RESULTS.value + blockin_path, 'r', encoding='utf-8') as blocking_file:
         blocks = json.load(blocking_file)
-
-    gt_pairs = extract_gt_pairs(gt_lines)
 
     for block in blocks:
         if len(block) == 1:
             continue
-        for item1, item2 in gt_pairs:
-            if item1 in block and item2 in block:
-                pairs_to_evaluate.add(item1, item2)
-    
+        pairs_to_evaluate.union(set(combinations(block, 2)))
+        
     return pairs_to_evaluate
         
          

@@ -1,6 +1,7 @@
 *.pyc
 .env
 *.pt
+checkpoints/*
 
 fields_descriptions_embeddings.json
 
