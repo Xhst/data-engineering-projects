@@ -305,7 +305,7 @@ def load_model(task, path, lm, use_gpu, fp16=True):
     return config, model
 
 
-def pairwise_matching(task='companies',
+def ditto_pairwise_matching(task='companies',
          input_path='../../blocking/results/lsh_bigram_blocking.json',
          output_path='../results/ditto/ditto_predict_lsh_bigram_blocking.txt',
          lm='distilbert',
@@ -363,7 +363,7 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
-    pairwise_matching(args.task, args.input_path, args.output_path, args.lm,
+    ditto_pairwise_matching(args.task, args.input_path, args.output_path, args.lm,
          args.use_gpu, args.fp16, args.checkpoint_path, args.dk,
          args.summarize, args.max_len)
 
