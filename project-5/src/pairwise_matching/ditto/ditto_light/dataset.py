@@ -38,7 +38,12 @@ class DittoDataset(data.Dataset):
 
         for line in lines:
             #print(line)
-            s1, s2, label = line.strip().split(' || ')
+            pair = line.strip().split(' || ')
+            if len(pair) == 2:
+                label = 1
+                s1, s2 = pair
+            else:
+                s1, s2, label = pair
             
             self.pairs.append((s1, s2))
             self.labels.append(int(label))

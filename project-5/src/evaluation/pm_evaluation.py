@@ -2,6 +2,7 @@ import json
 import sys
 import os
 from itertools import combinations
+import re
 
 ### --------- ###
 prv_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -9,6 +10,9 @@ sys.path.append(prv_folder)
 import paths
 from ansi_colors import *
 ### --------- ###
+
+def normalize_pair(pair: tuple):
+    return tuple(sorted((re.sub(r'\[.*?\]', '', pair[0]).strip(), re.sub(r'\[.*?\]', '', pair[1]).strip())))
 
 def evaluate(gt_file_path, predict_file_path):
     with open(gt_file_path, 'r', encoding='utf-8') as gt_file:
@@ -20,21 +24,29 @@ def evaluate(gt_file_path, predict_file_path):
     # To take only the predicted pairs of the same vocabulary as the GT 
     gt_pairs = extract_gt_pairs(gt_lines)
 
-    # Predicted pairs set (filtered on GT vocabulary)
-    true_positive = set()
-    for line in predicted_pairs:
-        item1, item2, label = line.split(' || ')
-        pair = item1, item2           
-        
-        if int(label) == 0: 
-            print("False negative: " + str(pair))
-        else:
-            true_positive.add(pair)
-
+    # True positive, False positive and False negative sets
+    tp = set()
+    fp = set()
+    fn = set()
     
+    for line in predicted_pairs:
+        line.strip()
+        item1, item2, label = line.split(' || ')
+        
+        pair = normalize_pair((item1, item2))    
+        
+        if pair in gt_pairs:
+            if int(label) == 1:
+                tp.add(pair)
+            else:
+                fn.add(pair)
+        # pair is not gt label 1 and you say it is
+        elif int(label) == 1:
+            fp.add(pair)
+            
     # PRECISION VIENE 1 PERCHE NON ABBIAMO FALSI POSITIVIIIIII :((((((((
-    precision = len(true_positive) / len(predicted_pairs) if predicted_pairs else 0
-    recall = len(true_positive) / len(gt_pairs) if gt_pairs else 0
+    precision = len(tp) / (len(tp) + len(fp)) if (len(tp) + len(fp)) else 0
+    recall = len(tp) / (len(tp) + len(fn)) if (len(tp) + len(fn)) else 0
     f1 = 2 * ((precision * recall) / (precision + recall)) if (precision + recall) > 0 else 0
 
     print(f"\n{CYAN}Pairwise matching EVALUATION for {predict_file_path.rsplit('/', 1)[-1]}{RESET}")
@@ -44,7 +56,7 @@ def evaluate(gt_file_path, predict_file_path):
 
 
 def get_pairs_for_pairwise_matching(blockin_path: str):
-    pairs_to_evaluate = set()
+    pairs_to_evaluate = []
 
     with open(paths.BLOCKING.RESULTS.value + blockin_path, 'r', encoding='utf-8') as blocking_file:
         blocks = json.load(blocking_file)
@@ -52,8 +64,8 @@ def get_pairs_for_pairwise_matching(blockin_path: str):
     for block in blocks:
         if len(block) == 1:
             continue
-        pairs_to_evaluate.union(set(combinations(block, 2)))
-        
+        pairs_to_evaluate.extend(combinations(block, 2))
+    
     return pairs_to_evaluate
         
          
@@ -69,5 +81,7 @@ def extract_gt_pairs(gt_lines: list[str]):
         pair = tuple(line.split(' || '))
         
         gt_pairs.add(pair)
+    
+    gt_pairs = {normalize_pair(pair) for pair in gt_pairs}
     
     return gt_pairs

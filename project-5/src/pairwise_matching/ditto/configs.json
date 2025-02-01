@@ -5,6 +5,7 @@
     "vocab": ["0", "1"],
     "trainset": "../../models/data_splits/train_ditto.txt",
     "validset": "../../models/data_splits/validation_ditto.txt",
-    "testset": "../../models/data_splits/test_ditto.txt"
+    "testset": "../../models/data_splits/test_ditto.txt",
+    "ditto_path": "./"
   }
 ]

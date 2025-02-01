@@ -3,18 +3,23 @@ import recordlinkage
 import json
 import re
 import os
+import sys
 
-directory = '../blocking/results/'
+### --------- ###
+prv_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append(prv_folder)
+import paths
+### --------- ###
 
-for filename in os.listdir(directory):
-    if filename.endswith('.json'): 
-        filepath = os.path.join(directory, filename)
+def pairwise_matching(blocking_path: str, threshold: float):
+    if blocking_path.endswith('.json'): 
+        filepath = os.path.join(paths.BLOCKING.RESULTS.value, blocking_path)
         print(f"Processing file: {filepath}")
         
         with open(filepath, 'r') as f:
             blocks = json.load(f)
 
-        blocking_method = filename.split('_blocking.')[0]
+        blocking_method = blocking_path.split('_blocking.')[0]
 
         data = []
         for block_id, block in enumerate(blocks):
@@ -30,21 +35,12 @@ for filename in os.listdir(directory):
         pairs = indexer.index(df)
 
         compare = recordlinkage.Compare()
-        compare.string('entry_cleaned', 'entry_cleaned', method='jarowinkler', threshold=0.85)
+        compare.string('entry_cleaned', 'entry_cleaned', method='jarowinkler', threshold=threshold)
         comparison_results = compare.compute(pairs, df)
 
-        matches = comparison_results[comparison_results.sum(axis=1) > 0]
-
-        matched_pairs = []
-        matched_pairs = []
-        for index1, index2 in matches.index:
-            matched_pairs.append({
-                "entry1": str(df.loc[index1, "entry"]),
-                "entry2": str(df.loc[index2, "entry"]),
-                "block_id": int(df.loc[index1, "block_id"])  
-            })
-
         os.makedirs('results/jarowinkler', exist_ok=True)
-
-        with open(f'results/jarowinkler/{blocking_method}.json', 'w') as f:
-            json.dump(matched_pairs, f, indent=4)
+        
+        with open('results/jarowinkler/' + blocking_method + '_t' + str(threshold) + '.txt', 'w', encoding="utf8") as f:
+            for (index1, index2), score in comparison_results.iterrows():
+                label = int(score.sum() > 0)  # 1 if matched, 0 otherwise
+                f.write(f"{df.loc[index1, 'entry']} || {df.loc[index2, 'entry']} || {label}\n")
