@@ -18,7 +18,7 @@ def remove_noise_words(text: str) -> str:
         "unlimited", "partnership", "society", "incorporated", "vereniging", "foundation", "grupo",  "technology",
         "nonprofit", "kabushiki", "gaisha", "financial", "gayrimenkul", "yatirim", "ortakligi", "gyo", "gruppo", "groupe",
         "gruppen", "holdings", "holding", "finance", "finances", "careers", "consultants", "consult", "consults",
-        "communication", "communications" #business international
+        "communication", "communications", "business", "international"
     }   
 
     # Split the text into tokens and remove noise words
@@ -55,18 +55,19 @@ def get_acronym(record: pd.Series) -> str:
 def clean_text(text: str) -> str:
     # Remove words between parenthesis
     text = re.sub(r"\(.*\)", "", text)
+    text = re.sub(r"\[.*\]", "", text)
 
     # Replace dashes with spaces
     text = re.sub(r"[-_]", " ", text)
-
-    # Split pascal case
-    text = split_pascal_case(text)
 
     # Remove accents and special characters
     text = unidecode(text)
 
     # Convert to lowercase, remove extra spaces and punctuation
     text = re.sub(r"[^a-zA-Z0-9&\s]", "", text.lower().strip())
+
+    # Split pascal case
+    text = split_pascal_case(text)
 
     # Remove words that are usally not relevant for matching
     text = remove_noise_words(text)
@@ -94,7 +95,8 @@ def bigram_tokenize(record: pd.Series) -> set[str]:
     return tokens
 
 
-def lsh_blocking(df: pd.DataFrame, outputfile: str, threshold=0.75, num_perm=128, tokenizer=tokenize, use_acronym=False):
+def lsh_blocking(df: pd.DataFrame, outputfile: str, threshold=0.75, num_perm=128, tokenizer=tokenize, use_acronym=False,
+                 add_idx=True):
     # Initialize LSH with a similarity threshold and number of permutations
     lsh = MinHashLSH(threshold=threshold, num_perm=num_perm)
 
@@ -105,7 +107,11 @@ def lsh_blocking(df: pd.DataFrame, outputfile: str, threshold=0.75, num_perm=128
         for token in tokens:
             minhash.update(token.encode('utf8'))  
 
-        lsh.insert(f"[{i}] {record['company_name']}", minhash)  # Use the record index as a unique key
+        name = record['company_name']
+        if add_idx:
+            name = f"[{i}] {name}"
+
+        lsh.insert(name, minhash)  # Use the record index as a unique key
 
     # Perform blocking (query similar records for each record)
     blocks = set()
@@ -138,15 +144,38 @@ def lsh_blocking(df: pd.DataFrame, outputfile: str, threshold=0.75, num_perm=128
     print(f"Blocking completed, results written on {outputfile}")
 
 
-if __name__ == "__main__":
+def blocking():
     datafile = "../schema_matching/mediated_schema/aggregated_sources.csv"
 
     df = pd.read_csv(datafile, low_memory=False)
     
     lsh_blocking(df, "./results/lsh_words_blocking.json")
-    lsh_blocking(df, "./results/lsh_bigram_blocking.json", tokenizer=bigram_tokenize)
+    #lsh_blocking(df, "./results/lsh_bigram_blocking.json", tokenizer=bigram_tokenize)
     lsh_blocking(df, "./results/lsh_words_aq_blocking.json", use_acronym=True)
-    lsh_blocking(df, "./results/lsh_bigram_aq_blocking.json", tokenizer=bigram_tokenize, use_acronym=True)
+    #lsh_blocking(df, "./results/lsh_bigram_aq_blocking.json", tokenizer=bigram_tokenize, use_acronym=True)
+
+
+def gt_blocking():
+    gt_elems = []
+    with open("../ground_truth/gt.txt", 'r', encoding='utf-8') as gt_file:
+        gt_lines = gt_file.readlines()
+        for line in gt_lines:
+            line = line.encode('utf-8').decode('unicode_escape')
+            pairs = line.strip().split(" || ")
+            gt_elems.append(pairs[0])
+            gt_elems.append(pairs[1])
+    
+    # create a dataframe with the ground truth elements as 'company_name' column
+    df_gt = pd.DataFrame(gt_elems, columns=['company_name'])
+
+    lsh_blocking(df_gt, "./results/lsh_words_gt_blocking.json", add_idx=False)
+    lsh_blocking(df_gt, "./results/lsh_bigram_gt_blocking.json", tokenizer=bigram_tokenize, add_idx=False)
+
+
+if __name__ == "__main__":
+    blocking()
+    gt_blocking()
+
 
 
 
