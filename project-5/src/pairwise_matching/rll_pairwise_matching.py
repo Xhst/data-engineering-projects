@@ -1,5 +1,6 @@
 import pandas as pd
 import recordlinkage
+import time
 import json
 import re
 import os
@@ -44,3 +45,12 @@ def pairwise_matching(blocking_path: str, threshold: float):
             for (index1, index2), score in comparison_results.iterrows():
                 label = int(score.sum() > 0)  # 1 if matched, 0 otherwise
                 f.write(f"{df.loc[index1, 'entry']} || {df.loc[index2, 'entry']} || {label}\n")
+
+
+if __name__ == "__main__":
+    start_time = time.time()
+    for blocking_file in os.listdir(paths.BLOCKING.RESULTS.value):
+        if blocking_file.endswith('.json'):
+            pairwise_matching(blocking_file, 0.75)
+    end_time = time.time()
+    print(f"Pairwise matching completed in {end_time - start_time} seconds")
