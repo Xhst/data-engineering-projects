@@ -24,6 +24,10 @@
         "[58706] Itau Corpbanca"
     ],
     [
+        "[1727] British Petroleum (BP)",
+        "[47268] BP INTERNATIONAL LIMITED"
+    ],
+    [
         "[52551] Muyuan Foods"
     ],
     [
@@ -95,9 +99,6 @@
     [
         "[58472] Kiocl",
         "[8364] Kiocl"
-    ],
-    [
-        "[62300] Green Cross Holdings Corporation"
     ],
     [
         "[26594] IBM"
@@ -200,9 +201,6 @@
         "[38166] Koninklijke Philips NV"
     ],
     [
-        "[11048] Joincare Pharmaceutical Group Industry Co.,Ltd."
-    ],
-    [
         "[38773] Bayerische Motoren Werke AG"
     ],
     [
@@ -243,9 +241,6 @@
     [
         "[25063] Cheniere Energy, Inc.",
         "[37434] Cheniere Energy Partners LP"
-    ],
-    [
-        "[56191] Joincare Pharmaceutical Group Industry"
     ],
     [
         "[27109] Warner Bros. Discovery",
@@ -321,8 +316,16 @@
         "[63769] BMW"
     ],
     [
+        "[11048] Joincare Pharmaceutical Group Industry Co.,Ltd.",
+        "[56191] Joincare Pharmaceutical Group Industry"
+    ],
+    [
         "[56879] Elite Material",
         "[34173] Elite Material Co Ltd"
+    ],
+    [
+        "[25225] Hewlett Packard Enterprise Company",
+        "[25976] HP Inc."
     ],
     [
         "[33775] Service Stream Ltd",
@@ -370,9 +373,6 @@
     [
         "[50613] METSA BOARD ITALIA SRL",
         "[47746] METSA BOARD ITALIA SRL"
-    ],
-    [
-        "[25225] Hewlett Packard Enterprise Company"
     ],
     [
         "[18437] Taiheiyo Cement Corp",
@@ -432,9 +432,6 @@
     [
         "[44334] T AND B ASSETS LTD",
         "[40870] T AND B ASSETS LTD"
-    ],
-    [
-        "[1727] British Petroleum (BP)"
     ],
     [
         "[21916] Safran SA",
@@ -543,6 +540,10 @@
     [
         "[25532] Under Armour, Inc.",
         "[54287] Under Armour"
+    ],
+    [
+        "[34469] GC Corp",
+        "[62300] Green Cross Holdings Corporation"
     ],
     [
         "[28324] Booz Allen Hamilton Holding",
