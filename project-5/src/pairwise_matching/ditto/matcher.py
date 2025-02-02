@@ -23,7 +23,6 @@ from ditto_light.dataset import DittoDataset
 from ditto_light.summarize import Summarizer
 from ditto_light.knowledge import *
 
-
 def set_seed(seed: int):
     """
     Helper function for reproducible behavior to set the seed in ``random``, ``numpy``, ``torch``
@@ -116,7 +115,7 @@ def classify(sentence_pairs, model,
 
 def predict(input_path, output_path, config,
             model,
-            batch_size=1024,
+            batch_size=32,
             summarizer=None,
             lm='distilbert',
             max_len=256,
@@ -159,16 +158,22 @@ def predict(input_path, output_path, config,
     if pairs_to_evaluate is not None:
         start_time = time.time()
         eval_results = []
+        
+        # remove roba
+        pairs_to_evaluate = [ (re.sub(r'\[.*?\]', '', x).strip(), re.sub(r'\[.*?\]', '', y).strip()) for x, y in pairs_to_evaluate ]
+        
         for i in range(0, len(pairs_to_evaluate), batch_size):
             batch = pairs_to_evaluate[i:i + batch_size]
-            
             eval_results.extend(process_batch(batch, [ f"{item1} || {item2}" for item1, item2 in batch ]))
-        with open(output_path, 'w') as f:
+        
+        os.makedirs("".join(output_path.split("/")[:-1]), exist_ok=True)
+        
+        with open(output_path, 'w', encoding="utf8") as f:
             for pair in eval_results:
                 f.write(f"{pair[0]} || {pair[1]} || {pair[2]}\n")
         run_time = time.time() - start_time
         run_tag = '%s_lm=%s_dk=%s_su=%s' % (config['name'], lm, str(dk_injector != None), str(summarizer != None))
-        os.system('echo %s %f >> log.txt' % (run_tag, run_time))
+        os.system('echo %s %f >> log_ditto.txt' % (run_tag, run_time))
         
         return
     
@@ -199,12 +204,12 @@ def predict(input_path, output_path, config,
 
     run_time = time.time() - start_time
     run_tag = '%s_lm=%s_dk=%s_su=%s' % (config['name'], lm, str(dk_injector != None), str(summarizer != None))
-    os.system('echo %s %f >> log.txt' % (run_tag, run_time))
+    os.system('echo %s %f >> log_ditto.txt' % (run_tag, run_time))
 
 
 def tune_threshold(config, model, hp):
     """Tune the prediction threshold for a given model on a validation set"""
-    validset = config['validset']
+    validset = config["ditto_path"] + config['validset']
     task = hp.task
 
     # summarize the sequences up to the max sequence length
@@ -267,7 +272,7 @@ def tune_threshold(config, model, hp):
 
 
 
-def load_model(task, path, lm, use_gpu, fp16=True):
+def load_model(task, path, lm, use_gpu, fp16=True, ditto_path: str = './'):
     """Load a model for a specific task.
 
     Args:
@@ -286,9 +291,10 @@ def load_model(task, path, lm, use_gpu, fp16=True):
     if not os.path.exists(checkpoint):
         raise ModelNotFoundError(checkpoint)
 
-    configs = json.load(open('configs.json'))
+    configs = json.load(open(ditto_path + 'configs.json'))
     configs = {conf['name'] : conf for conf in configs}
     config = configs[task]
+    config["ditto_path"] = ditto_path
     config_list = [config]
 
     if use_gpu:
@@ -315,11 +321,12 @@ def pairwise_matching(task='companies',
          dk=None,
          summarize=False,
          max_len=256,
-         pairs_to_evaluate=None):
+         pairs_to_evaluate=None,
+         ditto_path: str = './'):
     
     # Load the models
     set_seed(123)
-    config, model = load_model(task, checkpoint_path, lm, use_gpu, fp16)
+    config, model = load_model(task, checkpoint_path, lm, use_gpu, fp16, ditto_path)
 
     summarizer = dk_injector = None
     if summarize:

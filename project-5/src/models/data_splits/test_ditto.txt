@@ -24,7 +24,7 @@ Fuji (Restaurant chain) || Fuji Co. Ltd || 0
 Biogen || Biogen || 1
 Jointown Pharmaceutical Group Co Ltd || Jointown Pharmaceutical Group || 1
 Jcdecaux Sa || JCDecaux SA || 1
-"ADIDAS INTERNATIONAL ||  INC." || ADIDAS || 1
+"ADIDAS INTERNATIONAL, INC." || ADIDAS || 1
 Sony Corporation || Panasonic Corporation || 0
 Elevance Health || Elevance Health || 1
 Reckitt Benckiser Group || Reckitt || 1
@@ -103,4 +103,4 @@ Teledyne Technologies || Teledyne Technologies || 1
 Costco Wholesale Corporation || Walmart Inc. || 0
 Meliá Hotels International || WESCO International || 0
 New Balance Athletic Shoe Inc. || New Balance || 1
-Penguin International || "U INTERNATIONAL GROUP CO. ||  LTD" || 0
+Penguin International || "U INTERNATIONAL GROUP CO., LTD" || 0

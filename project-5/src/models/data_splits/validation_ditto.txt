@@ -74,8 +74,8 @@ Lenovo Group || Lenovo || 1
 Monsanto Company || Monsanto || 1
 Deep Industries Ltd || PARALLEL APPLICATIONS LTD || 0
 Cigna Health ||  Cigna || 1
-ASM International || "USF INTERNATIONAL HOLDINGS ||  LLC" || 0
-"ADIDAS INTERNATIONAL ||  INC." || Mirza International || 0
+ASM International || "USF INTERNATIONAL HOLDINGS, LLC" || 0
+"ADIDAS INTERNATIONAL, INC." || Mirza International || 0
 Colgate-Palmolive Company || Kimberly-Clark Corporation || 0
 Bristol-Myers Squibb || Bristol-Myers Squibb || 1
 Brookfield Asset Management || Brookfield Properties || 0

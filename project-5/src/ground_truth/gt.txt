@@ -3,11 +3,9 @@
 [38624] International Business Machines Corp || [26594] IBM
 [52330] Psbc (postal Savings Bank Of China) || [38703] Postal Savings Bank of China Co Ltd
 [47268] BP INTERNATIONAL LIMITED || [1727] British Petroleum (BP)
-[63665] Louis Vuitton || [38689] LVMH Moet Hennessy Louis Vuitton SE
 [63666] LVMH || [1592] Louis Vuitton (LV)
 [38166] Koninklijke Philips NV || [1526] Philips
 [26582] PepsiCo || [49460] PEPSI-COLA METROPOLITAN BOTTLING COMPANY, INC.
-[1501] Pepsi || [9639] PepsiCo
 [21927] Dior || [38688] Christian Dior SE
 [3983] Kraft Heinz || [52558] Kraft Heinz Company
 [38773] Bayerische Motoren Werke AG || [63769] BMW
@@ -54,6 +52,8 @@
 [38701] The Procter & Gamble Co || [9618] Procter & Gamble
 [24355] Centamin plc || [60194] Centamin
 [23417] AT&T || [52164] At&t
+[2454] Hana || [26979] Hana Financial Group
+[65761] M\u00f6lnlycke Health Care || [34920] Molnlycke Health Care AB
 [61192] Shanghai Maling Aquarius || [36055] Shanghai Maling Aquarius Co Ltd
 [34048] Fox Factory Holding Corp || [54797] Fox Factory Holding
 [59308] Kokuyo || [18549] Kokuyo Co. Ltd
@@ -129,7 +129,6 @@
 [56793] Kennedy-wilson Holdings || [5125] Kennedy Wilson
 [25431] Zynga Inc. || [54795] Zynga
 [3748] Texas Instruments || [38082] Texas Instruments Inc
-[64864] Prada || [45923] Prada Spa
 [52932] Saudi Arabian Mining Company (ma'aden) || [27234] Saudi Arabian Mining
 [37434] Cheniere Energy Partners LP || [25063] Cheniere Energy, Inc.
 [35962] Schnitzer Steel Industries, Inc. || [7776] Schnitzer Steel
@@ -145,6 +144,7 @@
 [8428] Dormakaba || [14690] dormakaba Holding AG
 [52406] Workday || [51230] Workday Careers
 [8364] Kiocl || [58472] Kiocl
+[58068] Wonders Information || [11423] Wonders Information Co. Ltd
 [52506] Monster Beverage Corporation || [3929] Monster Beverage
 [4463] Soci\u00e9t\u00e9 G\u00e9n\u00e9rale || [38633] Societe Generale SA
 [16026] Aurora Cannabis Inc. || [6870] Aurora Cannabis
