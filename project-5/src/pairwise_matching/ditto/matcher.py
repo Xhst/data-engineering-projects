@@ -166,8 +166,6 @@ def predict(input_path, output_path, config,
             batch = pairs_to_evaluate[i:i + batch_size]
             eval_results.extend(process_batch(batch, [ f"{item1} || {item2}" for item1, item2 in batch ]))
         
-        os.makedirs("".join(output_path.split("/")[:-1]), exist_ok=True)
-        
         with open(output_path, 'w', encoding="utf8") as f:
             for pair in eval_results:
                 f.write(f"{pair[0]} || {pair[1]} || {pair[2]}\n")

@@ -4,6 +4,7 @@ Jizhong Energy Resources || Jizhong Energy Resources Co Ltd || 1
 Nippon Electric Glass || Nippon Electric Glass Co., Ltd. || 1
 Haohua Chemical Science & Technology || Haohua Chemical Science & Technology Corp Ltd || 1
 Itaú Corpbanca || Itau Corpbanca || 1
+British Petroleum (BP) || BP INTERNATIONAL LIMITED || 0
 Xpel || Xpel || 1
 VEOLIA NORTH AMERICA, LLC || VEOLIA NORTH AMERICA, INC. || 1
 Société Générale || Societe Generale SA || 0
@@ -66,6 +67,7 @@ Shikoku Electric Power Co Inc || Shikoku Electric Power Company, Inc. || 1
 Air Canada || Air Canada || 1
 Joincare Pharmaceutical Group Industry Co.,Ltd. || Joincare Pharmaceutical Group Industry || 1
 Elite Material || Elite Material Co Ltd || 1
+Hewlett Packard Enterprise Company || HP Inc. || 0
 Service Stream Ltd || Service Stream Limited || 1
 WATCHTOWER SECURITY SOLUTIONS UNITED KINGDOM LIMITED || WATCHTOWER SECURITY SOLUTIONS UNITED KINGDOM LIMITED || 1
 Infineon Technologies || Infineon || 1
@@ -115,6 +117,7 @@ Chevron Corporation || Chevron || 1
 MindMaze || Mindmaze || 1
 Bank Albilad || Bank Albilad || 1
 Under Armour, Inc. || Under Armour || 1
+GC Corp || Green Cross Holdings Corporation || 0
 Booz Allen Hamilton Holding || Booz Allen Hamilton Holding Corporation || 1
 Castellum || Castellum Ab (publ) || 1
 China Construction Bank || China Construction Bank Corporation || 1

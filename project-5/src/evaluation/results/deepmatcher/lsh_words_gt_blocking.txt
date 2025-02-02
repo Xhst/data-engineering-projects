@@ -1,0 +1,135 @@
+Acer, Inc. || Acer || 1
+Nippon Electric Glass Co., Ltd. || Nippon Electric Glass || 1
+Centamin plc || Centamin || 1
+Prada S.p.A. || Prada || 1
+Nintendo Co Ltd || Nintendo || 1
+Royal Gold, Inc. || Royal Gold || 1
+Alkermes Plc || Alkermes || 1
+Nec Networks & System Integration Corporation || NEC Networks & System Integration Corp || 1
+Option Care Health, Inc. || Option Care Health || 1
+dormakaba Holding AG || Dormakaba || 1
+Corporacion America Airports || Corporación América Airports || 0
+Landis+Gyr Group AG || Landis+gyr || 1
+Extra Space Storage || Extra Space Storage Inc || 1
+Hana || Hana Financial Group || 1
+Ashtead Group || ASHTEAD GROUP PUBLIC LIMITED COMPANY || 0
+Castellum Ab (publ) || Castellum || 1
+Itau Corpbanca || Itaú Corpbanca || 1
+Ternium Argentina SA || Ternium Argentina || 1
+Renasant Corporation || Renasant Corp || 1
+MindMaze || Mindmaze || 1
+Taiwan Mobile Co Ltd || Taiwan Mobile || 1
+Reinsurance Group of America, Incorporated || Reinsurance Group of America || 0
+Aurora Cannabis || Aurora Cannabis Inc. || 1
+Apartment Income REIT Corp. || Apartment Income Reit || 1
+Spotify Technology SA || Spotify Technology || 1
+Amundi SA || Amundi || 1
+North China Pharmaceutical Co Ltd || North China Pharmaceutical Company. Ltd || 1
+Creepy Jar || Creepy Jar SA || 1
+CITIZENM LONDON BANKSIDE OPERATIONS B.V. || CITIZENM LONDON BANKSIDE OPERATIONS B.V. || 0
+Service Stream Limited || Service Stream Ltd || 1
+Schnitzer Steel || Schnitzer Steel Industries, Inc. || 1
+Nayax Ltd. || Nayax Ltd || 0
+Kajima Corp || Kajima Corporation || 1
+JL Mag Rare-Earth Co. Ltd || Jl Mag Rare-earth || 1
+Under Armour || Under Armour, Inc. || 1
+Ionis Pharmaceuticals || Ionis Pharmaceuticals, Inc. || 1
+GIORGIO GORI SRL || GIORGIO GORI SRL || 0
+Kar Auction Services || Kar Auction Services || 1
+Oracle || Oracle Corporation || 1
+AAC TECHNOLOGIES HOLDINGS INC || Aac Technologies Holdings || 1
+New China Life Insurance || New China Life Insurance Company || 1
+Kinder Morgan Inc || Kinder Morgan || 1
+Twitter Inc || Twitter || 1
+Shanghai Maling Aquarius Co Ltd || Shanghai Maling Aquarius || 1
+Xiaomi || Xiaomi Corporation || 1
+At&t || AT&T || 1
+Société Générale || Societe Generale SA || 0
+Warner Bros. Discovery || Warner Bros. Discovery Inc || 1
+ALL ABOUT CRAFTS LIMITED || ALL ABOUT CRAFTS TRADE LIMITED || 1
+China Merchants Bank || China Merchants Bank || 1
+WATCHTOWER SECURITY SOLUTIONS UNITED KINGDOM LIMITED || WATCHTOWER SECURITY SOLUTIONS UNITED KINGDOM LIMITED || 1
+Elisa Oyj || Elisa Oyj || 1
+Kraft Heinz || Kraft Heinz Company || 1
+Nanofilm Technologies International || Nanofilm Technologies International Ltd || 1
+Banque Cantonale de Genève SA || Banque Cantonale De Geneve Sa || 0
+Union Bank of India || Union Bank of India || 0
+Booz Allen Hamilton Holding || Booz Allen Hamilton Holding Corporation || 1
+Mrc Global || MRC Global Inc || 0
+China Construction Bank || China Construction Bank Corporation || 1
+Infineon Technologies || Infineon || 1
+Spectrum Brands Holdings Inc || Spectrum Brands || 1
+MERRILL LYNCH EUROPE LIMITED || MERRILL LYNCH EUROPE LIMITED || 1
+Atlas Air Worldwide Holdings || Atlas Air Worldwide Holdings Inc || 1
+OVH Groupe SAS || OVH || 1
+Arch Resources || Arch Resources Inc || 1
+Nu Holdings || Nu Holdings Ltd. || 1
+Wonders Information || Wonders Information Co. Ltd || 1
+Leyard Optoelectronic || Leyard Optoelectronic Co. Ltd || 1
+Kennedy Wilson || Kennedy-wilson Holdings || 1
+T AND B ASSETS LTD || T AND B ASSETS LTD || 1
+Blackrock Throgmorton Trust || BlackRock Throgmorton Trust plc || 1
+Fox Factory Holding Corp || Fox Factory Holding || 0
+VEOLIA NORTH AMERICA, INC. || VEOLIA NORTH AMERICA, LLC || 1
+Mölnlycke Health Care || Molnlycke Health Care AB || 0
+EVERBRIDGE, INC. || Everbridge || 1
+PT Hanjaya Mandala Sampoerna Tbk || Hanjaya Mandala Sampoerna Tbk PT || 1
+Edison S.p.a || Edison || 1
+First Solar || First Solar Inc || 1
+Microsoft Corp || Microsoft || 1
+Chevron Corporation || Chevron || 1
+Texas Instruments Inc || Texas Instruments || 1
+Japan Tobacco || Japan Tobacco Inc || 1
+Bank Albilad || Bank Albilad || 0
+Japan Airlines (JAL) || Japan Airlines Co. Ltd || 0
+Cheniere Energy Partners LP || Cheniere Energy, Inc. || 0
+Varonis || Varonis Systems || 1
+Elite Material || Elite Material Co Ltd || 1
+Divido || Divido Financial Services || 1
+Mekonomen AB || Mekonomen Ab (publ) || 1
+JPMorgan Global Growth & Income plc || Jpmorgan Global Growth & Income || 1
+Lundin Gold Inc. || Lundin Gold || 1
+Truist Financial || Truist Financial Corporation || 1
+Hexo || HEXO Corp. || 1
+COMPAGNIA AEREA ITALIANA SPA || COMPAGNIA AEREA ITALIANA SPA || 0
+Zynga Inc. || Zynga || 1
+Monster Beverage || Monster Beverage Corporation || 1
+METSA BOARD ITALIA SRL || METSA BOARD ITALIA SRL || 1
+Sociedad Quimica y Minera de Chile SA || Sociedad Quimica Y Minera De Chile || 0
+U.C.I.T. SRL || U.C.I.T. SRL || 1
+Jubilee Enterprise Public Company Ltd || Jubilee Industries Holdings Ltd || 0
+Deutsche Bank Spa || Deutsche Bank AG || 0
+Hyundai Mobis Co Ltd || Hyundai Mobis || 1
+Air Canada || Air Canada || 0
+Applegreen plc || Applegreen || 1
+Taiheiyo Cement Corporation || Taiheiyo Cement Corp || 1
+Trapizzino || Trapizzino || 1
+Kiocl || Kiocl || 1
+Swiss Life Holding || Swiss Life || 0
+Shikoku Electric Power Co Inc || Shikoku Electric Power Company, Inc. || 0
+Korea Gas || Korea Gas Corporation || 1
+Xpel || Xpel || 1
+General Dynamics Corporation || General Dynamics || 1
+C&C Group plc || C&C Group || 0
+BITTNET || Bittnet Systems || 1
+Jil Sander || JIL SANDER SPA || 1
+La Vida Europe || La Vida Europe || 0
+Wolverine World Wide Inc || Wolverine World Wide || 1
+RECTICEL OU || RECTICEL OU || 1
+Xilinx Inc || Xilinx || 1
+Kokuyo Co. Ltd || Kokuyo || 1
+Essentra || Essentra plc || 1
+Corbion || Corbion N.V. || 1
+China Eastern Airlines || China Eastern Airlines Corporation Limited || 1
+Jizhong Energy Resources || Jizhong Energy Resources Co Ltd || 1
+Safran SA || Safran || 1
+Semapa - Sociedade De Investimento E Gestao Sgps || Semapa Sociedade de Investimento e Gestao SGPS SA || 0
+AMAZON.COM SERVICES LLC || Amazon.com || 1
+Workday Careers || Workday || 1
+Saudi Arabian Mining || Saudi Arabian Mining Company (ma'aden) || 1
+Ingles Markets Inc || Ingles Markets || 1
+Getac Technology Corporation || Getac Holdings Corp || 1
+United Super Markets Holdings, Inc. || United Super Markets Holdings || 1
+Haohua Chemical Science & Technology Corp Ltd || Haohua Chemical Science & Technology || 1
+Wustenrot & Wurttembergische AG || Wustenrot & Wurttembergische Ag || 1
+Grendene || Grendene SA || 1

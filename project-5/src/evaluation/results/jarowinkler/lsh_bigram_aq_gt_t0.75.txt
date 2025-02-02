@@ -4,6 +4,7 @@
 [18451] Nippon Electric Glass Co., Ltd. || [58120] Nippon Electric Glass || 1
 [11784] Haohua Chemical Science & Technology Corp Ltd || [55289] Haohua Chemical Science & Technology || 1
 [58706] Itau Corpbanca || [8737] Itaú Corpbanca || 1
+[47268] BP INTERNATIONAL LIMITED || [1727] British Petroleum (BP) || 0
 [59073] Xpel || [5167] Xpel || 1
 [47546] VEOLIA NORTH AMERICA, INC. || [47543] VEOLIA NORTH AMERICA, LLC || 1
 [38633] Societe Generale SA || [4463] Société Générale || 1
@@ -66,6 +67,7 @@
 [36592] Air Canada || [54879] Air Canada || 1
 [56191] Joincare Pharmaceutical Group Industry || [11048] Joincare Pharmaceutical Group Industry Co.,Ltd. || 1
 [34173] Elite Material Co Ltd || [56879] Elite Material || 1
+[25976] HP Inc. || [25225] Hewlett Packard Enterprise Company || 0
 [22441] Service Stream Limited || [33775] Service Stream Ltd || 1
 [49653] WATCHTOWER SECURITY SOLUTIONS UNITED KINGDOM LIMITED || [46921] WATCHTOWER SECURITY SOLUTIONS UNITED KINGDOM LIMITED || 1
 [4028] Infineon || [10122] Infineon Technologies || 1
@@ -115,6 +117,7 @@
 [60315] Mindmaze || [2759] MindMaze || 1
 [28107] Bank Albilad || [34206] Bank Albilad || 1
 [54287] Under Armour || [25532] Under Armour, Inc. || 1
+[62300] Green Cross Holdings Corporation || [34469] GC Corp || 0
 [25380] Booz Allen Hamilton Holding Corporation || [28324] Booz Allen Hamilton Holding || 1
 [54234] Castellum Ab (publ) || [28150] Castellum || 1
 [52162] China Construction Bank Corporation || [3739] China Construction Bank || 1
