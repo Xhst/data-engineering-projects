@@ -150,8 +150,8 @@ def blocking():
     df = pd.read_csv(datafile, low_memory=False)
     
     lsh_blocking(df, "./results/lsh_words_blocking.json")
-    #lsh_blocking(df, "./results/lsh_bigram_blocking.json", tokenizer=bigram_tokenize)
-    lsh_blocking(df, "./results/lsh_words_aq_blocking.json", use_acronym=True)
+    lsh_blocking(df, "./results/lsh_bigram_blocking.json", tokenizer=bigram_tokenize)
+    #lsh_blocking(df, "./results/lsh_words_aq_blocking.json", use_acronym=True)
     #lsh_blocking(df, "./results/lsh_bigram_aq_blocking.json", tokenizer=bigram_tokenize, use_acronym=True)
 
 
@@ -169,11 +169,13 @@ def gt_blocking():
     df_gt = pd.DataFrame(gt_elems, columns=['company_name'])
 
     lsh_blocking(df_gt, "./results/lsh_words_gt_blocking.json", add_idx=False)
-    lsh_blocking(df_gt, "./results/lsh_bigram_gt_blocking.json", tokenizer=bigram_tokenize, add_idx=False)
+    lsh_blocking(df_gt, "./results/lsh_bigram_gt_blocking.json", tokenizer=bigram_tokenize, add_idx=False, use_acronym=True)
+    lsh_blocking(df_gt, "./results/lsh_words_aq_gt_blocking.json", add_idx=False)
+    lsh_blocking(df_gt, "./results/lsh_bigram_aq_gt_blocking.json", tokenizer=bigram_tokenize, add_idx=False)
 
 
 if __name__ == "__main__":
-    blocking()
+    #blocking()
     gt_blocking()
 
 
