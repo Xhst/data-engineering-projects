@@ -169,9 +169,9 @@ def gt_blocking():
     df_gt = pd.DataFrame(gt_elems, columns=['company_name'])
 
     lsh_blocking(df_gt, "./results/lsh_words_gt_blocking.json", add_idx=False)
-    lsh_blocking(df_gt, "./results/lsh_bigram_gt_blocking.json", tokenizer=bigram_tokenize, add_idx=False, use_acronym=True)
-    lsh_blocking(df_gt, "./results/lsh_words_aq_gt_blocking.json", add_idx=False)
-    lsh_blocking(df_gt, "./results/lsh_bigram_aq_gt_blocking.json", tokenizer=bigram_tokenize, add_idx=False)
+    lsh_blocking(df_gt, "./results/lsh_bigram_gt_blocking.json", tokenizer=bigram_tokenize, add_idx=False)
+    lsh_blocking(df_gt, "./results/lsh_words_aq_gt_blocking.json", add_idx=False, use_acronym=True)
+    lsh_blocking(df_gt, "./results/lsh_bigram_aq_gt_blocking.json", tokenizer=bigram_tokenize, add_idx=False, use_acronym=True)
 
 
 if __name__ == "__main__":
