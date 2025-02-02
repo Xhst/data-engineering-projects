@@ -98,32 +98,30 @@ def results_pairs_json_buider(directory):
         if filename.endswith('.csv'):
 
             filepath = os.path.join(directory, filename)
-            data = []
 
             # Leggere il file CSV
             with open(filepath, mode='r', encoding='utf-8') as file:
                 reader = csv.DictReader(file)
+                
+                filename = filename.replace("_pairs_predicted.csv", "") + ".txt"
+                filepath = os.path.join(paths.PAIRWISE_MATCHING.RESULTS_DM.value, filename)
 
-                for row in reader:
-                    match_score = float(row["match_score"])
+           
+                with open(filepath, mode='w', encoding='utf-8') as f:
 
-                    if match_score > 0.5:
-                        block_id = int(row["id"].split("_")[0])
-                        entry1 = f"[{block_id}] {row['left_']}"
-                        entry2 = f"[{block_id}] {row['right_']}"
-                        data.append({
-                            "entry1": entry1,
-                            "entry2": entry2,
-                            "block_id": block_id
-                            })
+                    for row in reader:
+                    
+                        match_score = float(row["match_score"])
+
+                        entry1 = f"{row['left_']}"
+                        entry2 = f"{row['right_']}"
+
+                        if match_score > 0.5:
+                            f.write(f"{entry1} || {entry2} || {1}\n")
+                        else:
+                            f.write(f"{entry1} || {entry2} || {0}\n")
+
                         
-
-            filename = filename.replace("_pairs_predicted.csv", "") + ".json"
-            filepath = os.path.join(paths.PAIRWISE_MATCHING.RESULTS_DM.value, filename)
-
-            # Scrivere i dati nel file JSON
-            with open(filepath, mode='w', encoding='utf-8') as file:
-                json.dump(data, file, indent=4, ensure_ascii=False)
 
             print(f"File JSON '{filename}' saved!")
 
