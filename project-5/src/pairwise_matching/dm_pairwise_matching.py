@@ -3,6 +3,8 @@ import itertools
 import json
 import re
 import sys
+import csv
+import json
 import os
 import deepmatcher as dm
 
@@ -74,24 +76,70 @@ def predict_pairs(directory):
             df = pd.read_csv(filepath)
 
             model = dm.MatchingModel()
-            model.load_state(f"{paths.MODELS.DEEP_MATCHER.value}/pw_matching_DM_model_lr0.0001_bs_16_epochs_10.pth")
+            model.load_state(f"{paths.MODELS.DEEP_MATCHER.value}/pw_matching_DM_model_lr1e-05_bs_8_epochs_15.pth")
 
             processed_data = dm.data.process_unlabeled(path = filepath,
                                                        trained_model=model)
             
             model.eval()
             predictions = model.run_prediction(processed_data,output_attributes=True)
+            
+            df.loc[df.index[:len(predictions)], 'match_score'] = predictions['match_score'].values
+            print(df)
 
             os.makedirs(paths.PAIRWISE_MATCHING.RESULTS_DM_PREDICTED.value, exist_ok=True)
-            predictions.to_csv(f"{paths.PAIRWISE_MATCHING.RESULTS_DM_PREDICTED.value}/{filename.removesuffix('.csv')}_predicted.csv", index=False)
+            df.to_csv(f"{paths.PAIRWISE_MATCHING.RESULTS_DM_PREDICTED.value}/{filename.removesuffix('.csv')}_predicted.csv", index=False)
+
+
+def results_pairs_json_buider(directory):
+
+    # Lista per memorizzare i dati
+    for filename in os.listdir(directory):
+        if filename.endswith('.csv'):
+
+            filepath = os.path.join(directory, filename)
+            data = []
+
+            # Leggere il file CSV
+            with open(filepath, mode='r', encoding='utf-8') as file:
+                reader = csv.DictReader(file)
+
+                for row in reader:
+                    match_score = float(row["match_score"])
+
+                    if match_score > 0.5:
+                        block_id = int(row["id"].split("_")[0])
+                        entry1 = f"[{block_id}] {row['left_']}"
+                        entry2 = f"[{block_id}] {row['right_']}"
+                        data.append({
+                            "entry1": entry1,
+                            "entry2": entry2,
+                            "block_id": block_id
+                            })
+                        
+
+            filename = filename.replace("_pairs_predicted.csv", "") + ".json"
+            filepath = os.path.join(paths.PAIRWISE_MATCHING.RESULTS_DM.value, filename)
+
+            # Scrivere i dati nel file JSON
+            with open(filepath, mode='w', encoding='utf-8') as file:
+                json.dump(data, file, indent=4, ensure_ascii=False)
+
+            print(f"File JSON '{filename}' saved!")
+
+
 
 
 
 if __name__ == "__main__":
     
-    blocking_directory = paths.BLOCKING.RESULTS.value
-    pairs_csv_builder(blocking_directory)
+    #blocking_directory = paths.BLOCKING.RESULTS.value
+    #pairs_csv_builder(blocking_directory)
     
     #unlabeled_pairs_directory = paths.PAIRWISE_MATCHING.RESULTS_DM_UNLABELED.value
     #predict_pairs(unlabeled_pairs_directory)
+
+    results_directory = paths.PAIRWISE_MATCHING.RESULTS_DM_PREDICTED.value
+    results_pairs_json_buider(results_directory)
+
 
