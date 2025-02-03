@@ -145,7 +145,7 @@ def lsh_blocking(df: pd.DataFrame, outputfile: str, threshold=0.75, num_perm=128
 
 
 def blocking():
-    datafile = "../schema_matching/mediated_schema/aggregated_sources.csv"
+    datafile = "../schema_alignment/mediated_schema/aggregated_sources.csv"
 
     df = pd.read_csv(datafile, low_memory=False)
     
