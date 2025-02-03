@@ -44,3 +44,6 @@ companies_lm=distilbert_dk=False_su=False 1.544468
 companies_lm=distilbert_dk=False_su=False 2.154288 
 companies_lm=distilbert_dk=False_su=False 1.503901 
 companies_lm=distilbert_dk=False_su=False 1.951795 
+companies_lm=distilbert_dk=False_su=False 0.882875 
+companies_lm=distilbert_dk=False_su=False 0.841611 
+companies_lm=distilbert_dk=False_su=False 4247.375948 
