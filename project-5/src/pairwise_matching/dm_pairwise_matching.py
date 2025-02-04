@@ -6,7 +6,12 @@ import sys
 import csv
 import json
 import os
+import torch
+import timeit
 import deepmatcher as dm
+
+import nltk
+nltk.download('punkt_tab')
 
 ### --------- ###
 prv_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -68,7 +73,14 @@ def pairs_csv_builder(directory):
 
 
 def predict_pairs(directory):
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Device: {device}")
+
     for filename in os.listdir(directory):
+
+        start_time = timeit.default_timer()
+
         if filename.endswith('.csv'):
             filepath = os.path.join(directory, filename)
             print(f"\n{CYAN}Processing file:{RESET} {filepath}")
@@ -78,6 +90,8 @@ def predict_pairs(directory):
             model = dm.MatchingModel()
             model.load_state(f"{paths.MODELS.DEEP_MATCHER.value}/pw_matching_DM_model_lr1e-05_bs_8_epochs_15.pth")
 
+            model.to(device)
+
             processed_data = dm.data.process_unlabeled(path = filepath,
                                                        trained_model=model)
             
@@ -85,21 +99,23 @@ def predict_pairs(directory):
             predictions = model.run_prediction(processed_data,output_attributes=True)
             
             df.loc[df.index[:len(predictions)], 'match_score'] = predictions['match_score'].values
-            print(df)
 
             os.makedirs(paths.PAIRWISE_MATCHING.RESULTS_DM_PREDICTED.value, exist_ok=True)
             df.to_csv(f"{paths.PAIRWISE_MATCHING.RESULTS_DM_PREDICTED.value}/{filename.removesuffix('.csv')}_predicted.csv", index=False)
+            
+            elapsed_time = timeit.default_timer() - start_time
+
+            print(f"\n{GREEN}File {RESET} {filepath} {GREEN}completed in {RESET} {elapsed_time}s")
 
 
-def results_pairs_json_buider(directory):
 
-    # Lista per memorizzare i dati
+def results_pairs_text_buider(directory):
+
     for filename in os.listdir(directory):
         if filename.endswith('.csv'):
 
             filepath = os.path.join(directory, filename)
 
-            # Leggere il file CSV
             with open(filepath, mode='r', encoding='utf-8') as file:
                 reader = csv.DictReader(file)
                 
@@ -134,10 +150,10 @@ if __name__ == "__main__":
     #blocking_directory = paths.BLOCKING.RESULTS.value
     #pairs_csv_builder(blocking_directory)
     
-    #unlabeled_pairs_directory = paths.PAIRWISE_MATCHING.RESULTS_DM_UNLABELED.value
-    #predict_pairs(unlabeled_pairs_directory)
+    unlabeled_pairs_directory = paths.PAIRWISE_MATCHING.RESULTS_DM_UNLABELED.value
+    predict_pairs(unlabeled_pairs_directory)
 
-    results_directory = paths.PAIRWISE_MATCHING.RESULTS_DM_PREDICTED.value
-    results_pairs_json_buider(results_directory)
+    #results_directory = paths.PAIRWISE_MATCHING.RESULTS_DM_PREDICTED.value
+    #results_pairs_text_buider(results_directory)
 
 
