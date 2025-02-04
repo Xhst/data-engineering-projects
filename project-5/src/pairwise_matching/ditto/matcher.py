@@ -115,7 +115,7 @@ def classify(sentence_pairs, model,
 
 def predict(input_path, output_path, config,
             model,
-            batch_size=32,
+            batch_size=2048,
             summarizer=None,
             lm='distilbert',
             max_len=256,
@@ -296,6 +296,7 @@ def load_model(task, path, lm, use_gpu, fp16=True, ditto_path: str = './'):
     config_list = [config]
 
     if use_gpu:
+        print("USING CUDAAA")
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
     else:
         device = 'cpu'
@@ -320,7 +321,8 @@ def pairwise_matching(task='companies',
          summarize=False,
          max_len=256,
          pairs_to_evaluate=None,
-         ditto_path: str = './'):
+         ditto_path: str = './',
+         gt_eval=False):
     
     # Load the models
     set_seed(123)
@@ -343,6 +345,11 @@ def pairwise_matching(task='companies',
         summarize=summarize, max_len=max_len
     ))
 
+    if gt_eval:
+        batch_size = 32
+    else:
+        batch_size = 2048
+        
     # Run prediction
     predict(input_path, output_path, config, model,
             summarizer=summarizer,
@@ -350,7 +357,8 @@ def pairwise_matching(task='companies',
             lm=lm,
             dk_injector=dk_injector,
             threshold=threshold,
-            pairs_to_evaluate=pairs_to_evaluate)
+            pairs_to_evaluate=pairs_to_evaluate,
+            batch_size=batch_size)
 
 
 if __name__ == "__main__":
