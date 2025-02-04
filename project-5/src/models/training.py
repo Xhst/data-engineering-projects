@@ -95,7 +95,6 @@ def train_dm(dataset: str):
         
         # Model init
         model = dm.MatchingModel(attr_summarizer='hybrid') # Uses RNN and attention mechanism
-        model.optimizer = 'adam'
         model.lr = lr
 
         model.run_train(
