@@ -6,3 +6,5 @@ checkpoints/*
 fields_descriptions_embeddings.json
 
 cacheddata.pth
+
+venv
