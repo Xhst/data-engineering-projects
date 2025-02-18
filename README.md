@@ -27,9 +27,9 @@ Group projects for the course **Data Engineering** held by professor Paolo Meria
 #
 
 - ### [Project 4](/project-4/README.md) - Table data extraction and understanding:
-
+Knowledge extraction from html tables (from project 1) using LLMs.
 #
 
-- ### [Project 5](/project-5/README.md) - Data Integration of Airline flights:
-
+- ### [Project 5](/project-5/README.md) - Data Integration of Companies:
+Integration of companies data from 16 different sources. The mediated schema is realized with the use of LLMs to generate field descriptions, on which embeddings were subsequently calculated and then used to do clustering (with HDBSCAN). The Blocking is done using Locality Sensitive Hashing (LSH) with words and bi-gram vectors. The final step of pairwise matching is realized with 3 different approaches: DITTO, DeepMatcher and Jaro-Winkler.
 #
